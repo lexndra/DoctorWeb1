@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.9060,
+  "f1": 0.9060,
+  "mcc": 0.8121,
+  "kappa": 0.8120,
+  "boundary_mae": 17.92,
+  "f1_at_3": 0.6274,
+  "epochs": 2,
+  "model_backbone": "microsoft/mdeberta-v3-base"
+}

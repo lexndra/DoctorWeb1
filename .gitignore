@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pt
+*.pth
+.DS_Store
+CoAT/
+CoAT_Hybrid/

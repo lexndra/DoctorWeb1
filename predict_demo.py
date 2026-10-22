@@ -11,6 +11,7 @@ import torch
 from transformers import AutoTokenizer
 from razdel import tokenize
 
+from src.html_analyzer import analyze_html_file, print_report
 from src.model import DeBERTaBiGRUCRFTagger
 
 
@@ -69,8 +70,21 @@ def main():
         default="tnc_dbgc_coat_best.pt",
         help="Путь к .pt файлу обученной модели (по умолчанию: tnc_dbgc_coat_best.pt)",
     )
-    parser.add_argument("--text", type=str, required=True, help="Входной текст для анализа")
+    group = parser.add_mutually_exclusive_group(required=True)
+
+    group.add_argument("--text", type=str, help="Входной текст для анализа")
+    group.add_argument("--html", type=str, help="Путь к HTML-файлу")
     args = parser.parse_args()
+    if args.html:
+        html_result = analyze_html_file(args.html)
+        print_report(html_result)
+        text = html_result.visible_text
+    else:
+        text = args.text
+
+    if not text.strip():
+        print("Нет текста для анализа нейросетью")
+        return
 
     ckpt_path = Path(args.checkpoint)
     if not ckpt_path.exists():
@@ -87,7 +101,7 @@ def main():
     model = DeBERTaBiGRUCRFTagger(model_name=model_name, num_labels=2, hidden_dim=hidden_dim).to(device)
     model.load_state_dict(ckpt["model_state_dict"])
 
-    words, preds, boundaries = segment_text(args.text, model, tokenizer, device)
+    words, preds, boundaries = segment_text(text, model, tokenizer, device)
     ai_ratio = (sum(preds) / len(preds) * 100.0) if preds else 0.0
 
     print(f"\n==========================================")

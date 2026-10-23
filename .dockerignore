@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.git
+.gitignore
+.DS_Store
+*.pt
+*.bin
+*.tar.gz
+results/*.png
+samples/result.json

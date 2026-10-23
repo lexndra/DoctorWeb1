@@ -1,16 +1,163 @@
-# DoctorWeb1
-Project by students NSU group 25948 Institute of Intelligent Robotics. A neural network for recognizing artificial intelligence in documents of various types.
+# DoctorWeb1 (DW-1)
 
-## Модель сегментации ИИ-текста (TNC-DBGC*)
+Проект студентов НГУ (Институт интеллектуальной робототехники) по заказу компании **«Доктор Веб»**.  
+**Тема:** Автоматизированная оценка AI-assisted происхождения электронных писем (EML, HTML, изображения) и локализация сгенерированных фрагментов.
 
-Архитектура: `Transformer (mDeBERTa-v3) + BiGRU + CRF` для пословного выявления границ перехода между текстом человека и нейросетей.
+---
 
-### Результаты валидации:
-- **Accuracy:** 90.6%
-- **F1-Score:** 90.6%
-- **Cohen's Kappa:** 0.8120
-- **Boundary MAE (ошибка границы):** 17.92 слов
-- **F1@3 (попадание в стыки):** 62.7%
+## 🏗 Архитектура Системы (по ТЗ DW-1 v5)
 
-*Веса модели (`tnc_dbgc_coat_best.pt`, 1.1 ГБ) сохранены на Google Диске.*  
-[Скачать веса модели tnc_dbgc_coat_best.pt](https://drive.google.com/file/d/1sfdBo-n8XDWCsi6bDoREvZMkHAf_ywbe/view?usp=sharing)
+Система построена по модульной конвейерной архитектуре (**L0 – L5**):
+
+```
+                       [ Вход: EML / HTML / Текст ]
+                                    │
+                                    ▼
+       ┌────────────────────────────────────────────────────────┐
+       │ L1: Разбор и зонирование (Subject, Greeting, Body, CTA)│
+       └───────┬────────────────────┬───────────────────┬───────┘
+               │                    │                   │
+               ▼                    ▼                   ▼
+       ┌───────────────┐    ┌───────────────┐   ┌───────────────┐
+       │ L2: Текстовый │    │   L2: HTML    │   │  L2: Vision   │
+       │  mDeBERTa-CRF │    │  Анти-сокрытие│   │  ИИ-картинки  │
+       │  (по словам)  │    │  (CSS, ссылки)│   │  QR-код, OCR  │
+       └───────┬───────┘    └───────┬───────┘   └───────┬───────┘
+               │                    │                   │
+               └────────────────────┼───────────────────┘
+                                    │
+                                    ▼
+       ┌────────────────────────────────────────────────────────┐
+       │ L3: Decision Engine (Композитный AI-индекс 0..1)       │
+       │     Объяснение для аналитика SOC на русском языке      │
+       │     Сериализация в единый JSON по стандарту ТЗ         │
+       └────────────────────────────┬───────────────────────────┘
+                                    │
+                                    ▼
+       ┌────────────────────────────────────────────────────────┐
+       │ L4: Интерфейсы: CLI (`cli.py`) и Docker-контейнер      │
+       └────────────────────────────────────────────────────────┘
+```
+
+### Основные компоненты:
+1. **Текстовая модель (`src/model.py`):**  
+   Архитектура `TNC-DBGC*` (`microsoft/mdeberta-v3-base` + BiGRU + CRF). Обеспечивает пословную классификацию и выявление точных символьных границ сгенерированных фрагментов в частично переписанных письмах.
+2. **HTML-анализатор (`src/html_analyzer.py`):**  
+   Детекция скрытых CSS-элементов (`display:none`, `font-size:0`, атрибут `hidden`), фишинговой подмены ссылок и извлечение чистого видимого текста.
+3. **Анализатор изображений (`src/image_analyzer.py`):**  
+   Классификация сгенерированных картинок (`umm-maybe/AI-image-detector`), извлечение текста через `EasyOCR` и детекция QR-кодов (`OpenCV`).
+4. **Конвейер принятия решений (`src/pipeline.py`):**  
+   Расчет итогового индекса AI-генерации (0.0..1.0), вердикта (`AI-Generated` / `Human-Written`), формирование заключения для SOC и сборка JSON.
+5. **CLI (`cli.py`):**  
+   Консольный интерфейс для одиночного анализа и пакетной обработки каталога писем (до 1941+ писем).
+
+---
+
+## 📊 Результаты валидации текстовой модели
+
+Модель обучена на корпусе `CoAT` (русский язык) для задачи sequence labeling:
+
+| Метрика | Значение | Описание |
+| :--- | :---: | :--- |
+| **Validation Accuracy** | **90.6%** | Доля верно классифицированных слов |
+| **Validation F1** | **90.6%** | Сбалансированная точность и полнота |
+| **Cohen's Kappa** | **0.8120** | Отличная согласованность с разметкой |
+| **Boundary MAE** | **17.92** | Средняя ошибка границы перехода |
+| **F1@3 (граница стыка)**| **62.7%** | Точное попадание в стык человек/ИИ |
+
+*Веса модели (`tnc_dbgc_coat_best.pt`, 1.1 ГБ) доступны для скачивания:*  
+[Скачать веса модели tnc_dbgc_coat_best.pt с Google Диска](https://drive.google.com/file/d/1sfdBo-n8XDWCsi6bDoREvZMkHAf_ywbe/view?usp=sharing)
+
+---
+
+## 🚀 Быстрый старт
+
+### 1. Установка зависимостей
+```bash
+python -m venv .venv
+source .venv/bin/activate  # На Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Поместите веса `tnc_dbgc_coat_best.pt` в корень репозитория.
+
+---
+
+### 2. Использование CLI (`cli.py`)
+
+#### Анализ произвольного текста:
+```bash
+python cli.py analyze --text "Уважаемый клиент, ваш пароль скомпрометирован..." --subject "Безопасность"
+```
+
+#### Анализ HTML-письма:
+```bash
+python cli.py analyze --html email.html --output report.json
+```
+
+#### Анализ EML-письма (после подключения парсера):
+```bash
+python cli.py analyze --eml letter.eml --output report.json --threshold 0.50
+```
+
+#### Пакетная обработка каталога писем (пакетный режим):
+```bash
+python cli.py batch --dir ./emails_folder/ --output batch_summary.json
+```
+
+---
+
+## 🐳 Запуск в Docker
+
+Сборка образа:
+```bash
+docker build -t doctorweb-detector .
+```
+
+Запуск анализа:
+```bash
+docker run --rm -v $(pwd):/app/data doctorweb-detector analyze --text "Тестовое сообщение"
+```
+
+---
+
+## 📄 Формат выходного JSON (п. 4.1.6 ТЗ)
+
+```json
+{
+  "file_id": "letter.eml",
+  "metadata": {
+    "subject": "Срочное уведомление",
+    "sender": "security@alert.ru",
+    "date": "Fri, 23 Oct 2026 10:00:00 +0300"
+  },
+  "overall_ai_index": 0.854,
+  "verdict": "Сгенерировано ИИ (AI-Generated)",
+  "threshold": 0.5,
+  "ai_zones_detected": ["body", "cta"],
+  "zones": [
+    {
+      "name": "body",
+      "text": "...",
+      "ai_probability": 0.84,
+      "is_ai": true,
+      "start_char": 26,
+      "end_char": 450,
+      "ai_spans": [
+        {
+          "text": "фрагмент текста",
+          "start_char": 45,
+          "end_char": 120
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "html_signals": {
+    "hidden_elements_count": 1,
+    "suspicious_links_count": 1
+  },
+  "explanation": "Письмо отнесено к категории 'Сгенерировано ИИ'...",
+  "method": "TNC-DBGC* + Vision + HTML Evasion (Ensemble)"
+}
+```

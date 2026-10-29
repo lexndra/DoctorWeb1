@@ -11,6 +11,7 @@ import torch
 from transformers import AutoTokenizer
 from razdel import tokenize
 
+from src.eml_parser import parse_eml
 from src.html_analyzer import analyze_html_file, print_report
 from src.model import DeBERTaBiGRUCRFTagger
 
@@ -74,11 +75,46 @@ def main():
 
     group.add_argument("--text", type=str, help="Входной текст для анализа")
     group.add_argument("--html", type=str, help="Путь к HTML-файлу")
+    group.add_argument("--eml", type=str, help="Путь к EML-файлу")
+
     args = parser.parse_args()
-    if args.html:
+
+    if args.eml:
+        eml_result = parse_eml(args.eml)
+
+        print("Тема:", eml_result["subject"])
+        print("Отправитель:", eml_result["from"])
+        print("Дата:", eml_result["date"])
+        print("Изображений:", len(eml_result["images"]))
+        print("Вложений:", len(eml_result["attachments"]))
+
+        if eml_result["html_analysis"] is not None:
+            print_report(eml_result["html_analysis"])
+
+        print("\nЗоны письма:")
+        for name, bounds in eml_result["zones"].items():
+            print(f"{name}: {bounds}")
+
+            if bounds is not None:
+                start, end = bounds
+                print(eml_result["zoned_text"][start:end])
+
+        print("\nАнализ изображений:")
+        for item in eml_result["image_results"]:
+            print("Файл:", item["filename"])
+
+            if "error" in item:
+                print("Ошибка:", item["error"])
+            else:
+                print("Результат:", item["analysis"])
+
+        text = eml_result["zoned_text"]
+
+    elif args.html:
         html_result = analyze_html_file(args.html)
         print_report(html_result)
         text = html_result.visible_text
+
     else:
         text = args.text
 

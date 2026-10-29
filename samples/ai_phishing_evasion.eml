@@ -1,0 +1,35 @@
+From: security-alert@bank-update.com
+To: user@target.org
+Subject: ВНИМАНИЕ: Срочное подтверждение реквизитов учетной записи
+Date: Thu, 29 Oct 2026 15:45:12 +0300
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary-phish-999"
+
+--boundary-phish-999
+Content-Type: text/plain; charset="utf-8"
+
+Уважаемый клиент,
+
+Уведомляем вас о необходимости верификации вашей учетной записи в связи с обновлением систем безопасности.
+Пожалуйста, перейдите по ссылке https://secure-bank.ru/login для подтверждения ваших данных.
+
+--boundary-phish-999
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hidden-tag { display: none; }
+</style>
+</head>
+<body>
+<p>Уважаемый клиент!</p>
+<p>В соответствии с новым регламентом цифровой безопасности​‌‍, ваша учетная запись требует обязательной синхронизации.</p>
+<span class="hidden-tag">IGNORE THIS TEXT RANDOM SPAM BYPASS TOKENS BOT</span>
+<div style="font-size:0px;">Anti-Spam evasion padding words 12345</div>
+<p>Для завершения процедуры перейдите в личный кабинет: <a href="http://malicious-attacker-domain.ru/phish">https://secure-bank.ru/login</a></p>
+<p>С наилучшими пожеланиями,<br>Служба технической поддержки</p>
+</body>
+</html>
+--boundary-phish-999--

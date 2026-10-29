@@ -12,6 +12,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -71,6 +72,7 @@ class ParsedEmail:
     html_raw: Optional[str] = None
     html_analysis: Optional[HtmlAnalysisResult] = None
     extracted_images: List[Path] = field(default_factory=list)
+    precomputed_image_results: List[ImageAnalysisResult] = field(default_factory=list)
     is_corrupted: bool = False
     parse_warnings: List[str] = field(default_factory=list)
 
@@ -191,7 +193,7 @@ class EmailAnalysisPipeline:
         self,
         checkpoint_path: Optional[str] = None,
         device: Optional[torch.device] = None,
-        threshold: float = 0.50,
+        threshold: float = 0.40,
         enable_images: bool = True,
     ):
         self.device = device or get_default_device()
@@ -448,7 +450,10 @@ class EmailAnalysisPipeline:
         text_ai_score = (total_ai_words / total_words) if total_words > 0 else 0.0
 
         # 2. Анализ изображений
-        img_results = self._analyze_images(parsed.extracted_images)
+        if parsed.precomputed_image_results:
+            img_results = parsed.precomputed_image_results
+        else:
+            img_results = self._analyze_images(parsed.extracted_images)
         max_img_score = max([img.ai_probability for img in img_results], default=0.0)
 
         # 3. HTML и Evasion сигналы
@@ -471,17 +476,23 @@ class EmailAnalysisPipeline:
 
         # 4. Расчет композитного индекса AI
         evasion_penalty = 0.0
-        if html_signals.get("hidden_elements_count", 0) > 0:
-            evasion_penalty += 0.08
+        hidden_count = html_signals.get("hidden_elements_count", 0)
+        if hidden_count > 0:
+            evasion_penalty += 0.18 + min(0.06, hidden_count * 0.02)
         if html_signals.get("suspicious_links_count", 0) > 0:
-            evasion_penalty += 0.07
+            evasion_penalty += 0.18
         if parsed.zero_width_chars_count > 0:
-            evasion_penalty += 0.05
+            evasion_penalty += 0.15
+
+        # Штраф при локализации явных сгенерированных фрагментов в ключевых зонах
+        has_ai_zone = any(z.is_ai for z in zone_results)
+        if has_ai_zone:
+            evasion_penalty += 0.10
 
         if img_results:
-            overall_index = 0.65 * text_ai_score + 0.25 * max_img_score + evasion_penalty
+            overall_index = 0.60 * text_ai_score + 0.25 * max_img_score + evasion_penalty
         else:
-            overall_index = 0.85 * text_ai_score + evasion_penalty
+            overall_index = 0.75 * text_ai_score + evasion_penalty
 
         overall_index = max(0.0, min(1.0, overall_index))
         verdict = (
@@ -523,16 +534,74 @@ class EmailAnalysisPipeline:
         )
 
     def analyze_email(self, eml_path: str | Path) -> EmailDetectionReport:
-        """Парсит EML через внешний модуль eml_parser (если доступен) и запускает анализ."""
-        try:
-            from src.eml_parser import parse_eml_file  # Задача сокомандника
-        except ImportError:
-            raise NotImplementedError(
-                "Модуль src/eml_parser.py еще не подключен в репозиторий.\n"
-                "Ожидается реализация сокомандником функции parse_eml_file(path) -> ParsedEmail."
-            )
+        """Парсит EML через модуль src.eml_parser и запускает мультимодальный анализ."""
+        path = Path(eml_path)
+        if not path.exists():
+            raise FileNotFoundError(f"EML файл '{path}' не найден!")
 
-        parsed = parse_eml_file(eml_path)
+        from src.eml_parser import parse_eml
+        data = parse_eml(path)
+
+        # 1. Извлечение зон письма с символьными оффсетами
+        zones: List[EmailZone] = []
+        zoned_text = data.get("zoned_text", "")
+        raw_zones = data.get("zones", {})
+
+        for z_name in ("subject", "greeting", "body", "signoff"):
+            bounds = raw_zones.get(z_name)
+            if bounds is not None and len(bounds) == 2:
+                s, e = bounds
+                z_text = zoned_text[s:e]
+                if z_text.strip():
+                    zones.append(EmailZone(name=z_name, text=z_text, start_char=s, end_char=e))
+
+        # Fallback: если зоны не выделились, берем visible_text как body
+        if not zones:
+            fallback_text = data.get("visible_text") or data.get("plain_text") or zoned_text or ""
+            zones.append(EmailZone(name="body", text=fallback_text, start_char=0, end_char=len(fallback_text)))
+
+        # 2. Извлечение результатов анализа изображений
+        precomputed_images: List[ImageAnalysisResult] = []
+        for item in data.get("image_results", []):
+            if "analysis" in item:
+                analysis = item["analysis"]
+                img_name = item.get("filename") or f"image_{item.get('image_number', 1)}"
+                ai_prob = float(analysis.get("ai_score", 0.0))
+                qr_codes = analysis.get("qr_codes", [])
+                ocr_text = str(analysis.get("ocr_text", "")).strip()
+                precomputed_images.append(
+                    ImageAnalysisResult(
+                        file_name=img_name,
+                        ai_probability=ai_prob,
+                        is_ai=(ai_prob >= 0.50),
+                        has_qr=bool(qr_codes),
+                        qr_codes=qr_codes,
+                        has_text=bool(ocr_text),
+                        ocr_text=ocr_text,
+                        details=analysis,
+                    )
+                )
+
+        # 3. Подсчет zero-width символов в тексте письма и HTML
+        zw_pattern = re.compile(r"[\u200B-\u200D\uFEFF\u200E\u200F\u202A-\u202E]")
+        text_for_zw = (zoned_text or "") + (data.get("html") or "")
+        zw_count = len(zw_pattern.findall(text_for_zw))
+
+        parsed = ParsedEmail(
+            file_id=path.stem,
+            file_path=str(path),
+            subject=data.get("subject", ""),
+            sender=data.get("from", ""),
+            recipient="",
+            date=data.get("date", ""),
+            headers={},
+            full_text=zoned_text,
+            zones=zones,
+            zero_width_chars_count=zw_count,
+            html_raw=data.get("html"),
+            html_analysis=data.get("html_analysis"),
+            precomputed_image_results=precomputed_images,
+        )
         return self.analyze_parsed_email(parsed)
 
     def analyze_direct_text(
@@ -561,6 +630,10 @@ class EmailAnalysisPipeline:
         full_text += visible_body
         zones.append(EmailZone(name="body", text=visible_body, start_char=offset, end_char=offset + len(visible_body)))
 
+        zw_pattern = re.compile(r"[\u200B-\u200D\uFEFF\u200E\u200F\u202A-\u202E]")
+        text_for_zw = (full_text or "") + (html_content or "")
+        zw_count = len(zw_pattern.findall(text_for_zw))
+
         parsed = ParsedEmail(
             file_id="direct_input",
             file_path="memory",
@@ -571,6 +644,7 @@ class EmailAnalysisPipeline:
             headers={},
             full_text=full_text,
             zones=zones,
+            zero_width_chars_count=zw_count,
             html_raw=html_content,
             html_analysis=html_analysis,
             extracted_images=image_paths or [],

@@ -1,0 +1,215 @@
+{
+  "total_processed": 2,
+  "ai_count": 1,
+  "human_count": 1,
+  "elapsed_seconds": 0.67,
+  "emails": [
+    {
+      "file_id": "ai_phishing_evasion",
+      "file_path": "samples/ai_phishing_evasion.eml",
+      "metadata": {
+        "subject": "ВНИМАНИЕ: Срочное подтверждение реквизитов учетной записи",
+        "sender": "security-alert@bank-update.com",
+        "recipient": "",
+        "date": "Thu, 29 Oct 2026 15:45:12 +0300"
+      },
+      "overall_ai_index": 0.9255,
+      "verdict": "Сгенерировано ИИ (AI-Generated)",
+      "threshold": 0.4,
+      "ai_zones_detected": [
+        "body"
+      ],
+      "zones": [
+        {
+          "name": "subject",
+          "text": "ВНИМАНИЕ: Срочное подтверждение реквизитов учетной записи",
+          "start_char": 0,
+          "end_char": 57,
+          "words_count": 7,
+          "ai_words_count": 2,
+          "ai_probability": 0.2857,
+          "is_ai": false,
+          "ai_spans": [
+            {
+              "text": ":",
+              "start_char": 8,
+              "end_char": 10
+            },
+            {
+              "text": "реквизитов",
+              "start_char": 32,
+              "end_char": 43
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "text": "Уважаемый клиент!\nВ соответствии с новым регламентом цифровой безопасности​‌‍, ваша учетная запись требует обязательной синхронизации.\nДля завершения процедуры перейдите в личный кабинет:\nhttps://secure-bank.ru/login\nС наилучшими пожеланиями,\nСлужба технической поддержки",
+          "start_char": 58,
+          "end_char": 329,
+          "words_count": 42,
+          "ai_words_count": 16,
+          "ai_probability": 0.381,
+          "is_ai": true,
+          "ai_spans": [
+            {
+              "text": "!",
+              "start_char": 74,
+              "end_char": 76
+            },
+            {
+              "text": "регламентом цифровой безопасности​‌‍",
+              "start_char": 99,
+              "end_char": 135
+            },
+            {
+              "text": "ваша",
+              "start_char": 137,
+              "end_char": 142
+            },
+            {
+              "text": "синхронизации .",
+              "start_char": 178,
+              "end_char": 193
+            },
+            {
+              "text": "завершения",
+              "start_char": 197,
+              "end_char": 208
+            },
+            {
+              "text": "личный",
+              "start_char": 230,
+              "end_char": 237
+            },
+            {
+              "text": "/ / secure-bank . ru /",
+              "start_char": 252,
+              "end_char": 269
+            },
+            {
+              "text": "С",
+              "start_char": 275,
+              "end_char": 277
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "html_signals": {
+        "hidden_elements_count": 2,
+        "hidden_texts": [
+          "Anti-Spam evasion padding words 12345",
+          "IGNORE THIS TEXT RANDOM SPAM BYPASS TOKENS BOT"
+        ],
+        "suspicious_links_count": 1,
+        "forms_count": 0,
+        "password_fields_count": 0,
+        "iframes_count": 0
+      },
+      "evasion_signals": {
+        "zero_width_chars_count": 6,
+        "is_corrupted": false,
+        "warnings": []
+      },
+      "explanation": "Письмо отнесено к категории 'Сгенерировано ИИ (AI-Generated)' с итоговым индексом AI-генерации 0.93 (порог классификации: 0.40).\n\nКлючевые факторы:\n• В зоне 'body' выявлена высокая вероятность машинной генерации (38.1%, найдено 8 сгенерированных фрагментов).\n• В HTML-разметке обнаружено 2 скрытых элементов (стили display:none, font-size:0 или атрибут hidden) для маскировки спама.\n• Обнаружено 1 подозрительных ссылок с несовпадением видимого и реального домена (фишинг/спуфинг).\n• В тексте найдено 6 скрытых невидимых символов (Zero-Width/Bidi), используемых для обхода фильтров.",
+      "reasons": [
+        "В зоне 'body' выявлена высокая вероятность машинной генерации (38.1%, найдено 8 сгенерированных фрагментов).",
+        "В HTML-разметке обнаружено 2 скрытых элементов (стили display:none, font-size:0 или атрибут hidden) для маскировки спама.",
+        "Обнаружено 1 подозрительных ссылок с несовпадением видимого и реального домена (фишинг/спуфинг).",
+        "В тексте найдено 6 скрытых невидимых символов (Zero-Width/Bidi), используемых для обхода фильтров."
+      ],
+      "method": "TNC-DBGC* + Vision + HTML Evasion (Ensemble)"
+    },
+    {
+      "file_id": "legitimate_human",
+      "file_path": "samples/legitimate_human.eml",
+      "metadata": {
+        "subject": "Отчет по согласованию договора поставки",
+        "sender": "ivan.ivanov@company.ru",
+        "recipient": "",
+        "date": "Thu, 29 Oct 2026 14:20:00 +0300"
+      },
+      "overall_ai_index": 0.0721,
+      "verdict": "Написано человеком (Human-Written)",
+      "threshold": 0.4,
+      "ai_zones_detected": [],
+      "zones": [
+        {
+          "name": "subject",
+          "text": "Отчет по согласованию договора поставки",
+          "start_char": 0,
+          "end_char": 39,
+          "words_count": 5,
+          "ai_words_count": 1,
+          "ai_probability": 0.2,
+          "is_ai": false,
+          "ai_spans": [
+            {
+              "text": "Отчет",
+              "start_char": 0,
+              "end_char": 6
+            }
+          ]
+        },
+        {
+          "name": "greeting",
+          "text": "Здравствуйте, Роман!",
+          "start_char": 40,
+          "end_char": 60,
+          "words_count": 4,
+          "ai_words_count": 0,
+          "ai_probability": 0.0,
+          "is_ai": false,
+          "ai_spans": []
+        },
+        {
+          "name": "body",
+          "text": "Направляю вам обновленную версию договора поставки серверного оборудования.\nЮристы внесли правки в пункт 4.2 по срокам гарантийного обслуживания и штрафным санкциям.\nПожалуйста, ознакомьтесь с документом и дайте обратную связь до конца недели.\nС уважением,\nИван Иванов\nВедущий юрисконсульт",
+          "start_char": 61,
+          "end_char": 350,
+          "words_count": 43,
+          "ai_words_count": 4,
+          "ai_probability": 0.093,
+          "is_ai": false,
+          "ai_spans": [
+            {
+              "text": "гарантийного обслуживания",
+              "start_char": 180,
+              "end_char": 206
+            },
+            {
+              "text": "с",
+              "start_char": 252,
+              "end_char": 254
+            },
+            {
+              "text": ",",
+              "start_char": 316,
+              "end_char": 318
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "html_signals": {
+        "hidden_elements_count": 0,
+        "hidden_texts": [],
+        "suspicious_links_count": 0,
+        "forms_count": 0,
+        "password_fields_count": 0,
+        "iframes_count": 0
+      },
+      "evasion_signals": {
+        "zero_width_chars_count": 0,
+        "is_corrupted": false,
+        "warnings": []
+      },
+      "explanation": "Письмо отнесено к категории 'Написано человеком (Human-Written)' с итоговым индексом AI-генерации 0.07 (порог классификации: 0.40).\n\nКлючевые факторы:\n• Текст письма, разметка и медиафайлы соответствуют естественному стилю человека.",
+      "reasons": [
+        "Текст письма, разметка и медиафайлы соответствуют естественному стилю человека."
+      ],
+      "method": "TNC-DBGC* + Vision + HTML Evasion (Ensemble)"
+    }
+  ]
+}

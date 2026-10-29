@@ -14,6 +14,7 @@ from razdel import tokenize
 from src.eml_parser import parse_eml
 from src.html_analyzer import analyze_html_file, print_report
 from src.model import DeBERTaBiGRUCRFTagger
+from src.pipeline import find_default_checkpoint
 
 
 def get_device() -> torch.device:
@@ -68,7 +69,7 @@ def main():
     parser.add_argument(
         "--checkpoint",
         type=str,
-        default="tnc_dbgc_coat_best.pt",
+        default=find_default_checkpoint(),
         help="Путь к .pt файлу обученной модели (по умолчанию: tnc_dbgc_coat_best.pt)",
     )
     group = parser.add_mutually_exclusive_group(required=True)

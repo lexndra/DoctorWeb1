@@ -1,0 +1,24 @@
+{
+  "benchmark_samples": 20,
+  "device": "mps",
+  "threshold": 0.4,
+  "metrics": {
+    "roc_auc": 0.86,
+    "fpr": 0.2,
+    "f1_score": 0.8,
+    "accuracy": 0.8,
+    "boundary_f1_at_3": 0.6274,
+    "boundary_mae": 17.92,
+    "true_negatives": 8,
+    "false_positives": 2,
+    "false_negatives": 2,
+    "true_positives": 8
+  },
+  "tz_compliance": {
+    "roc_auc_pass": true,
+    "fpr_pass": true,
+    "f1_pass": true,
+    "boundary_f1_pass": true,
+    "all_passed": true
+  }
+}

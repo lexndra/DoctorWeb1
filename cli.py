@@ -212,7 +212,7 @@ def main():
 
     p_analyze.add_argument("--subject", "-s", type=str, default=None, help="Тема письма (опционально)")
     p_analyze.add_argument("--output", "-o", type=str, default=None, help="Путь для сохранения JSON отчета")
-    p_analyze.add_argument("--threshold", type=float, default=0.50, help="Порог AI-индекса (по умолч.: 0.50)")
+    p_analyze.add_argument("--threshold", type=float, default=0.40, help="Порог AI-индекса (по умолч.: 0.40)")
     p_analyze.add_argument("--checkpoint", "-c", type=str, default=None, help="Путь к .pt файлу модели")
     p_analyze.add_argument("--no-images", action="store_true", help="Отключить анализ изображений")
 
@@ -220,7 +220,7 @@ def main():
     p_batch = subparsers.add_parser("batch", help="Пакетный анализ каталога EML писем")
     p_batch.add_argument("--dir", "-d", type=str, required=True, help="Каталог с файлами .eml")
     p_batch.add_argument("--output", "-o", type=str, default="batch_summary.json", help="Выходной сводный JSON")
-    p_batch.add_argument("--threshold", type=float, default=0.50, help="Порог AI-индекса (по умолч.: 0.50)")
+    p_batch.add_argument("--threshold", type=float, default=0.40, help="Порог AI-индекса (по умолч.: 0.40)")
     p_batch.add_argument("--checkpoint", "-c", type=str, default=None, help="Путь к .pt файлу модели")
     p_batch.add_argument("--no-images", action="store_true", help="Отключить анализ изображений")
 

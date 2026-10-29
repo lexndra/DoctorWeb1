@@ -22,6 +22,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копирование исходного кода проекта
 COPY src/ ./src/
 COPY cli.py .
+COPY evaluate.py .
+COPY samples/ ./samples/
 COPY README.md .
 
 # Рабочая точка входа

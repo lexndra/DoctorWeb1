@@ -1,0 +1,117 @@
+{
+  "file_id": "ai_phishing_evasion",
+  "file_path": "samples/ai_phishing_evasion.eml",
+  "metadata": {
+    "subject": "ВНИМАНИЕ: Срочное подтверждение реквизитов учетной записи",
+    "sender": "security-alert@bank-update.com",
+    "recipient": "",
+    "date": "Thu, 29 Oct 2026 15:45:12 +0300"
+  },
+  "overall_ai_index": 0.9255,
+  "verdict": "Сгенерировано ИИ (AI-Generated)",
+  "threshold": 0.4,
+  "ai_zones_detected": [
+    "body"
+  ],
+  "zones": [
+    {
+      "name": "subject",
+      "text": "ВНИМАНИЕ: Срочное подтверждение реквизитов учетной записи",
+      "start_char": 0,
+      "end_char": 57,
+      "words_count": 7,
+      "ai_words_count": 2,
+      "ai_probability": 0.2857,
+      "is_ai": false,
+      "ai_spans": [
+        {
+          "text": ":",
+          "start_char": 8,
+          "end_char": 10
+        },
+        {
+          "text": "реквизитов",
+          "start_char": 32,
+          "end_char": 43
+        }
+      ]
+    },
+    {
+      "name": "body",
+      "text": "Уважаемый клиент!\nВ соответствии с новым регламентом цифровой безопасности​‌‍, ваша учетная запись требует обязательной синхронизации.\nДля завершения процедуры перейдите в личный кабинет:\nhttps://secure-bank.ru/login\nС наилучшими пожеланиями,\nСлужба технической поддержки",
+      "start_char": 58,
+      "end_char": 329,
+      "words_count": 42,
+      "ai_words_count": 16,
+      "ai_probability": 0.381,
+      "is_ai": true,
+      "ai_spans": [
+        {
+          "text": "!",
+          "start_char": 74,
+          "end_char": 76
+        },
+        {
+          "text": "регламентом цифровой безопасности​‌‍",
+          "start_char": 99,
+          "end_char": 135
+        },
+        {
+          "text": "ваша",
+          "start_char": 137,
+          "end_char": 142
+        },
+        {
+          "text": "синхронизации .",
+          "start_char": 178,
+          "end_char": 193
+        },
+        {
+          "text": "завершения",
+          "start_char": 197,
+          "end_char": 208
+        },
+        {
+          "text": "личный",
+          "start_char": 230,
+          "end_char": 237
+        },
+        {
+          "text": "/ / secure-bank . ru /",
+          "start_char": 252,
+          "end_char": 269
+        },
+        {
+          "text": "С",
+          "start_char": 275,
+          "end_char": 277
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "html_signals": {
+    "hidden_elements_count": 2,
+    "hidden_texts": [
+      "Anti-Spam evasion padding words 12345",
+      "IGNORE THIS TEXT RANDOM SPAM BYPASS TOKENS BOT"
+    ],
+    "suspicious_links_count": 1,
+    "forms_count": 0,
+    "password_fields_count": 0,
+    "iframes_count": 0
+  },
+  "evasion_signals": {
+    "zero_width_chars_count": 6,
+    "is_corrupted": false,
+    "warnings": []
+  },
+  "explanation": "Письмо отнесено к категории 'Сгенерировано ИИ (AI-Generated)' с итоговым индексом AI-генерации 0.93 (порог классификации: 0.40).\n\nКлючевые факторы:\n• В зоне 'body' выявлена высокая вероятность машинной генерации (38.1%, найдено 8 сгенерированных фрагментов).\n• В HTML-разметке обнаружено 2 скрытых элементов (стили display:none, font-size:0 или атрибут hidden) для маскировки спама.\n• Обнаружено 1 подозрительных ссылок с несовпадением видимого и реального домена (фишинг/спуфинг).\n• В тексте найдено 6 скрытых невидимых символов (Zero-Width/Bidi), используемых для обхода фильтров.",
+  "reasons": [
+    "В зоне 'body' выявлена высокая вероятность машинной генерации (38.1%, найдено 8 сгенерированных фрагментов).",
+    "В HTML-разметке обнаружено 2 скрытых элементов (стили display:none, font-size:0 или атрибут hidden) для маскировки спама.",
+    "Обнаружено 1 подозрительных ссылок с несовпадением видимого и реального домена (фишинг/спуфинг).",
+    "В тексте найдено 6 скрытых невидимых символов (Zero-Width/Bidi), используемых для обхода фильтров."
+  ],
+  "method": "TNC-DBGC* + Vision + HTML Evasion (Ensemble)"
+}

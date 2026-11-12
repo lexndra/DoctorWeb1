@@ -1,0 +1,23 @@
+{
+  "dataset": "TheItCrOw/SeqXGPT",
+  "language": "en",
+  "task": "domain_shift_analysis",
+  "samples_total": 200,
+  "human_samples": 100,
+  "ai_samples": 100,
+  "threshold": 0.4,
+  "roc_auc": 0.4536,
+  "accuracy": 0.48,
+  "f1_score": 0.4639,
+  "precision": 0.4787,
+  "recall": 0.45,
+  "fpr": 0.49,
+  "confusion_matrix": {
+    "tn": 51,
+    "fp": 49,
+    "fn": 55,
+    "tp": 45
+  },
+  "elapsed_seconds": 42.77,
+  "academic_note": "SeqXGPT является полностью англоязычным датасетом. Падение метрик объясняется несовпадением языкового домена: модель DW-1 дообучена на русском корпусе CoAT_Hybrid."
+}

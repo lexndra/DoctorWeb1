@@ -1,0 +1,131 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #f3f3f3;
+    color: #222;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+h1 { margin-bottom: 10px; font-size: 30px; }
+h2 { margin-top: 0; font-size: 22px; }
+h3 { font-size: 17px; margin-bottom: 8px; }
+.block {
+    margin-top: 25px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+input[type="file"] { display: block; max-width: 100%; }
+button {
+    padding: 10px 18px;
+    background: #2166c2;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover { background: #174e96; }
+button:disabled { background: #888; cursor: wait; }
+button.secondary { margin-top: 12px; background: #666; }
+button.secondary:hover { background: #444; }
+.hint, .footer { font-size: 13px; color: #777; }
+.message { margin-bottom: 0; color: #b00020; }
+.explanation { white-space: pre-line; }
+.zone {
+    margin: 12px 0;
+    padding: 12px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+}
+.zone p { white-space: pre-wrap; overflow-wrap: anywhere; }
+mark { background: #ffec9b; }
+.footer { text-align: center; margin-top: 30px; }
+[hidden] { display: none !important; }
+@media (max-width: 600px) {
+    .container { margin-top: 25px; }
+    h1 { font-size: 26px; }
+    .block { padding: 18px; }
+}
+/* Кнопка переключения темы */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.theme-button {
+    background: #eeeeee;
+    color: #222;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.theme-button:hover {
+    background: #dddddd;
+}
+
+/* Плавная смена цветов */
+body, .block, .zone, button, .hint, .footer, .message, mark {
+    transition: background-color 0.35s ease,
+                color 0.35s ease,
+                border-color 0.35s ease;
+}
+
+/* Темная тема */
+html[data-theme="dark"] body {
+    background: #191919;
+    color: #f0f0f0;
+}
+
+html[data-theme="dark"] .block {
+    background: #292929;
+    border-color: #505050;
+}
+
+html[data-theme="dark"] .zone {
+    background: #333;
+    border-color: #505050;
+}
+
+html[data-theme="dark"] .hint,
+html[data-theme="dark"] .footer {
+    color: #b7b7b7;
+}
+
+html[data-theme="dark"] .message {
+    color: #ff8080;
+}
+
+html[data-theme="dark"] mark {
+    background: #9d812b;
+    color: #fff;
+}
+
+html[data-theme="dark"] .theme-button {
+    background: #333;
+    color: white;
+    border-color: #555;
+    .theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+
+    background: #eeeeee;
+    color: #222;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+}
+
+html[data-theme="dark"] .theme-button:hover {
+    background: #444;
+}

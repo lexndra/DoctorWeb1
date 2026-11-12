@@ -1,0 +1,5 @@
+{
+  "dataset": "deepfakesMSU/NTIRE-RobustAIGenDetection-train",
+  "status": "gated_access_required",
+  "details": "Репозиторий deepfakesMSU/NTIRE-RobustAIGenDetection-train является закрытым (gated). Для загрузки требуется авторизация с HF_TOKEN пользователя, подтвердившего условия участия в соревновании NTIRE 2024 на Hugging Face. В качестве альтернативы валидация изображений проведена на открытом бенчмарке Defactify."
+}

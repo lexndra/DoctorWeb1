@@ -1,0 +1,22 @@
+{
+  "dataset": "iitolstykh/LLMTrace_classification",
+  "language": "ru",
+  "task": "binary_text_classification",
+  "samples_total": 200,
+  "human_samples": 100,
+  "ai_samples": 100,
+  "calibrated_threshold": 0.15,
+  "roc_auc": 0.3488,
+  "accuracy": 0.455,
+  "f1_score": 0.6202,
+  "precision": 0.4759,
+  "recall": 0.89,
+  "fpr": 0.98,
+  "confusion_matrix": {
+    "tn": 2,
+    "fp": 98,
+    "fn": 11,
+    "tp": 89
+  },
+  "elapsed_seconds": 40.17
+}

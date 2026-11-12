@@ -1,0 +1,22 @@
+{
+  "dataset": "Rajarshi-Roy-research/Defactify_Image_Dataset",
+  "task": "fact_checking_vs_ai_synthesis",
+  "samples_total": 100,
+  "real_samples": 50,
+  "manipulated_samples": 50,
+  "threshold": 0.5,
+  "roc_auc": 0.612,
+  "accuracy": 0.52,
+  "f1_score": 0.1429,
+  "precision": 0.6667,
+  "recall": 0.08,
+  "fpr": 0.04,
+  "confusion_matrix": {
+    "tn": 48,
+    "fp": 2,
+    "fn": 46,
+    "tp": 4
+  },
+  "elapsed_seconds": 5.77,
+  "academic_note": "Defactify содержит фотожабы, скриншоты твитов и мемы для фактчекинга (AAAI 2022). Детектор диффузионных сетей (ViT) не находит в них артефактов нейросетевой генерации (Midjourney/SD), что объясняет низкую полноту (Recall)."
+}

@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "source": "gigachat",
+    "true_label": 1,
+    "ai_ratio_score": 0.0686,
+    "words_count": 102,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 2,
+    "source": "llama-7b",
+    "true_label": 1,
+    "ai_ratio_score": 0.3026,
+    "words_count": 152,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 3,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1985,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 4,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3431,
+    "words_count": 137,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 5,
+    "source": "GigaChat-Max",
+    "true_label": 1,
+    "ai_ratio_score": 0.2128,
+    "words_count": 94,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 6,
+    "source": "Qwen/QwQ-32B",
+    "true_label": 1,
+    "ai_ratio_score": 0.2848,
+    "words_count": 158,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 7,
+    "source": "WizardLM-2-7B",
+    "true_label": 1,
+    "ai_ratio_score": 0.1961,
+    "words_count": 153,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 8,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3099,
+    "words_count": 71,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 9,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4286,
+    "words_count": 147,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 10,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.2703,
+    "words_count": 37,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 11,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.3577,
+    "words_count": 137,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 12,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4758,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 13,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3352,
+    "words_count": 176,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 14,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.5,
+    "words_count": 20,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 15,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3596,
+    "words_count": 178,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 16,
+    "source": "gpt-4",
+    "true_label": 1,
+    "ai_ratio_score": 0.2576,
+    "words_count": 132,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 17,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.1765,
+    "words_count": 17,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 18,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.3562,
+    "words_count": 73,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 19,
+    "source": "Qwen/QwQ-32B",
+    "true_label": 1,
+    "ai_ratio_score": 0.4173,
+    "words_count": 127,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 20,
+    "source": "GigaChat-Max",
+    "true_label": 1,
+    "ai_ratio_score": 0.1667,
+    "words_count": 132,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 21,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5676,
+    "words_count": 37,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 22,
+    "source": "gigachat",
+    "true_label": 1,
+    "ai_ratio_score": 0.4167,
+    "words_count": 120,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 23,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.25,
+    "words_count": 132,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 24,
+    "source": "gigachat",
+    "true_label": 1,
+    "ai_ratio_score": 0.275,
+    "words_count": 40,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 25,
+    "source": "gpt-4",
+    "true_label": 1,
+    "ai_ratio_score": 0.2712,
+    "words_count": 118,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 26,
+    "source": "Qwen2-7B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1244,
+    "words_count": 209,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 27,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.5385,
+    "words_count": 13,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 28,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2558,
+    "words_count": 43,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 29,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5472,
+    "words_count": 53,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 30,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.413,
+    "words_count": 46,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 31,
+    "source": "llama-7b",
+    "true_label": 1,
+    "ai_ratio_score": 0.2366,
+    "words_count": 131,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 32,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.3529,
+    "words_count": 34,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 33,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.2857,
+    "words_count": 56,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 34,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.2226,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 35,
+    "source": "yagpt",
+    "true_label": 1,
+    "ai_ratio_score": 0.1404,
+    "words_count": 171,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 36,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3714,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 37,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.72,
+    "words_count": 25,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 38,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.25,
+    "words_count": 28,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 39,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.1932,
+    "words_count": 88,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 40,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.3188,
+    "words_count": 69,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 41,
+    "source": "mistralai/Ministral-8B-Instruct-2410",
+    "true_label": 1,
+    "ai_ratio_score": 0.3617,
+    "words_count": 47,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 42,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2955,
+    "words_count": 220,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 43,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2,
+    "words_count": 240,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 44,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.6479,
+    "words_count": 71,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 45,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4209,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 46,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.3825,
+    "words_count": 183,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 47,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.4651,
+    "words_count": 43,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 48,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.4,
+    "words_count": 40,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 49,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.1348,
+    "words_count": 141,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 50,
+    "source": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "true_label": 1,
+    "ai_ratio_score": 0.1209,
+    "words_count": 91,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 51,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.3206,
+    "words_count": 131,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 52,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.4077,
+    "words_count": 233,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 53,
+    "source": "ruGPT",
+    "true_label": 1,
+    "ai_ratio_score": 0.2179,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 54,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.5581,
+    "words_count": 86,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 55,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2584,
+    "words_count": 178,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 56,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.398,
+    "words_count": 196,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 57,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5373,
+    "words_count": 134,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 58,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.1705,
+    "words_count": 176,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 59,
+    "source": "gpt-4",
+    "true_label": 1,
+    "ai_ratio_score": 0.4571,
+    "words_count": 105,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 60,
+    "source": "Qwen/Qwen2.5-72B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.5484,
+    "words_count": 31,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 61,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3258,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 62,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.4333,
+    "words_count": 30,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 63,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.4602,
+    "words_count": 113,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 64,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3889,
+    "words_count": 54,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 65,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5185,
+    "words_count": 81,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 66,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.6463,
+    "words_count": 147,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 67,
+    "source": "WizardLM-2-7B",
+    "true_label": 1,
+    "ai_ratio_score": 0.1802,
+    "words_count": 172,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 68,
+    "source": "Qwen2-7B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1,
+    "words_count": 220,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 69,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2321,
+    "words_count": 56,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 70,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5238,
+    "words_count": 21,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 71,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3074,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 72,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.3939,
+    "words_count": 33,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 73,
+    "source": "WizardLM-2-7B",
+    "true_label": 1,
+    "ai_ratio_score": 0.2626,
+    "words_count": 198,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 74,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4773,
+    "words_count": 44,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 75,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2973,
+    "words_count": 37,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 76,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.6111,
+    "words_count": 18,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 77,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.5556,
+    "words_count": 63,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 78,
+    "source": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "true_label": 1,
+    "ai_ratio_score": 0.2941,
+    "words_count": 17,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 79,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2449,
+    "words_count": 49,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 80,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.0476,
+    "words_count": 21,
+    "predicted_label": 0,
+    "correct": true
+  },
+  {
+    "id": 81,
+    "source": "unsloth/Llama-3.3-70B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.3333,
+    "words_count": 189,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 82,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.6316,
+    "words_count": 57,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 83,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 84,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.1832,
+    "words_count": 262,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 85,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1444,
+    "words_count": 300,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 86,
+    "source": "Qwen/Qwen2.5-72B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1812,
+    "words_count": 160,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 87,
+    "source": "gpt-4",
+    "true_label": 1,
+    "ai_ratio_score": 0.4153,
+    "words_count": 118,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 88,
+    "source": "WizardLM-2-7B",
+    "true_label": 1,
+    "ai_ratio_score": 0.2622,
+    "words_count": 164,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 89,
+    "source": "gpt-4",
+    "true_label": 1,
+    "ai_ratio_score": 0.3627,
+    "words_count": 102,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 90,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4783,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 91,
+    "source": "01-ai/Yi-1.5-34B-Chat",
+    "true_label": 1,
+    "ai_ratio_score": 0.2921,
+    "words_count": 178,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 92,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.3168,
+    "words_count": 101,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 93,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3889,
+    "words_count": 18,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 94,
+    "source": "Qwen/Qwen2.5-72B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.2799,
+    "words_count": 286,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 95,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3494,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 96,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.4505,
+    "words_count": 91,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 97,
+    "source": "mistralai/Ministral-8B-Instruct-2410",
+    "true_label": 1,
+    "ai_ratio_score": 0.2863,
+    "words_count": 227,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 98,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.4118,
+    "words_count": 34,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 99,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.1327,
+    "words_count": 211,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 100,
+    "source": "gigachat",
+    "true_label": 1,
+    "ai_ratio_score": 0.1615,
+    "words_count": 130,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 101,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2646,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 102,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.2304,
+    "words_count": 204,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 103,
+    "source": "yagpt",
+    "true_label": 1,
+    "ai_ratio_score": 0.2273,
+    "words_count": 132,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 104,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.2839,
+    "words_count": 155,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 105,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3235,
+    "words_count": 34,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 106,
+    "source": "gigachat",
+    "true_label": 1,
+    "ai_ratio_score": 0.4,
+    "words_count": 65,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 107,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4163,
+    "words_count": 246,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 108,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.44,
+    "words_count": 254,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 109,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.207,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 110,
+    "source": "unsloth/Llama-3.3-70B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.3476,
+    "words_count": 164,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 111,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.2235,
+    "words_count": 85,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 112,
+    "source": "unsloth/Llama-3.3-70B-Instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1494,
+    "words_count": 300,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 113,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.314,
+    "words_count": 86,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 114,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.1133,
+    "words_count": 300,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 115,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.1724,
+    "words_count": 58,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 116,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2529,
+    "words_count": 87,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 117,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2038,
+    "words_count": 157,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 118,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.4178,
+    "words_count": 146,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 119,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.48,
+    "words_count": 50,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 120,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.2411,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 121,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1826,
+    "words_count": 115,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 122,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4238,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 123,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.1642,
+    "words_count": 67,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 124,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.2338,
+    "words_count": 154,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 125,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5455,
+    "words_count": 22,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 126,
+    "source": "GigaChat-Max",
+    "true_label": 1,
+    "ai_ratio_score": 0.375,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 127,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.5556,
+    "words_count": 18,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 128,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.4286,
+    "words_count": 35,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 129,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.2436,
+    "words_count": 156,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 130,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1992,
+    "words_count": 292,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 131,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2305,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 132,
+    "source": "gemma-1.1-7b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.2083,
+    "words_count": 240,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 133,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3491,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 134,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.2972,
+    "words_count": 295,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 135,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.3333,
+    "words_count": 39,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 136,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4,
+    "words_count": 20,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 137,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3413,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 138,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4568,
+    "words_count": 287,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 139,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4788,
+    "words_count": 259,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 140,
+    "source": "mistralai/Ministral-8B-Instruct-2410",
+    "true_label": 1,
+    "ai_ratio_score": 0.3478,
+    "words_count": 69,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 141,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.505,
+    "words_count": 101,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 142,
+    "source": "databricks/dbrx-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.2288,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 143,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.1333,
+    "words_count": 105,
+    "predicted_label": 0,
+    "correct": false
+  },
+  {
+    "id": 144,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.16,
+    "words_count": 175,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 145,
+    "source": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "true_label": 1,
+    "ai_ratio_score": 0.3585,
+    "words_count": 53,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 146,
+    "source": "yandex/YandexGPT-5-Lite-8B-instruct",
+    "true_label": 1,
+    "ai_ratio_score": 0.2819,
+    "words_count": 259,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 147,
+    "source": "01-ai/Yi-1.5-34B-Chat",
+    "true_label": 1,
+    "ai_ratio_score": 0.2021,
+    "words_count": 94,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 148,
+    "source": "gpt-4o",
+    "true_label": 1,
+    "ai_ratio_score": 0.2381,
+    "words_count": 21,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 149,
+    "source": "ruGPT",
+    "true_label": 1,
+    "ai_ratio_score": 0.3057,
+    "words_count": 157,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 150,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2374,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 151,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4231,
+    "words_count": 52,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 152,
+    "source": "CohereForAI/c4ai-command-r-08-2024",
+    "true_label": 1,
+    "ai_ratio_score": 0.3217,
+    "words_count": 115,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 153,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.2633,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 154,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3294,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 155,
+    "source": "google/gemma-2-27b-it",
+    "true_label": 1,
+    "ai_ratio_score": 0.2738,
+    "words_count": 84,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 156,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2769,
+    "words_count": 65,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 157,
+    "source": "gpt-3.5",
+    "true_label": 1,
+    "ai_ratio_score": 0.4472,
+    "words_count": 123,
+    "predicted_label": 1,
+    "correct": true
+  },
+  {
+    "id": 158,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5038,
+    "words_count": 260,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 159,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4717,
+    "words_count": 53,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 160,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2308,
+    "words_count": 13,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 161,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4182,
+    "words_count": 55,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 162,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5,
+    "words_count": 18,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 163,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3833,
+    "words_count": 60,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 164,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2937,
+    "words_count": 126,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 165,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4706,
+    "words_count": 119,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 166,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4,
+    "words_count": 35,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 167,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.1864,
+    "words_count": 59,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 168,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4154,
+    "words_count": 65,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 169,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3765,
+    "words_count": 170,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 170,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2398,
+    "words_count": 171,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 171,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2377,
+    "words_count": 122,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 172,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3986,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 173,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4762,
+    "words_count": 21,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 174,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2464,
+    "words_count": 211,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 175,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2581,
+    "words_count": 93,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 176,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.283,
+    "words_count": 53,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 177,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2794,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 178,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2535,
+    "words_count": 213,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 179,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5385,
+    "words_count": 39,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 180,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5094,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 181,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2308,
+    "words_count": 13,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 182,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.4189,
+    "words_count": 148,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 183,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.1786,
+    "words_count": 112,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 184,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.381,
+    "words_count": 21,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 185,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2281,
+    "words_count": 57,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 186,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2075,
+    "words_count": 159,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 187,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3158,
+    "words_count": 19,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 188,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5526,
+    "words_count": 38,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 189,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3833,
+    "words_count": 60,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 190,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2245,
+    "words_count": 49,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 191,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3377,
+    "words_count": 77,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 192,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.45,
+    "words_count": 20,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 193,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5747,
+    "words_count": 87,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 194,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3919,
+    "words_count": 74,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 195,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3636,
+    "words_count": 22,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 196,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3431,
+    "words_count": 102,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 197,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.2819,
+    "words_count": 281,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 198,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.5867,
+    "words_count": 300,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 199,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.3388,
+    "words_count": 121,
+    "predicted_label": 1,
+    "correct": false
+  },
+  {
+    "id": 200,
+    "source": "human",
+    "true_label": 0,
+    "ai_ratio_score": 0.0,
+    "words_count": 17,
+    "predicted_label": 0,
+    "correct": true
+  }
+]

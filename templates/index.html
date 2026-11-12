@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <button id="themeButton" class="theme-button" type="button">
+    🌙 Тёмная тема
+    </button>
+    <script>
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    </script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Анализ текста на ИИ</h1>
+        <p>Загрузите файл, и наша нейросеть проверит текст на признаки ИИ-генерации.</p>
+
+        <section class="block">
+            <h2>Загрузка файла</h2>
+            <form id="uploadForm">
+                <input type="file" id="fileInput" name="file" accept=".txt,.md,.html,.htm,.eml" required>
+                <p class="hint">Форматы: TXT, MD, HTML, EML. Максимум 20 МБ.</p>
+                <button id="analyzeButton" type="submit">Начать анализ</button>
+            </form>
+            <p id="message" class="message" role="alert" hidden></p>
+        </section>
+
+        <section class="block" id="result" hidden>
+            <h2>Результат анализа</h2>
+            <p><b>Файл:</b> <span id="fileName"></span></p>
+            <p><b>Результат:</b> <span id="verdict"></span></p>
+            <p><b>Индекс ИИ:</b> <span id="score"></span></p>
+            <p class="hint">Индекс — оценка модели, а не точная вероятность.</p>
+
+            <h3>Пояснение</h3>
+            <p id="explanation" class="explanation"></p>
+
+            <h3>Проверенные части текста</h3>
+            <div id="zones"></div>
+
+            <button id="downloadButton" type="button" class="secondary">Скачать JSON-отчёт</button>
+        </section>
+
+        <p class="footer">Учебный проект DoctorWeb1</p>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>

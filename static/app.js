@@ -9,6 +9,9 @@ const downloadButton = document.getElementById('downloadButton');
 
 let currentReport = null;
 
+// Названия зон в отчёте — английские ключи (subject, greeting, body, signoff).
+const ZONE_NAMES = { subject: 'Тема', greeting: 'Приветствие', body: 'Основной текст', signoff: 'Подпись / концовка' };
+
 function showError(text) {
     message.textContent = text;
     message.hidden = false;
@@ -50,7 +53,8 @@ function showResult(report) {
     currentReport = report;
     document.getElementById('fileName').textContent = report.file_id || '—';
     document.getElementById('verdict').textContent = report.verdict || 'Нет данных';
-    document.getElementById('score').textContent = percent(report.overall_ai_index);
+    document.getElementById('score').textContent = percent(report.overall_ai_index)
+        + (report.threshold !== undefined ? ' (порог ' + percent(report.threshold) + ')' : '');
     document.getElementById('explanation').textContent = report.explanation || 'Пояснения нет.';
 
     zones.replaceChildren();
@@ -62,7 +66,7 @@ function showResult(report) {
         const block = document.createElement('div');
         block.className = 'zone';
         const heading = document.createElement('b');
-        heading.textContent = (zone.name || 'Текст') + ' — ' + percent(zone.ai_probability);
+        heading.textContent = (ZONE_NAMES[zone.name] || zone.name || 'Текст') + ' — ' + percent(zone.ai_probability);
         const paragraph = document.createElement('p');
         showText(zone, paragraph);
         block.append(heading, paragraph);

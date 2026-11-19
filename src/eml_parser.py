@@ -113,8 +113,11 @@ def analyze_email_images(images):
 
     return results
 
-def parse_eml(path: str | Path) -> dict:
-    """Прочитать .eml: заголовки, HTML, обычный текст, вложения и изображения."""
+def parse_eml(path: str | Path, analyze_images: bool = True) -> dict:
+    """Прочитать .eml: заголовки, HTML, обычный текст, вложения и изображения.
+
+    analyze_images=False — только извлечь изображения, без запуска тяжёлых моделей (OCR/ViT).
+    """
     path = Path(path)
     with path.open("rb") as file:
         message = BytesParser(policy=policy.default).parse(file)
@@ -162,7 +165,7 @@ def parse_eml(path: str | Path) -> dict:
                 "content_type": content_type,
                 "size": len(data),
             })
-    image_results = analyze_email_images(images)
+    image_results = analyze_email_images(images) if analyze_images else []
     return {
         "subject": str(message.get("Subject", "")),
         "from": str(message.get("From", "")),

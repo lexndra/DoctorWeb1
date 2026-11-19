@@ -1,23 +1,164 @@
 {
-  "dataset": "TheItCrOw/SeqXGPT",
-  "language": "en",
-  "task": "domain_shift_analysis",
-  "samples_total": 200,
-  "human_samples": 100,
-  "ai_samples": 100,
-  "threshold": 0.4,
-  "roc_auc": 0.4536,
-  "accuracy": 0.48,
-  "f1_score": 0.4639,
-  "precision": 0.4787,
-  "recall": 0.45,
-  "fpr": 0.49,
-  "confusion_matrix": {
-    "tn": 51,
-    "fp": 49,
-    "fn": 55,
-    "tp": 45
+  "n": 300,
+  "n_ai": 150,
+  "n_human": 150,
+  "methods": {
+    "features": {
+      "threshold_source": "calibration.json: doc_threshold, подобран на собственном val (val)",
+      "info": {
+        "load_seconds": 0.2,
+        "model_file": "models_dev/feature_model.json",
+        "model": "features (TF-IDF sentence LR + stylometric document LR)",
+        "dataset_version": "dev",
+        "model_sha256": "4434328c676f9e2ed0a21b3cb68a013f07976cb248ba874b31306b5138980e4c",
+        "last_seconds": 1.8
+      },
+      "overall": {
+        "roc_auc": 0.5918222222222222,
+        "roc_auc_ci95": [
+          0.5257151036853688,
+          0.6561908863222069
+        ],
+        "threshold": 0.4902,
+        "precision": 0.6575342465753424,
+        "recall": 0.32,
+        "f1": 0.43049327354260086,
+        "fpr": 0.16666666666666666,
+        "accuracy": 0.5766666666666667,
+        "tp": 48,
+        "fp": 25,
+        "tn": 125,
+        "fn": 102,
+        "n": 300,
+        "n_pos": 150,
+        "n_neg": 150
+      },
+      "by_agent": {
+        "gpt2": {
+          "n": 30,
+          "mean_score": 0.2838624023653398,
+          "n_ai": 30,
+          "recall": 0.13333333333333333
+        },
+        "gpt3re": {
+          "n": 30,
+          "mean_score": 0.8118783479918881,
+          "n_ai": 30,
+          "recall": 0.9333333333333333
+        },
+        "gptj": {
+          "n": 30,
+          "mean_score": 0.27716184905579805,
+          "n_ai": 30,
+          "recall": 0.13333333333333333
+        },
+        "gptneo": {
+          "n": 30,
+          "mean_score": 0.2733324704875655,
+          "n_ai": 30,
+          "recall": 0.2
+        },
+        "human": {
+          "n": 150,
+          "mean_score": 0.27883688667620193,
+          "n_human": 150,
+          "fpr": 0.16666666666666666
+        },
+        "llama": {
+          "n": 30,
+          "mean_score": 0.2900041349195369,
+          "n_ai": 30,
+          "recall": 0.2
+        }
+      }
+    },
+    "lm": {
+      "threshold_source": "lm_calibration.json: doc_threshold, подобран на собственном val (val)",
+      "info": {
+        "load_seconds": 10.3,
+        "checkpoint": "tnc_dbgc_coat_best.pt",
+        "device": "cpu",
+        "last_seconds": 331.6
+      },
+      "overall": {
+        "roc_auc": 0.4501111111111111,
+        "roc_auc_ci95": [
+          0.3855048261616941,
+          0.5177051205278337
+        ],
+        "threshold": 0.4528,
+        "precision": 0.4835164835164835,
+        "recall": 0.29333333333333333,
+        "f1": 0.36514522821576767,
+        "fpr": 0.31333333333333335,
+        "accuracy": 0.49,
+        "tp": 44,
+        "fp": 47,
+        "tn": 103,
+        "fn": 106,
+        "n": 300,
+        "n_pos": 150,
+        "n_neg": 150
+      },
+      "by_agent": {
+        "gpt2": {
+          "n": 30,
+          "mean_score": 0.38896405213191376,
+          "n_ai": 30,
+          "recall": 0.2
+        },
+        "gpt3re": {
+          "n": 30,
+          "mean_score": 0.33850183946864537,
+          "n_ai": 30,
+          "recall": 0.06666666666666667
+        },
+        "gptj": {
+          "n": 30,
+          "mean_score": 0.40909705059561613,
+          "n_ai": 30,
+          "recall": 0.3333333333333333
+        },
+        "gptneo": {
+          "n": 30,
+          "mean_score": 0.4121100114378588,
+          "n_ai": 30,
+          "recall": 0.4
+        },
+        "human": {
+          "n": 150,
+          "mean_score": 0.41682090693770835,
+          "n_human": 150,
+          "fpr": 0.31333333333333335
+        },
+        "llama": {
+          "n": 30,
+          "mean_score": 0.45779138094023863,
+          "n_ai": 30,
+          "recall": 0.4666666666666667
+        }
+      }
+    }
   },
-  "elapsed_seconds": 42.77,
-  "academic_note": "SeqXGPT является полностью англоязычным датасетом. Падение метрик объясняется несовпадением языкового домена: модель DW-1 дообучена на русском корпусе CoAT_Hybrid."
+  "pool": {
+    "rows": 38304,
+    "label_counts": {
+      "ai": 31904,
+      "human": 6400
+    },
+    "agent_counts": {
+      "human": 6400,
+      "gptneo": 6400,
+      "gptj": 6400,
+      "gpt3re": 6400,
+      "gpt2": 6400,
+      "llama": 6304
+    },
+    "lang": {
+      "en-EN": 38304
+    },
+    "ai_texts_sharing_80char_prefix_with_human_text": 0.9166248746238717
+  },
+  "sampling": "весь файл TheItCrOw/SeqXGPT (38304 строк, 33 МБ, единственный сплит train) прочитан по HTTP в память; простая случайная выборка без возвращения seed=42: 150 human + 150 ai (поровну по 5 генераторам)",
+  "seconds": 342.5
 }

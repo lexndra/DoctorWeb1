@@ -1,16 +1,37 @@
-__pycache__
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
+# Контекст сборки: только код, модели (JSON), веб-файлы и примеры.
 .git
 .gitignore
+.dockerignore
 .DS_Store
+.env
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+pyrightconfig.json
+**/__pycache__
+**/*.py[cod]
+.pytest_cache/
+
+# Данные (письма Заказчика и корпуса в образ не попадают)
+data/
+CoAT/
+CoAT_Hybrid/
+
+# Веса и большие массивы
 *.pt
+*.pth
 *.bin
+*.safetensors
+*.npy
+*.npz
 *.tar.gz
-results/*.png
+
+# Артефакты разработки и обучения
+models_dev/
+results_dev/
+results/
+kaggle/
+out/
 samples/result.json

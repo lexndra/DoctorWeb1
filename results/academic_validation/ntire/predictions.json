@@ -1,0 +1,2102 @@
+[
+ {
+  "shard": "shard_0.zip",
+  "image_name": "5361093d353e80fced34.jpg",
+  "label": 1,
+  "score_artificial": 0.174835,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "82da841e2e79cfa45c7c.jpg",
+  "label": 1,
+  "score_artificial": 0.803822,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "dd599ba278b06adae9b7.jpg",
+  "label": 1,
+  "score_artificial": 0.199882,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3ed6e2c640d072f3ba84.jpg",
+  "label": 0,
+  "score_artificial": 0.012752,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7ee4c8e60c6977dfc756.jpg",
+  "label": 1,
+  "score_artificial": 0.615095,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "af292b5d5e4495f46653.jpg",
+  "label": 1,
+  "score_artificial": 0.250099,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "076a665cf38e50000664.jpg",
+  "label": 1,
+  "score_artificial": 0.304092,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fb642dda960f49b1dd89.jpg",
+  "label": 0,
+  "score_artificial": 0.81077,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "907939cbb10763780069.jpg",
+  "label": 0,
+  "score_artificial": 0.185731,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8cc08a73cc05555433db.jpg",
+  "label": 1,
+  "score_artificial": 0.886758,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0a2692229e1b4c57500d.jpg",
+  "label": 1,
+  "score_artificial": 0.279717,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a5f16dfb5220d459247f.jpg",
+  "label": 0,
+  "score_artificial": 0.041083,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7bfaaf9c129b4cc1b8fe.jpg",
+  "label": 1,
+  "score_artificial": 0.37496,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cdf9935c052cd44e9655.jpg",
+  "label": 0,
+  "score_artificial": 0.896494,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "124c7164620fedddc155.jpg",
+  "label": 1,
+  "score_artificial": 0.229233,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cf48fe81599945d5da2a.jpg",
+  "label": 1,
+  "score_artificial": 0.639616,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "00583c5375c34d3ee83b.jpg",
+  "label": 1,
+  "score_artificial": 0.950518,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "054738d64e08fd0b6c78.jpg",
+  "label": 1,
+  "score_artificial": 0.19231,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ce4813ce0df294a631b4.jpg",
+  "label": 0,
+  "score_artificial": 0.060338,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6ceb39774599225e23cb.jpg",
+  "label": 1,
+  "score_artificial": 0.013525,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8ff6edf47489a9759bb4.jpg",
+  "label": 0,
+  "score_artificial": 0.098381,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e2bbe546f10ea577f1a4.jpg",
+  "label": 0,
+  "score_artificial": 0.089532,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f0b2b8aa45da6cafa3c0.jpg",
+  "label": 1,
+  "score_artificial": 0.975848,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c43fbb03841d09a37530.jpg",
+  "label": 1,
+  "score_artificial": 0.972067,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "546cc3b162d098b6001e.jpg",
+  "label": 0,
+  "score_artificial": 0.041997,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "179f6083b2a2203b17b6.jpg",
+  "label": 0,
+  "score_artificial": 0.062132,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b1f3ee7c4ab7b318257d.jpg",
+  "label": 1,
+  "score_artificial": 0.44674,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1659fa45ab05c8b33d02.jpg",
+  "label": 1,
+  "score_artificial": 0.980032,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4f214e3d49aff92bea6d.jpg",
+  "label": 1,
+  "score_artificial": 0.833215,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8f1dcb4f52bb77e599a7.jpg",
+  "label": 1,
+  "score_artificial": 0.775124,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7a2d4dae81f2bf321624.jpg",
+  "label": 0,
+  "score_artificial": 0.779064,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7f2831c1d7fd26749177.jpg",
+  "label": 1,
+  "score_artificial": 0.857844,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e0eadf3ca30f446f2754.jpg",
+  "label": 0,
+  "score_artificial": 0.271133,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f7e293069fd727866ab1.jpg",
+  "label": 0,
+  "score_artificial": 0.043207,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a0fe87e64f9769ee07db.jpg",
+  "label": 1,
+  "score_artificial": 0.531855,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3af6ddddc880274d8866.jpg",
+  "label": 0,
+  "score_artificial": 0.088113,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "48765ab1002d71f6755e.jpg",
+  "label": 0,
+  "score_artificial": 0.03911,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "985692cc2f60243f882f.jpg",
+  "label": 0,
+  "score_artificial": 0.407551,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1df7b22381c432248214.jpg",
+  "label": 0,
+  "score_artificial": 0.005348,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2cfa227e35b7848ede99.jpg",
+  "label": 0,
+  "score_artificial": 0.20364,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0ebfece6d1d92618df71.jpg",
+  "label": 0,
+  "score_artificial": 0.263759,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0e17e5ecc5ae96c68bd5.jpg",
+  "label": 0,
+  "score_artificial": 0.259153,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e891ff9db324f9031d42.jpg",
+  "label": 1,
+  "score_artificial": 0.708912,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "70a2d7a4040af20ddd8a.jpg",
+  "label": 0,
+  "score_artificial": 0.023963,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cf8a86fc3443c87338b1.jpg",
+  "label": 0,
+  "score_artificial": 0.004315,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "155f71c38b721ca28695.jpg",
+  "label": 0,
+  "score_artificial": 0.01554,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9f6da1e70185179fafc3.jpg",
+  "label": 1,
+  "score_artificial": 0.006867,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "04f792637f219acada49.jpg",
+  "label": 1,
+  "score_artificial": 0.51324,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2b1397d4838f47b4527f.jpg",
+  "label": 0,
+  "score_artificial": 0.129424,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "5c52be91352d3c89cffe.jpg",
+  "label": 1,
+  "score_artificial": 0.4515,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8a580d987733f15cba9d.jpg",
+  "label": 1,
+  "score_artificial": 0.321914,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "40e6f28699b1e76e77bc.jpg",
+  "label": 0,
+  "score_artificial": 0.470112,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c232dd22ed6e57671679.jpg",
+  "label": 1,
+  "score_artificial": 0.736574,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "14e586f323cfe760ba63.jpg",
+  "label": 0,
+  "score_artificial": 0.131141,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0e40282a6c4d5516ed99.jpg",
+  "label": 1,
+  "score_artificial": 0.981962,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6c434dff9d7241c2b5c5.jpg",
+  "label": 1,
+  "score_artificial": 0.334357,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0951ef37749d68ff6730.jpg",
+  "label": 0,
+  "score_artificial": 0.038719,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "981a9951671038fc28b6.jpg",
+  "label": 0,
+  "score_artificial": 0.007539,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e3b06e764b201a362acb.jpg",
+  "label": 1,
+  "score_artificial": 0.897783,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9207ad4c63206f567fdc.jpg",
+  "label": 0,
+  "score_artificial": 0.058312,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3e3e456a80c6bce238d2.jpg",
+  "label": 1,
+  "score_artificial": 0.246147,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "dec6ff64a7d8b4519453.jpg",
+  "label": 0,
+  "score_artificial": 0.901904,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a202658912cd201c997a.jpg",
+  "label": 0,
+  "score_artificial": 0.024048,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "67d45820ea4cc85b0a80.jpg",
+  "label": 1,
+  "score_artificial": 0.389349,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9e3a927c2f8f199a86d0.jpg",
+  "label": 1,
+  "score_artificial": 0.011763,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b8afb9ce06122153754d.jpg",
+  "label": 0,
+  "score_artificial": 0.548993,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3366b46c58440e6d43a9.jpg",
+  "label": 0,
+  "score_artificial": 0.035609,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7bcafe09ddda16045958.jpg",
+  "label": 1,
+  "score_artificial": 0.519824,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fb38b4b2902e7387882c.jpg",
+  "label": 0,
+  "score_artificial": 0.061049,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "35e4d489c7c2fdd65e04.jpg",
+  "label": 1,
+  "score_artificial": 0.204466,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1fbbc15e025a97e950f7.jpg",
+  "label": 0,
+  "score_artificial": 0.581841,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ba301e140fcd717bfc80.jpg",
+  "label": 0,
+  "score_artificial": 0.789245,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4b7f148c905c2227b6b8.jpg",
+  "label": 1,
+  "score_artificial": 0.33956,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3154f617338a245d9456.jpg",
+  "label": 1,
+  "score_artificial": 0.267722,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "48ec6fa3205fe3ad62c9.jpg",
+  "label": 0,
+  "score_artificial": 0.649644,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c95857f5615c67b71730.jpg",
+  "label": 1,
+  "score_artificial": 0.970561,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "36580639e680bb730bfa.jpg",
+  "label": 0,
+  "score_artificial": 0.126263,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a582deea53d2d1e735ad.jpg",
+  "label": 0,
+  "score_artificial": 0.876369,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8bc7b9c3765ccbb96cb3.jpg",
+  "label": 0,
+  "score_artificial": 0.390603,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cb0c52b85b5c037afe17.jpg",
+  "label": 1,
+  "score_artificial": 0.730423,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7f787b5944fb88606732.jpg",
+  "label": 1,
+  "score_artificial": 0.439609,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fb626c77e82237c08b7e.jpg",
+  "label": 1,
+  "score_artificial": 0.085899,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1d6bd27b07c991c8afdb.jpg",
+  "label": 0,
+  "score_artificial": 0.629267,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3096a3922a245048b48d.jpg",
+  "label": 0,
+  "score_artificial": 0.032576,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "db131b68ec888a1be792.jpg",
+  "label": 0,
+  "score_artificial": 0.195359,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2b41fc692469388d6a2e.jpg",
+  "label": 0,
+  "score_artificial": 0.28742,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "85471f8228917a9124cc.jpg",
+  "label": 0,
+  "score_artificial": 0.941092,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0899b66a4945c022ac45.jpg",
+  "label": 0,
+  "score_artificial": 0.076567,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "096646577f844c85b80e.jpg",
+  "label": 0,
+  "score_artificial": 0.244139,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cd511a2264cf1e574497.jpg",
+  "label": 0,
+  "score_artificial": 0.022151,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "231bd4cb967bfe750afe.jpg",
+  "label": 1,
+  "score_artificial": 0.075829,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3acd3fa9d96775ec1237.jpg",
+  "label": 0,
+  "score_artificial": 0.007529,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d34eee4aa8fea49232a9.jpg",
+  "label": 0,
+  "score_artificial": 0.006801,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "be947b7a298d5223d82d.jpg",
+  "label": 1,
+  "score_artificial": 0.264202,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "16a84e75178713eda6b8.jpg",
+  "label": 0,
+  "score_artificial": 0.019578,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e2ea1911b2c2ce282569.jpg",
+  "label": 0,
+  "score_artificial": 0.050434,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8c36bb10724be1d95159.jpg",
+  "label": 1,
+  "score_artificial": 0.055202,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a0df57a80ce6044a300b.jpg",
+  "label": 0,
+  "score_artificial": 0.007586,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "579db0b6ea9afafcbd32.jpg",
+  "label": 1,
+  "score_artificial": 0.841858,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9d0b427d6013d7de70f2.jpg",
+  "label": 0,
+  "score_artificial": 0.401481,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "018e9cd5c50060333152.jpg",
+  "label": 1,
+  "score_artificial": 0.254731,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "aa16239e30d79b01b509.jpg",
+  "label": 0,
+  "score_artificial": 0.081909,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b5a64f5b87f9f383de7e.jpg",
+  "label": 0,
+  "score_artificial": 0.279841,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4fb92758200a0a16135c.jpg",
+  "label": 1,
+  "score_artificial": 0.051879,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "aa05cd42a863a7475257.jpg",
+  "label": 1,
+  "score_artificial": 0.05782,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "809798161dbea72a2585.jpg",
+  "label": 1,
+  "score_artificial": 0.918715,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "246128efc98f22cfc3b5.jpg",
+  "label": 0,
+  "score_artificial": 0.00478,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0206264c0049a246fc68.jpg",
+  "label": 0,
+  "score_artificial": 0.342834,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7d91437bea74d0b2510d.jpg",
+  "label": 1,
+  "score_artificial": 0.10431,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2891064942856a5fd39c.jpg",
+  "label": 0,
+  "score_artificial": 0.03341,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "20f8b050797db9ff1670.jpg",
+  "label": 0,
+  "score_artificial": 0.057327,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c4a3ddc5f150b02e9cc9.jpg",
+  "label": 1,
+  "score_artificial": 0.558258,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fd0b03313d4375c6e4ed.jpg",
+  "label": 0,
+  "score_artificial": 0.575588,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d5a72dd42904d85416a4.jpg",
+  "label": 1,
+  "score_artificial": 0.275655,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "78937a40399d5315f304.jpg",
+  "label": 1,
+  "score_artificial": 0.998621,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c7fba5c410ef06474895.jpg",
+  "label": 0,
+  "score_artificial": 0.012848,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f1bee337c718744e15b5.jpg",
+  "label": 0,
+  "score_artificial": 0.057925,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "625fc53921b6b87c110d.jpg",
+  "label": 1,
+  "score_artificial": 0.897982,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7657a7cb9e7cf40dc383.jpg",
+  "label": 1,
+  "score_artificial": 0.627875,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "36b35857669c9feef025.jpg",
+  "label": 1,
+  "score_artificial": 0.952273,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "615dedea9d88fb47cabf.jpg",
+  "label": 0,
+  "score_artificial": 0.208564,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "177c1a0504f4eb79e364.jpg",
+  "label": 1,
+  "score_artificial": 0.189084,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "72bdd7a3147b4b5b89f0.jpg",
+  "label": 1,
+  "score_artificial": 0.863635,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b5fadbb7e7866336f642.jpg",
+  "label": 1,
+  "score_artificial": 0.873152,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "06d0aabf334b06d3bbc1.jpg",
+  "label": 0,
+  "score_artificial": 0.724161,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3ebad6de75fe3e17ea07.jpg",
+  "label": 1,
+  "score_artificial": 0.417153,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cc80c37ae0eda5cc40a0.jpg",
+  "label": 0,
+  "score_artificial": 0.005647,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7109488492d9cc420dd4.jpg",
+  "label": 0,
+  "score_artificial": 0.063325,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "de519e71c7460ec02c49.jpg",
+  "label": 1,
+  "score_artificial": 0.986463,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3b7142e6287e512bcc8b.jpg",
+  "label": 1,
+  "score_artificial": 0.014601,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6a4caec2d28b2a14569d.jpg",
+  "label": 0,
+  "score_artificial": 0.124907,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9091c2e0518b55ec656e.jpg",
+  "label": 0,
+  "score_artificial": 0.04917,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "bbc3fd86862c640abcea.jpg",
+  "label": 1,
+  "score_artificial": 0.956375,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9e6341a623e5bee07e76.jpg",
+  "label": 0,
+  "score_artificial": 0.013849,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c6e30569c81a2a817bb1.jpg",
+  "label": 1,
+  "score_artificial": 0.174423,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e66e635ccf23abcd62ef.jpg",
+  "label": 1,
+  "score_artificial": 0.384516,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c46d1fb3732e86be47d6.jpg",
+  "label": 1,
+  "score_artificial": 0.860705,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "564cac70fea048c2b9cc.jpg",
+  "label": 1,
+  "score_artificial": 0.379941,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3fba842d8e52cad12a16.jpg",
+  "label": 1,
+  "score_artificial": 0.009703,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ed45819bfa8dd3c11214.jpg",
+  "label": 0,
+  "score_artificial": 0.004594,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b261d562f085b8f4e221.jpg",
+  "label": 0,
+  "score_artificial": 0.876137,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "07ef72c43ee83de01f5a.jpg",
+  "label": 0,
+  "score_artificial": 0.012534,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f369bc44a60120520c67.jpg",
+  "label": 1,
+  "score_artificial": 0.385016,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a51d1e7d229147b35330.jpg",
+  "label": 0,
+  "score_artificial": 0.000246,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "98e9972ab7f8da674fb6.jpg",
+  "label": 1,
+  "score_artificial": 0.890205,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "955687f16760055aee25.jpg",
+  "label": 1,
+  "score_artificial": 0.944107,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "87c9d65bd62f9da632ad.jpg",
+  "label": 0,
+  "score_artificial": 0.075042,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7f72de0d92f0c0176ad7.jpg",
+  "label": 0,
+  "score_artificial": 0.05085,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "45223e2c2c5c2ad60436.jpg",
+  "label": 0,
+  "score_artificial": 0.010093,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "05aff49dc2b4ef15e91b.jpg",
+  "label": 0,
+  "score_artificial": 0.37058,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "081d2fe64a465bf4954a.jpg",
+  "label": 1,
+  "score_artificial": 0.074884,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7fbb578ca6fae91f2c2d.jpg",
+  "label": 0,
+  "score_artificial": 0.238355,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "324ade425ab411fda352.jpg",
+  "label": 1,
+  "score_artificial": 0.313379,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "11fb30dc4455f8867b34.jpg",
+  "label": 1,
+  "score_artificial": 0.247872,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3b90214639243391f836.jpg",
+  "label": 1,
+  "score_artificial": 0.938841,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7f4ae0fa18f2f497cb30.jpg",
+  "label": 1,
+  "score_artificial": 0.186743,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7f63241a3b221094cf8e.jpg",
+  "label": 1,
+  "score_artificial": 0.639014,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "536c8f141292675ed79d.jpg",
+  "label": 0,
+  "score_artificial": 0.093248,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ac7476ee5958270c8402.jpg",
+  "label": 1,
+  "score_artificial": 0.50847,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a3c983a51466f04703dd.jpg",
+  "label": 0,
+  "score_artificial": 0.111938,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "08784f3dc84354b6500a.jpg",
+  "label": 1,
+  "score_artificial": 0.145237,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d31c97ecb9d022d9b987.jpg",
+  "label": 1,
+  "score_artificial": 0.371185,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c9866a174dc41f2862c1.jpg",
+  "label": 0,
+  "score_artificial": 0.001636,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "17161f02a0c25681f0ce.jpg",
+  "label": 0,
+  "score_artificial": 0.024801,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "05ec7772738778281564.jpg",
+  "label": 0,
+  "score_artificial": 0.002404,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3eb3ac7a4ac53ab8f1a0.jpg",
+  "label": 0,
+  "score_artificial": 0.075048,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "84d3e0a976ec0e4548a2.jpg",
+  "label": 1,
+  "score_artificial": 0.407264,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2663c64b37d48a752763.jpg",
+  "label": 1,
+  "score_artificial": 0.912756,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "5d4345b56913d57eea35.jpg",
+  "label": 1,
+  "score_artificial": 0.767554,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0f0b8517ccf4f4c17a0a.jpg",
+  "label": 0,
+  "score_artificial": 0.508499,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d1c8a04b70fab9bcd522.jpg",
+  "label": 0,
+  "score_artificial": 0.460476,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "196ded6d549720ad56ff.jpg",
+  "label": 1,
+  "score_artificial": 0.020634,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2afc9ff44ba2599a865e.jpg",
+  "label": 1,
+  "score_artificial": 0.464882,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "14e1280328cef445e091.jpg",
+  "label": 0,
+  "score_artificial": 0.152875,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7fa0b99eefe575fce895.jpg",
+  "label": 0,
+  "score_artificial": 0.007695,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b29fb2944100454bc63c.jpg",
+  "label": 1,
+  "score_artificial": 0.285483,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6011ea12ae039680d29f.jpg",
+  "label": 0,
+  "score_artificial": 0.412749,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b8318f5205b2f53f5b39.jpg",
+  "label": 0,
+  "score_artificial": 0.083904,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "91a493b9f76df59a8230.jpg",
+  "label": 1,
+  "score_artificial": 0.794017,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8082d08a3fc286d202ff.jpg",
+  "label": 0,
+  "score_artificial": 0.471723,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c7088f3bd34dc81e7cb5.jpg",
+  "label": 1,
+  "score_artificial": 0.933943,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f7f5228e7760281f2e1a.jpg",
+  "label": 0,
+  "score_artificial": 0.609556,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8b34f3a60f4c84a076e8.jpg",
+  "label": 1,
+  "score_artificial": 0.942868,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fa7d7de1852fe5c25529.jpg",
+  "label": 1,
+  "score_artificial": 0.96902,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "90436f9d5dbf1fcf543d.jpg",
+  "label": 0,
+  "score_artificial": 0.818672,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fb91c149aca9df6dead0.jpg",
+  "label": 1,
+  "score_artificial": 0.675419,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2b9b9fbbdc6d9a0031b9.jpg",
+  "label": 1,
+  "score_artificial": 0.786597,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d2cb2fffe56ccb94a6c2.jpg",
+  "label": 1,
+  "score_artificial": 0.007825,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "de392c93cd5b8ebcf6f0.jpg",
+  "label": 0,
+  "score_artificial": 0.078495,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c6856c1b93ed472ee4ec.jpg",
+  "label": 0,
+  "score_artificial": 0.355364,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "996b4d19e1444722785c.jpg",
+  "label": 0,
+  "score_artificial": 0.220293,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "61e9ff2f52fcbe1fc499.jpg",
+  "label": 1,
+  "score_artificial": 0.131092,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "397c0eb1368484135c62.jpg",
+  "label": 1,
+  "score_artificial": 0.92207,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "bf94adfbbe60c8a746f9.jpg",
+  "label": 1,
+  "score_artificial": 0.465216,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "92ea59fbf70cd3f97781.jpg",
+  "label": 1,
+  "score_artificial": 0.072645,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7465c98d585de1571779.jpg",
+  "label": 0,
+  "score_artificial": 0.393336,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "01df760fd64351d92b86.jpg",
+  "label": 1,
+  "score_artificial": 0.600778,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ef62b4e3f83de3b07bc8.jpg",
+  "label": 1,
+  "score_artificial": 0.508879,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "59f9a116fd2a8eb5ba81.jpg",
+  "label": 0,
+  "score_artificial": 0.056321,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6b8d0d90a40c6b075b85.jpg",
+  "label": 1,
+  "score_artificial": 0.012983,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6a7e6c5ae6519ba73325.jpg",
+  "label": 0,
+  "score_artificial": 0.214548,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8ca10efb0c44f6f03e5f.jpg",
+  "label": 0,
+  "score_artificial": 0.310863,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "815581cbfa077d1689b8.jpg",
+  "label": 0,
+  "score_artificial": 0.036334,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "2c7b9f68cfed5bfac973.jpg",
+  "label": 1,
+  "score_artificial": 0.063709,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a8b65a495b25ec8de372.jpg",
+  "label": 1,
+  "score_artificial": 0.098419,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "a1877153693d03b9cff3.jpg",
+  "label": 1,
+  "score_artificial": 0.414756,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "cfd7a538758aea4dad20.jpg",
+  "label": 1,
+  "score_artificial": 0.81191,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e75c498142439e613cf0.jpg",
+  "label": 0,
+  "score_artificial": 0.284621,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e269efa314bf539b74aa.jpg",
+  "label": 0,
+  "score_artificial": 0.051302,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e78655ebd934fc5858ee.jpg",
+  "label": 0,
+  "score_artificial": 0.003023,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "93984302084ff6b22307.jpg",
+  "label": 0,
+  "score_artificial": 0.429503,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fea6a044a80a49de5c35.jpg",
+  "label": 1,
+  "score_artificial": 0.46101,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e633caa33c36d7cd37fd.jpg",
+  "label": 0,
+  "score_artificial": 0.127243,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "394bc023739f8b55424f.jpg",
+  "label": 0,
+  "score_artificial": 0.058737,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9360f22324b56ab109c2.jpg",
+  "label": 1,
+  "score_artificial": 0.025578,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c0957017db7043fd3d6f.jpg",
+  "label": 0,
+  "score_artificial": 0.621727,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "21e577473ae8298d4fcb.jpg",
+  "label": 0,
+  "score_artificial": 0.107883,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e577ddfccef9cee4e8c0.jpg",
+  "label": 1,
+  "score_artificial": 0.313415,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "5134d1f2d664d4e54605.jpg",
+  "label": 1,
+  "score_artificial": 0.333868,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9cfd69da0741a91653e3.jpg",
+  "label": 0,
+  "score_artificial": 0.169914,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "537940c64769b734110e.jpg",
+  "label": 0,
+  "score_artificial": 0.293307,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "bc9fc356b795aa8d97d7.jpg",
+  "label": 1,
+  "score_artificial": 0.986493,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1850a78db3171df340fe.jpg",
+  "label": 1,
+  "score_artificial": 0.006458,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "81bd96f32656bbd7fcfd.jpg",
+  "label": 1,
+  "score_artificial": 0.95441,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "304e1ceb32d2aab24c45.jpg",
+  "label": 0,
+  "score_artificial": 0.022101,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8de4d3be161fce6b0aa4.jpg",
+  "label": 1,
+  "score_artificial": 0.560673,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0d5f3753e600810680e6.jpg",
+  "label": 0,
+  "score_artificial": 0.040018,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "954c4465849ab65bc9d6.jpg",
+  "label": 0,
+  "score_artificial": 0.138596,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1b4a3832b827483d38f5.jpg",
+  "label": 1,
+  "score_artificial": 0.666435,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4cda6acde892b57f0089.jpg",
+  "label": 1,
+  "score_artificial": 0.060689,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ec0332ea7d4be367f953.jpg",
+  "label": 0,
+  "score_artificial": 0.482656,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "91559aaff3cd10b746d7.jpg",
+  "label": 1,
+  "score_artificial": 0.169213,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "67a4ce0f95e3b3a37c98.jpg",
+  "label": 1,
+  "score_artificial": 0.581725,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "356252ea4f4c7cf5a977.jpg",
+  "label": 1,
+  "score_artificial": 0.324292,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "fb658d3b130aca1326d8.jpg",
+  "label": 1,
+  "score_artificial": 0.019197,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f47a550fefe3eea3d896.jpg",
+  "label": 0,
+  "score_artificial": 0.034307,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "5553399612afc1c767c5.jpg",
+  "label": 0,
+  "score_artificial": 0.493676,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9fc4b6f36af3a3640661.jpg",
+  "label": 0,
+  "score_artificial": 0.153217,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "dee9b105ae21f7831087.jpg",
+  "label": 1,
+  "score_artificial": 0.985406,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e36f4ec9f1656d1cd417.jpg",
+  "label": 1,
+  "score_artificial": 0.548351,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "db7e5f6631f8453fefa1.jpg",
+  "label": 1,
+  "score_artificial": 0.014505,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b94b0cd045b4ae2da031.jpg",
+  "label": 1,
+  "score_artificial": 0.809951,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4a7a399ebab355844537.jpg",
+  "label": 1,
+  "score_artificial": 0.198764,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1609f166bae76be19bb0.jpg",
+  "label": 0,
+  "score_artificial": 0.073495,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d3702770cd3fecdd4bad.jpg",
+  "label": 1,
+  "score_artificial": 0.575036,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "693172f82ab132e7c3d5.jpg",
+  "label": 0,
+  "score_artificial": 0.441254,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9505d225390960159af2.jpg",
+  "label": 1,
+  "score_artificial": 0.243408,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1a03dd41c17bd6dc309a.jpg",
+  "label": 1,
+  "score_artificial": 0.013305,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c29ca15b4f369a1523c4.jpg",
+  "label": 1,
+  "score_artificial": 0.557331,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "85f7d5551ce888eb766b.jpg",
+  "label": 0,
+  "score_artificial": 0.704895,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3eb0b606bc64ce36b8f6.jpg",
+  "label": 0,
+  "score_artificial": 0.241626,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "bc149f8f8409f83ce496.jpg",
+  "label": 0,
+  "score_artificial": 0.178802,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "937a3d21f47ee8443d93.jpg",
+  "label": 0,
+  "score_artificial": 0.029895,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "530e35eb57a072cc6df3.jpg",
+  "label": 0,
+  "score_artificial": 0.11059,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1ef1e7a46be9c574e6fd.jpg",
+  "label": 0,
+  "score_artificial": 0.219627,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f49cf29f9b3bdb21d09e.jpg",
+  "label": 0,
+  "score_artificial": 0.341629,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "af2752fef80f8122928f.jpg",
+  "label": 0,
+  "score_artificial": 0.518769,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b191b6f0b4446b5aa3e4.jpg",
+  "label": 0,
+  "score_artificial": 0.003095,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6d4bca7bf7c8ccb6b1de.jpg",
+  "label": 1,
+  "score_artificial": 0.990975,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4de37b16ab278bf7213a.jpg",
+  "label": 0,
+  "score_artificial": 0.843585,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1251f36084c94f1dadb3.jpg",
+  "label": 0,
+  "score_artificial": 0.937525,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1c57e40b440100a47021.jpg",
+  "label": 0,
+  "score_artificial": 0.017167,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "095785f9e6275ff1abe1.jpg",
+  "label": 1,
+  "score_artificial": 0.454708,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "aa757034b75008fde953.jpg",
+  "label": 0,
+  "score_artificial": 0.939772,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ede29d21241cca2c63d9.jpg",
+  "label": 0,
+  "score_artificial": 0.974177,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "e9758e6247a5fad80097.jpg",
+  "label": 1,
+  "score_artificial": 0.909859,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c913ba04c572a3885759.jpg",
+  "label": 1,
+  "score_artificial": 0.527693,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "3bb8568ee453bcb55254.jpg",
+  "label": 0,
+  "score_artificial": 0.037133,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "6f2d815947ff8df93bbe.jpg",
+  "label": 1,
+  "score_artificial": 0.052703,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "ffd4b179dbaa6f261f56.jpg",
+  "label": 1,
+  "score_artificial": 0.082157,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8eb839ebbc553ad9037a.jpg",
+  "label": 0,
+  "score_artificial": 0.184486,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0721915c85ed7dc9f1d6.jpg",
+  "label": 0,
+  "score_artificial": 0.584669,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "d45418fe85828863f4f1.jpg",
+  "label": 1,
+  "score_artificial": 0.223027,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b652959dd785e0a6b434.jpg",
+  "label": 1,
+  "score_artificial": 0.099105,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "542d6fe518f35b660528.jpg",
+  "label": 1,
+  "score_artificial": 0.326887,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "022bcb4b3daad2221180.jpg",
+  "label": 1,
+  "score_artificial": 0.14844,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8f311bf98060cb98ce59.jpg",
+  "label": 1,
+  "score_artificial": 0.46156,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9ebc662644099dce1932.jpg",
+  "label": 0,
+  "score_artificial": 0.001465,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "124958973903f00cf611.jpg",
+  "label": 0,
+  "score_artificial": 0.020726,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "9f954798737612b4c355.jpg",
+  "label": 1,
+  "score_artificial": 0.799385,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "762eb028b2a61686922c.jpg",
+  "label": 1,
+  "score_artificial": 0.885858,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "068276bebac9c8f244a3.jpg",
+  "label": 0,
+  "score_artificial": 0.238799,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "4611e249ab6366f3898c.jpg",
+  "label": 1,
+  "score_artificial": 0.58355,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c71e4ad0a738552e1a6e.jpg",
+  "label": 1,
+  "score_artificial": 0.571597,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "09f83bdc4f3106bd0447.jpg",
+  "label": 1,
+  "score_artificial": 0.066379,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "27cb7f4018d14d751e21.jpg",
+  "label": 1,
+  "score_artificial": 0.948223,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c99169b5dd29c1481942.jpg",
+  "label": 0,
+  "score_artificial": 0.002451,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "51fab950b5701e8ee7aa.jpg",
+  "label": 0,
+  "score_artificial": 0.317159,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0532c024f6f0c64692b9.jpg",
+  "label": 1,
+  "score_artificial": 0.585771,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "418221061e6b0b262234.jpg",
+  "label": 0,
+  "score_artificial": 0.53436,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "0b58d9a8d6031def2bf5.jpg",
+  "label": 0,
+  "score_artificial": 0.030857,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "49484cb75de9927c018e.jpg",
+  "label": 1,
+  "score_artificial": 0.358064,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "f8d086d86b5fd82bec3d.jpg",
+  "label": 0,
+  "score_artificial": 0.482578,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "23442b8352c228779b8a.jpg",
+  "label": 1,
+  "score_artificial": 0.593771,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "11dfaf72ec766993fac0.jpg",
+  "label": 0,
+  "score_artificial": 0.578269,
+  "pred": 1
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "1f06ed1c46c3d0a2155e.jpg",
+  "label": 1,
+  "score_artificial": 0.2068,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "7bdd469a9ae66b6ddfdf.jpg",
+  "label": 0,
+  "score_artificial": 0.20127,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "8ec7c7a068876ac8208c.jpg",
+  "label": 0,
+  "score_artificial": 0.253353,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "c7389e2d2cc919b18a62.jpg",
+  "label": 1,
+  "score_artificial": 0.116889,
+  "pred": 0
+ },
+ {
+  "shard": "shard_0.zip",
+  "image_name": "b9fc573a305e07f83c5c.jpg",
+  "label": 0,
+  "score_artificial": 0.149078,
+  "pred": 0
+ }
+]

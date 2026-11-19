@@ -1,22 +1,710 @@
 {
-  "dataset": "iitolstykh/LLMTrace_classification",
-  "language": "ru",
-  "task": "binary_text_classification",
-  "samples_total": 200,
-  "human_samples": 100,
-  "ai_samples": 100,
-  "calibrated_threshold": 0.15,
-  "roc_auc": 0.3488,
-  "accuracy": 0.455,
-  "f1_score": 0.6202,
-  "precision": 0.4759,
-  "recall": 0.89,
-  "fpr": 0.98,
-  "confusion_matrix": {
-    "tn": 2,
-    "fp": 98,
-    "fn": 11,
-    "tp": 89
+  "n": 400,
+  "n_ai": 200,
+  "n_human": 200,
+  "methods": {
+    "features": {
+      "threshold_source": "calibration.json: doc_threshold, подобран на собственном val (val)",
+      "info": {
+        "load_seconds": 0.2,
+        "model_file": "models_dev/feature_model.json",
+        "model": "features (TF-IDF sentence LR + stylometric document LR)",
+        "dataset_version": "dev",
+        "model_sha256": "4434328c676f9e2ed0a21b3cb68a013f07976cb248ba874b31306b5138980e4c",
+        "last_seconds": 1.5
+      },
+      "overall": {
+        "roc_auc": 0.8893,
+        "roc_auc_ci95": [
+          0.8536725136641168,
+          0.921068345365655
+        ],
+        "threshold": 0.4902,
+        "precision": 0.71484375,
+        "recall": 0.915,
+        "f1": 0.8026315789473684,
+        "fpr": 0.365,
+        "accuracy": 0.775,
+        "tp": 183,
+        "fp": 73,
+        "tn": 127,
+        "fn": 17,
+        "n": 400,
+        "n_pos": 200,
+        "n_neg": 200
+      },
+      "by_lang": {
+        "eng": {
+          "roc_auc": 0.9093,
+          "roc_auc_ci95": [
+            0.8648237310144057,
+            0.9452183038953808
+          ],
+          "threshold": 0.4902,
+          "precision": 0.7583333333333333,
+          "recall": 0.91,
+          "f1": 0.8272727272727273,
+          "fpr": 0.29,
+          "accuracy": 0.81,
+          "tp": 91,
+          "fp": 29,
+          "tn": 71,
+          "fn": 9,
+          "n": 200,
+          "n_pos": 100,
+          "n_neg": 100
+        },
+        "ru": {
+          "roc_auc": 0.8691,
+          "roc_auc_ci95": [
+            0.8144883157341607,
+            0.9150765227707001
+          ],
+          "threshold": 0.4902,
+          "precision": 0.6764705882352942,
+          "recall": 0.92,
+          "f1": 0.7796610169491526,
+          "fpr": 0.44,
+          "accuracy": 0.74,
+          "tp": 92,
+          "fp": 44,
+          "tn": 56,
+          "fn": 8,
+          "n": 200,
+          "n_pos": 100,
+          "n_neg": 100
+        }
+      },
+      "by_data_type": {
+        "article": {
+          "n": 80,
+          "mean_score": 0.5643265552430806,
+          "n_ai": 37,
+          "recall": 0.8378378378378378,
+          "n_human": 43,
+          "fpr": 0.3023255813953488
+        },
+        "factual": {
+          "n": 43,
+          "mean_score": 0.626425899160219,
+          "n_ai": 25,
+          "recall": 0.92,
+          "n_human": 18,
+          "fpr": 0.2222222222222222
+        },
+        "news": {
+          "n": 49,
+          "mean_score": 0.4833065610709404,
+          "n_ai": 21,
+          "recall": 0.8095238095238095,
+          "n_human": 28,
+          "fpr": 0.32142857142857145
+        },
+        "paper_abstract": {
+          "n": 21,
+          "mean_score": 0.8926835289901291,
+          "n_ai": 9,
+          "recall": 1.0,
+          "n_human": 12,
+          "fpr": 1.0
+        },
+        "poetry": {
+          "n": 33,
+          "mean_score": 0.726194229655193,
+          "n_ai": 15,
+          "recall": 1.0,
+          "n_human": 18,
+          "fpr": 0.5555555555555556
+        },
+        "question": {
+          "n": 56,
+          "mean_score": 0.5654188298568286,
+          "n_ai": 32,
+          "recall": 0.90625,
+          "n_human": 24,
+          "fpr": 0.16666666666666666
+        },
+        "review": {
+          "n": 43,
+          "mean_score": 0.5674604872972867,
+          "n_ai": 16,
+          "recall": 1.0,
+          "n_human": 27,
+          "fpr": 0.3333333333333333
+        },
+        "short_form": {
+          "n": 24,
+          "mean_score": 0.7529947635460698,
+          "n_ai": 19,
+          "recall": 0.8947368421052632,
+          "n_human": 5,
+          "fpr": 0.2
+        },
+        "story": {
+          "n": 51,
+          "mean_score": 0.6966306214956541,
+          "n_ai": 26,
+          "recall": 1.0,
+          "n_human": 25,
+          "fpr": 0.44
+        }
+      },
+      "by_model": {
+        "01-ai/Yi-1.5-34B-Chat": {
+          "n": 6,
+          "mean_score": 0.7872893992255392,
+          "n_ai": 6,
+          "recall": 0.8333333333333334
+        },
+        "CohereForAI/c4ai-command-r-08-2024": {
+          "n": 9,
+          "mean_score": 0.8248783502285518,
+          "n_ai": 9,
+          "recall": 0.8888888888888888
+        },
+        "GigaChat-Max": {
+          "n": 4,
+          "mean_score": 0.9149083619251396,
+          "n_ai": 4,
+          "recall": 1.0
+        },
+        "Phi-3-mini-128k-instruct": {
+          "n": 2,
+          "mean_score": 0.4943684249399476,
+          "n_ai": 2,
+          "recall": 0.5
+        },
+        "Qwen/QwQ-32B": {
+          "n": 2,
+          "mean_score": 0.9128141971930516,
+          "n_ai": 2,
+          "recall": 1.0
+        },
+        "Qwen/Qwen2.5-72B-Instruct": {
+          "n": 8,
+          "mean_score": 0.758883819259625,
+          "n_ai": 8,
+          "recall": 0.75
+        },
+        "Qwen/Qwen3-32B": {
+          "n": 9,
+          "mean_score": 0.9197650211527366,
+          "n_ai": 9,
+          "recall": 1.0
+        },
+        "WizardLM-2-7B": {
+          "n": 5,
+          "mean_score": 0.8597507838049528,
+          "n_ai": 5,
+          "recall": 0.8
+        },
+        "databricks/dbrx-instruct": {
+          "n": 12,
+          "mean_score": 0.882185152945025,
+          "n_ai": 12,
+          "recall": 1.0
+        },
+        "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
+          "n": 12,
+          "mean_score": 0.8537196789440756,
+          "n_ai": 12,
+          "recall": 0.9166666666666666
+        },
+        "gemini-2.0-flash": {
+          "n": 5,
+          "mean_score": 0.7416751298933197,
+          "n_ai": 5,
+          "recall": 0.8
+        },
+        "gemini-2.5-flash": {
+          "n": 8,
+          "mean_score": 0.9637617854720534,
+          "n_ai": 8,
+          "recall": 1.0
+        },
+        "gemma-1.1-7b-it": {
+          "n": 1,
+          "mean_score": 0.9751915255840976,
+          "n_ai": 1,
+          "recall": 1.0
+        },
+        "gigachat": {
+          "n": 1,
+          "mean_score": 0.8749440157382408,
+          "n_ai": 1,
+          "recall": 1.0
+        },
+        "google/gemma-2-27b-it": {
+          "n": 5,
+          "mean_score": 0.7557471711202766,
+          "n_ai": 5,
+          "recall": 0.8
+        },
+        "gpt-3.5": {
+          "n": 19,
+          "mean_score": 0.8475043348078373,
+          "n_ai": 19,
+          "recall": 0.9473684210526315
+        },
+        "gpt-4": {
+          "n": 4,
+          "mean_score": 0.8124225277952865,
+          "n_ai": 4,
+          "recall": 1.0
+        },
+        "gpt-4-0125-preview": {
+          "n": 2,
+          "mean_score": 0.9611377406327559,
+          "n_ai": 2,
+          "recall": 1.0
+        },
+        "gpt-4-1106-preview": {
+          "n": 2,
+          "mean_score": 0.9703454348166691,
+          "n_ai": 2,
+          "recall": 1.0
+        },
+        "gpt-4.1-2025-04-14": {
+          "n": 9,
+          "mean_score": 0.8839075704764406,
+          "n_ai": 9,
+          "recall": 1.0
+        },
+        "gpt-4o": {
+          "n": 14,
+          "mean_score": 0.901100763463145,
+          "n_ai": 14,
+          "recall": 0.9285714285714286
+        },
+        "human": {
+          "n": 200,
+          "mean_score": 0.39271160921517373,
+          "n_human": 200,
+          "fpr": 0.365
+        },
+        "mistralai/Magistral-Small-2507": {
+          "n": 4,
+          "mean_score": 0.6407837639152116,
+          "n_ai": 4,
+          "recall": 0.5
+        },
+        "mistralai/Ministral-8B-Instruct-2410": {
+          "n": 5,
+          "mean_score": 0.8742942172119605,
+          "n_ai": 5,
+          "recall": 1.0
+        },
+        "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+          "n": 9,
+          "mean_score": 0.8661459421872174,
+          "n_ai": 9,
+          "recall": 0.8888888888888888
+        },
+        "o1-mini-2024-09-12": {
+          "n": 1,
+          "mean_score": 0.9818810032347114,
+          "n_ai": 1,
+          "recall": 1.0
+        },
+        "o3-2025-04-16": {
+          "n": 9,
+          "mean_score": 0.7026476903241913,
+          "n_ai": 9,
+          "recall": 0.8888888888888888
+        },
+        "ruGPT": {
+          "n": 3,
+          "mean_score": 0.6053570287488585,
+          "n_ai": 3,
+          "recall": 0.6666666666666666
+        },
+        "tiiuae/Falcon3-10B-Instruct": {
+          "n": 7,
+          "mean_score": 0.9069016845124471,
+          "n_ai": 7,
+          "recall": 1.0
+        },
+        "unsloth/Llama-3.3-70B-Instruct": {
+          "n": 15,
+          "mean_score": 0.9373052881518038,
+          "n_ai": 15,
+          "recall": 1.0
+        },
+        "yagpt": {
+          "n": 2,
+          "mean_score": 0.8601776456913718,
+          "n_ai": 2,
+          "recall": 1.0
+        },
+        "yandex/YandexGPT-5-Lite-8B-instruct": {
+          "n": 4,
+          "mean_score": 0.8439126244559201,
+          "n_ai": 4,
+          "recall": 1.0
+        },
+        "zai-org/GLM-4-32B-0414": {
+          "n": 2,
+          "mean_score": 0.6541140892878996,
+          "n_ai": 2,
+          "recall": 0.5
+        }
+      }
+    },
+    "lm": {
+      "threshold_source": "lm_calibration.json: doc_threshold, подобран на собственном val (val)",
+      "info": {
+        "load_seconds": 10.3,
+        "checkpoint": "tnc_dbgc_coat_best.pt",
+        "device": "cpu",
+        "last_seconds": 193.1
+      },
+      "overall": {
+        "roc_auc": 0.45335,
+        "roc_auc_ci95": [
+          0.3994332497571386,
+          0.510776921918908
+        ],
+        "threshold": 0.4528,
+        "precision": 0.43956043956043955,
+        "recall": 0.2,
+        "f1": 0.27491408934707906,
+        "fpr": 0.255,
+        "accuracy": 0.4725,
+        "tp": 40,
+        "fp": 51,
+        "tn": 149,
+        "fn": 160,
+        "n": 400,
+        "n_pos": 200,
+        "n_neg": 200
+      },
+      "by_lang": {
+        "eng": {
+          "roc_auc": 0.4943,
+          "roc_auc_ci95": [
+            0.4164872711010597,
+            0.5708663631555955
+          ],
+          "threshold": 0.4528,
+          "precision": 0.4727272727272727,
+          "recall": 0.26,
+          "f1": 0.33548387096774196,
+          "fpr": 0.29,
+          "accuracy": 0.485,
+          "tp": 26,
+          "fp": 29,
+          "tn": 71,
+          "fn": 74,
+          "n": 200,
+          "n_pos": 100,
+          "n_neg": 100
+        },
+        "ru": {
+          "roc_auc": 0.406,
+          "roc_auc_ci95": [
+            0.327221905190519,
+            0.4900028595002731
+          ],
+          "threshold": 0.4528,
+          "precision": 0.3888888888888889,
+          "recall": 0.14,
+          "f1": 0.20588235294117646,
+          "fpr": 0.22,
+          "accuracy": 0.46,
+          "tp": 14,
+          "fp": 22,
+          "tn": 78,
+          "fn": 86,
+          "n": 200,
+          "n_pos": 100,
+          "n_neg": 100
+        }
+      },
+      "by_data_type": {
+        "article": {
+          "n": 80,
+          "mean_score": 0.3598452532042077,
+          "n_ai": 37,
+          "recall": 0.13513513513513514,
+          "n_human": 43,
+          "fpr": 0.18604651162790697
+        },
+        "factual": {
+          "n": 43,
+          "mean_score": 0.32079011974113536,
+          "n_ai": 25,
+          "recall": 0.2,
+          "n_human": 18,
+          "fpr": 0.05555555555555555
+        },
+        "news": {
+          "n": 49,
+          "mean_score": 0.3160690861696578,
+          "n_ai": 21,
+          "recall": 0.0,
+          "n_human": 28,
+          "fpr": 0.07142857142857142
+        },
+        "paper_abstract": {
+          "n": 21,
+          "mean_score": 0.4442888962691701,
+          "n_ai": 9,
+          "recall": 0.2222222222222222,
+          "n_human": 12,
+          "fpr": 0.5833333333333334
+        },
+        "poetry": {
+          "n": 33,
+          "mean_score": 0.3875350977127755,
+          "n_ai": 15,
+          "recall": 0.4666666666666667,
+          "n_human": 18,
+          "fpr": 0.2222222222222222
+        },
+        "question": {
+          "n": 56,
+          "mean_score": 0.36468158294495,
+          "n_ai": 32,
+          "recall": 0.21875,
+          "n_human": 24,
+          "fpr": 0.5416666666666666
+        },
+        "review": {
+          "n": 43,
+          "mean_score": 0.35616020034608137,
+          "n_ai": 16,
+          "recall": 0.125,
+          "n_human": 27,
+          "fpr": 0.2222222222222222
+        },
+        "short_form": {
+          "n": 24,
+          "mean_score": 0.3653192691766547,
+          "n_ai": 19,
+          "recall": 0.2631578947368421,
+          "n_human": 5,
+          "fpr": 0.4
+        },
+        "story": {
+          "n": 51,
+          "mean_score": 0.3823117913633166,
+          "n_ai": 26,
+          "recall": 0.2692307692307692,
+          "n_human": 25,
+          "fpr": 0.32
+        }
+      },
+      "by_model": {
+        "01-ai/Yi-1.5-34B-Chat": {
+          "n": 6,
+          "mean_score": 0.379597051894125,
+          "n_ai": 6,
+          "recall": 0.16666666666666666
+        },
+        "CohereForAI/c4ai-command-r-08-2024": {
+          "n": 9,
+          "mean_score": 0.31495776069442005,
+          "n_ai": 9,
+          "recall": 0.0
+        },
+        "GigaChat-Max": {
+          "n": 4,
+          "mean_score": 0.3612594035208309,
+          "n_ai": 4,
+          "recall": 0.25
+        },
+        "Phi-3-mini-128k-instruct": {
+          "n": 2,
+          "mean_score": 0.2849123849123849,
+          "n_ai": 2,
+          "recall": 0.5
+        },
+        "Qwen/QwQ-32B": {
+          "n": 2,
+          "mean_score": 0.3295454545454546,
+          "n_ai": 2,
+          "recall": 0.0
+        },
+        "Qwen/Qwen2.5-72B-Instruct": {
+          "n": 8,
+          "mean_score": 0.36068361335590393,
+          "n_ai": 8,
+          "recall": 0.25
+        },
+        "Qwen/Qwen3-32B": {
+          "n": 9,
+          "mean_score": 0.3990485292033719,
+          "n_ai": 9,
+          "recall": 0.2222222222222222
+        },
+        "WizardLM-2-7B": {
+          "n": 5,
+          "mean_score": 0.3585744996950114,
+          "n_ai": 5,
+          "recall": 0.4
+        },
+        "databricks/dbrx-instruct": {
+          "n": 12,
+          "mean_score": 0.34200154824381795,
+          "n_ai": 12,
+          "recall": 0.25
+        },
+        "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
+          "n": 12,
+          "mean_score": 0.4263991350064718,
+          "n_ai": 12,
+          "recall": 0.4166666666666667
+        },
+        "gemini-2.0-flash": {
+          "n": 5,
+          "mean_score": 0.3785557651851823,
+          "n_ai": 5,
+          "recall": 0.4
+        },
+        "gemini-2.5-flash": {
+          "n": 8,
+          "mean_score": 0.409641354953871,
+          "n_ai": 8,
+          "recall": 0.375
+        },
+        "gemma-1.1-7b-it": {
+          "n": 1,
+          "mean_score": 0.23786407766990292,
+          "n_ai": 1,
+          "recall": 0.0
+        },
+        "gigachat": {
+          "n": 1,
+          "mean_score": 0.3064516129032258,
+          "n_ai": 1,
+          "recall": 0.0
+        },
+        "google/gemma-2-27b-it": {
+          "n": 5,
+          "mean_score": 0.32735699486825415,
+          "n_ai": 5,
+          "recall": 0.0
+        },
+        "gpt-3.5": {
+          "n": 19,
+          "mean_score": 0.26555378626828646,
+          "n_ai": 19,
+          "recall": 0.10526315789473684
+        },
+        "gpt-4": {
+          "n": 4,
+          "mean_score": 0.33521101211568965,
+          "n_ai": 4,
+          "recall": 0.0
+        },
+        "gpt-4-0125-preview": {
+          "n": 2,
+          "mean_score": 0.3876956376956377,
+          "n_ai": 2,
+          "recall": 0.0
+        },
+        "gpt-4-1106-preview": {
+          "n": 2,
+          "mean_score": 0.2573158791746746,
+          "n_ai": 2,
+          "recall": 0.0
+        },
+        "gpt-4.1-2025-04-14": {
+          "n": 9,
+          "mean_score": 0.4533115166027182,
+          "n_ai": 9,
+          "recall": 0.4444444444444444
+        },
+        "gpt-4o": {
+          "n": 14,
+          "mean_score": 0.3204757044487988,
+          "n_ai": 14,
+          "recall": 0.14285714285714285
+        },
+        "human": {
+          "n": 200,
+          "mean_score": 0.37030699185102056,
+          "n_human": 200,
+          "fpr": 0.255
+        },
+        "mistralai/Magistral-Small-2507": {
+          "n": 4,
+          "mean_score": 0.3843814434307127,
+          "n_ai": 4,
+          "recall": 0.0
+        },
+        "mistralai/Ministral-8B-Instruct-2410": {
+          "n": 5,
+          "mean_score": 0.2444220935252619,
+          "n_ai": 5,
+          "recall": 0.0
+        },
+        "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+          "n": 9,
+          "mean_score": 0.4020142874876723,
+          "n_ai": 9,
+          "recall": 0.2222222222222222
+        },
+        "o1-mini-2024-09-12": {
+          "n": 1,
+          "mean_score": 0.22556390977443608,
+          "n_ai": 1,
+          "recall": 0.0
+        },
+        "o3-2025-04-16": {
+          "n": 9,
+          "mean_score": 0.483762667966848,
+          "n_ai": 9,
+          "recall": 0.6666666666666666
+        },
+        "ruGPT": {
+          "n": 3,
+          "mean_score": 0.25756882571733575,
+          "n_ai": 3,
+          "recall": 0.0
+        },
+        "tiiuae/Falcon3-10B-Instruct": {
+          "n": 7,
+          "mean_score": 0.3465229969920946,
+          "n_ai": 7,
+          "recall": 0.14285714285714285
+        },
+        "unsloth/Llama-3.3-70B-Instruct": {
+          "n": 15,
+          "mean_score": 0.32248374255751105,
+          "n_ai": 15,
+          "recall": 0.06666666666666667
+        },
+        "yagpt": {
+          "n": 2,
+          "mean_score": 0.23106416275430358,
+          "n_ai": 2,
+          "recall": 0.0
+        },
+        "yandex/YandexGPT-5-Lite-8B-instruct": {
+          "n": 4,
+          "mean_score": 0.2672027825975194,
+          "n_ai": 4,
+          "recall": 0.0
+        },
+        "zai-org/GLM-4-32B-0414": {
+          "n": 2,
+          "mean_score": 0.3672839506172839,
+          "n_ai": 2,
+          "recall": 0.0
+        }
+      }
+    }
   },
-  "elapsed_seconds": 40.17
+  "pool": {
+    "rows": 90950,
+    "by_lang_label": {
+      "eng/ai": 23380,
+      "eng/human": 15049,
+      "ru/ai": 31104,
+      "ru/human": 21417
+    }
+  },
+  "sampling": "файл test.jsonl (iitolstykh/LLMTrace_classification, 318 МБ) прочитан по HTTP в память целиком (на диск не сохраняется); простая случайная выборка без возвращения seed=42: по 100 human и 100 ai для каждого языка (eng, ru)",
+  "seconds": 241.5
 }

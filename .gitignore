@@ -35,3 +35,7 @@ models_dev/
 results_dev/
 kaggle/output/
 kaggle/working/
+
+# Пакетные отчёты по письмам кейса содержат текст писем Заказчика (п. 4.5.2 ТЗ)
+results/batch/emails/
+results/*.log

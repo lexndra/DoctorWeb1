@@ -1,0 +1,227 @@
+{
+  "method": "features",
+  "n_test": 2047,
+  "threshold": 0.5108,
+  "sentence_threshold": 0.2,
+  "calibration_source": "val",
+  "sec_per_text": 0.0014,
+  "roc_auc": 0.9079199917172394,
+  "roc_auc_ci95": {
+    "low": 0.8954995757718788,
+    "high": 0.9204444759648056,
+    "width": 0.024944900192926833,
+    "iters": 1000
+  },
+  "roc_auc_ci_width": 0.024944900192926833,
+  "precision": 0.8894783377541998,
+  "recall": 0.8172217709179529,
+  "f1": 0.8518204911092294,
+  "accuracy": 0.8290180752320468,
+  "fpr_human": 0.15318627450980393,
+  "fpr_marketing": 0.010309278350515464,
+  "n_marketing_human": 97,
+  "roc_auc_partial": 0.8318687230989956,
+  "char_partial": {
+    "precision": 0.587043403262837,
+    "recall": 0.924342262559414,
+    "f1": 0.7180550138370387
+  },
+  "char_f1_partial": 0.7180550138370387,
+  "char_all_ai": {
+    "precision": 0.867330631423459,
+    "recall": 0.9410547955501309,
+    "f1": 0.9026899220201349
+  },
+  "zone_recall": 0.9740048740861088,
+  "masking": {
+    "zero_width": {
+      "roc_auc": 0.9078901259935331,
+      "recall": 0.8172217709179529
+    },
+    "homoglyphs": {
+      "roc_auc": 0.9083560312833501,
+      "recall": 0.818034118602762
+    },
+    "typos": {
+      "roc_auc": 0.8948736480782404,
+      "recall": 0.7952883834281073
+    },
+    "casual_rewrite": {
+      "roc_auc": 0.9052947946034627,
+      "recall": 0.8107229894394801
+    }
+  },
+  "masking_auc_min": 0.8948736480782404,
+  "by_language": {
+    "en": {
+      "n": 1298,
+      "roc_auc": 0.920366776728649,
+      "precision": 0.9239482200647249,
+      "recall": 0.7800546448087432,
+      "f1": 0.845925925925926,
+      "accuracy": 0.8397534668721109,
+      "fpr": 0.08303886925795052
+    },
+    "ru": {
+      "n": 749,
+      "roc_auc": 0.8747254509018036,
+      "precision": 0.847953216374269,
+      "recall": 0.8717434869739479,
+      "f1": 0.8596837944664032,
+      "accuracy": 0.8104138851802403,
+      "fpr": 0.312
+    }
+  },
+  "by_email_type": {
+    "corporate": {
+      "n": 277,
+      "roc_auc": 0.9146730462519935,
+      "precision": 0.9047619047619048,
+      "recall": 0.6666666666666666,
+      "f1": 0.7676767676767676,
+      "accuracy": 0.9169675090252708,
+      "fpr": 0.01818181818181818
+    },
+    "marketing": {
+      "n": 273,
+      "roc_auc": 0.9634489222118089,
+      "precision": 0.9938271604938271,
+      "recall": 0.9147727272727273,
+      "f1": 0.9526627218934911,
+      "accuracy": 0.9413919413919414,
+      "fpr": 0.010309278350515464
+    },
+    "text": {
+      "n": 1497,
+      "roc_auc": 0.8657394950221085,
+      "precision": 0.8705501618122977,
+      "recall": 0.8086172344689379,
+      "f1": 0.8384415584415584,
+      "accuracy": 0.7922511690046761,
+      "fpr": 0.24048096192384769
+    }
+  },
+  "by_source": {
+    "customer_case": {
+      "n": 144,
+      "roc_auc": null,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "fpr": null
+    },
+    "dw1_generated": {
+      "n": 89,
+      "roc_auc": null,
+      "precision": 1.0,
+      "recall": 0.6179775280898876,
+      "f1": 0.7638888888888888,
+      "accuracy": 0.6179775280898876,
+      "fpr": null
+    },
+    "enron_aeslc": {
+      "n": 220,
+      "roc_auc": null,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9818181818181818,
+      "fpr": 0.01818181818181818
+    },
+    "enron_newsletters": {
+      "n": 97,
+      "roc_auc": null,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9896907216494846,
+      "fpr": 0.010309278350515464
+    },
+    "llmtrace_detection": {
+      "n": 1497,
+      "roc_auc": 0.8657394950221085,
+      "precision": 0.8705501618122977,
+      "recall": 0.8086172344689379,
+      "f1": 0.8384415584415584,
+      "accuracy": 0.7922511690046761,
+      "fpr": 0.24048096192384769
+    }
+  },
+  "email_matched": {
+    "n": 406,
+    "roc_auc": 0.8809059653351292,
+    "precision": 0.9166666666666666,
+    "recall": 0.6179775280898876,
+    "f1": 0.738255033557047,
+    "accuracy": 0.9039408866995073,
+    "fpr": 0.015772870662460567
+  },
+  "customer_case_recall": 1.0,
+  "customer_case_n": 144,
+  "recall_by_generation_method": {
+    "external_ai": 0.9456521739130435,
+    "external_mixed": 0.6867469879518072,
+    "full": 0.9,
+    "partial_append": 0.36363636363636365,
+    "partial_insert": 0.15384615384615385,
+    "partial_rewrite": 0.0,
+    "variation": 1.0
+  },
+  "tz_compliance": {
+    "roc_auc": {
+      "title": "ROC-AUC по бинарной метке",
+      "value": 0.9079199917172394,
+      "requirement": ">= 0.7",
+      "pass": true
+    },
+    "f1": {
+      "title": "F1-мера на калиброванном пороге",
+      "value": 0.8518204911092294,
+      "requirement": ">= 0.7",
+      "pass": true
+    },
+    "fpr_human": {
+      "title": "FPR на письмах, написанных человеком",
+      "value": 0.15318627450980393,
+      "requirement": "<= 0.2",
+      "pass": true
+    },
+    "fpr_marketing": {
+      "title": "FPR на легитимных маркетинговых рассылках",
+      "value": 0.010309278350515464,
+      "requirement": "<= 0.2",
+      "pass": true
+    },
+    "roc_auc_partial": {
+      "title": "ROC-AUC: частично сгенерированные vs человек",
+      "value": 0.8318687230989956,
+      "requirement": ">= 0.7",
+      "pass": true
+    },
+    "char_f1_partial": {
+      "title": "Локализация фрагментов, F1 по символам (частично сгенерированные)",
+      "value": 0.7180550138370387,
+      "requirement": ">= 0.6",
+      "pass": true
+    },
+    "zone_recall": {
+      "title": "Полнота выявления сгенерированных зон",
+      "value": 0.9740048740861088,
+      "requirement": "не предъявляется",
+      "pass": null
+    },
+    "masking_auc_min": {
+      "title": "Сохранность ROC-AUC при маскировке (минимум по сценариям)",
+      "value": 0.8948736480782404,
+      "requirement": "не предъявляется",
+      "pass": null
+    },
+    "roc_auc_ci_width": {
+      "title": "Ширина 95% ДИ ROC-AUC (бутстреп, 1000 итераций)",
+      "value": 0.024944900192926833,
+      "requirement": "не предъявляется",
+      "pass": null
+    }
+  }
+}

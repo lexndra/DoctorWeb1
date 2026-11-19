@@ -1,802 +1,3002 @@
 [
-  {
-    "id": 1,
-    "caption": "School buses parked along the curb of a city street.",
-    "true_label": 1,
-    "ai_probability": 0.1284,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 2,
-    "caption": "A distant airplane high up into the sky.",
-    "true_label": 0,
-    "ai_probability": 0.0614,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 3,
-    "caption": "A herd of cattle laying in the grass on the ground.",
-    "true_label": 1,
-    "ai_probability": 0.1745,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 4,
-    "caption": "A dog on a leash in front of a closed door",
-    "true_label": 0,
-    "ai_probability": 0.0568,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 5,
-    "caption": "The large winged bird is looking for some prey.",
-    "true_label": 1,
-    "ai_probability": 0.0141,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 6,
-    "caption": "This motorcycle is parked on the side of the grass.",
-    "true_label": 1,
-    "ai_probability": 0.2698,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 7,
-    "caption": "A bus is passing through an intersection beside a building.",
-    "true_label": 1,
-    "ai_probability": 0.4366,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 8,
-    "caption": "Shears and knives are in a cutting block.",
-    "true_label": 1,
-    "ai_probability": 0.0239,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 9,
-    "caption": "The yellow fire hydrant is next to the bushes.",
-    "true_label": 1,
-    "ai_probability": 0.2266,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 10,
-    "caption": "a man standing in a bathroom looking into a mirror",
-    "true_label": 1,
-    "ai_probability": 0.0879,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 11,
-    "caption": "A white passenger train traveling down train tracks.",
-    "true_label": 1,
-    "ai_probability": 0.059,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 12,
-    "caption": "a street light is hanging on a pole",
-    "true_label": 1,
-    "ai_probability": 0.0632,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 13,
-    "caption": "a group of cows standing on the side of a road.",
-    "true_label": 1,
-    "ai_probability": 0.476,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 14,
-    "caption": "a person sitting at a table with a laptop",
-    "true_label": 1,
-    "ai_probability": 0.3107,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 15,
-    "caption": "A kitchen refrigerator and bed mattress outside an apartment.",
-    "true_label": 1,
-    "ai_probability": 0.0358,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 16,
-    "caption": "A beautiful woman playing with a small green bird.",
-    "true_label": 1,
-    "ai_probability": 0.0322,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 17,
-    "caption": "A vast and grassy field with sheep grazing.",
-    "true_label": 1,
-    "ai_probability": 0.2013,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 18,
-    "caption": "The back side of an airplane sitting on a runway. ",
-    "true_label": 1,
-    "ai_probability": 0.8005,
-    "predicted_label": 1,
-    "correct": true
-  },
-  {
-    "id": 19,
-    "caption": "street lights on a city street with no one around",
-    "true_label": 1,
-    "ai_probability": 0.0551,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 20,
-    "caption": "A blue street sign sitting next to a road.",
-    "true_label": 1,
-    "ai_probability": 0.0206,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 21,
-    "caption": "a man is doing a jump on his board",
-    "true_label": 1,
-    "ai_probability": 0.0449,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 22,
-    "caption": "A TV sitting on top of a counter inside of a store.",
-    "true_label": 1,
-    "ai_probability": 0.5446,
-    "predicted_label": 1,
-    "correct": true
-  },
-  {
-    "id": 23,
-    "caption": "a large air plane on a snowy surface with a sky background",
-    "true_label": 0,
-    "ai_probability": 0.1033,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 24,
-    "caption": "there is a man and a woman standing in a kitchen ",
-    "true_label": 1,
-    "ai_probability": 0.2717,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 25,
-    "caption": "A bus parked in front of a building net to a traffic light.",
-    "true_label": 1,
-    "ai_probability": 0.3604,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 26,
-    "caption": "a air plane that is a model conected to a pole.",
-    "true_label": 1,
-    "ai_probability": 0.1139,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 27,
-    "caption": "A woman walking on a city street in a red coat. ",
-    "true_label": 0,
-    "ai_probability": 0.1644,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 28,
-    "caption": "A cat laying on to of a car roof.",
-    "true_label": 1,
-    "ai_probability": 0.3319,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 29,
-    "caption": "A photo of a skinny road between buildings.",
-    "true_label": 1,
-    "ai_probability": 0.0098,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 30,
-    "caption": "A small kitchen with a stove and counters.",
-    "true_label": 1,
-    "ai_probability": 0.0032,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 31,
-    "caption": "Two large trains at a modernized train station, people walking about.",
-    "true_label": 1,
-    "ai_probability": 0.1007,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 32,
-    "caption": "A bathroom with a large bathtub and sink under a large mirror.",
-    "true_label": 0,
-    "ai_probability": 0.0766,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 33,
-    "caption": "A stove and a sink in a room.",
-    "true_label": 1,
-    "ai_probability": 0.0076,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 34,
-    "caption": "a yellow bus that is next to a curb",
-    "true_label": 1,
-    "ai_probability": 0.2268,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 35,
-    "caption": "Two big white city buses parked near the curb.",
-    "true_label": 1,
-    "ai_probability": 0.1005,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 36,
-    "caption": "A small kitten sitting on a chair next to a small dog.",
-    "true_label": 1,
-    "ai_probability": 0.4872,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 37,
-    "caption": "People standing around two model stunt planes on grass.",
-    "true_label": 1,
-    "ai_probability": 0.2037,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 38,
-    "caption": "A yellow fire hydrant sitting next to a manhole with steam pouring out of it.",
-    "true_label": 0,
-    "ai_probability": 0.3186,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 39,
-    "caption": "A view into a bathroom with a white toilet, tub and a wooden cabinet sink.",
-    "true_label": 1,
-    "ai_probability": 0.0142,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 40,
-    "caption": "A picnic table on a porch overlooking a body of water.",
-    "true_label": 1,
-    "ai_probability": 0.0135,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 41,
-    "caption": "A ladder sitting against a bathroom wall next to a toilet.",
-    "true_label": 1,
-    "ai_probability": 0.0061,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 42,
-    "caption": "A woman holding onto a pink bag of luggage.",
-    "true_label": 1,
-    "ai_probability": 0.219,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 43,
-    "caption": "there is a all black motorcycle that is parked on the street",
-    "true_label": 1,
-    "ai_probability": 0.3339,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 44,
-    "caption": "A motorbike sitting in front of a wine display case",
-    "true_label": 1,
-    "ai_probability": 0.1041,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 45,
-    "caption": "A green and yellow railroad train pulling into the station",
-    "true_label": 1,
-    "ai_probability": 0.2848,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 46,
-    "caption": "Pelicans and sea gulls are sitting on the beach.",
-    "true_label": 1,
-    "ai_probability": 0.2614,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 47,
-    "caption": "A yellow tax sitting next to a car with lots of yellow bananas.",
-    "true_label": 1,
-    "ai_probability": 0.3102,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 48,
-    "caption": "A sign on a road that resembles a chess board.",
-    "true_label": 1,
-    "ai_probability": 0.0724,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 49,
-    "caption": "A group of people standing outside of a white store.",
-    "true_label": 0,
-    "ai_probability": 0.0057,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 50,
-    "caption": "Rows of sitting benches in old looking church",
-    "true_label": 0,
-    "ai_probability": 0.0955,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 51,
-    "caption": "A man is almost touching the ground while riding his motorcycle.",
-    "true_label": 1,
-    "ai_probability": 0.1665,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 52,
-    "caption": "A large purple and red passenger jet flying through a blue sky..",
-    "true_label": 1,
-    "ai_probability": 0.0471,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 53,
-    "caption": "Two giraffe standing next to each other on a grassy field.",
-    "true_label": 0,
-    "ai_probability": 0.1675,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 54,
-    "caption": "A parking lot has many school buses parked in it.",
-    "true_label": 1,
-    "ai_probability": 0.8611,
-    "predicted_label": 1,
-    "correct": true
-  },
-  {
-    "id": 55,
-    "caption": "An orange and white giraffe standing next to a wall.",
-    "true_label": 1,
-    "ai_probability": 0.5264,
-    "predicted_label": 1,
-    "correct": true
-  },
-  {
-    "id": 56,
-    "caption": "A dirty bathroom consisting of a toilet, bath tub and sink. ",
-    "true_label": 1,
-    "ai_probability": 0.0797,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 57,
-    "caption": "A silver bus on street next to buildings.",
-    "true_label": 1,
-    "ai_probability": 0.1457,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 58,
-    "caption": "A train drives along the tracks amidst many cranes.",
-    "true_label": 1,
-    "ai_probability": 0.0504,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 59,
-    "caption": "A library filled with wooden tables with apple laptop computers on them.",
-    "true_label": 1,
-    "ai_probability": 0.2117,
-    "predicted_label": 0,
-    "correct": false
-  },
-  {
-    "id": 60,
-    "caption": "The large bird has a red face and black feathers.",
-    "true_label": 0,
-    "ai_probability": 0.1297,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 61,
-    "caption": "TWO ELECTRIC TRAIN COMPARTMENTS STANDING NEAR TO A BUILDING.",
-    "true_label": 0,
-    "ai_probability": 0.2542,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 62,
-    "caption": "a white toilet an cabinet in a bathroom",
-    "true_label": 0,
-    "ai_probability": 0.0525,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 63,
-    "caption": "Several books are stacked on a table. ",
-    "true_label": 0,
-    "ai_probability": 0.0219,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 64,
-    "caption": "People get on a bus on a street next to a building. ",
-    "true_label": 0,
-    "ai_probability": 0.1263,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 65,
-    "caption": "A bus driving down a street in front of a motorcycle.",
-    "true_label": 0,
-    "ai_probability": 0.9068,
-    "predicted_label": 1,
-    "correct": false
-  },
-  {
-    "id": 66,
-    "caption": "A man sitting on a stone block talking on a cell phone.",
-    "true_label": 0,
-    "ai_probability": 0.0399,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 67,
-    "caption": "A distant view from high up in the sky in a window.",
-    "true_label": 0,
-    "ai_probability": 0.0611,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 68,
-    "caption": "A parking lot has many school buses parked in it.",
-    "true_label": 0,
-    "ai_probability": 0.1364,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 69,
-    "caption": "A man getting a drink from a water fountain that is a toilet.",
-    "true_label": 0,
-    "ai_probability": 0.0567,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 70,
-    "caption": "A blue cake with yellow stars around it.",
-    "true_label": 0,
-    "ai_probability": 0.0102,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 71,
-    "caption": "A big dog sticking its head out a car window.",
-    "true_label": 0,
-    "ai_probability": 0.0643,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 72,
-    "caption": "A white pickup truck parked near a white brick building.",
-    "true_label": 0,
-    "ai_probability": 0.0061,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 73,
-    "caption": "People standing around two model stunt planes on grass.",
-    "true_label": 0,
-    "ai_probability": 0.4746,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 74,
-    "caption": "A picture of a room with a TV and a bathroom.",
-    "true_label": 0,
-    "ai_probability": 0.0207,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 75,
-    "caption": "A wooden bench in front of some trees.",
-    "true_label": 0,
-    "ai_probability": 0.0037,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 76,
-    "caption": "A computer desk topped with a desktop computer and a scanner.",
-    "true_label": 0,
-    "ai_probability": 0.1297,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 77,
-    "caption": "a computer on a desk surrounded by papers",
-    "true_label": 0,
-    "ai_probability": 0.0779,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 78,
-    "caption": "A baseball player swinging a ball at a bat.",
-    "true_label": 0,
-    "ai_probability": 0.2202,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 79,
-    "caption": "A three wheeled motorcycle parked with some other old vehicles.",
-    "true_label": 0,
-    "ai_probability": 0.5381,
-    "predicted_label": 1,
-    "correct": false
-  },
-  {
-    "id": 80,
-    "caption": "A picture of many brick building and a large sign outside.",
-    "true_label": 0,
-    "ai_probability": 0.1542,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 81,
-    "caption": "A person with a helmet on a blue motorcycle.",
-    "true_label": 0,
-    "ai_probability": 0.2169,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 82,
-    "caption": "a big giraffe walks across a dirt road ",
-    "true_label": 0,
-    "ai_probability": 0.0626,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 83,
-    "caption": "A woman opening up the refrigerator looking for something.",
-    "true_label": 0,
-    "ai_probability": 0.0998,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 84,
-    "caption": "A train engine and passenger cars pulling in to a station.",
-    "true_label": 0,
-    "ai_probability": 0.0221,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 85,
-    "caption": "The kitchen with utensils on the wall is very old.",
-    "true_label": 0,
-    "ai_probability": 0.0517,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 86,
-    "caption": "A couple of street signs mounted to the top of a metal pole.",
-    "true_label": 0,
-    "ai_probability": 0.0871,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 87,
-    "caption": "A woman in red sitting on a park bench.",
-    "true_label": 0,
-    "ai_probability": 0.1233,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 88,
-    "caption": "A bus is passing through an intersection beside a building.",
-    "true_label": 0,
-    "ai_probability": 0.023,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 89,
-    "caption": "A tall wooden pole with two street signs hanging from it.",
-    "true_label": 0,
-    "ai_probability": 0.0375,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 90,
-    "caption": "A clean, organized bathroom with accessories in it.",
-    "true_label": 0,
-    "ai_probability": 0.0491,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 91,
-    "caption": "a man standing next to a a little passenger  train on the track",
-    "true_label": 0,
-    "ai_probability": 0.0972,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 92,
-    "caption": "Two large giraffe standing next to each other and an ostrich.",
-    "true_label": 0,
-    "ai_probability": 0.2004,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 93,
-    "caption": "A stop sign with a green street sign posted above it.",
-    "true_label": 0,
-    "ai_probability": 0.0131,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 94,
-    "caption": "A diner with large pepsi signs on the front of it.",
-    "true_label": 0,
-    "ai_probability": 0.0608,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 95,
-    "caption": "a tiled bathroom with a tub inside of it ",
-    "true_label": 0,
-    "ai_probability": 0.037,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 96,
-    "caption": "A bird walks on sand during the day",
-    "true_label": 0,
-    "ai_probability": 0.0846,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 97,
-    "caption": "A parked black motorcycle in front of a brown house.",
-    "true_label": 0,
-    "ai_probability": 0.1178,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 98,
-    "caption": "A man riding a bike down the middle of a street.",
-    "true_label": 0,
-    "ai_probability": 0.0357,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 99,
-    "caption": "This bathroom has a sleek counter top that wraps around the toilet.",
-    "true_label": 0,
-    "ai_probability": 0.0911,
-    "predicted_label": 0,
-    "correct": true
-  },
-  {
-    "id": 100,
-    "caption": "A sea gull walking along the sand and surf.",
-    "true_label": 0,
-    "ai_probability": 0.1069,
-    "predicted_label": 0,
-    "correct": true
-  }
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 854,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.106129,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 805,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.132472,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 782,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.375751,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1027,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.016029,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 11,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.111634,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 688,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.00831,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 938,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.0535,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 275,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.183415,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1153,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.079398,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 631,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.078374,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 502,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.221374,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 902,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.700788,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 691,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.023232,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 324,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.07041,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 435,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.77974,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1144,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.02795,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 360,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.445518,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1113,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.233769,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 171,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.117094,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 697,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.12528,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 133,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.090214,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 629,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.024057,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 901,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.024693,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 621,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.057583,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 698,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.023689,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 941,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.105074,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 28,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.056723,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 712,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.034685,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 755,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.131327,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1057,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.140763,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 447,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.132344,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 647,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.18891,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 221,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.015238,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1066,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.005523,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 416,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.041836,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 184,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.02587,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 343,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.049255,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 808,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.304241,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 562,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.051067,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 793,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.358499,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 152,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.266253,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 441,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.016884,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1018,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.155209,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 32,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.015318,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 290,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.004037,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1210,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.063094,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1192,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.472892,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1101,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.026935,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 769,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.252818,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 17,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.132751,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 822,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.112878,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 719,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.090759,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 318,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.09684,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 0,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.446474,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1115,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.582952,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1142,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.751356,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 492,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.026143,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 0,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.070755,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 411,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.047065,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 357,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.019482,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 907,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.018701,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 944,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.819905,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 179,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.168414,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 252,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.197912,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 764,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.068567,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 297,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.056856,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 904,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.071443,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 877,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.247847,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1203,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.056403,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 88,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.363221,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 792,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.030712,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 588,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.11127,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 791,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.512414,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 197,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.166571,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 207,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.005822,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 648,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.148705,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 719,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.04818,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 376,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.255921,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 527,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.012526,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 126,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.383376,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1015,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.002629,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 170,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.257629,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 667,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.140485,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 436,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.24174,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1116,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.014449,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 291,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.304644,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 13,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.308586,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 471,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.663613,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 746,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.087491,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 346,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.015857,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 414,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.32204,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 419,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.43477,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 833,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.354167,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1058,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.582173,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 417,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.098736,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 490,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.094613,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 461,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.264627,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 229,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.250022,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 64,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.155708,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 760,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.112328,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 704,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.835883,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1057,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.962287,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 420,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.014357,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 902,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.207566,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 620,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.033748,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1013,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.22439,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 182,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.678435,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 995,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.249848,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 404,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.08092,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 650,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.037059,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1189,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.106936,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1125,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.005563,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 378,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.280858,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 866,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.040097,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 194,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.177989,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 405,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.118476,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 76,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.167873,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1194,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.012238,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 178,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.29718,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 977,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.157041,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1204,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.32465,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 573,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.335188,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1169,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.036388,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 868,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.103187,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 976,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.772228,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 663,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.075313,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 399,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.094201,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 824,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.006969,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 19,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.107308,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 9,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.261444,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1052,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.3501,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1020,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.190155,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 973,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.043295,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 327,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.003488,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 568,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.116679,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 196,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.42063,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 36,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.448056,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 421,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.4676,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 641,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.031984,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 305,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.017257,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 799,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.028415,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 33,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.128887,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1146,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.014524,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1010,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.004686,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1060,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.566541,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 736,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.081635,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 847,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.012656,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 802,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.183403,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 924,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.023727,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 354,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.065984,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 247,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.081174,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1190,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.10006,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 781,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.029284,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 458,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.179029,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 825,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.202074,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 627,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.061252,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 373,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.068606,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 951,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.024443,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 108,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.494847,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 721,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.02363,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1188,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.108104,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 864,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.507628,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 581,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.396308,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 89,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.033099,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1222,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.07537,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 701,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.032631,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 230,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.020793,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 993,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.037056,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 323,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.008145,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 439,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.042635,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 260,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.291701,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 408,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.530129,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1152,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.424728,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1049,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.02552,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 853,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.02715,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1031,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.026992,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 375,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.011197,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 186,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.030754,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 843,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.066065,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 20,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.041215,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 396,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.704127,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 971,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.130318,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 510,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.347212,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 479,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.022866,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 11,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.463908,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 456,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.820958,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 80,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.093644,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 86,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.414685,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 10,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.02487,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 578,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.825661,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 727,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.037044,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1178,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.435208,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 843,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.657251,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 66,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.205382,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1204,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.319824,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 313,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.267422,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1053,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.978806,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 600,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.118274,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 400,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.037161,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 144,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.031027,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 364,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.125517,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 8,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.003346,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 379,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.011908,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 937,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.097181,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 445,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.027332,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 665,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.263303,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 79,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.026154,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 959,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.405205,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 595,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.079692,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 84,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.021286,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 807,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.01203,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 802,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.069162,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 711,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.024054,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 168,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.130455,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 831,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.386888,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 547,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.407299,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 293,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.098572,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 945,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.003398,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1011,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.097782,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 276,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.152462,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 76,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.848451,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1022,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.031737,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 948,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.393628,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1015,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.241113,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 561,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.516131,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 283,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.029238,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 274,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.006057,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 316,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.057182,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 135,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.294989,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 849,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.8413,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 592,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.003762,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 801,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.151765,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1022,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.030041,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1019,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.002612,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 691,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.308595,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 538,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.019101,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 518,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.06611,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 213,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.003515,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 664,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.67648,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1044,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.125099,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 514,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.253965,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1028,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.048458,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 850,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.209199,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 2,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.038704,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 711,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.81402,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 143,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.031046,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 792,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.028594,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1137,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.089414,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 245,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.140383,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 957,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.203689,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 222,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.288736,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 940,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.156603,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1194,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.197966,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1090,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.09964,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 608,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.379738,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 445,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.127091,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 142,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.333976,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 761,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.054481,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 742,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.006401,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 481,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.249995,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 774,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.077351,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 314,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.20278,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 428,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.053101,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 795,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.542877,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 794,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.615581,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 10,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.501121,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 15,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.115592,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1015,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.785972,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 980,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.830965,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 20,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.210144,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 642,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.913084,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 89,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.167374,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 686,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.070439,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 329,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.174289,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 960,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.387261,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 1007,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.023797,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1160,
+  "label_a": 1,
+  "label_b": 5,
+  "generator": "Midjourney v6",
+  "score_artificial": 0.101052,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 646,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.023421,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 460,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.428426,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 278,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.249674,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1009,
+  "label_a": 1,
+  "label_b": 2,
+  "generator": "SDXL",
+  "score_artificial": 0.143003,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 37,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.113429,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 97,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.269242,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 204,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.388697,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1193,
+  "label_a": 1,
+  "label_b": 3,
+  "generator": "SD 3",
+  "score_artificial": 0.046621,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 1071,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.781618,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 113,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.015943,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00006-of-00008.parquet",
+  "row_group": 0,
+  "row_in_group": 759,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.007182,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 78,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.154643,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1100,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.229912,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 425,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.131537,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 643,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.01099,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 262,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.029319,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 1205,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.963421,
+  "pred": 1
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 268,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.056583,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 69,
+  "label_a": 1,
+  "label_b": 1,
+  "generator": "SD 2.1",
+  "score_artificial": 0.036016,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 414,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.048972,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00000-of-00008.parquet",
+  "row_group": 3,
+  "row_in_group": 393,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.03121,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 58,
+  "label_a": 1,
+  "label_b": 4,
+  "generator": "DALL-E 3",
+  "score_artificial": 0.24933,
+  "pred": 0
+ },
+ {
+  "shard": "data/test-00005-of-00008.parquet",
+  "row_group": 1,
+  "row_in_group": 335,
+  "label_a": 0,
+  "label_b": 0,
+  "generator": "real (MS-COCO)",
+  "score_artificial": 0.069971,
+  "pred": 0
+ }
 ]

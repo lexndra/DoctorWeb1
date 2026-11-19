@@ -1,13 +1,13 @@
-"""веб-интерфейс для существующего EmailAnalysisPipeline.
+"""Веб-интерфейс для EmailAnalysisPipeline.
 
-Запуск: python app.py
+Запуск: python app.py  (или uvicorn app:app --host 0.0.0.0 --port 5000)
 Сайт: http://127.0.0.1:5000
+Настройки метода и порога — через .env / переменные окружения (см. .env.example).
 """
 
 from __future__ import annotations
 
 import logging
-import os
 import tempfile
 import threading
 import time
@@ -34,19 +34,41 @@ def get_pipeline():
     if _pipeline is None:
         with _pipeline_init_lock:
             if _pipeline is None:
-                checkpoint = os.getenv("MODEL_CHECKPOINT") or str(BASE_DIR / "tnc_dbgc_coat_best.pt")
-                if not Path(checkpoint).is_file():
-                    raise FileNotFoundError(checkpoint)
-
                 # Импорт внутри функции: главная страница доступна даже без ML-библиотек.
                 from src.pipeline import EmailAnalysisPipeline
-                _pipeline = EmailAnalysisPipeline(
-                    checkpoint_path=checkpoint,
-                    threshold=0.40,
-                    # Включается явно, поскольку OCR и детектор картинок тяжёлые.
-                    enable_images=os.getenv("ENABLE_IMAGES", "0") == "1",
-                )
+
+                # Метод, порог, каталог моделей и анализ изображений задаются через .env / окружение
+                # (DW1_METHOD, DW1_THRESHOLD, DW1_MODELS_DIR, DW1_ENABLE_IMAGES; см. .env.example).
+                _pipeline = EmailAnalysisPipeline()
     return _pipeline
+
+
+def _model_status() -> dict:
+    """Какие файлы моделей нужны выбранному методу и найдены ли они (без загрузки модели)."""
+    from src.config import Settings
+
+    settings = Settings()
+    files = {}
+    if settings.method in ("features", "combined"):
+        for name in ("feature_model.json", "calibration.json"):
+            files[name] = (settings.models_dir / name).is_file()
+    if settings.method in ("lm", "combined"):
+        from src.detectors.lm_model import find_lm_checkpoint
+
+        ckpt = find_lm_checkpoint(settings.lm_checkpoint)
+        files["lm_checkpoint"] = ckpt is not None
+    try:
+        threshold = round(settings.resolved_threshold(), 4)
+    except Exception:
+        threshold = None
+    return {
+        "method": settings.method,
+        "threshold": threshold,
+        "models_dir": settings.models_dir.name,
+        "model_files": files,
+        "model_file_found": all(files.values()) if files else False,
+        "images_enabled": settings.enable_images,
+    }
 
 
 def _safe_filename(name: str) -> str:
@@ -79,8 +101,9 @@ def create_app(config: dict | None = None) -> FastAPI:
 
     @app.get("/api/health")
     def health():
-        checkpoint = Path(os.getenv("MODEL_CHECKPOINT") or BASE_DIR / "tnc_dbgc_coat_best.pt")
-        return {"model_file_found": checkpoint.is_file()}
+        status = _model_status()
+        status["pipeline_loaded"] = _pipeline is not None
+        return status
 
     @app.post("/api/analyze")
     def analyze(file: UploadFile | None = File(default=None)):
@@ -102,22 +125,28 @@ def create_app(config: dict | None = None) -> FastAPI:
             # В тестах можно передать лёгкую подмену реальной модели.
             provider = app.state.config.get("PIPELINE_PROVIDER", get_pipeline)
             pipeline = provider()
-        except FileNotFoundError:
+        except FileNotFoundError as exc:
+            LOGGER.warning("Файлы модели не найдены: %s", exc)
             return error_response(
-                "Веса нейросети не найдены. Поместите tnc_dbgc_coat_best.pt "
-                "в корень проекта или задайте переменную MODEL_CHECKPOINT.",
+                "Обученная модель не найдена (models/feature_model.json и models/calibration.json "
+                "для метода features или веса .pt для метода lm). Выполните: python cli.py train "
+                "или укажите каталог моделей в переменной DW1_MODELS_DIR.",
                 503,
             )
         except (ImportError, ModuleNotFoundError):
             LOGGER.exception("Не удалось импортировать зависимости модели")
-            return error_response("Не установлены зависимости нейросети. Выполните pip install -r requirements-web.txt.", 503)
+            return error_response(
+                "Не установлены зависимости выбранного метода. Выполните pip install -r requirements.txt "
+                "(для DW1_METHOD=lm|combined также requirements-lm.txt).",
+                503,
+            )
         except Exception:
             LOGGER.exception("Не удалось загрузить модель")
             return error_response("Не удалось запустить нейросеть. Подробности смотрите в консоли сервера.", 503)
 
         try:
             started = time.perf_counter()
-            # Не допускаем параллельных инференсов одной тяжёлой модели.
+            # Не допускаем параллельных инференсов одного экземпляра модели.
             with _inference_lock:
                 if suffix == ".eml":
                     # EML-парсер принимает путь; файл удаляется сразу после анализа.

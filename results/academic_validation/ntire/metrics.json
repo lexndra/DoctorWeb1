@@ -1,0 +1,56 @@
+{
+  "n": 300,
+  "n_ai": 150,
+  "n_human": 150,
+  "pool": {
+    "repo_gated": false,
+    "shards": [
+      "shard_0.zip",
+      "shard_1.zip",
+      "shard_2.zip",
+      "shard_3.zip",
+      "shard_4.zip",
+      "shard_5.zip"
+    ],
+    "shard_used": "shard_0.zip",
+    "shard_rows": 50000,
+    "shard_label_counts": {
+      "0": 17982,
+      "1": 32018
+    }
+  },
+  "methods": {
+    "image": {
+      "threshold_source": "фиксированный априорный порог 0.5 (score метки 'artificial'), на NTIRE не подбирался",
+      "info": {
+        "model": "umm-maybe/AI-image-detector",
+        "device": "mps",
+        "seconds": 57.7,
+        "download_seconds": 310.9,
+        "download_mb": 112.4
+      },
+      "overall": {
+        "roc_auc": 0.7148,
+        "roc_auc_ci95": [
+          0.6532467657802679,
+          0.7726378100248639
+        ],
+        "threshold": 0.5,
+        "precision": 0.71875,
+        "recall": 0.46,
+        "f1": 0.5609756097560976,
+        "fpr": 0.18,
+        "accuracy": 0.64,
+        "tp": 69,
+        "fp": 27,
+        "tn": 123,
+        "fn": 81,
+        "n": 300,
+        "n_pos": 150,
+        "n_neg": 150
+      }
+    }
+  },
+  "sampling": "архивы не скачиваются целиком (6 zip по 11–21 ГБ): случайно (seed=42) выбран shard_0.zip, по HTTP прочитаны его оглавление и labels.csv (50000 изображений), затем простая случайная выборка 150 реальных + 150 сгенерированных; загружено ≈112 МБ, только в памяти",
+  "seconds": 377.0
+}

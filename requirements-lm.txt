@@ -1,0 +1,8 @@
+# Языковая модель TNC-DBGC* (mDeBERTa-v3 + BiGRU + CRF): DW1_METHOD=lm|combined, обучение src/train.py.
+# Установка: pip install -r requirements.txt -r requirements-lm.txt
+torch>=2.1
+transformers>=4.38
+pytorch-crf>=0.7.2
+sentencepiece>=0.1.99
+protobuf>=4.25
+razdel>=0.5.0

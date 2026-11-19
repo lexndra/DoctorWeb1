@@ -1,93 +1,40 @@
-"""Главный конвейер принятия решений (Decision Engine & Pipeline).
+"""Конвейер анализа письма (п. 4.1.12 ТЗ):
+разбор EML → извлечение признаков/зон → оценка вероятности генерации → объяснение → JSON.
 
-Объединяет:
-1. Модель токенизации и поиска границ DeBERTa-BiGRU-CRF (текстовые зоны).
-2. Анализатор изображений, QR и метаданных (image_analyzer).
-3. Анализатор HTML-разметки и анти-сокрытия (html_analyzer).
-4. Расчет композитного индекса AI-генерации (0.0..1.0) и вердикта.
-5. Формирование русскоязычного объяснения для аналитика SOC (п. 4.1.5 ТЗ).
-6. Сериализацию в единый формат JSON (п. 4.1.6 ТЗ).
+Методы оценки (DW1_METHOD): features (по умолчанию, CPU, обучаемая интерпретируемая модель),
+lm (пословная языковая модель TNC-DBGC*), combined (взвешенная сумма). Формат JSON единый для всех методов.
 """
-
 from __future__ import annotations
 
 import json
+import logging
 import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
-import torch
-from razdel import tokenize
-from transformers import AutoTokenizer
+from src.config import Settings
+from src.detectors.base import DetectorOutput, SentenceScore
+from src.detectors.feature_model import FEATURE_DESCRIPTIONS_RU
+from src.evaluation.tz_metrics import predicted_intervals
+from src.signals import find_prompt_leaks, masking_signals
+from src.text_utils import ZERO_WIDTH_RE, overlap
 
-from src.html_analyzer import analyze_html, HtmlAnalysisResult
-from src.model import DeBERTaBiGRUCRFTagger
+log = logging.getLogger(__name__)
 
-
-def get_default_device() -> torch.device:
-    if torch.cuda.is_available():
-        return torch.device("cuda")
-    if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
-        return torch.device("mps")
-    return torch.device("cpu")
-
-
-def find_default_checkpoint() -> str:
-    """Ищет файл весов tnc_dbgc_coat_best.pt в стандартных путях."""
-    candidates = [
-        Path("tnc_dbgc_coat_best.pt"),
-        Path("/Users/roman/Library/CloudStorage/GoogleDrive-korchaginroma511@gmail.com/Мой диск/doctor_web/coat_segmentation/tnc_dbgc_coat_best.pt"),
-        Path("/Users/roman/Desktop/DoctorWeb1/tnc_dbgc_coat_best.pt"),
-    ]
-    for c in candidates:
-        if c.exists():
-            return str(c)
-    return "tnc_dbgc_coat_best.pt"
-
-
-# Контракт данных для EML-парсера (задача сокомандника)
-@dataclass
-class EmailZone:
-    """Зона письма с символьными границами."""
-    name: str  # 'subject', 'greeting', 'body', 'cta', 'signoff'
-    text: str
-    start_char: int
-    end_char: int
-
-
-@dataclass
-class ParsedEmail:
-    """Контракт разобранного EML письма для передачи в Pipeline."""
-    file_id: str
-    file_path: str
-    subject: str
-    sender: str
-    recipient: str
-    date: str
-    headers: Dict[str, str]
-    full_text: str
-    zones: List[EmailZone]
-    zero_width_chars_count: int = 0
-    html_raw: Optional[str] = None
-    html_analysis: Optional[HtmlAnalysisResult] = None
-    extracted_images: List[Path] = field(default_factory=list)
-    precomputed_image_results: List[ImageAnalysisResult] = field(default_factory=list)
-    is_corrupted: bool = False
-    parse_warnings: List[str] = field(default_factory=list)
+ZONE_NAMES_RU = {"subject": "тема", "greeting": "приветствие", "body": "основной текст", "signoff": "подпись/концовка"}
 
 
 @dataclass
 class AISpan:
-    """Сгенерированный ИИ фрагмент с символьными границами."""
     text: str
     start_char: int
     end_char: int
+    probability: float = 0.0
 
 
 @dataclass
 class ZoneAnalysisResult:
-    """Результат анализа одной зоны письма."""
     name: str
     text: str
     start_char: int
@@ -99,70 +46,48 @@ class ZoneAnalysisResult:
     ai_spans: List[AISpan] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, object]:
-        return {
-            "name": self.name,
-            "text": self.text,
-            "start_char": self.start_char,
-            "end_char": self.end_char,
-            "words_count": self.words_count,
-            "ai_words_count": self.ai_words_count,
-            "ai_probability": round(self.ai_probability, 4),
-            "is_ai": self.is_ai,
-            "ai_spans": [asdict(s) for s in self.ai_spans],
-        }
+        d = asdict(self)
+        d["ai_probability"] = round(self.ai_probability, 4)
+        return d
 
 
 @dataclass
 class ImageAnalysisResult:
-    """Результат проверки одного изображения письма."""
-    file_name: str
-    ai_probability: float
-    is_ai: bool
-    has_qr: bool
-    qr_codes: List[str]
-    has_text: bool
-    ocr_text: str
-    details: Dict[str, object] = field(default_factory=dict)
+    filename: str
+    ai_probability: Optional[float]
+    is_ai: Optional[bool]
+    has_qr: bool = False
+    ocr_text: str = ""
+    reasons: List[str] = field(default_factory=list)
+    error: Optional[str] = None
 
     def to_dict(self) -> Dict[str, object]:
-        return {
-            "file_name": self.file_name,
-            "ai_probability": round(self.ai_probability, 4),
-            "is_ai": self.is_ai,
-            "has_qr": self.has_qr,
-            "qr_codes": self.qr_codes,
-            "has_text": self.has_text,
-            "ocr_text": self.ocr_text,
-            "details": self.details,
-        }
+        return asdict(self)
 
 
 @dataclass
 class EmailDetectionReport:
-    """Финальный отчет анализа электронного письма (п. 4.1.6 ТЗ)."""
     file_id: str
     file_path: str
     metadata: Dict[str, str]
-
-    # Итоговый вердикт
     overall_ai_index: float
-    verdict: str  # "Сгенерировано ИИ (AI-Generated)" или "Написано человеком (Human-Written)"
+    verdict: str
     threshold: float
-
-    # Анализ по зонам письма
-    zones: List[ZoneAnalysisResult]
     ai_zones_detected: List[str]
-
-    # Мультимодальные данные
+    zones: List[ZoneAnalysisResult]
     images: List[ImageAnalysisResult]
     html_signals: Dict[str, object]
     evasion_signals: Dict[str, object]
-
-    # Объяснение для аналитика SOC (п. 4.1.5 ТЗ)
     explanation: str
     reasons: List[str]
-
-    method: str = "TNC-DBGC* + Vision + HTML Evasion (Ensemble)"
+    method: str
+    # поля, добавленные с сохранением обратной совместимости (п. 4.1.6.3)
+    text_ai_probability: float = 0.0
+    key_signals: Dict[str, float] = field(default_factory=dict)
+    feature_contributions: Dict[str, float] = field(default_factory=dict)
+    sentence_scores: List[Dict[str, object]] = field(default_factory=list)
+    prompt_leakage: List[str] = field(default_factory=list)
+    explanation_threshold: float = 0.0
 
     def to_dict(self) -> Dict[str, object]:
         return {
@@ -171,483 +96,239 @@ class EmailDetectionReport:
             "metadata": self.metadata,
             "overall_ai_index": round(self.overall_ai_index, 4),
             "verdict": self.verdict,
-            "threshold": self.threshold,
+            "threshold": round(self.threshold, 4),
             "ai_zones_detected": self.ai_zones_detected,
             "zones": [z.to_dict() for z in self.zones],
-            "images": [img.to_dict() for img in self.images],
+            "images": [i.to_dict() for i in self.images],
             "html_signals": self.html_signals,
             "evasion_signals": self.evasion_signals,
             "explanation": self.explanation,
             "reasons": self.reasons,
             "method": self.method,
+            "text_ai_probability": round(self.text_ai_probability, 4),
+            "key_signals": self.key_signals,
+            "feature_contributions": self.feature_contributions,
+            "sentence_scores": self.sentence_scores,
+            "prompt_leakage": self.prompt_leakage,
+            "explanation_threshold": round(self.explanation_threshold, 4),
         }
 
     def to_json(self, indent: int = 2) -> str:
         return json.dumps(self.to_dict(), ensure_ascii=False, indent=indent)
 
 
+def build_detector(settings: Settings):
+    """Создаёт детектор согласно настройкам (единый интерфейс score())."""
+    from src.detectors.feature_model import FeatureDetector
+
+    method = settings.method
+    fpath = settings.models_dir / "feature_model.json"
+    if method in ("features", "combined"):
+        if not fpath.exists():
+            raise FileNotFoundError(f"Нет обученной модели {fpath}. Выполните: python cli.py train")
+        feat = FeatureDetector.load(fpath)
+        if method == "features":
+            return feat
+    from src.detectors.lm_model import CombinedDetector, LMDetector
+
+    lm = LMDetector(settings.lm_checkpoint)
+    if method == "lm":
+        return lm
+    return CombinedDetector(feat, lm, settings.weight_features, settings.weight_lm)
+
+
 class EmailAnalysisPipeline:
-    """Главный класс конвейера анализа писем на генеративный ИИ."""
+    def __init__(self, settings: Optional[Settings] = None, detector=None, threshold: Optional[float] = None,
+                 enable_images: Optional[bool] = None, **_ignored):
+        self.settings = settings or Settings()
+        if threshold is not None:
+            self.settings.threshold = threshold
+        if enable_images is not None:
+            self.settings.enable_images = enable_images
+        self.detector = detector or build_detector(self.settings)
+        self.method = getattr(self.detector, "method_name", self.settings.method)
+        cal = self.settings.calibration(self.method)
+        self.threshold = self.settings.resolved_threshold(self.method)
+        self.sentence_threshold = float(cal.get("sentence_threshold", 0.5))
+        self.explanation_threshold = float(cal.get("explanation_threshold", self.threshold))
 
-    def __init__(
-        self,
-        checkpoint_path: Optional[str] = None,
-        device: Optional[torch.device] = None,
-        threshold: float = 0.40,
-        enable_images: bool = True,
-    ):
-        self.device = device or get_default_device()
-        self.threshold = threshold
-        self.enable_images = enable_images
-        self.ckpt_path = Path(checkpoint_path or find_default_checkpoint())
-
-        if not self.ckpt_path.exists():
-            raise FileNotFoundError(f"Файл весов модели '{self.ckpt_path}' не найден!")
-
-        print(f"[Pipeline] Загрузка модели DeBERTa-BiGRU-CRF на {self.device}...")
-        ckpt = torch.load(self.ckpt_path, map_location=self.device)
-        self.model_name = ckpt.get("model_name", "microsoft/mdeberta-v3-base")
-        self.hidden_dim = ckpt.get("hidden_dim", 256)
-
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        self.model = DeBERTaBiGRUCRFTagger(
-            model_name=self.model_name,
-            num_labels=2,
-            hidden_dim=self.hidden_dim,
-        ).to(self.device)
-        self.model.load_state_dict(ckpt["model_state_dict"])
-        self.model.eval()
-
-        self._image_analyzer_available = False
-        if self.enable_images:
-            try:
-                import src.image_analyzer as img_module
-                self.img_module = img_module
-                self._image_analyzer_available = True
-            except Exception as e:
-                print(f"[Pipeline] Предупреждение: Модуль изображений недоступен: {e}")
-
-    @torch.no_grad()
-    def _predict_words(self, words: List[str]) -> List[int]:
-        """Прогоняет слова через DeBERTa-BiGRU-CRF и возвращает предсказания (0=человек, 1=ИИ)."""
-        if not words:
+    # ------------------------------------------------------------------ images
+    def _analyze_images(self, images: List[dict]) -> List[ImageAnalysisResult]:
+        if not images:
             return []
-
-        all_preds: List[int] = []
-
-        # Чанкование по 250 слов во избежание обрезки на 512 токенах
-        for chunk_start in range(0, len(words), 250):
-            chunk_words = words[chunk_start : chunk_start + 250]
-            encoding = self.tokenizer(
-                chunk_words,
-                is_split_into_words=True,
-                max_length=512,
-                truncation=True,
-                return_attention_mask=True,
-                return_tensors="pt",
-            )
-
-            input_ids = encoding["input_ids"].to(self.device)
-            attention_mask = encoding["attention_mask"].to(self.device)
-            subword_preds: List[int] = self.model(input_ids=input_ids, attention_mask=attention_mask)[0]
-
-            word_ids = encoding.word_ids(batch_index=0)
-            seen_words = set()
-            chunk_word_preds: List[int] = []
-
-            for w_id, p_label in zip(word_ids, subword_preds):
-                if w_id is not None and w_id not in seen_words:
-                    seen_words.add(w_id)
-                    chunk_word_preds.append(p_label)
-
-            all_preds.extend(chunk_word_preds[: len(chunk_words)])
-
-        return all_preds
-
-    def _analyze_zone(self, zone: EmailZone) -> ZoneAnalysisResult:
-        """Анализирует текст одной зоны письма."""
-        tokens = list(tokenize(zone.text))
-        words = [t.text for t in tokens if t.text.strip()]
-
-        if not words:
-            return ZoneAnalysisResult(
-                name=zone.name,
-                text=zone.text,
-                start_char=zone.start_char,
-                end_char=zone.end_char,
-                words_count=0,
-                ai_words_count=0,
-                ai_probability=0.0,
-                is_ai=False,
-            )
-
-        preds = self._predict_words(words)
-        ai_words_count = sum(preds)
-        ai_prob = (ai_words_count / len(preds)) if preds else 0.0
-        is_ai = ai_prob >= 0.35  # Порог локализации зоны
-
-        # Поиск непрерывных интервалов (спанов) сгенерированного текста
-        ai_spans: List[AISpan] = []
-        current_span_words: List[str] = []
-        span_start_rel: Optional[int] = None
-
-        word_tokens = [t for t in tokens if t.text.strip()]
-        for t, pred in zip(word_tokens, preds):
-            if pred == 1:
-                if span_start_rel is None:
-                    span_start_rel = t.start
-                current_span_words.append(t.text)
-            else:
-                if current_span_words and span_start_rel is not None:
-                    span_text = " ".join(current_span_words)
-                    ai_spans.append(
-                        AISpan(
-                            text=span_text,
-                            start_char=zone.start_char + span_start_rel,
-                            end_char=zone.start_char + t.start,
-                        )
-                    )
-                    current_span_words = []
-                    span_start_rel = None
-
-        if current_span_words and span_start_rel is not None:
-            span_text = " ".join(current_span_words)
-            ai_spans.append(
-                AISpan(
-                    text=span_text,
-                    start_char=zone.start_char + span_start_rel,
-                    end_char=zone.end_char,
-                )
-            )
-
-        return ZoneAnalysisResult(
-            name=zone.name,
-            text=zone.text,
-            start_char=zone.start_char,
-            end_char=zone.end_char,
-            words_count=len(words),
-            ai_words_count=ai_words_count,
-            ai_probability=ai_prob,
-            is_ai=is_ai,
-            ai_spans=ai_spans,
-        )
-
-    def _analyze_images(self, image_paths: List[Path]) -> List[ImageAnalysisResult]:
-        """Прогоняет изображения через модуль Алёны."""
-        results: List[ImageAnalysisResult] = []
-        if not self._image_analyzer_available or not image_paths:
-            return results
-
-        for img_path in image_paths:
+        if not self.settings.enable_images:
+            return [ImageAnalysisResult(filename=i.get("filename") or f"image_{n}", ai_probability=None, is_ai=None,
+                                        error="анализ изображений отключён (DW1_ENABLE_IMAGES=0)")
+                    for n, i in enumerate(images, 1)]
+        out = []
+        try:
+            from src.image_analyzer import analyze_image
+        except Exception as e:
+            return [ImageAnalysisResult(filename=i.get("filename") or "image", ai_probability=None, is_ai=None,
+                                        error=f"модуль изображений недоступен: {e}") for i in images]
+        for n, item in enumerate(images, 1):
+            name = item.get("filename") or f"image_{n}"
             try:
-                res = self.img_module.analyze_image(img_path)
-
-                ai_preds = res.get("ai_detection", [])
-                ai_prob = 0.0
-                if isinstance(ai_preds, list):
-                    for p in ai_preds:
-                        label = str(p.get("label", "")).lower()
-                        if label in ("artificial", "ai", "generated"):
-                            ai_prob = float(p.get("score", 0.0))
-
-                qr_codes = res.get("qr_codes", [])
-                ocr_text = str(res.get("ocr_text", "")).strip()
-
-                results.append(
-                    ImageAnalysisResult(
-                        file_name=img_path.name,
-                        ai_probability=ai_prob,
-                        is_ai=(ai_prob >= 0.50),
-                        has_qr=bool(qr_codes),
-                        qr_codes=qr_codes,
-                        has_text=bool(ocr_text),
-                        ocr_text=ocr_text,
-                        details=res,
-                    )
-                )
+                a = analyze_image(item["data"])
+                p = a.get("ai_score")
+                reasons = []
+                if p is not None and p >= 0.5:
+                    reasons.append(f"детектор сгенерированных изображений: {p:.2f}")
+                if not a.get("exif"):
+                    reasons.append("нет EXIF-метаданных камеры")
+                if a.get("c2pa"):
+                    reasons.append(f"C2PA: {a['c2pa']}")
+                out.append(ImageAnalysisResult(name, p, (p >= 0.5) if p is not None else None, a.get("has_qr", False),
+                                               (a.get("ocr_text") or "")[:500], reasons))
             except Exception as e:
-                print(f"[Pipeline] Ошибка анализа изображения {img_path.name}: {e}")
+                out.append(ImageAnalysisResult(name, None, None, error=str(e)[:200]))
+        return out
 
-        return results
+    # ------------------------------------------------------------------ core
+    def _analyze(self, file_id: str, file_path: str, subject: str, visible_text: str, metadata: Dict[str, str],
+                 html_analysis=None, images: Optional[List[dict]] = None, raw_text: str = "") -> EmailDetectionReport:
+        from src.eml_parser import split_text_zones
 
-    def _build_soc_explanation(
-        self,
-        overall_index: float,
-        verdict: str,
-        zone_results: List[ZoneAnalysisResult],
-        img_results: List[ImageAnalysisResult],
-        html_signals: Dict[str, object],
-        evasion_signals: Dict[str, object],
-    ) -> Tuple[str, List[str]]:
-        """Генерирует связное русскоязычное объяснение для аналитика SOC (п. 4.1.5 ТЗ)."""
-        reasons: List[str] = []
+        visible_text = ZERO_WIDTH_RE.sub("", visible_text or "")
+        subject = (subject or "").strip()
+        zr = split_text_zones(subject, visible_text)
+        full_text, zones = zr["text"], zr["zones"]
+        body_offset = (len(subject) + 1) if subject and visible_text.strip() else (0 if not subject else len(full_text))
+        body_text = full_text[body_offset:] if body_offset < len(full_text) else ""
 
-        # Текстовые причины
-        for z in zone_results:
-            if z.is_ai:
-                reasons.append(
-                    f"В зоне '{z.name}' выявлена высокая вероятность машинной генерации "
-                    f"({z.ai_probability:.1%}, найдено {len(z.ai_spans)} сгенерированных фрагментов)."
-                )
+        det: DetectorOutput = self.detector.score(body_text) if body_text.strip() else DetectorOutput(prob=0.0, method=self.method)
+        sentences = [SentenceScore(s.start + body_offset, s.end + body_offset, s.prob) for s in det.sentences]
+        if subject:
+            sub_out = self.detector.score(subject)
+            sp = max((x.prob for x in sub_out.sentences), default=sub_out.prob)
+            sentences.insert(0, SentenceScore(0, len(subject), float(sp)))
 
-        # Причины по изображениям
-        for img in img_results:
-            if img.is_ai:
-                reasons.append(
-                    f"Во вложении '{img.file_name}' обнаружены визуальные признаки генерации ИИ "
-                    f"(оценка классификатора: {img.ai_probability:.1%})."
-                )
-            if img.has_qr:
-                reasons.append(
-                    f"В изображении '{img.file_name}' найден QR-код с переходом: {', '.join(img.qr_codes)}."
-                )
-
-        # HTML причины
-        hidden_cnt = html_signals.get("hidden_elements_count", 0)
-        if hidden_cnt > 0:
-            reasons.append(
-                f"В HTML-разметке обнаружено {hidden_cnt} скрытых элементов "
-                f"(стили display:none, font-size:0 или атрибут hidden) для маскировки спама."
-            )
-
-        susp_links = html_signals.get("suspicious_links_count", 0)
-        if susp_links > 0:
-            reasons.append(
-                f"Обнаружено {susp_links} подозрительных ссылок с несовпадением видимого и реального домена (фишинг/спуфинг)."
-            )
-
-        # Невидимые символы
-        zw_cnt = evasion_signals.get("zero_width_chars_count", 0)
-        if zw_cnt > 0:
-            reasons.append(
-                f"В тексте найдено {zw_cnt} скрытых невидимых символов (Zero-Width/Bidi), используемых для обхода фильтров."
-            )
-
-        if not reasons:
-            reasons.append("Текст письма, разметка и медиафайлы соответствуют естественному стилю человека.")
-
-        summary = (
-            f"Письмо отнесено к категории '{verdict}' с итоговым индексом AI-генерации {overall_index:.2f} "
-            f"(порог классификации: {self.threshold:.2f})."
-        )
-
-        full_explanation = f"{summary}\n\nКлючевые факторы:\n" + "\n".join(f"• {r}" for r in reasons)
-        return full_explanation, reasons
-
-    def analyze_parsed_email(self, parsed: ParsedEmail) -> EmailDetectionReport:
-        """Анализирует письмо на основе переданного объекта ParsedEmail (от EML-парсера)."""
-        # 1. Анализ зон текста моделью DeBERTa
+        ai_intervals = predicted_intervals(sentences, self.sentence_threshold)
         zone_results: List[ZoneAnalysisResult] = []
-        total_words = 0
-        total_ai_words = 0
+        for name in ("subject", "greeting", "body", "signoff"):
+            b = zones.get(name)
+            if not b:
+                continue
+            zs, ze = b
+            ztext = full_text[zs:ze]
+            num = den = 0.0
+            for s in sentences:
+                ov = overlap((s.start, s.end), (zs, ze))
+                num += ov * s.prob
+                den += ov
+            zprob = num / den if den else 0.0
+            spans = []
+            for s, e in ai_intervals:
+                a, c = max(s, zs), min(e, ze)
+                if c > a:
+                    pr = max((x.prob for x in sentences if overlap((x.start, x.end), (a, c)) > 0), default=0.0)
+                    spans.append(AISpan(full_text[a:c], a, c, round(pr, 4)))
+            words = len(re.findall(r"\w+", ztext))
+            ai_words = sum(len(re.findall(r"\w+", sp.text)) for sp in spans)
+            zone_results.append(ZoneAnalysisResult(name, ztext, zs, ze, words, ai_words, zprob,
+                                                   zprob >= self.sentence_threshold, spans))
 
-        for z in parsed.zones:
-            zr = self._analyze_zone(z)
-            zone_results.append(zr)
-            total_words += zr.words_count
-            total_ai_words += zr.ai_words_count
+        img_results = self._analyze_images(images or [])
+        img_scores = [i.ai_probability for i in img_results if i.ai_probability is not None]
+        text_prob = det.prob
+        index = text_prob
+        if img_scores:
+            w = self.settings.weight_images
+            index = (1 - w) * text_prob + w * max(img_scores)
+        hidden = list(html_analysis.hidden_texts) if html_analysis is not None else []
+        leaks = find_prompt_leaks(full_text, *hidden)
+        if leaks:
+            index = max(index, self.settings.prompt_leak_floor)
+        index = max(0.0, min(1.0, index))
+        is_ai = index >= self.threshold
+        verdict = "Сгенерировано ИИ (AI-Generated)" if is_ai else "Написано человеком (Human-Written)"
 
-        text_ai_score = (total_ai_words / total_words) if total_words > 0 else 0.0
+        mask = masking_signals(html_analysis, raw_text or visible_text)
+        html_signals = {k: mask[k] for k in ("hidden_elements_count", "suspicious_links_count", "forms_count",
+                                              "password_fields_count", "iframes_count")}
+        html_signals["hidden_texts"] = [h[:300] for h in hidden[:5]]
+        evasion = {"zero_width_chars_count": mask["zero_width_chars_count"], "hidden_text_chars": mask["hidden_text_chars"]}
 
-        # 2. Анализ изображений
-        if parsed.precomputed_image_results:
-            img_results = parsed.precomputed_image_results
-        else:
-            img_results = self._analyze_images(parsed.extracted_images)
-        max_img_score = max([img.ai_probability for img in img_results], default=0.0)
-
-        # 3. HTML и Evasion сигналы
-        html_signals: Dict[str, object] = {}
-        if parsed.html_analysis:
-            html_signals = {
-                "hidden_elements_count": parsed.html_analysis.hidden_elements_count,
-                "hidden_texts": parsed.html_analysis.hidden_texts[:5],
-                "suspicious_links_count": parsed.html_analysis.suspicious_links_count,
-                "forms_count": parsed.html_analysis.forms_count,
-                "password_fields_count": parsed.html_analysis.password_fields_count,
-                "iframes_count": parsed.html_analysis.iframes_count,
-            }
-
-        evasion_signals = {
-            "zero_width_chars_count": parsed.zero_width_chars_count,
-            "is_corrupted": parsed.is_corrupted,
-            "warnings": parsed.parse_warnings,
-        }
-
-        # 4. Расчет композитного индекса AI
-        evasion_penalty = 0.0
-        hidden_count = html_signals.get("hidden_elements_count", 0)
-        if hidden_count > 0:
-            evasion_penalty += 0.18 + min(0.06, hidden_count * 0.02)
-        if html_signals.get("suspicious_links_count", 0) > 0:
-            evasion_penalty += 0.18
-        if parsed.zero_width_chars_count > 0:
-            evasion_penalty += 0.15
-
-        # Штраф при локализации явных сгенерированных фрагментов в ключевых зонах
-        has_ai_zone = any(z.is_ai for z in zone_results)
-        if has_ai_zone:
-            evasion_penalty += 0.10
-
-        if img_results:
-            overall_index = 0.60 * text_ai_score + 0.25 * max_img_score + evasion_penalty
-        else:
-            overall_index = 0.75 * text_ai_score + evasion_penalty
-
-        overall_index = max(0.0, min(1.0, overall_index))
-        verdict = (
-            "Сгенерировано ИИ (AI-Generated)"
-            if overall_index >= self.threshold
-            else "Написано человеком (Human-Written)"
+        reasons = self._reasons(det, zone_results, img_results, leaks, mask, sentences, full_text)
+        ai_zones = [z.name for z in zone_results if z.is_ai]
+        expl = (
+            f"Письмо отнесено к категории «{verdict}»: итоговый индекс AI-генерации {index:.2f} "
+            f"(порог {self.threshold:.2f}, метод: {self.method}; оценка текста {text_prob:.2f}).\n"
         )
-
-        # 5. Генерация объяснения для SOC
-        ai_zones_detected = [z.name for z in zone_results if z.is_ai]
-        explanation, reasons = self._build_soc_explanation(
-            overall_index=overall_index,
-            verdict=verdict,
-            zone_results=zone_results,
-            img_results=img_results,
-            html_signals=html_signals,
-            evasion_signals=evasion_signals,
-        )
+        if ai_zones:
+            expl += "Зоны с признаками генерации: " + ", ".join(ZONE_NAMES_RU.get(z, z) for z in ai_zones) + ".\n"
+        else:
+            expl += "Ни одна зона не превысила порог локализации.\n"
+        expl += "Ключевые факторы:\n" + "\n".join(f"• {r}" for r in reasons)
 
         return EmailDetectionReport(
-            file_id=parsed.file_id,
-            file_path=parsed.file_path,
-            metadata={
-                "subject": parsed.subject,
-                "sender": parsed.sender,
-                "recipient": parsed.recipient,
-                "date": parsed.date,
-            },
-            overall_ai_index=overall_index,
-            verdict=verdict,
-            threshold=self.threshold,
-            zones=zone_results,
-            ai_zones_detected=ai_zones_detected,
-            images=img_results,
-            html_signals=html_signals,
-            evasion_signals=evasion_signals,
-            explanation=explanation,
-            reasons=reasons,
+            file_id=file_id, file_path=file_path, metadata=metadata, overall_ai_index=index, verdict=verdict,
+            threshold=self.threshold, ai_zones_detected=ai_zones, zones=zone_results, images=img_results,
+            html_signals=html_signals, evasion_signals=evasion, explanation=expl, reasons=reasons,
+            method=self.method, text_ai_probability=text_prob, key_signals=det.signals,
+            feature_contributions=det.contributions,
+            sentence_scores=[{"start_char": s.start, "end_char": s.end, "probability": round(s.prob, 4),
+                              "text": full_text[s.start:s.end][:300]} for s in sentences],
+            prompt_leakage=leaks, explanation_threshold=self.explanation_threshold,
         )
 
+    def _reasons(self, det, zones, images, leaks, mask, sentences, full_text) -> List[str]:
+        r: List[str] = []
+        if leaks:
+            r.append(f"В письме остались инструкции для языковой модели (утечка промпта), например: «{leaks[0][:120]}»")
+        for z in zones:
+            if z.is_ai:
+                r.append(f"Зона «{ZONE_NAMES_RU.get(z.name, z.name)}»: вероятность генерации {z.ai_probability:.0%}, "
+                         f"выделено фрагментов: {len(z.ai_spans)}")
+        if det.contributions:
+            # признаки, сильнее всего сдвинувшие оценку в сторону вердикта (коэффициент × стандартизованное значение)
+            sign = 1 if det.prob >= self.threshold else -1
+            top = sorted(((k, c) for k, c in det.contributions.items() if c * sign > 0.1), key=lambda kv: -abs(kv[1]))[:3]
+            for k, c in top:
+                direction = "в сторону ИИ" if c > 0 else "в сторону человека"
+                r.append(f"{FEATURE_DESCRIPTIONS_RU.get(k, k).capitalize()}: {det.signals.get(k)} (вклад {c:+.2f}, {direction})")
+        top_s = sorted(sentences, key=lambda s: -s.prob)[:1]
+        if top_s and top_s[0].prob >= self.sentence_threshold:
+            s = top_s[0]
+            r.append(f"Наиболее «машинное» предложение ({s.prob:.0%}): «{full_text[s.start:s.end][:140]}»")
+        for im in images:
+            if im.is_ai:
+                r.append(f"Изображение {im.filename}: вероятность генерации {im.ai_probability:.0%} ({'; '.join(im.reasons)})")
+        if mask["hidden_elements_count"]:
+            r.append(f"В HTML {mask['hidden_elements_count']} скрытых элементов ({mask['hidden_text_chars']} симв. скрытого текста) — "
+                     "признак маскировки/шаблонной рассылки; в индекс не входит")
+        if mask["suspicious_links_count"]:
+            r.append(f"Подозрительных ссылок (текст ≠ адрес): {mask['suspicious_links_count']}")
+        if mask["zero_width_chars_count"]:
+            r.append(f"Невидимых символов нулевой ширины: {mask['zero_width_chars_count']}")
+        if not r:
+            r.append("Явных признаков генерации не обнаружено")
+        return r
+
+    # ------------------------------------------------------------------ public API
     def analyze_email(self, eml_path: str | Path) -> EmailDetectionReport:
-        """Парсит EML через модуль src.eml_parser и запускает мультимодальный анализ."""
+        from src.eml_parser import parse_eml
+
         path = Path(eml_path)
         if not path.exists():
-            raise FileNotFoundError(f"EML файл '{path}' не найден!")
+            raise FileNotFoundError(f"EML файл '{path}' не найден")
+        data = parse_eml(path, analyze_images=False)
+        if not (data["visible_text"] or "").strip() and not (data["subject"] or "").strip():
+            raise ValueError("в письме нет ни темы, ни текстовой части")
+        meta = {"subject": data["subject"], "sender": data["from"], "date": data["date"]}
+        return self._analyze(path.stem, str(path), data["subject"], data["visible_text"], meta,
+                             data["html_analysis"], data["images"], raw_text=(data["plain_text"] or "") + (data["html"] or ""))
 
-        from src.eml_parser import parse_eml
-        data = parse_eml(path)
-
-        # 1. Извлечение зон письма с символьными оффсетами
-        zones: List[EmailZone] = []
-        zoned_text = data.get("zoned_text", "")
-        raw_zones = data.get("zones", {})
-
-        for z_name in ("subject", "greeting", "body", "signoff"):
-            bounds = raw_zones.get(z_name)
-            if bounds is not None and len(bounds) == 2:
-                s, e = bounds
-                z_text = zoned_text[s:e]
-                if z_text.strip():
-                    zones.append(EmailZone(name=z_name, text=z_text, start_char=s, end_char=e))
-
-        # Fallback: если зоны не выделились, берем visible_text как body
-        if not zones:
-            fallback_text = data.get("visible_text") or data.get("plain_text") or zoned_text or ""
-            zones.append(EmailZone(name="body", text=fallback_text, start_char=0, end_char=len(fallback_text)))
-
-        # 2. Извлечение результатов анализа изображений
-        precomputed_images: List[ImageAnalysisResult] = []
-        for item in data.get("image_results", []):
-            if "analysis" in item:
-                analysis = item["analysis"]
-                img_name = item.get("filename") or f"image_{item.get('image_number', 1)}"
-                ai_prob = float(analysis.get("ai_score", 0.0))
-                qr_codes = analysis.get("qr_codes", [])
-                ocr_text = str(analysis.get("ocr_text", "")).strip()
-                precomputed_images.append(
-                    ImageAnalysisResult(
-                        file_name=img_name,
-                        ai_probability=ai_prob,
-                        is_ai=(ai_prob >= 0.50),
-                        has_qr=bool(qr_codes),
-                        qr_codes=qr_codes,
-                        has_text=bool(ocr_text),
-                        ocr_text=ocr_text,
-                        details=analysis,
-                    )
-                )
-
-        # 3. Подсчет zero-width символов в тексте письма и HTML
-        zw_pattern = re.compile(r"[\u200B-\u200D\uFEFF\u200E\u200F\u202A-\u202E]")
-        text_for_zw = (zoned_text or "") + (data.get("html") or "")
-        zw_count = len(zw_pattern.findall(text_for_zw))
-
-        parsed = ParsedEmail(
-            file_id=path.stem,
-            file_path=str(path),
-            subject=data.get("subject", ""),
-            sender=data.get("from", ""),
-            recipient="",
-            date=data.get("date", ""),
-            headers={},
-            full_text=zoned_text,
-            zones=zones,
-            zero_width_chars_count=zw_count,
-            html_raw=data.get("html"),
-            html_analysis=data.get("html_analysis"),
-            precomputed_image_results=precomputed_images,
-        )
-        return self.analyze_parsed_email(parsed)
-
-    def analyze_direct_text(
-        self,
-        text: str,
-        subject: Optional[str] = None,
-        html_content: Optional[str] = None,
-        image_paths: Optional[List[Path]] = None,
-    ) -> EmailDetectionReport:
-        """Прямой анализ текста/HTML/изображений без необходимости в EML-файле."""
-        zones: List[EmailZone] = []
-        full_text = ""
-        offset = 0
-
-        if subject:
-            zones.append(EmailZone(name="subject", text=subject, start_char=0, end_char=len(subject)))
-            full_text = subject + "\n\n"
-            offset = len(full_text)
-
+    def analyze_direct_text(self, text: str = "", subject: Optional[str] = None, html_content: Optional[str] = None,
+                            file_id: str = "direct_input") -> EmailDetectionReport:
         html_analysis = None
-        visible_body = text
+        visible = text or ""
         if html_content:
+            from src.html_analyzer import analyze_html
+
             html_analysis = analyze_html(html_content)
-            visible_body = html_analysis.visible_text or text
-
-        full_text += visible_body
-        zones.append(EmailZone(name="body", text=visible_body, start_char=offset, end_char=offset + len(visible_body)))
-
-        zw_pattern = re.compile(r"[\u200B-\u200D\uFEFF\u200E\u200F\u202A-\u202E]")
-        text_for_zw = (full_text or "") + (html_content or "")
-        zw_count = len(zw_pattern.findall(text_for_zw))
-
-        parsed = ParsedEmail(
-            file_id="direct_input",
-            file_path="memory",
-            subject=subject or "",
-            sender="",
-            recipient="",
-            date="",
-            headers={},
-            full_text=full_text,
-            zones=zones,
-            zero_width_chars_count=zw_count,
-            html_raw=html_content,
-            html_analysis=html_analysis,
-            extracted_images=image_paths or [],
-        )
-
-        return self.analyze_parsed_email(parsed)
+            if not visible.strip():
+                visible = html_analysis.visible_text
+        meta = {"subject": subject or "", "sender": "", "date": ""}
+        return self._analyze(file_id, file_id, subject or "", visible, meta, html_analysis, [],
+                             raw_text=(text or "") + (html_content or ""))

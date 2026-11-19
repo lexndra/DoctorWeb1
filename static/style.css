@@ -53,24 +53,19 @@ mark { background: #ffec9b; }
     h1 { font-size: 26px; }
     .block { padding: 18px; }
 }
-/* Кнопка переключения темы */
-.top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
-
+/* Переключатель темы справа сверху */
 .theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    padding: 7px 10px;
     background: #eeeeee;
     color: #222;
     border: 1px solid #ccc;
     font-size: 13px;
 }
-
-.theme-button:hover {
-    background: #dddddd;
-}
+.theme-button:hover { background: #dddddd; }
 
 /* Плавная смена цветов */
 body, .block, .zone, button, .hint, .footer, .message, mark {
@@ -79,53 +74,41 @@ body, .block, .zone, button, .hint, .footer, .message, mark {
                 border-color 0.35s ease;
 }
 
-/* Темная тема */
+/* Тёмная тема */
+html[data-theme="dark"] { color-scheme: dark; }
 html[data-theme="dark"] body {
     background: #191919;
     color: #f0f0f0;
 }
-
 html[data-theme="dark"] .block {
     background: #292929;
     border-color: #505050;
 }
-
 html[data-theme="dark"] .zone {
     background: #333;
     border-color: #505050;
 }
-
 html[data-theme="dark"] .hint,
-html[data-theme="dark"] .footer {
-    color: #b7b7b7;
-}
-
-html[data-theme="dark"] .message {
-    color: #ff8080;
-}
-
+html[data-theme="dark"] .footer { color: #b7b7b7; }
+html[data-theme="dark"] .message { color: #ff8080; }
 html[data-theme="dark"] mark {
     background: #9d812b;
     color: #fff;
 }
-
 html[data-theme="dark"] .theme-button {
     background: #333;
-    color: white;
+    color: #fff;
     border-color: #555;
-    .theme-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 100;
-
-    background: #eeeeee;
-    color: #222;
-    border: 1px solid #ccc;
-    font-size: 13px;
 }
+html[data-theme="dark"] .theme-button:hover { background: #444; }
+
+@media (max-width: 600px) {
+    .theme-button { top: 10px; right: 10px; }
+    .container { margin-top: 75px; }
 }
 
-html[data-theme="dark"] .theme-button:hover {
-    background: #444;
+@media (prefers-reduced-motion: reduce) {
+    body, .block, .zone, button, .hint, .footer, .message, mark {
+        transition: none;
+    }
 }

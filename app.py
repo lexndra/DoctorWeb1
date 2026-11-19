@@ -94,7 +94,7 @@ def create_app(config: dict | None = None) -> FastAPI:
 
         raw = file.file.read(MAX_UPLOAD_BYTES + 1)
         if len(raw) > MAX_UPLOAD_BYTES:
-            return error_response("Файл слишком большой. Максимальный размер — 5 МБ.", 413)
+            return error_response("Файл слишком большой. Максимальный размер — 20 МБ.", 413)
         if not raw:
             return error_response("Загруженный файл пуст.", 422)
 

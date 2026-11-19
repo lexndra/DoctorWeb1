@@ -75,7 +75,7 @@ form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const file = fileInput.files[0];
     if (!file) return showError('Сначала выберите файл.');
-    if (file.size > 5 * 1024 * 1024) return showError('Максимальный размер файла — 5 МБ.');
+    if (file.size > 20 * 1024 * 1024) return showError('Максимальный размер файла — 20 МБ.');
 
     button.disabled = true;
     button.textContent = 'Проверяем...';

@@ -6,29 +6,34 @@
     "features": {
       "threshold_source": "calibration.json: doc_threshold, подобран на собственном val (val)",
       "info": {
-        "load_seconds": 0.2,
-        "model_file": "models_dev/feature_model.json",
+        "load_seconds": 0.0,
+        "model_file": "models/feature_model.json",
         "model": "features (TF-IDF sentence LR + stylometric document LR)",
-        "dataset_version": "dev",
-        "model_sha256": "4434328c676f9e2ed0a21b3cb68a013f07976cb248ba874b31306b5138980e4c",
-        "last_seconds": 1.8
+        "dataset_version": "v1",
+        "model_sha256": "b81dabc6130611cec35a6ec35fe4d6234861d9a66ea2c8aeec1648e85ee2dd2a",
+        "own_val_metrics": {
+          "roc_auc": 0.9185,
+          "val_f1": 0.867,
+          "val_fpr_human": 0.1486
+        },
+        "last_seconds": 0.5
       },
       "overall": {
-        "roc_auc": 0.5918222222222222,
+        "roc_auc": 0.6067111111111112,
         "roc_auc_ci95": [
-          0.5257151036853688,
-          0.6561908863222069
+          0.5411752592079432,
+          0.6733165879308892
         ],
-        "threshold": 0.4902,
-        "precision": 0.6575342465753424,
-        "recall": 0.32,
-        "f1": 0.43049327354260086,
-        "fpr": 0.16666666666666666,
-        "accuracy": 0.5766666666666667,
-        "tp": 48,
-        "fp": 25,
-        "tn": 125,
-        "fn": 102,
+        "threshold": 0.5108,
+        "precision": 0.6538461538461539,
+        "recall": 0.34,
+        "f1": 0.4473684210526316,
+        "fpr": 0.18,
+        "accuracy": 0.58,
+        "tp": 51,
+        "fp": 27,
+        "tn": 123,
+        "fn": 99,
         "n": 300,
         "n_pos": 150,
         "n_neg": 150
@@ -36,66 +41,71 @@
       "by_agent": {
         "gpt2": {
           "n": 30,
-          "mean_score": 0.2838624023653398,
+          "mean_score": 0.3069945814544682,
           "n_ai": 30,
-          "recall": 0.13333333333333333
+          "recall": 0.1
         },
         "gpt3re": {
           "n": 30,
-          "mean_score": 0.8118783479918881,
+          "mean_score": 0.8157065515524333,
           "n_ai": 30,
-          "recall": 0.9333333333333333
+          "recall": 0.9666666666666667
         },
         "gptj": {
           "n": 30,
-          "mean_score": 0.27716184905579805,
+          "mean_score": 0.30990204472442134,
           "n_ai": 30,
-          "recall": 0.13333333333333333
+          "recall": 0.2
         },
         "gptneo": {
           "n": 30,
-          "mean_score": 0.2733324704875655,
+          "mean_score": 0.3009636659908564,
           "n_ai": 30,
           "recall": 0.2
         },
         "human": {
           "n": 150,
-          "mean_score": 0.27883688667620193,
+          "mean_score": 0.2985643594501149,
           "n_human": 150,
-          "fpr": 0.16666666666666666
+          "fpr": 0.18
         },
         "llama": {
           "n": 30,
-          "mean_score": 0.2900041349195369,
+          "mean_score": 0.31844550254262793,
           "n_ai": 30,
-          "recall": 0.2
+          "recall": 0.23333333333333334
         }
       }
     },
     "lm": {
       "threshold_source": "lm_calibration.json: doc_threshold, подобран на собственном val (val)",
       "info": {
-        "load_seconds": 10.3,
-        "checkpoint": "tnc_dbgc_coat_best.pt",
+        "load_seconds": 4.5,
+        "checkpoint": "tnc_dbgc_llmtrace.pt",
         "device": "cpu",
-        "last_seconds": 331.6
+        "own_val_metrics": {
+          "roc_auc": 0.9239,
+          "val_f1": 0.8958,
+          "val_fpr_human": 0.1967
+        },
+        "last_seconds": 44.8
       },
       "overall": {
-        "roc_auc": 0.4501111111111111,
+        "roc_auc": 0.6345333333333334,
         "roc_auc_ci95": [
-          0.3855048261616941,
-          0.5177051205278337
+          0.5757513328913942,
+          0.6914706288916563
         ],
-        "threshold": 0.4528,
-        "precision": 0.4835164835164835,
-        "recall": 0.29333333333333333,
-        "f1": 0.36514522821576767,
-        "fpr": 0.31333333333333335,
-        "accuracy": 0.49,
-        "tp": 44,
-        "fp": 47,
-        "tn": 103,
-        "fn": 106,
+        "threshold": 0.2632,
+        "precision": 0.7325581395348837,
+        "recall": 0.42,
+        "f1": 0.5338983050847457,
+        "fpr": 0.15333333333333332,
+        "accuracy": 0.6333333333333333,
+        "tp": 63,
+        "fp": 23,
+        "tn": 127,
+        "fn": 87,
         "n": 300,
         "n_pos": 150,
         "n_neg": 150
@@ -103,39 +113,39 @@
       "by_agent": {
         "gpt2": {
           "n": 30,
-          "mean_score": 0.38896405213191376,
-          "n_ai": 30,
-          "recall": 0.2
-        },
-        "gpt3re": {
-          "n": 30,
-          "mean_score": 0.33850183946864537,
-          "n_ai": 30,
-          "recall": 0.06666666666666667
-        },
-        "gptj": {
-          "n": 30,
-          "mean_score": 0.40909705059561613,
+          "mean_score": 0.2113252833199169,
           "n_ai": 30,
           "recall": 0.3333333333333333
         },
+        "gpt3re": {
+          "n": 30,
+          "mean_score": 0.8562038914040515,
+          "n_ai": 30,
+          "recall": 1.0
+        },
+        "gptj": {
+          "n": 30,
+          "mean_score": 0.14628703789114864,
+          "n_ai": 30,
+          "recall": 0.16666666666666666
+        },
         "gptneo": {
           "n": 30,
-          "mean_score": 0.4121100114378588,
+          "mean_score": 0.15640525600196395,
           "n_ai": 30,
-          "recall": 0.4
+          "recall": 0.26666666666666666
         },
         "human": {
           "n": 150,
-          "mean_score": 0.41682090693770835,
+          "mean_score": 0.13962518091456758,
           "n_human": 150,
-          "fpr": 0.31333333333333335
+          "fpr": 0.15333333333333332
         },
         "llama": {
           "n": 30,
-          "mean_score": 0.45779138094023863,
+          "mean_score": 0.19638117150260753,
           "n_ai": 30,
-          "recall": 0.4666666666666667
+          "recall": 0.3333333333333333
         }
       }
     }
@@ -160,5 +170,5 @@
     "ai_texts_sharing_80char_prefix_with_human_text": 0.9166248746238717
   },
   "sampling": "весь файл TheItCrOw/SeqXGPT (38304 строк, 33 МБ, единственный сплит train) прочитан по HTTP в память; простая случайная выборка без возвращения seed=42: 150 human + 150 ai (поровну по 5 генераторам)",
-  "seconds": 342.5
+  "seconds": 52.3
 }

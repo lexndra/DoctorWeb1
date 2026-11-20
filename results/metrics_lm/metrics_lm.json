@@ -1,0 +1,226 @@
+{
+  "method": "lm",
+  "n_test": 600,
+  "threshold": 0.2632,
+  "sentence_threshold": 0.425,
+  "calibration_source": "val",
+  "sec_per_text": 0.1341,
+  "roc_auc": 0.9114872685185186,
+  "roc_auc_ci95": {
+    "low": 0.8871994120330629,
+    "high": 0.9364653456859734,
+    "width": 0.04926593365291054,
+    "iters": 1000
+  },
+  "roc_auc_ci_width": 0.04926593365291054,
+  "precision": 0.863517060367454,
+  "recall": 0.9138888888888889,
+  "f1": 0.8879892037786775,
+  "accuracy": 0.8616666666666667,
+  "fpr_human": 0.21666666666666667,
+  "fpr_marketing": 0.2413793103448276,
+  "n_marketing_human": 29,
+  "roc_auc_partial": 0.8495121308016879,
+  "char_partial": {
+    "precision": 0.7624830776914685,
+    "recall": 0.9308579772468349,
+    "f1": 0.8382994711135516
+  },
+  "char_f1_partial": 0.8382994711135516,
+  "char_all_ai": {
+    "precision": 0.9313450981137094,
+    "recall": 0.9067887831384575,
+    "f1": 0.9189029121482576
+  },
+  "zone_recall": 0.9611111111111111,
+  "masking": {
+    "zero_width": {
+      "roc_auc": 0.8871064814814815,
+      "recall": 0.8638888888888889
+    },
+    "homoglyphs": {
+      "roc_auc": 0.8071585648148147,
+      "recall": 0.6944444444444444
+    },
+    "typos": {
+      "roc_auc": 0.8351041666666666,
+      "recall": 0.7694444444444445
+    },
+    "casual_rewrite": {
+      "roc_auc": 0.9062210648148149,
+      "recall": 0.9111111111111111
+    }
+  },
+  "masking_auc_min": 0.8071585648148147,
+  "by_language": {
+    "en": {
+      "n": 400,
+      "roc_auc": 0.9184767385602606,
+      "precision": 0.869198312236287,
+      "recall": 0.9074889867841409,
+      "f1": 0.8879310344827587,
+      "accuracy": 0.87,
+      "fpr": 0.1791907514450867
+    },
+    "ru": {
+      "n": 200,
+      "roc_auc": 0.8866569408596118,
+      "precision": 0.8541666666666666,
+      "recall": 0.924812030075188,
+      "f1": 0.8880866425992779,
+      "accuracy": 0.845,
+      "fpr": 0.31343283582089554
+    }
+  },
+  "by_email_type": {
+    "corporate": {
+      "n": 84,
+      "roc_auc": 0.8846801346801345,
+      "precision": 0.5517241379310345,
+      "recall": 0.8888888888888888,
+      "f1": 0.6808510638297872,
+      "accuracy": 0.8214285714285714,
+      "fpr": 0.19696969696969696
+    },
+    "marketing": {
+      "n": 84,
+      "roc_auc": 0.899373040752351,
+      "precision": 0.8793103448275862,
+      "recall": 0.9272727272727272,
+      "f1": 0.9026548672566371,
+      "accuracy": 0.8690476190476191,
+      "fpr": 0.2413793103448276
+    },
+    "text": {
+      "n": 432,
+      "roc_auc": 0.9097440826625015,
+      "precision": 0.891156462585034,
+      "recall": 0.9128919860627178,
+      "f1": 0.9018932874354562,
+      "accuracy": 0.8680555555555556,
+      "fpr": 0.2206896551724138
+    }
+  },
+  "by_source": {
+    "customer_case": {
+      "n": 41,
+      "roc_auc": null,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "fpr": null
+    },
+    "dw1_generated": {
+      "n": 32,
+      "roc_auc": null,
+      "precision": 1.0,
+      "recall": 0.8125,
+      "f1": 0.896551724137931,
+      "accuracy": 0.8125,
+      "fpr": null
+    },
+    "enron_aeslc": {
+      "n": 66,
+      "roc_auc": null,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.803030303030303,
+      "fpr": 0.19696969696969696
+    },
+    "enron_newsletters": {
+      "n": 29,
+      "roc_auc": null,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.7586206896551724,
+      "fpr": 0.2413793103448276
+    },
+    "llmtrace_detection": {
+      "n": 432,
+      "roc_auc": 0.9097440826625015,
+      "precision": 0.891156462585034,
+      "recall": 0.9128919860627178,
+      "f1": 0.9018932874354562,
+      "accuracy": 0.8680555555555556,
+      "fpr": 0.2206896551724138
+    }
+  },
+  "email_matched": {
+    "n": 127,
+    "roc_auc": 0.8700657894736842,
+    "precision": 0.5652173913043478,
+    "recall": 0.8125,
+    "f1": 0.6666666666666666,
+    "accuracy": 0.7952755905511811,
+    "fpr": 0.21052631578947367
+  },
+  "customer_case_recall": 1.0,
+  "customer_case_n": 41,
+  "recall_by_generation_method": {
+    "external_ai": 0.988950276243094,
+    "external_mixed": 0.8435374149659864,
+    "full": 1.0,
+    "partial_append": 0.4,
+    "partial_insert": 0.25,
+    "partial_rewrite": 1.0
+  },
+  "tz_compliance": {
+    "roc_auc": {
+      "title": "ROC-AUC по бинарной метке",
+      "value": 0.9114872685185186,
+      "requirement": ">= 0.7",
+      "pass": true
+    },
+    "f1": {
+      "title": "F1-мера на калиброванном пороге",
+      "value": 0.8879892037786775,
+      "requirement": ">= 0.7",
+      "pass": true
+    },
+    "fpr_human": {
+      "title": "FPR на письмах, написанных человеком",
+      "value": 0.21666666666666667,
+      "requirement": "<= 0.2",
+      "pass": false
+    },
+    "fpr_marketing": {
+      "title": "FPR на легитимных маркетинговых рассылках",
+      "value": 0.2413793103448276,
+      "requirement": "<= 0.2",
+      "pass": false
+    },
+    "roc_auc_partial": {
+      "title": "ROC-AUC: частично сгенерированные vs человек",
+      "value": 0.8495121308016879,
+      "requirement": ">= 0.7",
+      "pass": true
+    },
+    "char_f1_partial": {
+      "title": "Локализация фрагментов, F1 по символам (частично сгенерированные)",
+      "value": 0.8382994711135516,
+      "requirement": ">= 0.6",
+      "pass": true
+    },
+    "zone_recall": {
+      "title": "Полнота выявления сгенерированных зон",
+      "value": 0.9611111111111111,
+      "requirement": "не предъявляется",
+      "pass": null
+    },
+    "masking_auc_min": {
+      "title": "Сохранность ROC-AUC при маскировке (минимум по сценариям)",
+      "value": 0.8071585648148147,
+      "requirement": "не предъявляется",
+      "pass": null
+    },
+    "roc_auc_ci_width": {
+      "title": "Ширина 95% ДИ ROC-AUC (бутстреп, 1000 итераций)",
+      "value": 0.04926593365291054,
+      "requirement": "не предъявляется",
+      "pass": null
+    }
+  }
+}

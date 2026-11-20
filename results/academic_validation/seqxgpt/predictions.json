@@ -6,9 +6,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "be on the motorists' side. After a leak left their gas tank nearly empty, Crocker set off on a 26-mile bicycle ride to the nearest town. When he stopped, the gas was nearly gone. The farmer's house st",
-  "score_features": 0.194108,
+  "score_features": 0.226158,
   "pred_features": 0,
-  "score_lm": 0.555911,
+  "score_lm": 0.738019,
   "pred_lm": 1
  },
  {
@@ -18,9 +18,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "this article aims to explain why the notion of mania puerperalis , or puerperal insanity , was not used in the netherlands to exonerate women accused of infanticide , in contrast to other countries .\n",
-  "score_features": 0.171556,
+  "score_features": 0.188632,
   "pred_features": 0,
-  "score_lm": 0.415842,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -30,9 +30,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "From Sydney to Moscow, Paris to New York, crowds said goodbye to 2016, a tumultuous year in global politics. Many cities stepped up security for New Year's Eve celebrations, after a year in which atta",
-  "score_features": 0.042772,
+  "score_features": 0.069234,
   "pred_features": 0,
-  "score_lm": 0.33913,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -42,10 +42,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we present a theoretical study of the energy levels in a parabolically confined quantum dot in the presence of the rashba spin - orbit interaction ( soi ) .  the features of some low - lying states in",
-  "score_features": 0.480753,
-  "pred_features": 0,
-  "score_lm": 0.605769,
-  "pred_lm": 1
+  "score_features": 0.740985,
+  "pred_features": 1,
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "e5b533a3-1340-432e-bc3b-0bd2ec5748e8",
@@ -54,9 +54,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "the allwise processing pipeline has measured motions for all objects detected on wise images taken between 2010 january and 2011 february .\n\n3.  If required, we apply a 2-point transformation to conve",
-  "score_features": 0.569072,
+  "score_features": 0.691593,
   "pred_features": 1,
-  "score_lm": 0.454128,
+  "score_lm": 0.311927,
   "pred_lm": 1
  },
  {
@@ -66,10 +66,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Copyright by WCMH - All rights reserved John Oliver (CNN file)Copyright by WCMH - All rights reserved John Oliver (CNN file)NEW YORK (WCMH) -- Comedian John Oliver says he bought the medical debt of n",
-  "score_features": 0.05918,
+  "score_features": 0.031356,
   "pred_features": 0,
-  "score_lm": 0.484615,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "1b06bb08-8ca5-4053-88a0-8a414535b11f",
@@ -78,10 +78,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "The former military Alouette aircraft crashed at Breighton Aerodrome, near Selby, North Yorkshire, on 17 July 2016. Nigel Feetham, 36, from Hedon, East Yorkshire, died a week later in hospital. Invest",
-  "score_features": 0.210463,
+  "score_features": 0.150802,
   "pred_features": 0,
-  "score_lm": 0.424,
-  "pred_lm": 0
+  "score_lm": 0.344,
+  "pred_lm": 1
  },
  {
   "id": "3d9bdd97-fdb0-49e4-bbe4-7f1e7fe63602",
@@ -90,9 +90,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Daeth hi i'r amlwg fel cantores wrth gyrraedd rowndiau terfynol X Factor yn 2009. Never Give Up On You ydy'r gân fydd y Gymraes yn ei chanu yn y rowndiau terfynol yn Kiev, prifddinas yr Iwcraen. Katri",
-  "score_features": 0.043648,
+  "score_features": 0.068659,
   "pred_features": 0,
-  "score_lm": 0.408633,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -102,9 +102,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "this pilot study investigated the possibility that metabolomic differences exist in second trimester of women delivering at term ( 37 weeks ,     n = 216 ) and preterm ( 35 weeks ,   n = 11 ) .  for t",
-  "score_features": 0.132261,
+  "score_features": 0.320141,
   "pred_features": 0,
-  "score_lm": 0.407609,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -114,9 +114,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "For example, consider the deterministic sorting algorithm quicksort. This solves the problem of sorting a list of integers that is given as the input. The worst-case is when the input is sorted or sor",
-  "score_features": 0.492864,
+  "score_features": 0.526174,
   "pred_features": 1,
-  "score_lm": 0.641892,
+  "score_lm": 0.601351,
   "pred_lm": 1
  },
  {
@@ -126,10 +126,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "New Nissan Cars for Sale - New Nissan Inventory in Austin* All vehicle prices are plus tax, title, plate and dealer fees. The advertised price does not include sales tax, vehicle registration fees, fi",
-  "score_features": 0.138403,
+  "score_features": 0.374088,
   "pred_features": 0,
-  "score_lm": 0.377551,
-  "pred_lm": 0
+  "score_lm": 0.836735,
+  "pred_lm": 1
  },
  {
   "id": "ecdde060-70e3-4ea0-b1b5-58f7defc220b",
@@ -138,9 +138,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Economist Simon Kuznets argued that levels of economic inequality are in large part the result of stages of development. According to Kuznets, countries with low levels of development have relatively ",
-  "score_features": 0.399147,
+  "score_features": 0.244981,
   "pred_features": 0,
-  "score_lm": 0.392405,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -150,10 +150,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "background : we present a case in which laparoscopy was both diagnostic and therapeutic in a patient with a spigelian hernia.case report : a 35-year - old man was referred to the general surgery servi",
-  "score_features": 0.577007,
+  "score_features": 0.534658,
   "pred_features": 1,
-  "score_lm": 0.364055,
-  "pred_lm": 0
+  "score_lm": 0.714286,
+  "pred_lm": 1
  },
  {
   "id": "94791340-1483-4390-b1b4-84ab345eede1",
@@ -162,10 +162,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The common allotrope of elemental oxygen on Earth is called dioxygen, O 2. It is the form that is a major part of the Earth's atmosphere (see Occurrence). O2 has a bond length of 121 pm and a bond ene",
-  "score_features": 0.069497,
+  "score_features": 0.066085,
   "pred_features": 0,
-  "score_lm": 0.555556,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "3b71a079-4d8a-4b23-9627-27f43927a5fd",
@@ -174,10 +174,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "we show that the kullback - leibler distance is a good measure of the statistical uncertainty of correlation matrices estimated by using a finite set of data . for correlation matrices of multivariate",
-  "score_features": 0.4583,
-  "pred_features": 0,
-  "score_lm": 0.637795,
-  "pred_lm": 1
+  "score_features": 0.663257,
+  "pred_features": 1,
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "3b7483b2-c842-4aa7-884a-d61e04d219d4",
@@ -186,10 +186,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "Marion Davies stars in this remarkable comedy \"\"Show People\"\" released by MGM in 1928. Davies plays a hick from Savannah, Georgia, who arrives in Hollywood with her father (Dell Henderson). The jalopy",
-  "score_features": 0.826404,
+  "score_features": 0.721278,
   "pred_features": 1,
-  "score_lm": 0.277778,
-  "pred_lm": 0
+  "score_lm": 0.919192,
+  "pred_lm": 1
  },
  {
   "id": "24cf7c2b-8623-4024-b1be-59e9300d055d",
@@ -198,10 +198,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "The complaints are valid, to me the biggest problem is that this soap opera is too aimed for women. I am okay with these night time soaps, like Grey's Anatomy, or Ugly Betty, or West Wing, because the",
-  "score_features": 0.065298,
+  "score_features": 0.048338,
   "pred_features": 0,
-  "score_lm": 0.469565,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "f41c8fc3-8597-4b93-83e0-d190ce8fcc08",
@@ -210,10 +210,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "ANN ARBOR -- On Saturday night, Michigan went through the most lopsided -- and arguably the ugliest -- loss of Brady Hoke's tenure.The 31-0 loss at Notre Dame was the widest margin of defeat Michigan ",
-  "score_features": 0.395138,
+  "score_features": 0.36198,
   "pred_features": 0,
-  "score_lm": 0.353933,
-  "pred_lm": 0
+  "score_lm": 0.938202,
+  "pred_lm": 1
  },
  {
   "id": "32d9f4a1-fae3-400a-bfc2-a71c7d4dc8ab",
@@ -222,10 +222,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "based on the weakly - coupled spontaneous cp - violation two - higgs - doublet model ( named lee model ) and the mechanism to generate the correlation between smallness of cp - violation and lightness",
-  "score_features": 0.045873,
+  "score_features": 0.074608,
   "pred_features": 0,
-  "score_lm": 0.631579,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "502bdd06-60fd-4f94-b644-62b8eb4dc2cf",
@@ -234,10 +234,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "The complaints are valid, to me the biggest problem is that this soap opera is too aimed for women. There are a lot of moments where the acting is over-the-top and the dialogue feels cheesy, which is ",
-  "score_features": 0.872196,
+  "score_features": 0.87116,
   "pred_features": 1,
-  "score_lm": 0.385714,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "75aa3404-9e0d-41f0-a929-e3405a7b34ee",
@@ -246,10 +246,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we show that the kullback - leibler distance is a good measure of the statistical uncertainty of correlation matrices estimated by using a finite set of data . for correlation matrices of multivariate",
-  "score_features": 0.48346,
-  "pred_features": 0,
-  "score_lm": 0.556485,
-  "pred_lm": 1
+  "score_features": 0.519994,
+  "pred_features": 1,
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "7882a58f-74df-40a5-b37d-8ca6684a05ba",
@@ -258,10 +258,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "I read the book before watching the movie and it left me emotionally drained but I felt that it truly transported me to Afghanistan, a culture I know very little about. I had great hopes for this movi",
-  "score_features": 0.867943,
+  "score_features": 0.778487,
   "pred_features": 1,
-  "score_lm": 0.335714,
-  "pred_lm": 0
+  "score_lm": 0.535714,
+  "pred_lm": 1
  },
  {
   "id": "1637eb78-7941-4176-8998-37ab02f3f50f",
@@ -270,9 +270,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "A number of contributors have mentioned the age difference between Stewart and Novak. She was 25 and he was 50 when this movie was released. I think that the difference didn't matter for a suspense dr",
-  "score_features": 0.451897,
+  "score_features": 0.410141,
   "pred_features": 0,
-  "score_lm": 0.578431,
+  "score_lm": 0.338235,
   "pred_lm": 1
  },
  {
@@ -282,9 +282,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "Marion Davies stars in this remarkable comedy \"\"Show People\"\" released by MGM in 1928. Davies plays a hick from Savannah, Georgia, who arrives in Hollywood with her father (Dell Henderson). The jalopy",
-  "score_features": 0.135405,
+  "score_features": 0.108491,
   "pred_features": 0,
-  "score_lm": 0.375758,
+  "score_lm": 0.090909,
   "pred_lm": 0
  },
  {
@@ -294,9 +294,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Of the elements that make this the best at this point, I have to say #1 is Christine McIntire. Shemp's scene when poisoned and her reaction are truly magnificent. I imagine that, as one poster suggest",
-  "score_features": 0.502151,
+  "score_features": 0.522624,
   "pred_features": 1,
-  "score_lm": 0.445312,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -306,10 +306,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The South Australian State Emergency Service (SES) exists to minimise the loss of life, injuries and property damage from emergencies and natural disasters. The service is a volunteer-based organisati",
-  "score_features": 0.705291,
+  "score_features": 0.733188,
   "pred_features": 1,
-  "score_lm": 0.349462,
-  "pred_lm": 0
+  "score_lm": 0.865591,
+  "pred_lm": 1
  },
  {
   "id": "56558868-9189-4699-a6bb-2c14a66f6ea5",
@@ -318,10 +318,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "we have studied a mass model for spiral galaxies in which the dark matter surface density is a scaled version of the observed hi surface density . applying this mass model to a sample of 24 spiral gal",
-  "score_features": 0.148189,
+  "score_features": 0.305508,
   "pred_features": 0,
-  "score_lm": 0.503106,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "fd4684d5-d95c-42b7-88b3-419ea432b6c4",
@@ -330,9 +330,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "As well as creating rights for \"workers\" who generally lack bargaining power in the market, the Treaty on the Functioning of the European Union also protects the \"freedom of establishment\" in article ",
-  "score_features": 0.062795,
+  "score_features": 0.034011,
   "pred_features": 0,
-  "score_lm": 0.332298,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -342,9 +342,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Thank God I watched this at a friend's place and did not pay for it. The plot is horribly transparent and the whole movie felt like an episode of a TV show. If you have any knowledge of computers or e",
-  "score_features": 0.071155,
+  "score_features": 0.069549,
   "pred_features": 0,
-  "score_lm": 0.316456,
+  "score_lm": 0.219409,
   "pred_lm": 0
  },
  {
@@ -354,10 +354,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "experience unmatched by any BMW past or present. As a result of the interplay between precise, pared-down forms and an open sense of space, the driver and passengers find themselves immersed in a very",
-  "score_features": 0.920766,
+  "score_features": 0.911243,
   "pred_features": 1,
-  "score_lm": 0.301587,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "fab53468-96c3-4095-984e-662e93b90e37",
@@ -366,10 +366,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "CC Search beta has added 470,000 images from the millions of materials contained in Europeana's collection of Creative Commons images.CC Search beta has added 470,000 images from the millions of mater",
-  "score_features": 0.683073,
+  "score_features": 0.632264,
   "pred_features": 1,
-  "score_lm": 0.337121,
-  "pred_lm": 0
+  "score_lm": 0.382576,
+  "pred_lm": 1
  },
  {
   "id": "6aa8ff9f-aa9c-483c-b63d-88fdb4779317",
@@ -378,9 +378,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "are much greater than the punishment. They",
-  "score_features": 0.146313,
+  "score_features": 0.166835,
   "pred_features": 0,
-  "score_lm": 0.428571,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -390,9 +390,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "As well as creating rights for \"workers\" who generally lack bargaining power in the market, the Treaty on the Functioning of the European Union also protects the \"freedom of establishment\" in article ",
-  "score_features": 0.292314,
+  "score_features": 0.145795,
   "pred_features": 0,
-  "score_lm": 0.373938,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -402,9 +402,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Officers say they have no idea who the man was and what his links to the forgery operation might be. Five foreigners were arrested and one police officer was shot and wounded during the operation. Qua",
-  "score_features": 0.187321,
+  "score_features": 0.141527,
   "pred_features": 0,
-  "score_lm": 0.350877,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -414,10 +414,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "Data is the foundation of pay-per-click marketing; it's both the by-product of every action undertaken, and the source of denoting which action is the most effective to take next. But not all PPC mark",
-  "score_features": 0.915888,
+  "score_features": 0.893949,
   "pred_features": 1,
-  "score_lm": 0.447059,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "ff1c41b7-bf22-4677-9c54-7f56c84045f7",
@@ -426,10 +426,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we use time - evolutions of the linear perturbation equations to study the oscillations of rapidly rotating neutrons stars .  our models account for the buoyancy due to composition gradients and we st",
-  "score_features": 0.168984,
+  "score_features": 0.151842,
   "pred_features": 0,
-  "score_lm": 0.493827,
-  "pred_lm": 1
+  "score_lm": 0.179012,
+  "pred_lm": 0
  },
  {
   "id": "464bc568-51e9-4c6d-b9b4-f8fc367d1b85",
@@ -438,9 +438,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "A number of researchers (David Rodda, Jacob Vigdor, and Janna Matlack), argue that a shortage of affordable housing – at least in the US – is caused in part by income inequality. David Rodda noted tha",
-  "score_features": 0.601469,
+  "score_features": 0.601911,
   "pred_features": 1,
-  "score_lm": 0.330435,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -450,9 +450,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Researchers analysed 14 years of data from 62 councils in England and Wales which had tried strategies such as permanently switching off lights or dimming them. They said the findings could help save ",
-  "score_features": 0.436138,
+  "score_features": 0.429068,
   "pred_features": 0,
-  "score_lm": 0.407921,
+  "score_lm": 0.09703,
   "pred_lm": 0
  },
  {
@@ -462,9 +462,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Republicans' tax-rewrite plans are riddled with bugs, loopholes and other potential problems that could plague lawmakers long after their legislation is signed into law.Some of the provisions could be",
-  "score_features": 0.265563,
+  "score_features": 0.358872,
   "pred_features": 0,
-  "score_lm": 0.466797,
+  "score_lm": 0.976562,
   "pred_lm": 1
  },
  {
@@ -474,9 +474,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The club's Latin motto Nil Satis, Nisi Optimum, which means \"nothing but the best is good enough\", and two wreaths have been removed from the new design. The petition said fans would not buy merchandi",
-  "score_features": 0.084413,
+  "score_features": 0.062929,
   "pred_features": 0,
-  "score_lm": 0.329231,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -486,10 +486,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "An oscillating cylinder steam engine is a variant of the simple expansion steam engine which does not require valves to direct steam into and out of the cylinder. Instead of valves, the entire cylinde",
-  "score_features": 0.542811,
-  "pred_features": 1,
-  "score_lm": 0.537634,
-  "pred_lm": 1
+  "score_features": 0.497566,
+  "pred_features": 0,
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "69068fc3-0ed8-493d-8d88-0eb235169a6e",
@@ -498,10 +498,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "What a boring film! To sum it all up, its was basically just Nana Patekar beating up his daughter-in-law Karisma Kapoor, while she tried to flee from the village, with her son. Can someone say BORING?",
-  "score_features": 0.379208,
+  "score_features": 0.324281,
   "pred_features": 0,
-  "score_lm": 0.214286,
-  "pred_lm": 0
+  "score_lm": 0.34127,
+  "pred_lm": 1
  },
  {
   "id": "56344008-328d-48b9-af94-da7cfe000d71",
@@ -510,10 +510,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "neighborhoods without a protective barrier. \"I take concerns about the safety of all residents very, very seriously,\" says Bass. But",
-  "score_features": 0.427056,
+  "score_features": 0.473141,
   "pred_features": 0,
-  "score_lm": 0.4,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "110756b5-888e-48bc-aabd-9758430dd101",
@@ -522,9 +522,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "An increase in imported cars into North America forced General Motors, Ford and Chrysler to introduce smaller and fuel-efficient models for domestic sales. The Dodge Omni / Plymouth Horizon from Chrys",
-  "score_features": 0.362878,
+  "score_features": 0.37985,
   "pred_features": 0,
-  "score_lm": 0.348571,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -534,10 +534,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "In Ireland, private schools (Irish: scoil phríobháideach) are unusual because a certain number of teacher's salaries are paid by the State. If the school wishes to employ extra teachers they are paid ",
-  "score_features": 0.193829,
+  "score_features": 0.177082,
   "pred_features": 0,
-  "score_lm": 0.480519,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "705ccb4f-5883-436d-aed4-dfaa7f6d577d",
@@ -546,9 +546,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "I dunno sometimes...you try and try and try to be charitable towards all the B thru Z grade movies out there, but once in a while a particular movie just tests your patience until you want to slap eve",
-  "score_features": 0.237493,
+  "score_features": 0.16733,
   "pred_features": 0,
-  "score_lm": 0.412574,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -558,10 +558,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "background : we present a case in which laparoscopy was both diagnostic and therapeutic in a patient with a spigelian hernia.case report : a 35-year - old man was referred to the general surgery servi",
-  "score_features": 0.47949,
+  "score_features": 0.49953,
   "pred_features": 0,
-  "score_lm": 0.511628,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "c524d677-a8d2-45c7-9f11-1837b90d4fc1",
@@ -570,10 +570,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "Marion Davies stars in this remarkable comedy \"\"Show People\"\" released by MGM in 1928. Davies plays a hick from Savannah, Georgia, who arrives in Hollywood with her father (Dell Henderson). The jalopy",
-  "score_features": 0.121659,
+  "score_features": 0.154504,
   "pred_features": 0,
-  "score_lm": 0.464789,
-  "pred_lm": 1
+  "score_lm": 0.126761,
+  "pred_lm": 0
  },
  {
   "id": "63abb062-a362-420c-8e8b-87c721295dcb",
@@ -582,10 +582,10 @@
   "source": "document-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "LOS ANGELES — Former Breitbart News editor-at-large Ben Shapiro announced Sunday evening via left-wing Buzzfeed that he is abandoning Andrew Breitbart's lifelong best friend, widow, hand-picked manage",
-  "score_features": 0.06899,
+  "score_features": 0.068652,
   "pred_features": 0,
-  "score_lm": 0.391691,
-  "pred_lm": 0
+  "score_lm": 0.881306,
+  "pred_lm": 1
  },
  {
   "id": "01dce715-8dfd-478d-b412-e4fa4c69eda6",
@@ -594,10 +594,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "are much greater than the punishment. \"Part of the damage control exercise saw the department set up accountability sessions with staff to make sure they understood the limits of privacy legislation. ",
-  "score_features": 0.955061,
+  "score_features": 0.968376,
   "pred_features": 1,
-  "score_lm": 0.292683,
-  "pred_lm": 0
+  "score_lm": 0.970732,
+  "pred_lm": 1
  },
  {
   "id": "d2b84a7e-e47a-466a-a8af-c08e9ff4072f",
@@ -606,9 +606,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "During the mass high school education movement from 1910–1940, there was an increase in skilled workers, which led to a decrease in the price of skilled labor. High school education during the period ",
-  "score_features": 0.334768,
+  "score_features": 0.425906,
   "pred_features": 0,
-  "score_lm": 0.386973,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -618,10 +618,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the allwise processing pipeline has measured motions for all objects detected on wise images taken between 2010 january and 2011 february . in this paper  , we discuss new capabilities made to the sof",
-  "score_features": 0.032942,
+  "score_features": 0.0834,
   "pred_features": 0,
-  "score_lm": 0.518657,
-  "pred_lm": 1
+  "score_lm": 0.059701,
+  "pred_lm": 0
  },
  {
   "id": "b4df2b4f-99b4-48c3-ba69-7fb73b6acc75",
@@ -630,9 +630,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "While studying law and philosophy in England and Germany, Iqbal became a member of the London branch of the All India Muslim League. He came back to Lahore in 1908. While dividing his time between law",
-  "score_features": 0.244139,
+  "score_features": 0.261063,
   "pred_features": 0,
-  "score_lm": 0.350746,
+  "score_lm": 0.067164,
   "pred_lm": 0
  },
  {
@@ -642,9 +642,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "fixed - wind unmanned aerial vehicles ( uavs ) are essential for low cost aerial surveillance and mapping applications in remote regions .  one of the main limitations of uavs is limited fuel capacity",
-  "score_features": 0.482746,
+  "score_features": 0.464091,
   "pred_features": 0,
-  "score_lm": 0.32,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -654,9 +654,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "introductionhypothermic circulatory arrest for adult aortic arch repair is still high - risk . Eur Heart J 2011 ; 32 : 745 – 56. 2. de Mooij FJ Hoenderving EJ Oude Griessens RJ Boerwinkle EJ Wesseling",
-  "score_features": 0.151931,
+  "score_features": 0.09147,
   "pred_features": 0,
-  "score_lm": 0.322368,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -666,9 +666,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "Well, if you are Welsh sailor Hannah Mills, the answer is simple. You aim to repeat your success, maybe this time in a different boat. History awaits for the 29-year-old as Mills aims to become Britai",
-  "score_features": 0.12675,
+  "score_features": 0.221035,
   "pred_features": 0,
-  "score_lm": 0.314286,
+  "score_lm": 0.104762,
   "pred_lm": 0
  },
  {
@@ -678,10 +678,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "experience unmatched by any BMW past or present. As a result of the interplay between precise, pared-down forms and an open sense of space, the driver and passengers find themselves immersed in a very",
-  "score_features": 0.914783,
+  "score_features": 0.908354,
   "pred_features": 1,
-  "score_lm": 0.375494,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "8d8821de-424f-456c-85d3-ea9848220a7b",
@@ -690,9 +690,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "I never watched the 'Next Action Hero' show, and until reading the other comments here, did not know that this movie was the 'prize' from that competition. I was just flipping channels and came across",
-  "score_features": 0.55646,
-  "pred_features": 1,
-  "score_lm": 0.406375,
+  "score_features": 0.47548,
+  "pred_features": 0,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -702,9 +702,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "The complaints are valid, to me the biggest problem is that this soap opera is too aimed for women. It is a very good soap opera for women I just don\\'t think it reaches the men as much. It is like so",
-  "score_features": 0.264309,
+  "score_features": 0.308838,
   "pred_features": 0,
-  "score_lm": 0.417989,
+  "score_lm": 0.15873,
   "pred_lm": 0
  },
  {
@@ -714,9 +714,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "backgroundmost traumatic tracheobronchial injuries are fatal and result in death .  some milder cases are not life threatening and are often missed at the initial presentation .  tracheobronchial rupt",
-  "score_features": 0.153141,
+  "score_features": 0.20027,
   "pred_features": 0,
-  "score_lm": 0.366438,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -726,9 +726,9 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "we show that the kullback - leibler distance is a good measure of the statistical uncertainty of correlation matrices estimated by using a finite set of data . for correlation matrices of multivariate",
-  "score_features": 0.971608,
+  "score_features": 0.979038,
   "pred_features": 1,
-  "score_lm": 0.473404,
+  "score_lm": 0.611702,
   "pred_lm": 1
  },
  {
@@ -738,10 +738,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we search for asymptotic safety in a yukawa system with a chiral u@xmath0u@xmath1 symmetry , serving as a toy model for the standard - model higgs sector . using the functional rg as a nonperturbative",
-  "score_features": 0.081535,
+  "score_features": 0.138823,
   "pred_features": 0,
-  "score_lm": 0.660606,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "abb40ffa-e127-4cbf-b4b2-4a39d3b4f4eb",
@@ -750,9 +750,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Officers working on the case said they had uncovered \"several items\" including women's clothing in a search of woodland near Roberton. The Sunday Mail newspaper reported that other \"significant items\"",
-  "score_features": 0.13088,
+  "score_features": 0.076167,
   "pred_features": 0,
-  "score_lm": 0.352273,
+  "score_lm": 0.261364,
   "pred_lm": 0
  },
  {
@@ -762,9 +762,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "although the national health service ( nhs ) is regarded as a national treasure , it is no longer immune from the colossal financial pressures brought about by global recession . economic sustainabili",
-  "score_features": 0.715835,
+  "score_features": 0.764605,
   "pred_features": 1,
-  "score_lm": 0.363636,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -774,10 +774,10 @@
   "source": "document-level detection dataset\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "malignant transformation of teratoma in the anterior mediastinum is rare, it is one of the most common in the abdominal cavity\n- teratoma usually malignant transformation of the process occurs in wome",
-  "score_features": 0.776257,
+  "score_features": 0.748595,
   "pred_features": 1,
-  "score_lm": 0.629268,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "b36b248b-cd68-4d63-8b9b-58fe461c1219",
@@ -786,9 +786,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "During the mass high school education movement from 1910–1940, there was an increase in skilled workers, which led to a decrease in the price of skilled labor. High school education during the period ",
-  "score_features": 0.707138,
+  "score_features": 0.680695,
   "pred_features": 1,
-  "score_lm": 0.357143,
+  "score_lm": 0.208333,
   "pred_lm": 0
  },
  {
@@ -798,10 +798,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The complaints are valid, to me the biggest problem is that this soap opera is too aimed for women. I am okay with these night time soaps, like Grey's Anatomy, or Ugly Betty, or West Wing, because the",
-  "score_features": 0.078307,
+  "score_features": 0.051657,
   "pred_features": 0,
-  "score_lm": 0.485075,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "ef516a12-8d5e-4b9d-81a1-b5ac08586768",
@@ -810,10 +810,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "During the mass high school education movement from 1910–1940, there was an increase in skilled workers, which led to a decrease in the price of skilled labor. High school education during the period ",
-  "score_features": 0.552866,
-  "pred_features": 1,
-  "score_lm": 0.403448,
-  "pred_lm": 0
+  "score_features": 0.497714,
+  "pred_features": 0,
+  "score_lm": 0.268966,
+  "pred_lm": 1
  },
  {
   "id": "a74da057-2390-43b6-9fd7-28720ce6542c",
@@ -822,9 +822,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "From Sydney to Moscow, Paris to New York, crowds said goodbye to 2016, a tumultuous year in global politics. Many cities stepped up security for New Year's Eve celebrations, after a year in which atta",
-  "score_features": 0.195033,
+  "score_features": 0.152146,
   "pred_features": 0,
-  "score_lm": 0.336323,
+  "score_lm": 0.112108,
   "pred_lm": 0
  },
  {
@@ -834,10 +834,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "Well, if you are Welsh sailor Hannah Mills, the answer is simple. You aim to repeat your success, maybe this time in a different boat. History awaits for the 29-year-old as Mills aims to become Britai",
-  "score_features": 0.406459,
-  "pred_features": 0,
-  "score_lm": 0.289157,
-  "pred_lm": 0
+  "score_features": 0.578155,
+  "pred_features": 1,
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "c05fa7d7-b84c-41b5-89b4-7acaad5e3f0a",
@@ -846,9 +846,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "In contrast to product requirements or other laws that hinder market access, the Court of Justice developed a presumption that \"selling arrangements\" would be presumed to not fall into TFEU article 34",
-  "score_features": 0.291013,
+  "score_features": 0.261905,
   "pred_features": 0,
-  "score_lm": 0.386598,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -858,9 +858,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "I know little or nothing about astronomy, but nevertheless; I was, at first, a little sceptical about the plot of this movie. It follows three children that were all born during a solar eclipse and so",
-  "score_features": 0.146351,
+  "score_features": 0.181058,
   "pred_features": 0,
-  "score_lm": 0.33432,
+  "score_lm": 0.047337,
   "pred_lm": 0
  },
  {
@@ -870,9 +870,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "Well, if you are Welsh sailor Hannah Mills, the answer is simple. You aim to repeat your success, maybe this time in a different boat. History awaits for the 29-year-old as Mills aims to become Britai",
-  "score_features": 0.140891,
+  "score_features": 0.205715,
   "pred_features": 0,
-  "score_lm": 0.503333,
+  "score_lm": 0.41,
   "pred_lm": 1
  },
  {
@@ -882,9 +882,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "we investigate the tunability of electrostatic coupling between solid state quantum dots as building blocks for quantum bits . specifically , our analysis is based upon two - dimensional electron syst",
-  "score_features": 0.257708,
+  "score_features": 0.259716,
   "pred_features": 0,
-  "score_lm": 0.643154,
+  "score_lm": 0.352697,
   "pred_lm": 1
  },
  {
@@ -894,9 +894,9 @@
   "source": "document-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Review: Against Me!, 'Transgender Dysphoria Blues'toggle caption Ryan Russell/Courtesy of the artistThe bracingly political Florida punk band Against Me! has been a going concern since 1997, but Trans",
-  "score_features": 0.548508,
+  "score_features": 0.546758,
   "pred_features": 1,
-  "score_lm": 0.478873,
+  "score_lm": 1.0,
   "pred_lm": 1
  },
  {
@@ -906,10 +906,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "New Nissan Cars for Sale - New Nissan Inventory in Austin* All vehicle prices are plus tax, title, plate and dealer fees. The advertised price does not include sales tax, vehicle registration fees, fi",
-  "score_features": 0.19668,
+  "score_features": 0.42214,
   "pred_features": 0,
-  "score_lm": 0.307229,
-  "pred_lm": 0
+  "score_lm": 0.86747,
+  "pred_lm": 1
  },
  {
   "id": "6859b9df-dc38-4e58-841f-7e0de0959eb4",
@@ -918,10 +918,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "a non  perturbative approach to the solution of the time  dependent , two  center dirac equation is presented with a special emphasis on the proper treatment of the potential of the nuclei . in order ",
-  "score_features": 0.320951,
+  "score_features": 0.414059,
   "pred_features": 0,
-  "score_lm": 0.509009,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "b4ba7b27-97ab-4a4d-8f0e-807ce5cf91d8",
@@ -930,9 +930,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Hollywood movie industry is the laziest one in the entire world. It only needs a single hit to flood theaters with the same old crap re-invented over and over again. Take superheroes for example, for ",
-  "score_features": 0.14995,
+  "score_features": 0.181294,
   "pred_features": 0,
-  "score_lm": 0.420455,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -942,10 +942,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the atlas experiment pixel detector upgrade plans are focused on development of new technology , including the fe - i4 readout integrated circuit .  the first upgrade project to make use of this new t",
-  "score_features": 0.574383,
+  "score_features": 0.73858,
   "pred_features": 1,
-  "score_lm": 0.509259,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "ac9838ab-c282-49b6-a458-7383cc3b94a4",
@@ -954,10 +954,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "Data is the foundation of pay-per-click marketing; it's both the by-product of every action undertaken, and the source of denoting which action is the most effective to take next. But not all PPC mark",
-  "score_features": 0.224996,
+  "score_features": 0.423525,
   "pred_features": 0,
-  "score_lm": 0.480114,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "40a6be32-ffc2-46f2-b506-d8931e28e17b",
@@ -966,9 +966,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "Data is the foundation of pay-per-click marketing; it's both the by-product of every action undertaken, and the source of denoting which action is the most effective to take next. But not all PPC mark",
-  "score_features": 0.27836,
+  "score_features": 0.384859,
   "pred_features": 0,
-  "score_lm": 0.325648,
+  "score_lm": 0.037464,
   "pred_lm": 0
  },
  {
@@ -978,10 +978,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "we investigate the tunability of electrostatic coupling between solid state quantum dots as building blocks for quantum bits . specifically , our analysis is based upon two - dimensional electron syst",
-  "score_features": 0.258747,
+  "score_features": 0.26229,
   "pred_features": 0,
-  "score_lm": 0.466899,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "500f7a03-a0c8-46a5-a7ac-f07dab2a0768",
@@ -990,10 +990,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "globally , national pharmacovigilance systems rely on spontaneous reporting in which suspected adverse drug reactions ( adrs ) are reported to a national coordinating centre by health professionals , ",
-  "score_features": 0.310548,
+  "score_features": 0.261961,
   "pred_features": 0,
-  "score_lm": 0.497585,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "b7d3521a-ac7f-4e04-a33b-89097228350d",
@@ -1002,9 +1002,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Another Spanish movie about the 1936 Civil War. This time we're told about the story of Carol (lovely played by débutant Clara Lago), a little girl which comes to live to a little Spanish village from",
-  "score_features": 0.506261,
+  "score_features": 0.569693,
   "pred_features": 1,
-  "score_lm": 0.375,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1014,9 +1014,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Maybe it was the title, or the trailer (certainly not the interview on the DVD, which is with the director as he keeps saying \"\"hi, kids\"\" into the camera like a buffoon), but I had expectations for E",
-  "score_features": 0.143403,
+  "score_features": 0.139687,
   "pred_features": 0,
-  "score_lm": 0.402961,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1026,9 +1026,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Very strange but occasionally elegant exploitation movie with no real story, but benefiting from its stunningly ravishing lead actress and a handful of nice, gruesome make-up effects. Daniella is a be",
-  "score_features": 0.311333,
+  "score_features": 0.330181,
   "pred_features": 0,
-  "score_lm": 0.321053,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1038,9 +1038,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "So well made, no CGI crap. Has anyone else been on the \"\"Jumping Crocs\"\" tour of Darwin's Adelaide River before? Black Water was WAY realistic; Rogue was a bit cringeworthy.<br /><br />Thought the blo",
-  "score_features": 0.420327,
+  "score_features": 0.421281,
   "pred_features": 0,
-  "score_lm": 0.375,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1050,9 +1050,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "objectiveheavily calcified left - main coronary diseases ( lmca ) remain a formidable challenge for percutaneous interventions ( pci ) .  this study was to investigate the safety and efficacy of using",
-  "score_features": 0.1643,
+  "score_features": 0.193008,
   "pred_features": 0,
-  "score_lm": 0.440789,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1062,9 +1062,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Since his arrival in January, Clement has steered the Swans from the bottom of the Premier League to 15th, four points above the relegation zone. The Swans face a trip to league leaders Chelsea on Sat",
-  "score_features": 0.073404,
+  "score_features": 0.091828,
   "pred_features": 0,
-  "score_lm": 0.329016,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1074,9 +1074,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "recent technical advances in mass spectrometry ( ms ) have brought the field of metabolomics to a point where large numbers of metabolites from numerous prokaryotic and eukaryotic organisms can now be",
-  "score_features": 0.192458,
+  "score_features": 0.186009,
   "pred_features": 0,
-  "score_lm": 0.437838,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1086,9 +1086,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "While studying law and philosophy in England and Germany, Iqbal became a member of the London branch of the All India Muslim League. The",
-  "score_features": 0.598844,
+  "score_features": 0.711976,
   "pred_features": 1,
-  "score_lm": 0.208333,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1098,9 +1098,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "background : we present a case in which laparoscopy was both diagnostic and therapeutic in a patient with a spigelian hernia.case report : a 35-year - old man was referred to the general surgery servi",
-  "score_features": 0.45105,
+  "score_features": 0.417485,
   "pred_features": 0,
-  "score_lm": 0.372549,
+  "score_lm": 0.222222,
   "pred_lm": 0
  },
  {
@@ -1110,9 +1110,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "This is yet another western about a greedy cattle baron looking to push out small ranchers and farmers. It's certainly all been done before and since. But The Violent Men is something special.<br /><b",
-  "score_features": 0.212815,
+  "score_features": 0.275249,
   "pred_features": 0,
-  "score_lm": 0.299625,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1122,9 +1122,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "In contrast to product requirements or other laws that hinder market access, the Court of Justice developed a presumption that \"selling arrangements\" would be presumed to not fall into TFEU article 34",
-  "score_features": 0.357806,
+  "score_features": 0.384278,
   "pred_features": 0,
-  "score_lm": 0.314286,
+  "score_lm": 0.078571,
   "pred_lm": 0
  },
  {
@@ -1134,10 +1134,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "pill were not truly having \"bad sex.\" Overall, these women were still mostly satisfied with their sex lives and were just as likely to achieve orgasm, so this headline is just blatantly misleading. Fo",
-  "score_features": 0.182573,
+  "score_features": 0.202221,
   "pred_features": 0,
-  "score_lm": 0.396667,
-  "pred_lm": 0
+  "score_lm": 0.973333,
+  "pred_lm": 1
  },
  {
   "id": "290e544c-af0d-4a15-a2d1-7e3c68f65fce",
@@ -1146,10 +1146,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "DECnet is a suite of network protocols created by Digital Equipment Corporation, originally released in 1975 in order to connect two PDP-11 minicomputers. It evolved into one of the first peer-to-peer",
-  "score_features": 0.675134,
+  "score_features": 0.718575,
   "pred_features": 1,
-  "score_lm": 0.472527,
-  "pred_lm": 1
+  "score_lm": 0.21978,
+  "pred_lm": 0
  },
  {
   "id": "275f7643-81d7-4972-b1c3-7d3d7fedc2e2",
@@ -1158,10 +1158,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "be on the motorists' side. After a leak left their gas tank nearly empty, Crocker set off on a 26-mile bicycle ride to the nearest town. A bike tire punctured, however, and forced Crocker to walk most",
-  "score_features": 0.801108,
+  "score_features": 0.788808,
   "pred_features": 1,
-  "score_lm": 0.360424,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "287c7018-a76c-4777-90b2-b297389ce89d",
@@ -1170,10 +1170,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "introductionhypothermic circulatory arrest for adult aortic arch repair is still high - risk . despite decades of clinical experience , significant practice variations exist around the world .  these ",
-  "score_features": 0.429201,
+  "score_features": 0.449421,
   "pred_features": 0,
-  "score_lm": 0.474886,
-  "pred_lm": 1
+  "score_lm": 0.118721,
+  "pred_lm": 0
  },
  {
   "id": "20f36898-4e9c-49c7-8f39-68c2bb13fbc8",
@@ -1182,10 +1182,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "nuclear interactions of antiprotons in atomic states are discussed . the total as well as partial widths for single nucleon capture events are calculated . Additionally, the results of experiments tha",
-  "score_features": 0.907818,
+  "score_features": 0.924536,
   "pred_features": 1,
-  "score_lm": 0.383784,
-  "pred_lm": 0
+  "score_lm": 0.864865,
+  "pred_lm": 1
  },
  {
   "id": "d93d610f-bb40-438a-bd95-fb287f597cc2",
@@ -1194,9 +1194,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "stevens - johnson syndrome ( sjs ) is characterized by mucocutaneous tenderness and typical hemorrhagic erosions , erythema and epidermal detachment presenting as blisters and areas of denuded skin . ",
-  "score_features": 0.034095,
+  "score_features": 0.035756,
   "pred_features": 0,
-  "score_lm": 0.425532,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1206,10 +1206,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "we show that the kullback - leibler distance is a good measure of the statistical uncertainty of correlation matrices estimated by using a finite set of data . for correlation matrices of multivariate",
-  "score_features": 0.198898,
+  "score_features": 0.226225,
   "pred_features": 0,
-  "score_lm": 0.320675,
-  "pred_lm": 0
+  "score_lm": 0.337553,
+  "pred_lm": 1
  },
  {
   "id": "2242af9f-b289-490e-a3a0-8289ed20f413",
@@ -1218,10 +1218,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "first - principles density - functional theory has been used to investigate equilibrium geometries , total energies , and diffusion barriers for h as an interstitial impurity absorbed in @xmath0-fe . ",
-  "score_features": 0.129012,
+  "score_features": 0.142985,
   "pred_features": 0,
-  "score_lm": 0.648438,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "cc7251f1-09b1-48f6-b099-2e2816c37043",
@@ -1230,9 +1230,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "or his first ever debut this film has some riveting and chilling moments. In the best horror film fashion the pit of your stomach tightens every moment during this film. The ending is superb. The make",
-  "score_features": 0.877091,
+  "score_features": 0.826061,
   "pred_features": 1,
-  "score_lm": 0.231707,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1242,9 +1242,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "As well as creating rights for \"workers\" who generally lack bargaining power in the market, the Treaty on the Functioning of the European Union also protects the \"freedom of establishment\" in article ",
-  "score_features": 0.351983,
+  "score_features": 0.245699,
   "pred_features": 0,
-  "score_lm": 0.442997,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1254,9 +1254,9 @@
   "source": "OOD sentence-level detection dataset\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Cosworth has had a long and distinguished career in Formula One , beginning in 1963. Two Formula One teams were supplied with Cosworth engines in 2006: the Williams team using Cosworth V8 engines , tr",
-  "score_features": 0.073489,
+  "score_features": 0.098807,
   "pred_features": 0,
-  "score_lm": 0.366038,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1266,9 +1266,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "ANN ARBOR -- On Saturday night, Michigan went through the most lopsided -- and arguably the ugliest -- loss of Brady Hoke's tenure.The 31-0 loss at Notre Dame was the widest margin of defeat Michigan ",
-  "score_features": 0.154466,
+  "score_features": 0.096532,
   "pred_features": 0,
-  "score_lm": 0.354839,
+  "score_lm": 0.091398,
   "pred_lm": 0
  },
  {
@@ -1278,9 +1278,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The Rhine was not known to Herodotus and first enters the historical period in the 1st century BC in Roman-era geography. At that time, it formed the boundary between Gaul and Germania. The Upper Rhin",
-  "score_features": 0.144691,
+  "score_features": 0.215239,
   "pred_features": 0,
-  "score_lm": 0.401515,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1290,9 +1290,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "This show makes absolutely no sense. Every week, two ladies go to an estate to do some gardening, and every week without fail, they somehow stumble upon a murder. Because everyone who owns a big house",
-  "score_features": 0.196097,
+  "score_features": 0.265184,
   "pred_features": 0,
-  "score_lm": 0.432836,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1302,9 +1302,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "or his first ever debut this film has some riveting and chilling moments. In the best horror film fashion the pit of your stomach tightens every moment during this film. The ending is superb. There's ",
-  "score_features": 0.429189,
+  "score_features": 0.457128,
   "pred_features": 0,
-  "score_lm": 0.320988,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1314,9 +1314,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "lotka volterra model and its modified forms have long become a major area of interest for periodic motions in nonlinear systems with competitive species . the model given by volterra shows that its pe",
-  "score_features": 0.053935,
+  "score_features": 0.034911,
   "pred_features": 0,
-  "score_lm": 0.440678,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1326,10 +1326,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we report on the chemical abundances of stars in the carina dwarf spheroidal galaxy ( dsph ) derived from low - resolution spectra . we have determined values of [ fe / h ] for 52 stars from the reduc",
-  "score_features": 0.157343,
+  "score_features": 0.201318,
   "pred_features": 0,
-  "score_lm": 0.544643,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "119498da-add6-48ff-9bf9-a4b180b2d37c",
@@ -1338,10 +1338,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "the allwise processing pipeline has measured motions for all objects detected on wise images taken between 2010 january and 2011 february . in this paper  , we discuss new capabilities made to the sof",
-  "score_features": 0.827107,
+  "score_features": 0.889528,
   "pred_features": 1,
-  "score_lm": 0.430493,
-  "pred_lm": 0
+  "score_lm": 0.569507,
+  "pred_lm": 1
  },
  {
   "id": "ef58f127-ab42-4723-ad11-5cf71cc74f01",
@@ -1350,9 +1350,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "vogt - koyanagi - harada disease ( vkh ) and sympathetic ophthalmia ( so ) are types of t - cell mediated autoimmune granulomatous uveitis .  although the two diseases share common clinical features ,",
-  "score_features": 0.047263,
+  "score_features": 0.054396,
   "pred_features": 0,
-  "score_lm": 0.451883,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1362,9 +1362,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "The child has not been seen for two days, since his parents abandoned him in northern Hokkaido, a region home to wild bears. He was found curled on the side of a road by a local woman who was going to",
-  "score_features": 0.060262,
+  "score_features": 0.056169,
   "pred_features": 0,
-  "score_lm": 0.38914,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1374,10 +1374,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "The child has not been seen for two days, since his parents abandoned him in northern Hokkaido, a region home to wild bears. The couple first told police he got lost as they foraged for vegetables.\n\nB",
-  "score_features": 0.160067,
+  "score_features": 0.160887,
   "pred_features": 0,
-  "score_lm": 0.259669,
-  "pred_lm": 0
+  "score_lm": 0.762431,
+  "pred_lm": 1
  },
  {
   "id": "689236aa-9539-420a-b4e0-5ea1b1300e21",
@@ -1386,9 +1386,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "On 1 July 1851, writs were issued for the election of the first Victorian Legislative Council, and the absolute independence of Victoria from New South Wales was established proclaiming a new Colony o",
-  "score_features": 0.288998,
+  "score_features": 0.285013,
   "pred_features": 0,
-  "score_lm": 0.290076,
+  "score_lm": 0.236641,
   "pred_lm": 0
  },
  {
@@ -1398,10 +1398,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "This is my story about shoes.My approach to shoes has always been indicative of my approach to running. In the past that meant that the shoe didn't really matter; all I wanted to do was run in the mou",
-  "score_features": 0.362371,
+  "score_features": 0.283915,
   "pred_features": 0,
-  "score_lm": 0.462891,
-  "pred_lm": 1
+  "score_lm": 0.251953,
+  "pred_lm": 0
  },
  {
   "id": "975669a6-155c-4bc4-be89-5b41294d5f86",
@@ -1410,10 +1410,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Daeth hi i'r amlwg fel cantores wrth gyrraedd rowndiau terfynol X Factor yn 2009. Never Give Up On You ydy'r gân fydd y Gymraes yn ei chanu yn y rowndiau terfynol yn Kiev, prifddinas yr Iwcraen. Katri",
-  "score_features": 0.108505,
+  "score_features": 0.1787,
   "pred_features": 0,
-  "score_lm": 0.571429,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "bcf5f192-68a6-44c6-b72b-8912dc23dfbd",
@@ -1422,10 +1422,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "we report a dynamic light scattering study of the fluctuation modes in a thermotropic liquid crystalline mixture of monomer and dimer compounds that exhibits the twist - bend nematic ( @xmath0 ) phase",
-  "score_features": 0.284841,
+  "score_features": 0.142507,
   "pred_features": 0,
-  "score_lm": 0.689394,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "dcb561d0-da95-4c8b-88d1-4775aa4d5e9f",
@@ -1434,9 +1434,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "From Sydney to Moscow, Paris to New York, crowds said goodbye to 2016, a tumultuous year in global politics. Many cities stepped up security for New Year's Eve celebrations, after a year in which atta",
-  "score_features": 0.120885,
+  "score_features": 0.226987,
   "pred_features": 0,
-  "score_lm": 0.368627,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1446,9 +1446,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "I've been making nerdy Valentines! Here are some printables for today. Simply right click, save the image, and print! Happy Valentine's Day!The sheet below is for the back of the cards.My printer was ",
-  "score_features": 0.215445,
+  "score_features": 0.369707,
   "pred_features": 0,
-  "score_lm": 0.38756,
+  "score_lm": 0.23445,
   "pred_lm": 0
  },
  {
@@ -1458,9 +1458,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "The complaints are valid, to me the biggest problem is that this soap opera is too aimed for women.\n\n\nHowever, there is one other small note which I did like, and it is a very important thing if you a",
-  "score_features": 0.011368,
+  "score_features": 0.010889,
   "pred_features": 0,
-  "score_lm": 0.29771,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1470,10 +1470,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "motor neuron diseases ( mnds ) are a rather heterogeneous group of diseases , with either sporadic or genetic origin or both , all characterized by the progressive degeneration of motor neurons . at t",
-  "score_features": 0.831803,
+  "score_features": 0.844294,
   "pred_features": 1,
-  "score_lm": 0.34589,
-  "pred_lm": 0
+  "score_lm": 0.678082,
+  "pred_lm": 1
  },
  {
   "id": "a14c7620-5244-4304-bf70-a0fa170f0dcc",
@@ -1482,9 +1482,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "Data is the foundation of pay-per-click marketing; it's both the by-product of every action undertaken, and the source of denoting which action is the most effective to take next. But not all PPC mark",
-  "score_features": 0.334397,
-  "pred_features": 0,
-  "score_lm": 0.421365,
+  "score_features": 0.540968,
+  "pred_features": 1,
+  "score_lm": 0.139466,
   "pred_lm": 0
  },
  {
@@ -1494,9 +1494,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "dysfunctional fictional nation of Abuddin. Even mainstream TV critics derided the series as unbearably Orientalist, with the Washington Post's Hank Stuever describing it as a \"stultifyingly acted TV d",
-  "score_features": 0.356751,
+  "score_features": 0.29923,
   "pred_features": 0,
-  "score_lm": 0.345528,
+  "score_lm": 0.219512,
   "pred_lm": 0
  },
  {
@@ -1506,10 +1506,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "motor neuron diseases ( mnds ) are a rather heterogeneous group of diseases , with either sporadic or genetic origin or both , all characterized by the progressive degeneration of motor neurons . at t",
-  "score_features": 0.252044,
+  "score_features": 0.300898,
   "pred_features": 0,
-  "score_lm": 0.569948,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "ae7d4238-81c6-4bb7-9e46-8e0f7a959ab4",
@@ -1518,9 +1518,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "After this, Huguenots (with estimates ranging from 200,000 to 1,000,000) fled to surrounding Protestant countries: England, the Netherlands, Switzerland, Norway, Denmark, and Prussia — whose Calvinist",
-  "score_features": 0.079496,
+  "score_features": 0.073697,
   "pred_features": 0,
-  "score_lm": 0.268519,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1530,9 +1530,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "reported lack of efficacy of ayurvedic treatments in clinical trials is often not due to inefficacy of the treatment itself , but arises from inadequacies of trial design .  this paper argues that tri",
-  "score_features": 0.78921,
+  "score_features": 0.90484,
   "pred_features": 1,
-  "score_lm": 0.431373,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1542,9 +1542,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "Well, if you are Welsh sailor Hannah Mills, the answer is simple. You aim to repeat your success, maybe this time in a different boat. History awaits for the 29-year-old as Mills aims to become Britai",
-  "score_features": 0.040502,
+  "score_features": 0.107157,
   "pred_features": 0,
-  "score_lm": 0.29703,
+  "score_lm": 0.052805,
   "pred_lm": 0
  },
  {
@@ -1554,10 +1554,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "It's a unique film, as it gives us our only chance to see the young Noel Coward in all his ironic glory. Because he seems so reserved & detached he's perfect for the role of an unloved cad who matter-",
-  "score_features": 0.172968,
+  "score_features": 0.154515,
   "pred_features": 0,
-  "score_lm": 0.399061,
-  "pred_lm": 0
+  "score_lm": 0.309859,
+  "pred_lm": 1
  },
  {
   "id": "6bce388d-881f-4722-b929-7969dccd50b7",
@@ -1566,9 +1566,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "initial release of doom. there are tons of tricks and traps to keep you on your toes. specters are always fun in dark places - not! and the author really put the time in which you will quickly realize",
-  "score_features": 0.405844,
+  "score_features": 0.396347,
   "pred_features": 0,
-  "score_lm": 0.289216,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1578,9 +1578,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Okay, last night, August 18th, 2004, I had the distinct displeasure of meeting Mr. Van Bebble at a showing of the film The Manson Family at the Three Penny in Chicago as part of the Chicago Undergroun",
-  "score_features": 0.039285,
+  "score_features": 0.036754,
   "pred_features": 0,
-  "score_lm": 0.308094,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1590,10 +1590,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "the mips fusarium graminearum genome database ( fgdb ) was established as a comprehensive genome database on one of the most devastating fungal plant pathogens of wheat , barley and maize . the curren",
-  "score_features": 0.934735,
+  "score_features": 0.963339,
   "pred_features": 1,
-  "score_lm": 0.283505,
-  "pred_lm": 0
+  "score_lm": 0.556701,
+  "pred_lm": 1
  },
  {
   "id": "6c5c4169-1c7a-40ba-ac7a-57cd53c50b4e",
@@ -1602,9 +1602,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we report a case of cardiac rhabdomyosarcoma , with initial clinical features of  atrial rhythmic dysfunction  , which was concluded as a mediastinal tumor by computed tomography ( ct ) scan .  endosc",
-  "score_features": 0.151887,
+  "score_features": 0.182883,
   "pred_features": 0,
-  "score_lm": 0.409836,
+  "score_lm": 0.139344,
   "pred_lm": 0
  },
  {
@@ -1614,10 +1614,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Alfio Anthony Granata pleaded guilty to multiple rapes, threats to kill, and intentionally causing serious injury. He held the backpacker in his Melbourne hotel room in 2012 after they had sex and too",
-  "score_features": 0.892276,
+  "score_features": 0.848053,
   "pred_features": 1,
-  "score_lm": 0.333333,
-  "pred_lm": 0
+  "score_lm": 0.954023,
+  "pred_lm": 1
  },
  {
   "id": "5aeb859a-17ac-4f6e-9bea-74470b99625a",
@@ -1626,10 +1626,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "As well as creating rights for \"workers\" who generally lack bargaining power in the market, the Treaty on the Functioning of the European Union also protects the \"freedom of establishment\" in article ",
-  "score_features": 0.965402,
+  "score_features": 0.934315,
   "pred_features": 1,
-  "score_lm": 0.327869,
-  "pred_lm": 0
+  "score_lm": 0.983607,
+  "pred_lm": 1
  },
  {
   "id": "1911406b-4d6c-477a-bddb-710c951dfd31",
@@ -1638,10 +1638,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "this article aims to explain why the notion of mania puerperalis , or puerperal insanity , was not used in the netherlands to exonerate women accused of infanticide , in contrast to other countries . ",
-  "score_features": 0.891281,
+  "score_features": 0.916722,
   "pred_features": 1,
-  "score_lm": 0.277228,
-  "pred_lm": 0
+  "score_lm": 0.752475,
+  "pred_lm": 1
  },
  {
   "id": "ba68081b-6ac9-40a7-926b-dfcf72b7b74d",
@@ -1650,10 +1650,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "nuclear interactions of antiprotons in atomic states are discussed . the total as well as partial widths for single nucleon capture events are calculated . the role of the nuclear force is discussed w",
-  "score_features": 0.119158,
+  "score_features": 0.156012,
   "pred_features": 0,
-  "score_lm": 0.489451,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "e41fa21a-fdb1-4900-8874-9913f2d5af12",
@@ -1662,10 +1662,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "or his first ever debut this film has some riveting and chilling moments. The way the film is shot keeps the audience on the edge of their seat throughout the entire runtime. The director's use of clo",
-  "score_features": 0.989433,
+  "score_features": 0.988179,
   "pred_features": 1,
-  "score_lm": 0.112069,
-  "pred_lm": 0
+  "score_lm": 0.887931,
+  "pred_lm": 1
  },
  {
   "id": "1c64ac69-ec73-44d0-b743-60799b202bd1",
@@ -1674,9 +1674,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "objectivethe aims of this study were to evaluate the relationship between the detachment force and bonding resin surface are and to determine the resin bonding surface area that would provide adequate",
-  "score_features": 0.15087,
+  "score_features": 0.165822,
   "pred_features": 0,
-  "score_lm": 0.513619,
+  "score_lm": 0.287938,
   "pred_lm": 1
  },
  {
@@ -1686,10 +1686,10 @@
   "source": "OOD sentence-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "THE design of coins is determined by a tradition going back at least to the time of Charles II that the direction in which the head faces should alternate between the coinage of successive monarchs. T",
-  "score_features": 0.296327,
+  "score_features": 0.167314,
   "pred_features": 0,
-  "score_lm": 0.55291,
-  "pred_lm": 1
+  "score_lm": 0.010582,
+  "pred_lm": 0
  },
  {
   "id": "80f3bc0b-3f3b-42d4-b74b-5f09a72bf1eb",
@@ -1698,9 +1698,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the iuphar database ( iuphar - db ) integrates peer - reviewed pharmacological , chemical , genetic , functional and anatomical information on the 354 nonsensory g protein - coupled receptors ( gpcrs ",
-  "score_features": 0.05455,
+  "score_features": 0.09689,
   "pred_features": 0,
-  "score_lm": 0.426295,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1710,9 +1710,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Lorna Green(Janine Reynaud)is a performance artist for wealthy intellectuals at a local club. She falls prey to her fantasies as the promise of romantic interludes turn into murder as she kills those ",
-  "score_features": 0.582142,
+  "score_features": 0.588991,
   "pred_features": 1,
-  "score_lm": 0.396341,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1722,10 +1722,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "in this letter we describe the pseudoparticle multipole method ( p@xmath0m@xmath0 ) , a new method to express multipole expansion by a distribution of pseudoparticles .  we can use this distribution o",
-  "score_features": 0.035063,
+  "score_features": 0.054537,
   "pred_features": 0,
-  "score_lm": 0.563981,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "c9b4552b-a725-4b24-850b-afc1236acae0",
@@ -1734,9 +1734,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "I remember watching this series avidly, every Saturday evening. My mother would be furious with me if I missed my allotted half hour. It was a family ritual. I remember watching it with my grandmother",
-  "score_features": 0.421382,
+  "score_features": 0.49188,
   "pred_features": 0,
-  "score_lm": 0.486842,
+  "score_lm": 0.335526,
   "pred_lm": 1
  },
  {
@@ -1746,10 +1746,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "ANN ARBOR -- On Saturday night, Michigan went through the most lopsided -- and arguably the ugliest -- loss of Brady Hoke's tenure.The 31-0 loss at Notre Dame was the widest margin of defeat Michigan ",
-  "score_features": 0.751987,
+  "score_features": 0.732163,
   "pred_features": 1,
-  "score_lm": 0.285256,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "f1191968-6056-40f3-af14-c5e18cd002db",
@@ -1758,10 +1758,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "You might not associate academic analysis with raucous outdoor performances or atmospheric indoor shows under candlelight. But Shakespeare's Globe on London's Bankside is a kind of living laboratory, ",
-  "score_features": 0.431093,
+  "score_features": 0.431053,
   "pred_features": 0,
-  "score_lm": 0.462963,
-  "pred_lm": 1
+  "score_lm": 0.094444,
+  "pred_lm": 0
  },
  {
   "id": "dd49d5b8-921e-4e97-9f20-166bb099d0c3",
@@ -1770,10 +1770,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "a double - peak spectral - energy - density of @xmath0-rays , similar to that observed in blazars , is expected in @xmath0-ray bursts ( grbs ) produced in supernova ( sn ) explosions .  the second pea",
-  "score_features": 0.00945,
+  "score_features": 0.017843,
   "pred_features": 0,
-  "score_lm": 0.580488,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "e2afa81c-a310-41a2-a7fd-dae14456a8bc",
@@ -1782,10 +1782,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Vettel was 0.239 seconds clear of Red Bull's Max Verstappen, with Mercedes' Nico Rosberg and Ferrari's Kimi Raikkonen also quicker than Hamilton. Drivers headed out early to get to work before expecte",
-  "score_features": 0.260664,
+  "score_features": 0.41588,
   "pred_features": 0,
-  "score_lm": 0.395778,
-  "pred_lm": 0
+  "score_lm": 0.277045,
+  "pred_lm": 1
  },
  {
   "id": "1cfb5178-fa88-48e8-8715-3fb40e660f0a",
@@ -1794,10 +1794,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The Harvard Crimson competes in 42 intercollegiate sports in the NCAA Division I Ivy League. Harvard has an intense athletic rivalry with Yale University culminating in The Game, although the Harvard–",
-  "score_features": 0.205029,
+  "score_features": 0.20585,
   "pred_features": 0,
-  "score_lm": 0.4875,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "7b452822-5efd-4392-b7f5-07a564838853",
@@ -1806,10 +1806,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "The child has not been seen for two days, since his parents abandoned him in northern Hokkaido, a region home to wild bears. A search party was organized immediately, combing through the dense forests",
-  "score_features": 0.801156,
+  "score_features": 0.754414,
   "pred_features": 1,
-  "score_lm": 0.308442,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "2dfe16a5-2e5a-41f3-a40a-fb0be00f2508",
@@ -1818,10 +1818,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "consistent perturbation theory for thermodynamical quantities in strongly type ii superconductors in magnetic field at low temperatures is developed .  it is complementary to the existing expansion va",
-  "score_features": 0.531885,
+  "score_features": 0.699887,
   "pred_features": 1,
-  "score_lm": 0.244681,
-  "pred_lm": 0
+  "score_lm": 0.404255,
+  "pred_lm": 1
  },
  {
   "id": "6a6ad861-904a-4c8d-8f0c-e3972899d07d",
@@ -1830,9 +1830,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "As well as creating rights for \"workers\" who generally lack bargaining power in the market, the Treaty on the Functioning of the European Union also protects the \"freedom of establishment\" in article ",
-  "score_features": 0.072425,
+  "score_features": 0.044861,
   "pred_features": 0,
-  "score_lm": 0.398601,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1842,10 +1842,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "lotka volterra model and its modified forms have long become a major area of interest for periodic motions in nonlinear systems with competitive species . The study of the nonautonomous FitzHugh-Nagum",
-  "score_features": 0.032461,
+  "score_features": 0.030964,
   "pred_features": 0,
-  "score_lm": 0.512397,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "e65acd46-099c-4240-9648-f24ce5d7254a",
@@ -1854,9 +1854,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "in the present paper we investigate incoherent @xmath0 electroproduction off complex nuclei . @xmath0 @xmath5@xmath0 @xmath0 and @xmath0 complex nuclei @xmath0@xmath5@xmath0@xmath0 were used. @xmath10",
-  "score_features": 0.119803,
+  "score_features": 0.053479,
   "pred_features": 0,
-  "score_lm": 0.34,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1866,9 +1866,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "lotka volterra model and its modified forms have long become a major area of interest for periodic motions in nonlinear systems with competitive species . Astrophys. J. 641, L54 (2013)\n\n51. Borschowa,",
-  "score_features": 0.496647,
-  "pred_features": 1,
-  "score_lm": 0.281818,
+  "score_features": 0.487689,
+  "pred_features": 0,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1878,10 +1878,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Islamist movements such as the Muslim Brotherhood, \"are well known for providing shelters, educational assistance, free or low cost medical clinics, housing assistance to students from out of town, st",
-  "score_features": 0.157544,
+  "score_features": 0.130168,
   "pred_features": 0,
-  "score_lm": 0.471698,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "61063a91-b660-4951-a59d-0bcd1c7b6393",
@@ -1890,9 +1890,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "It is thought to be the first time a Chinese company has invested in the games industry in Scotland. The new studio, which will be led by former Reloaded Productions managing director Michael Boniface",
-  "score_features": 0.301507,
+  "score_features": 0.301243,
   "pred_features": 0,
-  "score_lm": 0.277512,
+  "score_lm": 0.066986,
   "pred_lm": 0
  },
  {
@@ -1902,9 +1902,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "or his first ever debut this film has some riveting and chilling moments. In the best horror film fashion the pit of your stomach tightens every moment during this film. The ending is superb. No matte",
-  "score_features": 0.637286,
+  "score_features": 0.606329,
   "pred_features": 1,
-  "score_lm": 0.221053,
+  "score_lm": 0.094737,
   "pred_lm": 0
  },
  {
@@ -1914,9 +1914,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "this work evaluated activity levels in a group of healthy older adults to establish a target activity level for adults of similar age after total joint arthroplasty ( tja ) . with the decreasing age o",
-  "score_features": 0.054079,
+  "score_features": 0.055002,
   "pred_features": 0,
-  "score_lm": 0.441718,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1926,9 +1926,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "I dunno sometimes...you try and try and try to be charitable towards all the B thru Z grade movies out there, but once in a while a particular movie just tests your patience until you want to slap eve",
-  "score_features": 0.183631,
+  "score_features": 0.153759,
   "pred_features": 0,
-  "score_lm": 0.439689,
+  "score_lm": 0.143969,
   "pred_lm": 0
  },
  {
@@ -1938,10 +1938,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "During the mass high school education movement from 1910–1940, there was an increase in skilled workers, which led to a decrease in the price of skilled labor. High school education during the period ",
-  "score_features": 0.241444,
+  "score_features": 0.240649,
   "pred_features": 0,
-  "score_lm": 0.31701,
-  "pred_lm": 0
+  "score_lm": 0.623711,
+  "pred_lm": 1
  },
  {
   "id": "1e827ca8-4449-4fee-a74e-1f291e17c2ae",
@@ -1950,9 +1950,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "introduction.rapigest is an acid - labile detergent used in proteomics for the improvement of protein digestion.materials and method.to test the efficacy of rapigest for proteomics analysis of differe",
-  "score_features": 0.168287,
+  "score_features": 0.321405,
   "pred_features": 0,
-  "score_lm": 0.420814,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1962,9 +1962,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "One of my favorite shows back in the '70s. As I recall it went to air on Friday (or possibly Saturday)night on the Nine Network (?) here in Australia. Darren McGavin and Simon Oakland were great toget",
-  "score_features": 0.272669,
+  "score_features": 0.225829,
   "pred_features": 0,
-  "score_lm": 0.270531,
+  "score_lm": 0.096618,
   "pred_lm": 0
  },
  {
@@ -1974,10 +1974,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "a general method for compressing the modulation time - bandwidth product of analog signals is introduced and experimentally demonstrated . as one of its applications  , this physics - based signal gro",
-  "score_features": 0.710615,
+  "score_features": 0.857241,
   "pred_features": 1,
-  "score_lm": 0.528139,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "58995267-46c0-4124-a692-d6b77c72514e",
@@ -1986,9 +1986,9 @@
   "source": "document-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "BSkyB initially charged additional subscription fees for using a Sky+ PVR with their service; waiving the charge for subscribers whose package included two or more premium channels. This changed as fr",
-  "score_features": 0.898555,
+  "score_features": 0.871948,
   "pred_features": 1,
-  "score_lm": 0.38961,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -1998,10 +1998,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "this article aims to explain why the notion of mania puerperalis , or puerperal insanity , was not used in the netherlands to exonerate women accused of infanticide , in contrast to other countries . ",
-  "score_features": 0.157243,
+  "score_features": 0.099134,
   "pred_features": 0,
-  "score_lm": 0.463918,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "c707f839-5467-4ef3-8726-d5400b327708",
@@ -2010,10 +2010,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Replacement cost profit between July and September was $1.23bn (Â£802m), compared with $2.38bn a year earlier. Total revenue was $55.9bn against $94.8bn a year ago. The oil price dipped below $50 a ba",
-  "score_features": 0.118214,
+  "score_features": 0.147675,
   "pred_features": 0,
-  "score_lm": 0.163462,
-  "pred_lm": 0
+  "score_lm": 0.375,
+  "pred_lm": 1
  },
  {
   "id": "661cba63-19d2-4a6e-863b-166c2382b7df",
@@ -2022,10 +2022,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "The child has not been seen for two days, since his parents abandoned him in northern Hokkaido, a region home to wild bears. The couple first told police he got lost as they foraged for vegetables. Bu",
-  "score_features": 0.262,
+  "score_features": 0.251224,
   "pred_features": 0,
-  "score_lm": 0.237885,
-  "pred_lm": 0
+  "score_lm": 0.559471,
+  "pred_lm": 1
  },
  {
   "id": "b41a91f9-b92e-4997-9474-e7f302856f71",
@@ -2034,10 +2034,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Many important complexity classes can be defined by bounding the time or space used by the algorithm. Some important complexity classes of decision problems defined in this manner are the following:",
-  "score_features": 0.939054,
+  "score_features": 0.844742,
   "pred_features": 1,
-  "score_lm": 0.516129,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "3e313b01-d1f8-4c87-9dd3-0b32a12a18a3",
@@ -2046,10 +2046,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we study characteristic ( quasinormal ) modes of a @xmath0-dimensional schwarzshild black hole .  it proves out that the real parts of the complex quasinormal modes , representing the real oscillation",
-  "score_features": 0.028312,
+  "score_features": 0.025715,
   "pred_features": 0,
-  "score_lm": 0.59434,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "fb2d071f-9b9f-4282-9b2b-a10389f23190",
@@ -2058,10 +2058,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "introductionhypothermic circulatory arrest for adult aortic arch repair is still high - risk . despite decades of clinical experience , significant practice variations exist around the world . these p",
-  "score_features": 0.894168,
+  "score_features": 0.891134,
   "pred_features": 1,
-  "score_lm": 0.370166,
-  "pred_lm": 0
+  "score_lm": 0.762431,
+  "pred_lm": 1
  },
  {
   "id": "5e8c237a-7be3-4d5f-9c86-ba5ec9be2522",
@@ -2070,10 +2070,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "experience unmatched by any BMW past or present. As a result of the interplay between precise, pared-down forms and an open sense of space, the driver and passengers find themselves immersed in a very",
-  "score_features": 0.90294,
+  "score_features": 0.846811,
   "pred_features": 1,
-  "score_lm": 0.358871,
-  "pred_lm": 0
+  "score_lm": 0.471774,
+  "pred_lm": 1
  },
  {
   "id": "fd87ef0d-cc17-45a8-bbd1-c32fca14cd57",
@@ -2082,9 +2082,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Construction projects can suffer from preventable financial problems. Underbids happen when builders ask for too little money to complete the project. Cash flow problems exist when the present amount ",
-  "score_features": 0.41171,
+  "score_features": 0.468389,
   "pred_features": 0,
-  "score_lm": 0.368852,
+  "score_lm": 0.032787,
   "pred_lm": 0
  },
  {
@@ -2094,9 +2094,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "a set of exposure factors that reflects the characteristics of individual behavior capable of influencing exposure is essential for risk and exposure assessment . in 2007 ,  the korean exposure factor",
-  "score_features": 0.409426,
+  "score_features": 0.436245,
   "pred_features": 0,
-  "score_lm": 0.402299,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2106,10 +2106,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "type i interferons ( ifns ) were originally identified as antiviral effector molecules that exert pleiotropic physiological processes ranging from immune modulation , control of proliferation , apopto",
-  "score_features": 0.065415,
+  "score_features": 0.126871,
   "pred_features": 0,
-  "score_lm": 0.76569,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "6d8dd597-d4e9-4ce8-bb23-e465bfb42cb2",
@@ -2118,9 +2118,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The market was crowded with people doing last-minute shopping on the eve of the Eid festival marking the end of the Muslim Holy month of Ramadan. One witness told the BBC many of the bodies he had see",
-  "score_features": 0.058611,
+  "score_features": 0.065805,
   "pred_features": 0,
-  "score_lm": 0.284722,
+  "score_lm": 0.027778,
   "pred_lm": 0
  },
  {
@@ -2130,10 +2130,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "narrow planetary rings are eccentric and inclined .  particles within a given ring must therefore share the same pericenter and node .  we solve for the three - dimensional geometries and mass distrib",
-  "score_features": 0.189266,
+  "score_features": 0.261408,
   "pred_features": 0,
-  "score_lm": 0.59761,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "6dd8d631-2f01-4e24-9016-b613966991be",
@@ -2142,9 +2142,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "Since his arrival in January, Clement has steered the Swans from the bottom of the Premier League to 15th, four points above the relegation zone. The Swans face a trip to league leaders Chelsea on Sat",
-  "score_features": 0.124585,
+  "score_features": 0.170564,
   "pred_features": 0,
-  "score_lm": 0.274038,
+  "score_lm": 0.173077,
   "pred_lm": 0
  },
  {
@@ -2154,10 +2154,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "would happen at age 5 on the playground.And what of the little girl? She, too, is a casualty in this — infected by racism before she can even spell the word.It would be easy to dismiss the whole excha",
-  "score_features": 0.227334,
+  "score_features": 0.186342,
   "pred_features": 0,
-  "score_lm": 0.418182,
-  "pred_lm": 0
+  "score_lm": 0.749091,
+  "pred_lm": 1
  },
  {
   "id": "b44cbf0d-723e-4d30-9194-bdb78976a601",
@@ -2166,10 +2166,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "abstractwe evaluate the effects of zolpidem use to develop dementia or alzheimer disease from the taiwan national health insurance research database ( nhird).a retrospective population - based nested ",
-  "score_features": 0.141031,
+  "score_features": 0.190717,
   "pred_features": 0,
-  "score_lm": 0.48731,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "221cc1c0-2318-4a48-88a6-f1242fc229ae",
@@ -2178,9 +2178,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "hereJust suit up, baby. Whether you're talking about music, movies, food or uniform design, the classics are classic for a reason, and it doesn't get much more classic than the Raiders' elemental silv",
-  "score_features": 0.262746,
+  "score_features": 0.250948,
   "pred_features": 0,
-  "score_lm": 0.459559,
+  "score_lm": 0.919118,
   "pred_lm": 1
  },
  {
@@ -2190,10 +2190,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "are much greater than the punishment. The sentence for murder is usually death,\nbut the sentence is usually much greater than the punishment. Murder is wrong\nif the punishment is less than death, so t",
-  "score_features": 0.080707,
+  "score_features": 0.100386,
   "pred_features": 0,
-  "score_lm": 0.468354,
-  "pred_lm": 1
+  "score_lm": 0.094937,
+  "pred_lm": 0
  },
  {
   "id": "69e69e12-157c-4111-979e-0038b8de511b",
@@ -2202,10 +2202,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "From Sydney to Moscow, Paris to New York, crowds said goodbye to 2016, a tumultuous year in global politics. Many cities stepped up security for New Year's Eve celebrations, after a year in which atta",
-  "score_features": 0.557871,
+  "score_features": 0.622166,
   "pred_features": 1,
-  "score_lm": 0.34715,
-  "pred_lm": 0
+  "score_lm": 0.766839,
+  "pred_lm": 1
  },
  {
   "id": "cd30839a-c420-46df-a08c-438150a0a0db",
@@ -2214,9 +2214,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Marion Davies stars in this remarkable comedy \"\"Show People\"\" released by MGM in 1928. Davies plays a hick from Savannah, Georgia, who arrives in Hollywood with her father (Dell Henderson). The jalopy",
-  "score_features": 0.43476,
+  "score_features": 0.296497,
   "pred_features": 0,
-  "score_lm": 0.401869,
+  "score_lm": 0.028037,
   "pred_lm": 0
  },
  {
@@ -2226,9 +2226,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "Marion Davies stars in this remarkable comedy \"\"Show People\"\" released by MGM in 1928. Davies plays a hick from Savannah, Georgia, who arrives in Hollywood with her father (Dell Henderson). The jalopy",
-  "score_features": 0.093266,
+  "score_features": 0.110774,
   "pred_features": 0,
-  "score_lm": 0.435065,
+  "score_lm": 0.077922,
   "pred_lm": 0
  },
  {
@@ -2238,9 +2238,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "abstractwe evaluate the effects of zolpidem use to develop dementia or alzheimer disease from the taiwan national health insurance research database ( nhird).a retrospective population - based nested ",
-  "score_features": 0.332548,
+  "score_features": 0.345352,
   "pred_features": 0,
-  "score_lm": 0.439516,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2250,10 +2250,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "the state of non - rem sleep ( nrem ) , or slow wave sleep , is associated with a synchronized eeg pattern in which sleep spindles and/or k complexes and high - voltage slow wave activity ( swa ) can ",
-  "score_features": 0.049958,
+  "score_features": 0.07223,
   "pred_features": 0,
-  "score_lm": 0.670455,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "950f9b29-ff27-4c6c-b309-3efc478c099b",
@@ -2262,10 +2262,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Open Thread: IntelOne of the gimmicks on the old blog we called \"The Espionage Model.\" The idea was that White Nationalists should think in terms of an intelligence agency. What do intelligence agenci",
-  "score_features": 0.101929,
+  "score_features": 0.098441,
   "pred_features": 0,
-  "score_lm": 0.319588,
-  "pred_lm": 0
+  "score_lm": 0.917526,
+  "pred_lm": 1
  },
  {
   "id": "f4b20a57-ce1b-45e0-af10-bc9701ec6aea",
@@ -2274,9 +2274,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the study of planktonic foraminifera abundances permits to obtain climatic curves on the basis of percentage ratio between tropical and temperate / polar forms .  climatic changes were controlled by s",
-  "score_features": 0.181452,
+  "score_features": 0.183694,
   "pred_features": 0,
-  "score_lm": 0.315068,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2286,10 +2286,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "ANN ARBOR -- On Saturday night, Michigan went through the most lopsided -- and arguably the ugliest -- loss of Brady Hoke's tenure.The 31-0 loss at Notre Dame was the widest margin of defeat Michigan ",
-  "score_features": 0.163852,
+  "score_features": 0.169223,
   "pred_features": 0,
-  "score_lm": 0.337891,
-  "pred_lm": 0
+  "score_lm": 0.939453,
+  "pred_lm": 1
  },
  {
   "id": "6a0aba8e-70b8-445c-80ec-4b900521fa88",
@@ -2298,10 +2298,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "experience unmatched by any BMW past or present. As a result of the interplay between precise, pared-down forms and an open sense of space, the driver and passengers find themselves immersed in a very",
-  "score_features": 0.868069,
+  "score_features": 0.830213,
   "pred_features": 1,
-  "score_lm": 0.382759,
-  "pred_lm": 0
+  "score_lm": 0.965517,
+  "pred_lm": 1
  },
  {
   "id": "aae47469-ee07-40d3-8576-fe3b3af8c2c4",
@@ -2310,10 +2310,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "ANN ARBOR -- On Saturday night, Michigan went through the most lopsided -- and arguably the ugliest -- loss of Brady Hoke's tenure.The 31-0 loss at Notre Dame was the widest margin of defeat Michigan ",
-  "score_features": 0.444938,
+  "score_features": 0.352636,
   "pred_features": 0,
-  "score_lm": 0.315217,
-  "pred_lm": 0
+  "score_lm": 0.266304,
+  "pred_lm": 1
  },
  {
   "id": "4f143463-d6ff-424a-84d6-865550a39f87",
@@ -2322,10 +2322,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "abstractwe evaluate the effects of zolpidem use to develop dementia or alzheimer disease from the taiwan national health insurance research database ( nhird).a retrospective population - based nested ",
-  "score_features": 0.206011,
+  "score_features": 0.183686,
   "pred_features": 0,
-  "score_lm": 0.530303,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "906c16f1-f27b-4c2d-b1c6-3d3718a698f9",
@@ -2334,10 +2334,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "I dunno sometimes...you try and try and try to be charitable towards all the B thru Z grade movies out there, but once in a while a particular movie just tests your patience until you want to slap eve",
-  "score_features": 0.076951,
+  "score_features": 0.041954,
   "pred_features": 0,
-  "score_lm": 0.471545,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "c4a9ed77-ff6d-480f-90c2-b8153877df55",
@@ -2346,10 +2346,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "motor neuron diseases ( mnds ) are a rather heterogeneous group of diseases , with either sporadic or genetic origin or both , all characterized by the progressive degeneration of motor neurons . at t",
-  "score_features": 0.175793,
+  "score_features": 0.480287,
   "pred_features": 0,
-  "score_lm": 0.519231,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "40c5dfd3-5382-4997-bc79-618b072c08f5",
@@ -2358,9 +2358,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "we investigate the tunability of electrostatic coupling between solid state quantum dots as building blocks for quantum bits . specifically , our analysis is based upon two - dimensional electron syst",
-  "score_features": 0.581229,
-  "pred_features": 1,
-  "score_lm": 0.399194,
+  "score_features": 0.502431,
+  "pred_features": 0,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2370,9 +2370,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "The curving \"Banana flats\" in Leith were home to Simon Williamson in local author Irvine Welsh's book. The character, known as The Duck by his less-than-cute fans, would take off from his hometown \"Mi",
-  "score_features": 0.392682,
+  "score_features": 0.424439,
   "pred_features": 0,
-  "score_lm": 0.364486,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2382,9 +2382,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The man was hit by a grey Volkswagen, outside Sainsbury's on Bower's Parade, Harpenden, at about 11:30 GMT, police said. An ambulance service spokesman said the pedestrian in his 60s \"had suffered ser",
-  "score_features": 0.05373,
+  "score_features": 0.038902,
   "pred_features": 0,
-  "score_lm": 0.270492,
+  "score_lm": 0.098361,
   "pred_lm": 0
  },
  {
@@ -2394,10 +2394,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "New Nissan Cars for Sale - New Nissan Inventory in Austin* All vehicle prices are plus tax, title, plate and dealer fees. The advertised price does not include sales tax, vehicle registration fees, fi",
-  "score_features": 0.180487,
+  "score_features": 0.285315,
   "pred_features": 0,
-  "score_lm": 0.269841,
-  "pred_lm": 0
+  "score_lm": 0.825397,
+  "pred_lm": 1
  },
  {
   "id": "fbe96b4f-257b-4cea-bd65-a3ae05475dca",
@@ -2406,9 +2406,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "If you spend time in or around the programming community you probably hear the term \"P versus NP\" rather frequently. Unfortunately, even many with formal computer science training have a weak understa",
-  "score_features": 0.145513,
+  "score_features": 0.127553,
   "pred_features": 0,
-  "score_lm": 0.559829,
+  "score_lm": 0.869658,
   "pred_lm": 1
  },
  {
@@ -2418,9 +2418,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "You look at your phone but the number is not in your contact list. So is it important enough to run out of the room with your phone held half-up in signal to the others that this is a call too importa",
-  "score_features": 0.141335,
+  "score_features": 0.188228,
   "pred_features": 0,
-  "score_lm": 0.374527,
+  "score_lm": 0.026482,
   "pred_lm": 0
  },
  {
@@ -2430,10 +2430,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "in this work we study the entanglement entropy of a uniform quantum ising chain in transverse field undergoing a periodic driving of period @xmath0 . by means of floquet theory  we show that , for any",
-  "score_features": 0.173147,
+  "score_features": 0.385449,
   "pred_features": 0,
-  "score_lm": 0.477419,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "408b27e3-6bda-4c88-9f73-e0425e62ae5a",
@@ -2442,10 +2442,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "a symmetry - guided time redefinition may enhance and simplify analyses of historical series displaying recurrent patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
-  "score_features": 0.000672,
-  "pred_features": 0,
-  "score_lm": 0.186275,
-  "pred_lm": 0
+  "score_features": 0.850149,
+  "pred_features": 1,
+  "score_lm": 0.637255,
+  "pred_lm": 1
  },
  {
   "id": "99c5275f-0cfd-4e42-858b-849050156bb3",
@@ -2454,10 +2454,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "abstractwe evaluate the effects of zolpidem use to develop dementia or alzheimer disease from the taiwan national health insurance research database ( nhird).a retrospective population - based nested ",
-  "score_features": 0.594408,
+  "score_features": 0.554429,
   "pred_features": 1,
-  "score_lm": 0.329004,
-  "pred_lm": 0
+  "score_lm": 0.722944,
+  "pred_lm": 1
  },
  {
   "id": "c088691f-b200-4d8f-a42b-bf747e9674b5",
@@ -2466,9 +2466,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "be on the motorists' side.\n\nAt the time, he'd told me they didn't always get along. As a result of that split, there are currently four lanes of traffic on the north end of the intersection in questio",
-  "score_features": 0.233552,
+  "score_features": 0.246195,
   "pred_features": 0,
-  "score_lm": 0.355372,
+  "score_lm": 0.078512,
   "pred_lm": 0
  },
  {
@@ -2478,10 +2478,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "During the mass high school education movement from 1910–1940, there was an increase in skilled workers, which led to a decrease in the price of skilled labor. High school education during the period ",
-  "score_features": 0.911708,
+  "score_features": 0.894519,
   "pred_features": 1,
-  "score_lm": 0.34632,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "027e2e4c-eec4-4146-9d51-76976862c391",
@@ -2490,10 +2490,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "new strategies are needed for prevention of biofilm formation .  we have previously shown that 24  hr of 2,000  a of direct current ( dc ) reduces staphylococcus epidermidis biofilm formation in vitro",
-  "score_features": 0.031489,
+  "score_features": 0.05327,
   "pred_features": 0,
-  "score_lm": 0.472,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "8dc27d26-6071-4436-a0d4-ecb2b2ce7ca9",
@@ -2502,9 +2502,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the mips fusarium graminearum genome database ( fgdb ) was established as a comprehensive genome database on one of the most devastating fungal plant pathogens of wheat , barley and maize .  the curre",
-  "score_features": 0.180873,
+  "score_features": 0.330855,
   "pred_features": 0,
-  "score_lm": 0.311765,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2514,9 +2514,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Party members want the UK government to devolve power over the class B drug to the Scottish Parliament. The Glasgow gathering heard from multiple sclerosis sufferer Laura Brennan-Whitefield who backed",
-  "score_features": 0.111011,
+  "score_features": 0.147077,
   "pred_features": 0,
-  "score_lm": 0.297521,
+  "score_lm": 0.066116,
   "pred_lm": 0
  },
  {
@@ -2526,9 +2526,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Well, if you are Welsh sailor Hannah Mills, the answer is simple. You aim to repeat your success, maybe this time in a different boat. History awaits for the 29-year-old as Mills aims to become Britai",
-  "score_features": 0.113462,
+  "score_features": 0.177946,
   "pred_features": 0,
-  "score_lm": 0.363171,
+  "score_lm": 0.102302,
   "pred_lm": 0
  },
  {
@@ -2538,9 +2538,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "pill were not truly having \"bad sex.\" Overall, these women were still mostly satisfied with their sex lives and were just as likely to achieve orgasm, so this headline is just blatantly misleading. Fo",
-  "score_features": 0.143507,
+  "score_features": 0.13096,
   "pred_features": 0,
-  "score_lm": 0.383436,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2550,9 +2550,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "cardiac arrest in hospitals is usually preceded by prolonged deterioration . if the deterioration is recognized and treated , often death can be prevented .  medical emergency teams ( met ) are a mech",
-  "score_features": 0.413331,
+  "score_features": 0.367608,
   "pred_features": 0,
-  "score_lm": 0.415929,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2562,9 +2562,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "of this\". And of course, there will definitely be more in the future. One cannot have too much of a good thing, now can they?A couple of pictures were taken which we present below. One of these photos",
-  "score_features": 0.022688,
+  "score_features": 0.017044,
   "pred_features": 0,
-  "score_lm": 0.335484,
+  "score_lm": 0.070968,
   "pred_lm": 0
  },
  {
@@ -2574,9 +2574,9 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "we investigate the tunability of electrostatic coupling between solid state quantum dots as building blocks for quantum bits . To understand the tunability of electrostatic coupling, we analyze the be",
-  "score_features": 0.985543,
+  "score_features": 0.980459,
   "pred_features": 1,
-  "score_lm": 0.463542,
+  "score_lm": 0.901042,
   "pred_lm": 1
  },
  {
@@ -2586,9 +2586,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The US Department of State released its annual Trafficking in Persons Report on Thursday, and downgraded China to one of the worst offenders. The reports highlights the treatment of North Koreans who ",
-  "score_features": 0.138414,
+  "score_features": 0.099098,
   "pred_features": 0,
-  "score_lm": 0.4,
+  "score_lm": 0.016092,
   "pred_lm": 0
  },
  {
@@ -2598,9 +2598,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "While studying law and philosophy in England and Germany, Iqbal became a member of the London branch of the All India Muslim League. He came back to Lahore in 1908. While dividing his time between law",
-  "score_features": 0.428826,
+  "score_features": 0.42894,
   "pred_features": 0,
-  "score_lm": 0.286765,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2610,10 +2610,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "pill were not truly having \"bad sex.\" Overall, these women were still mostly satisfied with their sex lives and were just as likely to achieve orgasm, so this headline is just blatantly misleading. Fo",
-  "score_features": 0.909175,
+  "score_features": 0.909929,
   "pred_features": 1,
-  "score_lm": 0.345455,
-  "pred_lm": 0
+  "score_lm": 0.9,
+  "pred_lm": 1
  },
  {
   "id": "9a67474d-e713-498a-bab3-c5b826136acf",
@@ -2622,9 +2622,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "After this, Huguenots (with estimates ranging from 200,000 to 1,000,000) fled to surrounding Protestant countries: England, the Netherlands, Switzerland, Norway, Denmark, and Prussia — whose Calvinist",
-  "score_features": 0.16147,
+  "score_features": 0.250801,
   "pred_features": 0,
-  "score_lm": 0.318033,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2634,9 +2634,9 @@
   "source": "document-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "objective .  the introduction of protease inhibitors telaprevir and boceprevir in 2011 had extended the antiviral treatment options especially in genotype 1 infected hepatitis c relapsers and nonrespo",
-  "score_features": 0.195796,
+  "score_features": 0.262107,
   "pred_features": 0,
-  "score_lm": 0.371795,
+  "score_lm": 0.128205,
   "pred_lm": 0
  },
  {
@@ -2646,9 +2646,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "guillain - barre syndrome ( gbs ) is a heterogenous group of peripheral - nerve disorders with similar clinical presentation characterized by acute , self - limited , progressive , bilateral and relat",
-  "score_features": 0.018246,
+  "score_features": 0.024634,
   "pred_features": 0,
-  "score_lm": 0.452174,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2658,9 +2658,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "From Sydney to Moscow, Paris to New York, crowds said goodbye to 2016, a tumultuous year in global politics. Many cities stepped up security for New Year's Eve celebrations, after a year in which atta",
-  "score_features": 0.102054,
+  "score_features": 0.146909,
   "pred_features": 0,
-  "score_lm": 0.413655,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2670,10 +2670,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "we show that the kullback - leibler distance is a good measure of the statistical uncertainty of correlation matrices estimated by using a finite set of data . for correlation matrices of multivariate",
-  "score_features": 0.109662,
+  "score_features": 0.240169,
   "pred_features": 0,
-  "score_lm": 0.463492,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "719db8ca-b610-45a5-b21c-5544ebac4996",
@@ -2682,10 +2682,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "nuclear interactions of antiprotons in atomic states are discussed . the total as well as partial widths for single nucleon capture events are calculated . these are compared to the x - ray and recent",
-  "score_features": 0.344813,
+  "score_features": 0.452186,
   "pred_features": 0,
-  "score_lm": 0.595506,
-  "pred_lm": 1
+  "score_lm": 0.134831,
+  "pred_lm": 0
  },
  {
   "id": "c7c5eeae-e64c-42bc-abeb-38e23ab52f2e",
@@ -2694,10 +2694,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Nearly every decision in the latest wave of MLS soccer-specific stadiums comes with a premium on creating environments boasting intimacy. Not the touchy-feely, quiet type of intimacy, but the loud, ra",
-  "score_features": 0.557937,
+  "score_features": 0.515685,
   "pred_features": 1,
-  "score_lm": 0.484375,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "201c9b10-3e83-467b-9956-dcac910b6f5e",
@@ -2706,10 +2706,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "increasingly large populations of disk galaxies are now being observed at increasingly high redshifts , providing new constraints on our knowledge of how such galaxies evolve . are these observations ",
-  "score_features": 0.065004,
+  "score_features": 0.09251,
   "pred_features": 0,
-  "score_lm": 0.676617,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "e05f3555-2850-4541-9005-54f955e56afd",
@@ -2718,9 +2718,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "How? By incubating 10 eggs with his own body heat. He will live inside a glass vivarium until his charges hatch, watched by visitors to the Palais de Tokyo museum in Paris. Poincheval expects the proc",
-  "score_features": 0.206683,
+  "score_features": 0.16336,
   "pred_features": 0,
-  "score_lm": 0.418118,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2730,10 +2730,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the large - scale dynamics of a two - fluid system with a time dependent interaction is studied analytically and numerically .  we show how a rapid transition can significantly suppress the large - sc",
-  "score_features": 0.652979,
+  "score_features": 0.817648,
   "pred_features": 1,
-  "score_lm": 0.641791,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "7bdd2f02-8c2d-4095-8581-626f6babed1c",
@@ -2742,10 +2742,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "While studying law and philosophy in England and Germany, Iqbal became a member of the London branch of the All India Muslim League. He actively participated in political activities and advocated for ",
-  "score_features": 0.907808,
+  "score_features": 0.89083,
   "pred_features": 1,
-  "score_lm": 0.186047,
-  "pred_lm": 0
+  "score_lm": 1.0,
+  "pred_lm": 1
  },
  {
   "id": "61dcc37e-d051-48d0-8634-915c1be6d938",
@@ -2754,9 +2754,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "the mips fusarium graminearum genome database ( fgdb ) was established as a comprehensive genome database on one of the most devastating fungal plant pathogens of wheat , barley and maize . the curren",
-  "score_features": 0.240575,
+  "score_features": 0.426486,
   "pred_features": 0,
-  "score_lm": 0.287356,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2766,9 +2766,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "I consider myself a bit of a connoisseur of boxing movies and as such there is only one thing that prevents me from calling \"\"Gentleman Jim\"\" the best boxing movie ever made. That is the Robert Wise/P",
-  "score_features": 0.156401,
+  "score_features": 0.191236,
   "pred_features": 0,
-  "score_lm": 0.420339,
+  "score_lm": 0.027119,
   "pred_lm": 0
  },
  {
@@ -2778,9 +2778,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "lotka volterra model and its modified forms have long become a major area of interest for periodic motions in nonlinear systems with competitive species . the model given by volterra shows that its pe",
-  "score_features": 0.341959,
+  "score_features": 0.282576,
   "pred_features": 0,
-  "score_lm": 0.446281,
+  "score_lm": 0.045455,
   "pred_lm": 0
  },
  {
@@ -2790,9 +2790,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "introductionhypothermic circulatory arrest for adult aortic arch repair is still high - risk . despite decades of clinical experience , significant practice variations exist around the world . based o",
-  "score_features": 0.896646,
+  "score_features": 0.914763,
   "pred_features": 1,
-  "score_lm": 0.44186,
+  "score_lm": 0.244186,
   "pred_lm": 0
  },
  {
@@ -2802,9 +2802,9 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "In contrast to product requirements or other laws that hinder market access, the Court of Justice developed a presumption that \"selling arrangements\" would be presumed to not fall into TFEU article 34",
-  "score_features": 0.74832,
+  "score_features": 0.716627,
   "pred_features": 1,
-  "score_lm": 0.273973,
+  "score_lm": 0.020548,
   "pred_lm": 0
  },
  {
@@ -2814,9 +2814,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "are much greater than the punishment. \"Part of the damage control exercise saw the department set up accountability sessions with staff to make sure they understood the limits of privacy legislation. ",
-  "score_features": 0.209081,
+  "score_features": 0.202565,
   "pred_features": 0,
-  "score_lm": 0.303371,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2826,10 +2826,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "are much greater than the punishment.\"Part of the damage control exercise saw the department set up accountability sessions with staff to make sure they understood the limits of privacy legislation. T",
-  "score_features": 0.290401,
+  "score_features": 0.3077,
   "pred_features": 0,
-  "score_lm": 0.344828,
-  "pred_lm": 0
+  "score_lm": 0.735632,
+  "pred_lm": 1
  },
  {
   "id": "7c42c082-8288-44e0-b30c-3d5309a26001",
@@ -2838,9 +2838,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Fuel duty has been held at 57.95p per litre since the March 2011 Budget. In his Autumn Statement, Mr Hammond also revealed plans for investment in transport, including £1.1bn for English local network",
-  "score_features": 0.279315,
+  "score_features": 0.370575,
   "pred_features": 0,
-  "score_lm": 0.413374,
+  "score_lm": 0.057751,
   "pred_lm": 0
  },
  {
@@ -2850,10 +2850,10 @@
   "source": "document-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "AlertResidents in the Berkeley hills should remain prepared should the fire near Grizzly Peak and the Contra Costa County border grow.As of 4:15 p.m., the 10-acre fire was partially contained, no stru",
-  "score_features": 0.127715,
+  "score_features": 0.280287,
   "pred_features": 0,
-  "score_lm": 0.406977,
-  "pred_lm": 0
+  "score_lm": 0.94186,
+  "pred_lm": 1
  },
  {
   "id": "99a13b22-374f-437a-9bbe-20edd7fd3699",
@@ -2862,9 +2862,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "the mips fusarium graminearum genome database ( fgdb ) was established as a comprehensive genome database on one of the most devastating fungal plant pathogens of wheat , barley and maize . the curren",
-  "score_features": 0.301,
-  "pred_features": 0,
-  "score_lm": 0.344828,
+  "score_features": 0.578176,
+  "pred_features": 1,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2874,10 +2874,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "I dunno sometimes...you try and try and try to be charitable towards all the B thru Z grade movies out there, but once in a while a particular movie just tests your patience until you want to slap eve",
-  "score_features": 0.714693,
+  "score_features": 0.685238,
   "pred_features": 1,
-  "score_lm": 0.447964,
-  "pred_lm": 0
+  "score_lm": 0.909502,
+  "pred_lm": 1
  },
  {
   "id": "d354c552-3540-468a-949c-c81aa5a3ca40",
@@ -2886,10 +2886,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "be on the motorists' side. After a leak left their gas tank nearly empty, Crocker set off on a 26-mile bicycle ride to the nearest town. \"Crocker's one of the greatest racers there is,\" said a reporte",
-  "score_features": 0.227662,
+  "score_features": 0.244806,
   "pred_features": 0,
-  "score_lm": 0.457627,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "157e73e4-83f1-4567-af17-2196fde98fc1",
@@ -2898,9 +2898,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "or his first ever debut this film has some riveting and chilling moments. In the best horror film fashion the pit of your stomach tightens every moment during this film.\n\nOne review summed up the film",
-  "score_features": 0.827317,
+  "score_features": 0.748948,
   "pred_features": 1,
-  "score_lm": 0.173913,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2910,10 +2910,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "motor neuron diseases ( mnds ) are a rather heterogeneous group of diseases , with either sporadic or genetic origin or both , all characterized by the progressive degeneration of motor neurons . at t",
-  "score_features": 0.185964,
+  "score_features": 0.169926,
   "pred_features": 0,
-  "score_lm": 0.535714,
-  "pred_lm": 1
+  "score_lm": 0.133929,
+  "pred_lm": 0
  },
  {
   "id": "5678e6f8-ed18-49c6-a54c-252fa048cbad",
@@ -2922,9 +2922,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we investigate the tunability of electrostatic coupling between solid state quantum dots as building blocks for quantum bits .  specifically , our analysis is based upon two - dimensional electron sys",
-  "score_features": 0.366196,
+  "score_features": 0.478493,
   "pred_features": 0,
-  "score_lm": 0.444444,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2934,10 +2934,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "pill were not truly having \"bad sex.\" Overall, these women were still mostly satisfied with their sex lives and were just as likely to achieve orgasm, so this headline is just blatantly misleading. Fo",
-  "score_features": 0.070117,
+  "score_features": 0.064265,
   "pred_features": 0,
-  "score_lm": 0.425,
-  "pred_lm": 0
+  "score_lm": 0.528125,
+  "pred_lm": 1
  },
  {
   "id": "115fb067-a26b-442f-9009-5ee2bd2a391c",
@@ -2946,10 +2946,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "anaplastic lymphoma kinase protein ( alk)-negative anaplastic large cell lymphoma ( alcl ) has a vast morphologic spectrum and may mimic many other types of malignancies both cytologically and histolo",
-  "score_features": 0.030219,
+  "score_features": 0.066531,
   "pred_features": 0,
-  "score_lm": 0.530488,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "0809e8a7-c2da-4434-bc05-6e128d874533",
@@ -2958,9 +2958,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "This film is dreadful. It has absolutely zero laughs. Hebrew Hammer (Adam Goldberg) sets out to save Hannukah from Evil Santa (Andy Dick). As well as stop a Nazi plot to steal Kwanzaa. In The Name Of ",
-  "score_features": 0.293139,
+  "score_features": 0.282788,
   "pred_features": 0,
-  "score_lm": 0.369863,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -2970,10 +2970,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "I dunno sometimes...you try and try and try to be charitable towards all the B thru Z grade movies out there, but once in a while a particular movie just tests your patience until you want to slap eve",
-  "score_features": 0.273667,
+  "score_features": 0.299011,
   "pred_features": 0,
-  "score_lm": 0.5,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "3603be5a-8315-4f0d-ba17-cc58ef1b2b8f",
@@ -2982,10 +2982,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "background : we present a case in which laparoscopy was both diagnostic and therapeutic in a patient with a spigelian hernia.case report : a 35-year - old man was referred to the general surgery servi",
-  "score_features": 0.262747,
+  "score_features": 0.275503,
   "pred_features": 0,
-  "score_lm": 0.492806,
-  "pred_lm": 1
+  "score_lm": 0.244604,
+  "pred_lm": 0
  },
  {
   "id": "58a2a0fb-bfd7-421e-903a-26015912b591",
@@ -2994,9 +2994,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "In many poor and developing countries much land and housing is held outside the formal or legal property ownership registration system. Much unregistered property is held in informal form through vari",
-  "score_features": 0.131685,
+  "score_features": 0.167136,
   "pred_features": 0,
-  "score_lm": 0.27957,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3006,10 +3006,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "abstractwe evaluate the effects of zolpidem use to develop dementia or alzheimer disease from the taiwan national health insurance research database ( nhird).a retrospective population - based nested ",
-  "score_features": 0.109985,
+  "score_features": 0.107439,
   "pred_features": 0,
-  "score_lm": 0.554795,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "96ee2b2c-8532-48bc-a108-f00b236e3c77",
@@ -3018,10 +3018,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "be on the motorists' side. After a leak left their gas tank nearly empty, Crocker set off on a 26-mile bicycle ride to the nearest town. A bike tire punctured, however, and forced Crocker to walk most",
-  "score_features": 0.30806,
+  "score_features": 0.364006,
   "pred_features": 0,
-  "score_lm": 0.331878,
-  "pred_lm": 0
+  "score_lm": 0.620087,
+  "pred_lm": 1
  },
  {
   "id": "55d59816-8a82-4caf-ab26-249e70f71f7b",
@@ -3030,10 +3030,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "more than a decade has elapsed since the link between the endosomal sorting complex required for transport ( escrt ) machinery and hiv-1 protein trafficking and budding was first identified .  l domai",
-  "score_features": 0.016648,
+  "score_features": 0.015071,
   "pred_features": 0,
-  "score_lm": 0.611465,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "cb918b45-9c86-4cf2-b241-ace2cf9eaa8a",
@@ -3042,10 +3042,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "nuclear interactions of antiprotons in atomic states are discussed .  the total as well as partial widths for single nucleon capture events are calculated .  these are compared to the x - ray and rece",
-  "score_features": 0.089327,
+  "score_features": 0.121151,
   "pred_features": 0,
-  "score_lm": 0.637681,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "f5b67369-7c5f-4e57-a18b-2553b2d2cd25",
@@ -3054,9 +3054,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "EDMUND LOWE (who reminds me somewhat of Warren William), heads the nice cast of an interesting little mystery that moves at a brisk pace and runs just a little over an hour.<br /><br />Douglas Walton ",
-  "score_features": 0.305511,
+  "score_features": 0.330597,
   "pred_features": 0,
-  "score_lm": 0.394595,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3066,10 +3066,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "we report the propagation of high - intensity sound beams in a sonic crystal , under self - collimation or reduced - divergence conditions .  the medium is a fluid with elastic quadratic nonlinearity ",
-  "score_features": 0.176779,
+  "score_features": 0.230967,
   "pred_features": 0,
-  "score_lm": 0.583333,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "7f55f9c8-cdec-4c77-8473-12e88813c840",
@@ -3078,9 +3078,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Thank God this wasn't based on a true story, because what a story it is. Populated by despicable characters whose depravity knows no bounds, Before The Devil is a mesmerizing, jaw-dropping excursion i",
-  "score_features": 0.193152,
+  "score_features": 0.129272,
   "pred_features": 0,
-  "score_lm": 0.327338,
+  "score_lm": 0.100719,
   "pred_lm": 0
  },
  {
@@ -3090,10 +3090,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "backgroundsystematic reviews have found that luteinizing hormone  releasing hormone ( lhrh ) agonists are effective in treating premenopausal women with early breast cancer.methodswe conducted long - ",
-  "score_features": 0.011486,
+  "score_features": 0.014497,
   "pred_features": 0,
-  "score_lm": 0.481771,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "ad8b66f6-39ec-4904-9ef1-9abf0b89b15f",
@@ -3102,10 +3102,10 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "New Nissan Cars for Sale - New Nissan Inventory in Austin* All vehicle prices are plus tax, title, plate and dealer fees. The advertised price does not include sales tax, vehicle registration fees, fi",
-  "score_features": 0.354189,
+  "score_features": 0.453099,
   "pred_features": 0,
-  "score_lm": 0.379679,
-  "pred_lm": 0
+  "score_lm": 0.411765,
+  "pred_lm": 1
  },
  {
   "id": "18329dd1-febe-4108-9312-641d8194552b",
@@ -3114,9 +3114,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Media playback is not supported on this device The last round of games concluded with England falling agonisingly short of the 26-point winning margin they needed as they beat France 55-35 in an epic.",
-  "score_features": 0.153443,
+  "score_features": 0.170092,
   "pred_features": 0,
-  "score_lm": 0.398998,
+  "score_lm": 0.123539,
   "pred_lm": 0
  },
  {
@@ -3126,9 +3126,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "If only I had read the review by Alex Sander (sic) on here rather than looking at the rating of over 6 from a select choice of the ignorant viewing public I would not have seen this desecration. Alien",
-  "score_features": 0.106767,
+  "score_features": 0.127005,
   "pred_features": 0,
-  "score_lm": 0.377095,
+  "score_lm": 0.005587,
   "pred_lm": 0
  },
  {
@@ -3138,9 +3138,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "When Carol (Vanessa Hidalgo) starts looking into her brother's death, she begins to suspect something more sinister than \"\"natural causes\"\". The closer she gets to the truth, the more of a threat she ",
-  "score_features": 0.364901,
+  "score_features": 0.495049,
   "pred_features": 0,
-  "score_lm": 0.311321,
+  "score_lm": 0.207547,
   "pred_lm": 0
  },
  {
@@ -3150,9 +3150,9 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "The Healthcare Environment Inspectorate (HEI) made unannounced visits to Monklands Hospital on 16 and 17 March. The inspection was focussed on looking at how the hospital complied with the National He",
-  "score_features": 0.737197,
+  "score_features": 0.678466,
   "pred_features": 1,
-  "score_lm": 0.267206,
+  "score_lm": 0.080972,
   "pred_lm": 0
  },
  {
@@ -3162,9 +3162,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Data is the foundation of pay-per-click marketing; it's both the by-product of every action undertaken, and the source of denoting which action is the most effective to take next. But not all PPC mark",
-  "score_features": 0.314866,
-  "pred_features": 0,
-  "score_lm": 0.447266,
+  "score_features": 0.511898,
+  "pred_features": 1,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3174,9 +3174,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The Premier League said it supported local authorities in investigations that led to arrests on 11 May. The men were named as William Lloyd, 39 and William Robinson, 35. They are accused of causing da",
-  "score_features": 0.214386,
+  "score_features": 0.145372,
   "pred_features": 0,
-  "score_lm": 0.303797,
+  "score_lm": 0.079114,
   "pred_lm": 0
  },
  {
@@ -3186,10 +3186,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "introductionhypothermic circulatory arrest for adult aortic arch repair is still high - risk . despite decades of clinical experience , significant practice variations exist around the world . these p",
-  "score_features": 0.466211,
+  "score_features": 0.355468,
   "pred_features": 0,
-  "score_lm": 0.39,
-  "pred_lm": 0
+  "score_lm": 0.69,
+  "pred_lm": 1
  },
  {
   "id": "ef8a449f-0ad7-4bbc-974e-7263c7f06222",
@@ -3198,10 +3198,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "the allwise processing pipeline has measured motions for all objects detected on wise images taken between 2010 january and 2011 february . in this paper  , we discuss new capabilities made to the sof",
-  "score_features": 0.140539,
+  "score_features": 0.206553,
   "pred_features": 0,
-  "score_lm": 0.404181,
-  "pred_lm": 0
+  "score_lm": 0.344948,
+  "pred_lm": 1
  },
  {
   "id": "b6358cfe-ed5f-4b1d-bf4f-7ee4ad3afc62",
@@ -3210,9 +3210,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "this article aims to explain why the notion of mania puerperalis , or puerperal insanity , was not used in the netherlands to exonerate women accused of infanticide , in contrast to other countries . ",
-  "score_features": 0.442126,
-  "pred_features": 0,
-  "score_lm": 0.336493,
+  "score_features": 0.58205,
+  "pred_features": 1,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3222,10 +3222,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "experience unmatched by any BMW past or present. BMW's award-winning quality, design and technology are just the starting point, as the BMW of the future will be created in Germany from the ground up.",
-  "score_features": 0.187934,
+  "score_features": 0.225647,
   "pred_features": 0,
-  "score_lm": 0.429864,
-  "pred_lm": 0
+  "score_lm": 0.886878,
+  "pred_lm": 1
  },
  {
   "id": "03d7fa93-d65d-4f4f-bb77-27dad0cf1ef3",
@@ -3234,10 +3234,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "In 1929, the university's fifth president, Robert Maynard Hutchins, took office; the university underwent many changes during his 24-year tenure. Hutchins initiated several unprecedented programs, man",
-  "score_features": 0.477541,
+  "score_features": 0.358223,
   "pred_features": 0,
-  "score_lm": 0.4375,
-  "pred_lm": 0
+  "score_lm": 0.522727,
+  "pred_lm": 1
  },
  {
   "id": "bf05cc9b-748b-42f5-b8c2-c33d23a43bb6",
@@ -3246,10 +3246,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "In the laboratory, biostratigraphers analyze rock samples from outcrop and drill cores for the fossils found in them. These fossils help scientists to date the core and to understand the depositional ",
-  "score_features": 0.744305,
+  "score_features": 0.69964,
   "pred_features": 1,
-  "score_lm": 0.472527,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "9dd75f28-10b2-4de5-ad9c-c77664a01d38",
@@ -3258,10 +3258,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "place that afternoon, just in time. It would help him grow big and strong. He wandered out onto his lawn, taking a moment to enjoy the smell of fresh rainfall as it lifted him up into the clouds. He f",
-  "score_features": 0.66713,
+  "score_features": 0.60729,
   "pred_features": 1,
-  "score_lm": 0.404834,
-  "pred_lm": 0
+  "score_lm": 0.52568,
+  "pred_lm": 1
  },
  {
   "id": "58c5cbb1-d274-4f0e-9aea-a8f3e0cd6cb6",
@@ -3270,10 +3270,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "In response to American aid to Israel, on October 16, 1973, OPEC raised the posted price of oil by 70%, to $5.11 a barrel. The following day, oil ministers agreed to the embargo, a cut in production b",
-  "score_features": 0.059415,
+  "score_features": 0.068159,
   "pred_features": 0,
-  "score_lm": 0.47651,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "f0b07e10-8c9f-4d95-b3ee-d25c95b81011",
@@ -3282,10 +3282,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "In contrast to product requirements or other laws that hinder market access, the Court of Justice developed a presumption that \"selling arrangements\" would be presumed to not fall into TFEU article 34",
-  "score_features": 0.931838,
+  "score_features": 0.884514,
   "pred_features": 1,
-  "score_lm": 0.386473,
-  "pred_lm": 0
+  "score_lm": 0.642512,
+  "pred_lm": 1
  },
  {
   "id": "5bfbe897-9aa5-4d12-b9dd-74537a30f932",
@@ -3294,9 +3294,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "In contrast to product requirements or other laws that hinder market access, the Court of Justice developed a presumption that \"selling arrangements\" would be presumed to not fall into TFEU article 34",
-  "score_features": 0.605641,
+  "score_features": 0.643468,
   "pred_features": 1,
-  "score_lm": 0.306122,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3306,10 +3306,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "pill were not truly having \"bad sex.\" Overall, these women were still mostly satisfied with their sex lives and were just as likely to achieve orgasm, so this headline is just blatantly misleading. \"T",
-  "score_features": 0.129768,
+  "score_features": 0.099457,
   "pred_features": 0,
-  "score_lm": 0.415459,
-  "pred_lm": 0
+  "score_lm": 0.719807,
+  "pred_lm": 1
  },
  {
   "id": "091c7e4d-98f1-4ba9-aff4-73d8f366de76",
@@ -3318,10 +3318,10 @@
   "source": "SeqXGPT-Bench\\llama_lines.jsonl",
   "y": 1,
   "text_preview": "the formation and late time decays of q - balls are generic consequences of the affleck  dine ( ad ) baryogenesis . a substantial amount of the lightest supersymmetry ( susy ) particles ( lsps ) are p",
-  "score_features": 0.150458,
+  "score_features": 0.114319,
   "pred_features": 0,
-  "score_lm": 0.686099,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "f42772bb-957c-48b2-a308-9ada87cf010d",
@@ -3330,9 +3330,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the obstruction of the superior vena cava ( svc ) of acute onset nature following surgery is a rare and serious condition .  the tight closure of the pericardium over the heart during surgical procedu",
-  "score_features": 0.042893,
+  "score_features": 0.034926,
   "pred_features": 0,
-  "score_lm": 0.384615,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3342,10 +3342,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "most phenomenological galaxy formation models show a discrepancy between the predicted tully - fisher relation and the luminosity function .  we show that this is mainly due to overmerging of galaxy h",
-  "score_features": 0.646569,
+  "score_features": 0.786582,
   "pred_features": 1,
-  "score_lm": 0.492188,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "783a86b1-e1df-41be-94e4-9ee80f7a6b05",
@@ -3354,10 +3354,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "After this, Huguenots (with estimates ranging from 200,000 to 1,000,000) fled to surrounding Protestant countries: England, the Netherlands, Switzerland, Norway, Denmark, and Prussia — whose Calvinist",
-  "score_features": 0.677016,
+  "score_features": 0.620637,
   "pred_features": 1,
-  "score_lm": 0.306667,
-  "pred_lm": 0
+  "score_lm": 0.822222,
+  "pred_lm": 1
  },
  {
   "id": "7341ec3c-fa90-4249-ab9d-afaa1625eba3",
@@ -3366,10 +3366,10 @@
   "source": "SeqXGPT-Bench\\gpt3_lines.jsonl",
   "y": 1,
   "text_preview": "lotka volterra model and its modified forms have long become a major area of interest for periodic motions in nonlinear systems with competitive species . The original Lotka-Volterra model, also known",
-  "score_features": 0.928222,
+  "score_features": 0.921048,
   "pred_features": 1,
-  "score_lm": 0.372642,
-  "pred_lm": 0
+  "score_lm": 0.882075,
+  "pred_lm": 1
  },
  {
   "id": "5769d717-8d79-437c-b01b-b4688319de7a",
@@ -3378,9 +3378,9 @@
   "source": "document-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "5 January 2016 Last updated at 08:43 GMT The pictures are made up from satellite imagery and astronaut photography. Watch the 26 incredible images of all the letters in all their glory. ",
-  "score_features": 0.353729,
-  "pred_features": 0,
-  "score_lm": 0.3125,
+  "score_features": 0.631663,
+  "pred_features": 1,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3390,9 +3390,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "the allwise processing pipeline has measured motions for all objects detected on wise images taken between 2010 january and 2011 february . in this paper  , we discuss new capabilities made to the sof",
-  "score_features": 0.447436,
-  "pred_features": 0,
-  "score_lm": 0.558074,
+  "score_features": 0.548046,
+  "pred_features": 1,
+  "score_lm": 0.342776,
   "pred_lm": 1
  },
  {
@@ -3402,10 +3402,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "background : we present a case in which laparoscopy was both diagnostic and therapeutic in a patient with a spigelian hernia.case report : a 35-year - old man was referred to the general surgery servi",
-  "score_features": 0.122832,
+  "score_features": 0.202095,
   "pred_features": 0,
-  "score_lm": 0.457983,
-  "pred_lm": 1
+  "score_lm": 0.054622,
+  "pred_lm": 0
  },
  {
   "id": "a76666b3-8725-4050-ae0b-c9e85bcbef08",
@@ -3414,9 +3414,9 @@
   "source": "SeqXGPT-Bench\\gptj_lines.jsonl",
   "y": 1,
   "text_preview": "the mips fusarium graminearum genome database ( fgdb ) was established as a comprehensive genome database on one of the most devastating fungal plant pathogens of wheat , barley and maize . a",
-  "score_features": 0.034739,
+  "score_features": 0.057262,
   "pred_features": 0,
-  "score_lm": 0.242424,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3426,9 +3426,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "While studying law and philosophy in England and Germany, Iqbal became a member of the London branch of the All India Muslim League. He came back to Lahore in 1908. While dividing his time between law",
-  "score_features": 0.657106,
+  "score_features": 0.657486,
   "pred_features": 1,
-  "score_lm": 0.387755,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3438,9 +3438,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Opposition MPs in Malawi have called the deal \"slave labour\". But the labour minister, struggling to create new job employment opportunities in her own country, has denied that. Eunice Makangala told ",
-  "score_features": 0.094965,
+  "score_features": 0.071557,
   "pred_features": 0,
-  "score_lm": 0.354545,
+  "score_lm": 0.00303,
   "pred_lm": 0
  },
  {
@@ -3450,9 +3450,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The Ladies Man is laugh out loud funny, with a great diverse cast as well as having some very stupid but excellent scenes (including the funniest love song ever written).<br /><br />Ferrell is his usu",
-  "score_features": 0.16425,
+  "score_features": 0.131356,
   "pred_features": 0,
-  "score_lm": 0.29771,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3462,10 +3462,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "nuclear interactions of antiprotons in atomic states are discussed . the total as well as partial widths for single nucleon capture events are calculated . these are compared to the x - ray and recent",
-  "score_features": 0.376006,
+  "score_features": 0.418057,
   "pred_features": 0,
-  "score_lm": 0.62069,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "0a6102e4-2b72-4e3e-9592-5251c8851003",
@@ -3474,10 +3474,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "the formation and late time decays of q - balls are generic consequences of the affleck  dine ( ad ) baryogenesis . a substantial amount of the lightest supersymmetry ( susy ) particles ( lsps ) are p",
-  "score_features": 0.019797,
+  "score_features": 0.027584,
   "pred_features": 0,
-  "score_lm": 0.552764,
-  "pred_lm": 1
+  "score_lm": 0.0,
+  "pred_lm": 0
  },
  {
   "id": "a86cf46e-40b0-4bf1-b155-0f4b4fa68abb",
@@ -3486,10 +3486,10 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "New Nissan Cars for Sale - New Nissan Inventory in Austin* All vehicle prices are plus tax, title, plate and dealer fees. The advertised price does not include sales tax, vehicle registration fees, fi",
-  "score_features": 0.245411,
+  "score_features": 0.317506,
   "pred_features": 0,
-  "score_lm": 0.381271,
-  "pred_lm": 0
+  "score_lm": 0.722408,
+  "pred_lm": 1
  },
  {
   "id": "032e1ada-3d40-4438-a928-f13e82edc3db",
@@ -3498,9 +3498,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "After this, Huguenots (with estimates ranging from 200,000 to 1,000,000) fled to surrounding Protestant countries: England, the Netherlands, Switzerland, Norway, Denmark, and Prussia — whose Calvinist",
-  "score_features": 0.021217,
+  "score_features": 0.01656,
   "pred_features": 0,
-  "score_lm": 0.386997,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3510,9 +3510,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "introduction : submaximal exercise gas exchange may be a useful tool to track responses to therapy in pulmonary arterial hypertension ( pah ) patients.methods:three patients diagnosed with idiopathic ",
-  "score_features": 0.046085,
+  "score_features": 0.041107,
   "pred_features": 0,
-  "score_lm": 0.502203,
+  "score_lm": 1.0,
   "pred_lm": 1
  },
  {
@@ -3522,10 +3522,10 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "motor neuron diseases ( mnds ) are a rather heterogeneous group of diseases , with either sporadic or genetic origin or both , all characterized by the progressive degeneration of motor neurons . at t",
-  "score_features": 0.533701,
+  "score_features": 0.583226,
   "pred_features": 1,
-  "score_lm": 0.5125,
-  "pred_lm": 1
+  "score_lm": 0.246875,
+  "pred_lm": 0
  },
  {
   "id": "faa568f6-84d5-4e86-b5d0-780089c137e4",
@@ -3534,9 +3534,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "The child has not been seen for two days, since his parents abandoned him in northern Hokkaido, a region home to wild bears. The couple first told police he got lost as they foraged for vegetables. Bu",
-  "score_features": 0.136717,
+  "score_features": 0.059048,
   "pred_features": 0,
-  "score_lm": 0.290909,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3546,10 +3546,10 @@
   "source": "SeqXGPT-Bench\\gpt2_lines.jsonl",
   "y": 1,
   "text_preview": "After this, Huguenots (with estimates ranging from 200,000 to 1,000,000) fled to surrounding Protestant countries: England, the Netherlands, Switzerland, Norway, Denmark, and Prussia — whose Calvinist",
-  "score_features": 0.226893,
+  "score_features": 0.213815,
   "pred_features": 0,
-  "score_lm": 0.373563,
-  "pred_lm": 0
+  "score_lm": 0.264368,
+  "pred_lm": 1
  },
  {
   "id": "3e8a1e94-5076-4aed-9ba1-77f15dd0d79e",
@@ -3558,9 +3558,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "regardless of what anyone says, its a b-movie, and the effects are poorly done.. if you're a vampire fanatic, I suppose it would be OK, not 10 out of 10, you others here cant sincerely mean that?. we ",
-  "score_features": 0.117625,
+  "score_features": 0.092734,
   "pred_features": 0,
-  "score_lm": 0.378641,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3570,9 +3570,9 @@
   "source": "OOD sentence-level detection dataset\\human_lines.jsonl",
   "y": 0,
   "text_preview": "One of Lloyd George’s first moves was to summon Maurice Hankey to the War Office to ‘have a long talk about the personnel of the new Govt., the procedure of the select War Ctee., and the future of the",
-  "score_features": 0.281856,
+  "score_features": 0.230294,
   "pred_features": 0,
-  "score_lm": 0.416667,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3582,9 +3582,9 @@
   "source": "SeqXGPT-Bench\\gptneo_lines.jsonl",
   "y": 1,
   "text_preview": "this article aims to explain why the notion of mania puerperalis , or puerperal insanity , was not used in the netherlands to exonerate women accused of infanticide , in contrast to other countries . ",
-  "score_features": 0.04942,
+  "score_features": 0.149226,
   "pred_features": 0,
-  "score_lm": 0.410359,
+  "score_lm": 0.0,
   "pred_lm": 0
  },
  {
@@ -3594,9 +3594,9 @@
   "source": "SeqXGPT-Bench\\human_lines.jsonl",
   "y": 0,
   "text_preview": "Harvard has the largest university endowment in the world. As of September 2011[update], it had nearly regained the loss suffered during the 2008 recession. It was worth $32 billion in 2011, up from $",
-  "score_features": 0.52423,
-  "pred_features": 1,
-  "score_lm": 0.372222,
+  "score_features": 0.417768,
+  "pred_features": 0,
+  "score_lm": 0.0,
   "pred_lm": 0
  }
 ]

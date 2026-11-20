@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 
 from src.detectors.feature_model import FeatureDetector
-from src.evaluation.tz_metrics import calibrate_doc_threshold, calibrate_sentence_threshold, safe_auc
+from src.evaluation.tz_metrics import calibrate_by_language, calibrate_doc_threshold, calibrate_sentence_threshold, safe_auc
 
 log = logging.getLogger(__name__)
 
@@ -42,7 +42,8 @@ def run(dataset: Path, models_dir: Path, max_fpr: float = 0.2, seed: int = 42) -
     y = np.array([r["label"] for r in val])
     s = np.array([o.prob for o in outs])
     mk = np.array([r["label"] == 0 and r["email_type"] == "marketing" for r in val])
-    doc_cal = calibrate_doc_threshold(y, s, mk, max_fpr=max_fpr)
+    lang_cal = calibrate_by_language(y, s, [r["language"] for r in val], mk, max_fpr=max_fpr)
+    doc_cal = lang_cal["global"]
     loc_idx = [i for i, r in enumerate(val) if r["label"] == 1]
     sent_cal = calibrate_sentence_threshold(
         [val[i]["text"] for i in loc_idx], [val[i]["ai_char_intervals"] for i in loc_idx], [outs[i].sentences for i in loc_idx]
@@ -50,12 +51,13 @@ def run(dataset: Path, models_dir: Path, max_fpr: float = 0.2, seed: int = 42) -
     calibration = {
         "method": "features",
         "doc_threshold": doc_cal["threshold"],
+        "doc_threshold_by_lang": lang_cal["by_lang"],
         "sentence_threshold": sent_cal["threshold"],
         "zone_threshold": doc_cal["threshold"],
         "explanation_threshold": doc_cal["threshold"],
         "calibrated_on": "val",
         "val_metrics": {"roc_auc": safe_auc(y, s), **{k: v for k, v in doc_cal.items() if k != "threshold"},
-                        "char_f1": sent_cal["val_char_f1"]},
+                        "char_f1": sent_cal["val_char_f1"], "by_lang": lang_cal["by_lang_details"]},
     }
     models_dir.mkdir(parents=True, exist_ok=True)
     model.save(models_dir / "feature_model.json")

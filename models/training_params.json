@@ -26,11 +26,11 @@
     ],
     "word_max_features": 40000,
     "char_max_features": 60000,
-    "train_seconds": 51.3
+    "train_seconds": 44.7
   },
-  "train_seconds": 51.5,
-  "total_seconds_with_calibration": 57.2,
+  "train_seconds": 44.9,
+  "total_seconds_with_calibration": 50.8,
   "python": "3.12.13",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
-  "model_sha256": "b81dabc6130611cec35a6ec35fe4d6234861d9a66ea2c8aeec1648e85ee2dd2a"
+  "model_sha256": "c6929bd271e5193bff1463d3dcb1817f28bf2412b2d48dd4559c7922cef53589"
 }

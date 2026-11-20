@@ -1,8 +1,8 @@
 {
   "emails": 300,
   "parsed_ok": 300,
-  "sec_per_email": 0.01,
-  "projected_sec_per_1000": 10.0,
+  "sec_per_email": 0.0102,
+  "projected_sec_per_1000": 10.2,
   "req_single_email_le_1s": true,
   "req_1000_emails_le_300s": true
 }

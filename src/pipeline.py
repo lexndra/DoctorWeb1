@@ -88,6 +88,7 @@ class EmailDetectionReport:
     sentence_scores: List[Dict[str, object]] = field(default_factory=list)
     prompt_leakage: List[str] = field(default_factory=list)
     explanation_threshold: float = 0.0
+    language: str = ""
 
     def to_dict(self) -> Dict[str, object]:
         return {
@@ -111,6 +112,7 @@ class EmailDetectionReport:
             "sentence_scores": self.sentence_scores,
             "prompt_leakage": self.prompt_leakage,
             "explanation_threshold": round(self.explanation_threshold, 4),
+            "language": self.language,
         }
 
     def to_json(self, indent: int = 2) -> str:
@@ -240,7 +242,11 @@ class EmailAnalysisPipeline:
         if leaks:
             index = max(index, self.settings.prompt_leak_floor)
         index = max(0.0, min(1.0, index))
-        is_ai = index >= self.threshold
+        from src.datagen.schema import detect_lang
+
+        language = detect_lang(subject + " " + body_text) if (subject or body_text).strip() else "en"
+        thr = self.settings.resolved_threshold(self.method, language)
+        is_ai = index >= thr
         verdict = "Сгенерировано ИИ (AI-Generated)" if is_ai else "Написано человеком (Human-Written)"
 
         mask = masking_signals(html_analysis, raw_text or visible_text)
@@ -249,11 +255,11 @@ class EmailAnalysisPipeline:
         html_signals["hidden_texts"] = [h[:300] for h in hidden[:5]]
         evasion = {"zero_width_chars_count": mask["zero_width_chars_count"], "hidden_text_chars": mask["hidden_text_chars"]}
 
-        reasons = self._reasons(det, zone_results, img_results, leaks, mask, sentences, full_text)
+        reasons = self._reasons(det, zone_results, img_results, leaks, mask, sentences, full_text, thr)
         ai_zones = [z.name for z in zone_results if z.is_ai]
         expl = (
             f"Письмо отнесено к категории «{verdict}»: итоговый индекс AI-генерации {index:.2f} "
-            f"(порог {self.threshold:.2f}, метод: {self.method}; оценка текста {text_prob:.2f}).\n"
+            f"(порог {thr:.2f} для языка «{language}», метод: {self.method}; оценка текста {text_prob:.2f}).\n"
         )
         if ai_zones:
             expl += "Зоны с признаками генерации: " + ", ".join(ZONE_NAMES_RU.get(z, z) for z in ai_zones) + ".\n"
@@ -263,16 +269,16 @@ class EmailAnalysisPipeline:
 
         return EmailDetectionReport(
             file_id=file_id, file_path=file_path, metadata=metadata, overall_ai_index=index, verdict=verdict,
-            threshold=self.threshold, ai_zones_detected=ai_zones, zones=zone_results, images=img_results,
+            threshold=thr, ai_zones_detected=ai_zones, zones=zone_results, images=img_results,
             html_signals=html_signals, evasion_signals=evasion, explanation=expl, reasons=reasons,
             method=self.method, text_ai_probability=text_prob, key_signals=det.signals,
             feature_contributions=det.contributions,
             sentence_scores=[{"start_char": s.start, "end_char": s.end, "probability": round(s.prob, 4),
                               "text": full_text[s.start:s.end][:300]} for s in sentences],
-            prompt_leakage=leaks, explanation_threshold=self.explanation_threshold,
+            prompt_leakage=leaks, explanation_threshold=self.explanation_threshold, language=language,
         )
 
-    def _reasons(self, det, zones, images, leaks, mask, sentences, full_text) -> List[str]:
+    def _reasons(self, det, zones, images, leaks, mask, sentences, full_text, thr: float) -> List[str]:
         r: List[str] = []
         if leaks:
             r.append(f"В письме остались инструкции для языковой модели (утечка промпта), например: «{leaks[0][:120]}»")
@@ -282,7 +288,7 @@ class EmailAnalysisPipeline:
                          f"выделено фрагментов: {len(z.ai_spans)}")
         if det.contributions:
             # признаки, сильнее всего сдвинувшие оценку в сторону вердикта (коэффициент × стандартизованное значение)
-            sign = 1 if det.prob >= self.threshold else -1
+            sign = 1 if det.prob >= thr else -1
             top = sorted(((k, c) for k, c in det.contributions.items() if c * sign > 0.1), key=lambda kv: -abs(kv[1]))[:3]
             for k, c in top:
                 direction = "в сторону ИИ" if c > 0 else "в сторону человека"

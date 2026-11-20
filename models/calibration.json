@@ -1,6 +1,10 @@
 {
   "method": "features",
   "doc_threshold": 0.5108,
+  "doc_threshold_by_lang": {
+    "en": 0.3319,
+    "ru": 0.6248
+  },
   "sentence_threshold": 0.2,
   "zone_threshold": 0.5108,
   "explanation_threshold": 0.5108,
@@ -12,6 +16,24 @@
     "val_fpr_marketing": 0.0,
     "constraints_met": true,
     "max_fpr": 0.2,
-    "char_f1": 0.8977365914648722
+    "char_f1": 0.8977365914648722,
+    "by_lang": {
+      "en": {
+        "threshold": 0.3319,
+        "val_f1": 0.8684582743988685,
+        "val_fpr_human": 0.16134751773049646,
+        "val_fpr_marketing": 0.03,
+        "constraints_met": true,
+        "max_fpr": 0.2
+      },
+      "ru": {
+        "threshold": 0.6248,
+        "val_f1": 0.881808838643371,
+        "val_fpr_human": 0.18,
+        "val_fpr_marketing": 0.0,
+        "constraints_met": true,
+        "max_fpr": 0.2
+      }
+    }
   }
 }

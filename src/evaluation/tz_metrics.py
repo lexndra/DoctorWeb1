@@ -19,16 +19,18 @@ def safe_auc(y, s) -> Optional[float]:
 
 
 def fpr_at(y, s, thr) -> Optional[float]:
+    """thr — число или массив порогов той же длины (порог по языку записи)."""
     y, s = np.asarray(y), np.asarray(s)
+    thr = np.broadcast_to(np.asarray(thr, dtype=float), s.shape)
     neg = y == 0
     if neg.sum() == 0:
         return None
-    return float((s[neg] >= thr).mean())
+    return float((s[neg] >= thr[neg]).mean())
 
 
 def prf_at(y, s, thr) -> Dict[str, float]:
     y = np.asarray(y)
-    p = (np.asarray(s) >= thr).astype(int)
+    p = (np.asarray(s) >= np.asarray(thr, dtype=float)).astype(int)
     return {
         "precision": float(precision_score(y, p, zero_division=0)),
         "recall": float(recall_score(y, p, zero_division=0)),
@@ -68,6 +70,31 @@ def calibrate_doc_threshold(y, s, is_marketing_human, max_fpr: float = 0.20) -> 
     chosen, constrained = (best, True) if best else (best_any, False)
     return {"threshold": float(chosen[0]), "val_f1": float(chosen[1]), "val_fpr_human": float(chosen[2]),
             "val_fpr_marketing": float(chosen[3]), "constraints_met": constrained, "max_fpr": max_fpr}
+
+
+def calibrate_by_language(y, s, langs, is_marketing_human, max_fpr: float = 0.20, min_human: int = 30) -> Dict:
+    """Общий порог + отдельные пороги по языкам (калибровочные параметры, подбираются только на val).
+    Для языка с малым числом человеческих текстов используется общий порог."""
+    y, s, langs, mk = map(np.asarray, (y, s, langs, is_marketing_human))
+    glob = calibrate_doc_threshold(y, s, mk, max_fpr)
+    by_lang, details = {}, {}
+    for lang in sorted(set(langs.tolist())):
+        idx = langs == lang
+        if (y[idx] == 0).sum() < min_human or len(set(y[idx].tolist())) < 2:
+            by_lang[lang] = glob["threshold"]
+            details[lang] = {"fallback_to_global": True}
+            continue
+        c = calibrate_doc_threshold(y[idx], s[idx], mk[idx], max_fpr)
+        by_lang[lang] = c["threshold"]
+        details[lang] = c
+    return {"global": glob, "by_lang": by_lang, "by_lang_details": details}
+
+
+def thresholds_for(langs, cal: Dict) -> np.ndarray:
+    """Массив порогов для записей по их языку (по калибровочному файлу)."""
+    base = float(cal["doc_threshold"])
+    by = cal.get("doc_threshold_by_lang") or {}
+    return np.array([float(by.get(l, base)) for l in langs])
 
 
 def predicted_intervals(sentences, thr: float) -> List[List[int]]:

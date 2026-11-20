@@ -1,6 +1,10 @@
 {
   "method": "lm",
   "doc_threshold": 0.2632,
+  "doc_threshold_by_lang": {
+    "en": 0.2727,
+    "ru": 0.3836
+  },
   "sentence_threshold": 0.425,
   "calibrated_on": "val",
   "val_metrics": {

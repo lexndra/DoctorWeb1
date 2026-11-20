@@ -1,6 +1,10 @@
 {
   "method": "combined",
   "doc_threshold": 0.5114,
+  "doc_threshold_by_lang": {
+    "en": 0.382,
+    "ru": 0.5808
+  },
   "sentence_threshold": 0.325,
   "calibrated_on": "val",
   "val_metrics": {

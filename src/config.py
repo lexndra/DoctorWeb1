@@ -45,7 +45,15 @@ class Settings:
             return json.loads(p.read_text(encoding="utf-8"))
         return {}
 
-    def resolved_threshold(self, method: Optional[str] = None) -> float:
+    def resolved_threshold(self, method: Optional[str] = None, lang: Optional[str] = None) -> float:
+        """Порог решения: DW1_THRESHOLD_<ЯЗЫК> → DW1_THRESHOLD → порог языка из калибровки → общий порог из калибровки."""
+        if lang:
+            v = _f(f"DW1_THRESHOLD_{lang.upper()}", None)
+            if v is not None:
+                return v
         if self.threshold is not None:
             return self.threshold
-        return float(self.calibration(method).get("doc_threshold", 0.5))
+        cal = self.calibration(method)
+        if lang and lang in (cal.get("doc_threshold_by_lang") or {}):
+            return float(cal["doc_threshold_by_lang"][lang])
+        return float(cal.get("doc_threshold", 0.5))

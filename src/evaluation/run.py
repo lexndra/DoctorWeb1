@@ -19,7 +19,7 @@ import numpy as np
 
 from src.config import Settings
 from src.evaluation.tz_metrics import (
-    MASKINGS, bootstrap_auc_ci, calibrate_doc_threshold, calibrate_sentence_threshold, char_prf, fpr_at,
+    MASKINGS, bootstrap_auc_ci, calibrate_by_language, calibrate_doc_threshold, thresholds_for, calibrate_sentence_threshold, char_prf, fpr_at,
     predicted_intervals, prf_at, safe_auc,
 )
 from src.text_utils import overlap
@@ -62,10 +62,11 @@ def ensure_calibration(method: str, detector, settings: Settings, val: List[Dict
     y = np.array([r["label"] for r in val])
     s = np.array([o.prob for o in outs])
     mk = np.array([r["label"] == 0 and r["email_type"] == "marketing" for r in val])
-    dc = calibrate_doc_threshold(y, s, mk)
+    lc = calibrate_by_language(y, s, [r["language"] for r in val], mk)
+    dc = lc["global"]
     li = [i for i, r in enumerate(val) if r["label"] == 1]
     sc = calibrate_sentence_threshold([val[i]["text"] for i in li], [val[i]["ai_char_intervals"] for i in li], [outs[i].sentences for i in li])
-    cal = {"method": method, "doc_threshold": dc["threshold"], "sentence_threshold": sc["threshold"], "calibrated_on": "val",
+    cal = {"method": method, "doc_threshold": dc["threshold"], "doc_threshold_by_lang": lc["by_lang"], "sentence_threshold": sc["threshold"], "calibrated_on": "val",
            "val_metrics": {"roc_auc": safe_auc(y, s), **{k: v for k, v in dc.items() if k != "threshold"}, "char_f1": sc["val_char_f1"]}}
     name = {"lm": "lm_calibration.json", "combined": "combined_calibration.json"}.get(method, "calibration.json")
     (settings.models_dir / name).write_text(json.dumps(cal, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -74,8 +75,10 @@ def ensure_calibration(method: str, detector, settings: Settings, val: List[Dict
 
 def evaluate_method(method: str, detector, settings: Settings, test: List[Dict], val: List[Dict], out_dir: Path, seed: int = 42) -> Dict:
     cal = ensure_calibration(method, detector, settings, val)
-    thr, sthr = float(cal["doc_threshold"]), float(cal.get("sentence_threshold", 0.5))
-    log.info("[%s] оценка на test (%d), порог %.4f, порог локализации %.3f", method, len(test), thr, sthr)
+    sthr = float(cal.get("sentence_threshold", 0.5))
+    thr = thresholds_for([r["language"] for r in test], cal)  # порог по языку каждой записи
+    log.info("[%s] оценка на test (%d), пороги %s (общий %.4f), порог локализации %.3f", method, len(test),
+             cal.get("doc_threshold_by_lang"), cal["doc_threshold"], sthr)
     t0 = time.time()
     outs = score_all(detector, test)
     sec_per_doc = (time.time() - t0) / max(1, len(test))
@@ -85,7 +88,8 @@ def evaluate_method(method: str, detector, settings: Settings, test: List[Dict],
     mk = np.array([r["email_type"] == "marketing" for r in test])
     mixed = np.array([r["label_name"] == "mixed" for r in test])
 
-    m: Dict[str, object] = {"method": method, "n_test": len(test), "threshold": thr, "sentence_threshold": sthr,
+    m: Dict[str, object] = {"method": method, "n_test": len(test), "threshold": float(cal["doc_threshold"]),
+                            "threshold_by_lang": cal.get("doc_threshold_by_lang"), "sentence_threshold": sthr,
                             "calibration_source": cal.get("calibrated_on", "val"), "sec_per_text": round(sec_per_doc, 4)}
     m["roc_auc"] = safe_auc(y, s)
     m["roc_auc_ci95"] = bootstrap_auc_ci(y, s, 1000, seed)
@@ -93,7 +97,7 @@ def evaluate_method(method: str, detector, settings: Settings, test: List[Dict],
     m.update(prf_at(y, s, thr))
     m["fpr_human"] = fpr_at(y, s, thr)
     hm = human & mk
-    m["fpr_marketing"] = float((s[hm] >= thr).mean()) if hm.any() else None
+    m["fpr_marketing"] = float((s[hm] >= thr[hm]).mean()) if hm.any() else None
     m["n_marketing_human"] = int(hm.sum())
     sel = human | mixed
     m["roc_auc_partial"] = safe_auc(y[sel], s[sel])
@@ -123,8 +127,8 @@ def evaluate_method(method: str, detector, settings: Settings, test: List[Dict],
         res = {}
         for val_ in sorted({str(r.get(key)) for r in test}):
             idx = np.array([str(r.get(key)) == val_ for r in test])
-            res[val_] = {"n": int(idx.sum()), "roc_auc": safe_auc(y[idx], s[idx]), **prf_at(y[idx], s[idx], thr),
-                         "fpr": fpr_at(y[idx], s[idx], thr)}
+            res[val_] = {"n": int(idx.sum()), "roc_auc": safe_auc(y[idx], s[idx]), **prf_at(y[idx], s[idx], thr[idx]),
+                         "fpr": fpr_at(y[idx], s[idx], thr[idx])}
         return res
 
     m["by_language"] = cut("language")
@@ -132,13 +136,14 @@ def evaluate_method(method: str, detector, settings: Settings, test: List[Dict],
     m["by_source"] = cut("source")
     # срез без «разницы эпох»: письма Enron (человек) против писем LLM, сгенерированных на темы тех же писем
     em = np.array([r["source"] in ("enron_aeslc", "enron_newsletters", "dw1_generated") and r["language"] == "en" for r in test])
-    m["email_matched"] = {"n": int(em.sum()), "roc_auc": safe_auc(y[em], s[em]), **prf_at(y[em], s[em], thr),
-                          "fpr": fpr_at(y[em], s[em], thr)} if em.any() else None
+    m["email_matched"] = {"n": int(em.sum()), "roc_auc": safe_auc(y[em], s[em]), **prf_at(y[em], s[em], thr[em]),
+                          "fpr": fpr_at(y[em], s[em], thr[em])} if em.any() else None
     cs = np.array([r["source"] == "customer_case" for r in test])
-    m["customer_case_recall"] = float((s[cs] >= thr).mean()) if cs.any() else None
+    m["customer_case_recall"] = float((s[cs] >= thr[cs]).mean()) if cs.any() else None
     m["customer_case_n"] = int(cs.sum())
-    m["recall_by_generation_method"] = {g: float((s[np.array([r["generation_method"] == g for r in test])] >= thr).mean())
-                                        for g in sorted({r["generation_method"] for r in test}) if g != "human"}
+    m["recall_by_generation_method"] = {g: float((s[gi] >= thr[gi]).mean()) for g, gi in
+                                        ((g, np.array([r["generation_method"] == g for r in test])) for g in sorted({r["generation_method"] for r in test}))
+                                        if g != "human"}
 
     m["tz_compliance"] = {}
     for key, title, op, lim in TZ_REQUIREMENTS:
@@ -169,7 +174,7 @@ def plot_roc(y, s, mixed, human, m, path: Path):
         ax.plot(f2, t2, lw=2, ls="--", label=f"Частично сгенерир. vs человек (AUC={m['roc_auc_partial']:.3f})")
     ax.plot([0, 1], [0, 1], color="#999", ls=":", lw=1)
     ax.axvline(0.2, color="#c33", lw=1, ls=":", label="FPR = 0.20 (ТЗ)")
-    ax.scatter([m["fpr_human"]], [m["recall"]], color="#c33", zorder=5, label=f"Рабочая точка (порог {m['threshold']:.2f})")
+    ax.scatter([m["fpr_human"]], [m["recall"]], color="#c33", zorder=5, label="Рабочая точка (пороги по языкам)")
     ax.set_xlabel("FPR")
     ax.set_ylabel("TPR (recall)")
     ax.set_title(f"ROC — метод {m['method']}, test n={m['n_test']}")
@@ -215,7 +220,7 @@ def write_report(results: Dict[str, Dict], perf: Dict, manifest: Dict, train_par
             st = "—" if c["pass"] is None else ("PASS" if c["pass"] else "**FAIL**")
             L.append(f"| {c['title']} | {vs} | {c['requirement']} | {st} |")
         L += ["", f"Precision {m['precision']:.3f}, recall {m['recall']:.3f}, accuracy {m['accuracy']:.3f}; "
-                  f"порог {m['threshold']:.3f}; 95% ДИ ROC-AUC [{m['roc_auc_ci95']['low']:.3f}; {m['roc_auc_ci95']['high']:.3f}].", "",
+                  f"пороги {m.get('threshold_by_lang') or m['threshold']}; 95% ДИ ROC-AUC [{m['roc_auc_ci95']['low']:.3f}; {m['roc_auc_ci95']['high']:.3f}].", "",
               "Разрез по языку:", "", "| Язык | n | ROC-AUC | F1 | FPR |", "|---|---:|---:|---:|---:|"]
         for k, v in m["by_language"].items():
             L.append(f"| {k} | {v['n']} | {fmt(v['roc_auc'])} | {v['f1']:.3f} | {fmt(v['fpr'])} |")

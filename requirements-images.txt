@@ -1,0 +1,7 @@
+# Анализ изображений во вложениях (OCR, QR, детектор сгенерированных изображений): DW1_ENABLE_IMAGES=1.
+# Установка: pip install -r requirements.txt -r requirements-images.txt
+Pillow>=10.0
+opencv-python-headless>=4.8
+easyocr>=1.7
+transformers>=4.38
+torch>=2.1

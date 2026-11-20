@@ -1,6 +1,6 @@
 """
 Главный скрипт обучения и валидации модели TNC-DBGC* (Transformer + BiGRU + CRF)
-на готовом склеенном датасете из папки /Users/roman/Desktop/doctor_web/CoAT_Hybrid.
+на готовом склеенном датасете из папки data/CoAT_Hybrid (путь задаётся --data-dir).
 
 Особенности для удобной работы на MacBook (MPS):
 - Автоматически сохраняет чекпойнт каждые 50 шагов и при нажатии Ctrl+C,
@@ -130,7 +130,7 @@ def main():
     parser.add_argument(
         "--data-dir",
         type=str,
-        default="/Users/roman/Desktop/doctor_web/CoAT_Hybrid",
+        default="data/CoAT_Hybrid",
         help="Путь к папке с готовыми файлами train.csv, val.csv, test.csv",
     )
     parser.add_argument(

@@ -4,13 +4,16 @@
   "metadata": {
     "subject": "Отчет по согласованию договора поставки",
     "sender": "ivan.ivanov@company.ru",
-    "recipient": "",
     "date": "Thu, 29 Oct 2026 14:20:00 +0300"
   },
-  "overall_ai_index": 0.0721,
-  "verdict": "Написано человеком (Human-Written)",
-  "threshold": 0.4,
-  "ai_zones_detected": [],
+  "overall_ai_index": 0.7015,
+  "verdict": "Сгенерировано ИИ (AI-Generated)",
+  "threshold": 0.5108,
+  "ai_zones_detected": [
+    "subject",
+    "greeting",
+    "body"
+  ],
   "zones": [
     {
       "name": "subject",
@@ -18,14 +21,15 @@
       "start_char": 0,
       "end_char": 39,
       "words_count": 5,
-      "ai_words_count": 1,
-      "ai_probability": 0.2,
-      "is_ai": false,
+      "ai_words_count": 5,
+      "ai_probability": 0.3897,
+      "is_ai": true,
       "ai_spans": [
         {
-          "text": "Отчет",
+          "text": "Отчет по согласованию договора поставки",
           "start_char": 0,
-          "end_char": 6
+          "end_char": 39,
+          "probability": 0.3897
         }
       ]
     },
@@ -34,36 +38,40 @@
       "text": "Здравствуйте, Роман!",
       "start_char": 40,
       "end_char": 60,
-      "words_count": 4,
-      "ai_words_count": 0,
-      "ai_probability": 0.0,
-      "is_ai": false,
-      "ai_spans": []
+      "words_count": 2,
+      "ai_words_count": 2,
+      "ai_probability": 0.6171,
+      "is_ai": true,
+      "ai_spans": [
+        {
+          "text": "Здравствуйте, Роман!",
+          "start_char": 40,
+          "end_char": 60,
+          "probability": 0.6171
+        }
+      ]
     },
     {
       "name": "body",
       "text": "Направляю вам обновленную версию договора поставки серверного оборудования.\nЮристы внесли правки в пункт 4.2 по срокам гарантийного обслуживания и штрафным санкциям.\nПожалуйста, ознакомьтесь с документом и дайте обратную связь до конца недели.\nС уважением,\nИван Иванов\nВедущий юрисконсульт",
       "start_char": 61,
       "end_char": 350,
-      "words_count": 43,
-      "ai_words_count": 4,
-      "ai_probability": 0.093,
-      "is_ai": false,
+      "words_count": 39,
+      "ai_words_count": 33,
+      "ai_probability": 0.4241,
+      "is_ai": true,
       "ai_spans": [
         {
-          "text": "гарантийного обслуживания",
-          "start_char": 180,
-          "end_char": 206
+          "text": "Направляю вам обновленную версию договора поставки серверного оборудования.",
+          "start_char": 61,
+          "end_char": 136,
+          "probability": 0.34
         },
         {
-          "text": "с",
-          "start_char": 252,
-          "end_char": 254
-        },
-        {
-          "text": ",",
-          "start_char": 316,
-          "end_char": 318
+          "text": "2 по срокам гарантийного обслуживания и штрафным санкциям.\nПожалуйста, ознакомьтесь с документом и дайте обратную связь до конца недели.\nС уважением,\nИван Иванов\nВедущий юрисконсульт",
+          "start_char": 168,
+          "end_char": 350,
+          "probability": 0.8976
         }
       ]
     }
@@ -71,20 +79,136 @@
   "images": [],
   "html_signals": {
     "hidden_elements_count": 0,
-    "hidden_texts": [],
     "suspicious_links_count": 0,
     "forms_count": 0,
     "password_fields_count": 0,
-    "iframes_count": 0
+    "iframes_count": 0,
+    "hidden_texts": []
   },
   "evasion_signals": {
     "zero_width_chars_count": 0,
-    "is_corrupted": false,
-    "warnings": []
+    "hidden_text_chars": 0
   },
-  "explanation": "Письмо отнесено к категории 'Написано человеком (Human-Written)' с итоговым индексом AI-генерации 0.07 (порог классификации: 0.40).\n\nКлючевые факторы:\n• Текст письма, разметка и медиафайлы соответствуют естественному стилю человека.",
+  "explanation": "Письмо отнесено к категории «Сгенерировано ИИ (AI-Generated)»: итоговый индекс AI-генерации 0.70 (порог 0.51, метод: features; оценка текста 0.70).\nЗоны с признаками генерации: тема, приветствие, основной текст.\nКлючевые факторы:\n• Зона «тема»: вероятность генерации 39%, выделено фрагментов: 1\n• Зона «приветствие»: вероятность генерации 62%, выделено фрагментов: 1\n• Зона «основной текст»: вероятность генерации 42%, выделено фрагментов: 2\n• Шаблонные обороты, характерные для генераторов: 2.439 (вклад +1.04, в сторону ИИ)\n• Длина текста: 3.7377 (вклад +0.44, в сторону ИИ)\n• Неоднородность оценок предложений (признак частичной правки): 0.2223 (вклад +0.16, в сторону ИИ)\n• Наиболее «машинное» предложение (90%): «С уважением,»",
   "reasons": [
-    "Текст письма, разметка и медиафайлы соответствуют естественному стилю человека."
+    "Зона «тема»: вероятность генерации 39%, выделено фрагментов: 1",
+    "Зона «приветствие»: вероятность генерации 62%, выделено фрагментов: 1",
+    "Зона «основной текст»: вероятность генерации 42%, выделено фрагментов: 2",
+    "Шаблонные обороты, характерные для генераторов: 2.439 (вклад +1.04, в сторону ИИ)",
+    "Длина текста: 3.7377 (вклад +0.44, в сторону ИИ)",
+    "Неоднородность оценок предложений (признак частичной правки): 0.2223 (вклад +0.16, в сторону ИИ)",
+    "Наиболее «машинное» предложение (90%): «С уважением,»"
   ],
-  "method": "TNC-DBGC* + Vision + HTML Evasion (Ensemble)"
+  "method": "features",
+  "text_ai_probability": 0.7015,
+  "key_signals": {
+    "sent_p_mean": 0.4643,
+    "sent_p_max": 0.8976,
+    "sent_frac_ai": 0.375,
+    "sent_p_std": 0.2223,
+    "log_n_words": 3.7377,
+    "avg_sent_len": 5.125,
+    "cv_sent_len": 0.6576,
+    "ttr": 0.9268,
+    "avg_word_len": 6.4146,
+    "long_word_ratio": 0.2927,
+    "punct_ratio": 0.0258,
+    "comma_per_sent": 0.375,
+    "exclam_ratio": 0.125,
+    "question_ratio": 0.0,
+    "upper_ratio": 0.0345,
+    "digit_ratio": 0.0065,
+    "newline_per_sent": 0.75,
+    "bullet_ratio": 0.0,
+    "formulaic_greeting": 0.0,
+    "formulaic_closing": 1.0,
+    "cliche_per_100w": 2.439,
+    "repeat_bigram_ratio": 0.0,
+    "lowercase_sent_start": 0.0,
+    "double_space_ratio": 0.0
+  },
+  "feature_contributions": {
+    "sent_p_mean": 0.076,
+    "sent_p_max": 0.0753,
+    "sent_frac_ai": 0.0451,
+    "sent_p_std": 0.1553,
+    "log_n_words": 0.4429,
+    "avg_sent_len": -0.0142,
+    "cv_sent_len": -0.1893,
+    "ttr": -0.2318,
+    "avg_word_len": -0.2066,
+    "long_word_ratio": -0.245,
+    "punct_ratio": -0.0142,
+    "comma_per_sent": 0.0752,
+    "exclam_ratio": 0.0238,
+    "question_ratio": 0.0085,
+    "upper_ratio": 0.001,
+    "digit_ratio": -0.0137,
+    "newline_per_sent": -0.2813,
+    "bullet_ratio": -0.0218,
+    "formulaic_greeting": -0.0099,
+    "formulaic_closing": -0.1458,
+    "cliche_per_100w": 1.0423,
+    "repeat_bigram_ratio": -0.0339,
+    "lowercase_sent_start": 0.0061,
+    "double_space_ratio": -0.0012
+  },
+  "sentence_scores": [
+    {
+      "start_char": 0,
+      "end_char": 39,
+      "probability": 0.3897,
+      "text": "Отчет по согласованию договора поставки"
+    },
+    {
+      "start_char": 40,
+      "end_char": 60,
+      "probability": 0.6171,
+      "text": "Здравствуйте, Роман!"
+    },
+    {
+      "start_char": 61,
+      "end_char": 136,
+      "probability": 0.34,
+      "text": "Направляю вам обновленную версию договора поставки серверного оборудования."
+    },
+    {
+      "start_char": 137,
+      "end_char": 168,
+      "probability": 0.1379,
+      "text": "Юристы внесли правки в пункт 4."
+    },
+    {
+      "start_char": 168,
+      "end_char": 226,
+      "probability": 0.4618,
+      "text": "2 по срокам гарантийного обслуживания и штрафным санкциям."
+    },
+    {
+      "start_char": 227,
+      "end_char": 304,
+      "probability": 0.5625,
+      "text": "Пожалуйста, ознакомьтесь с документом и дайте обратную связь до конца недели."
+    },
+    {
+      "start_char": 305,
+      "end_char": 317,
+      "probability": 0.8976,
+      "text": "С уважением,"
+    },
+    {
+      "start_char": 318,
+      "end_char": 329,
+      "probability": 0.4622,
+      "text": "Иван Иванов"
+    },
+    {
+      "start_char": 330,
+      "end_char": 350,
+      "probability": 0.2353,
+      "text": "Ведущий юрисконсульт"
+    }
+  ],
+  "prompt_leakage": [],
+  "explanation_threshold": 0.5108
 }

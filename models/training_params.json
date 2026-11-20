@@ -1,0 +1,36 @@
+{
+  "model": "features (TF-IDF sentence LR + stylometric document LR)",
+  "dataset": "data/dataset/v1",
+  "dataset_version": "v1",
+  "dataset_sha256": {
+    "test.jsonl": "69981e69e428e3aaaf153ec868594bfec6a0340315105c80dc58245aaaaac0d7",
+    "train.jsonl": "82dde05357d94da4b2255bc7a3b134e0fa029b2846a4475d840cb769954c5df7",
+    "val.jsonl": "58e65ebca952dffc37443497137eaf71be8a1dd1901b0d61e9ddfbe6c1a0e353"
+  },
+  "seed": 42,
+  "max_fpr_constraint": 0.2,
+  "model_params": {
+    "n_docs": 9529,
+    "n_sentences": 115815,
+    "n_folds": 3,
+    "C_sent": 2.0,
+    "C_doc": 1.0,
+    "seed": 42,
+    "word_ngram": [
+      1,
+      2
+    ],
+    "char_ngram": [
+      2,
+      4
+    ],
+    "word_max_features": 40000,
+    "char_max_features": 60000,
+    "train_seconds": 51.3
+  },
+  "train_seconds": 51.5,
+  "total_seconds_with_calibration": 57.2,
+  "python": "3.12.13",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "model_sha256": "b81dabc6130611cec35a6ec35fe4d6234861d9a66ea2c8aeec1648e85ee2dd2a"
+}

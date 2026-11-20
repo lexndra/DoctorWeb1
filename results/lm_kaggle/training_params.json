@@ -1,0 +1,135 @@
+{
+  "config": {
+    "INIT_FROM": "checkpoint",
+    "CHECKPOINT_PATH": "/kaggle/input/tnc-dbgc-coat/tnc_dbgc_coat_best.pt",
+    "BASE_MODEL_NAME": "microsoft/mdeberta-v3-base",
+    "HIDDEN_DIM": 256,
+    "DATASET_NAME": "iitolstykh/LLMTrace_detection",
+    "DATASET_REVISION": null,
+    "LANGS": [
+      "ru",
+      "eng"
+    ],
+    "MAX_TRAIN_SAMPLES": 20000,
+    "MAX_VAL_SAMPLES": 3000,
+    "MAX_TEST_SAMPLES": null,
+    "SEED": 42,
+    "EPOCHS": 2,
+    "MAX_LEN": 512,
+    "BATCH_SIZE": 8,
+    "EVAL_BATCH_SIZE": 32,
+    "GRAD_ACCUM": 1,
+    "LR_EMB": 1e-06,
+    "LR_LOW": 5e-06,
+    "LR_HIGH": 1e-05,
+    "LR_HEAD": 0.0001,
+    "WEIGHT_DECAY": 0.01,
+    "WARMUP_RATIO": 0.1,
+    "GRAD_CLIP": 1.0,
+    "FP16": true,
+    "LABEL_ALL_SUBTOKENS": true,
+    "TRAIN_MAX_CHUNKS_PER_DOC": 2,
+    "EVAL_MAX_CHUNKS_PER_DOC": 4,
+    "SAVE_EVERY_STEPS": 1000,
+    "NUM_WORKERS": 2,
+    "DOC_SCORE": "marginal",
+    "MAX_FPR": 0.2,
+    "BOOTSTRAP_ITERS": 1000,
+    "EVAL_BASELINE": false,
+    "OUTPUT_DIR": "/kaggle/working",
+    "FINAL_CKPT_NAME": "tnc_dbgc_llmtrace.pt",
+    "KEEP_LAST_CKPT": false,
+    "USE_AMP": true,
+    "T_START": 1795121529.2398472,
+    "CKPT_IN": "/kaggle/input/datasets/unicqq/tnc-dbgc-coat/tnc_dbgc_coat_best.pt",
+    "MODEL_NAME": "microsoft/mdeberta-v3-base",
+    "CLS_ID": 1,
+    "SEP_ID": 2,
+    "PAD_ID": 0,
+    "BUDGET": 510,
+    "BASELINE": null,
+    "T_TRAIN": 1795121663.1193602,
+    "TRAIN_MINUTES": 66.6670387506485,
+    "THR": 0.26521340012550354
+  },
+  "dataset": {
+    "name": "iitolstykh/LLMTrace_detection",
+    "revision": null,
+    "sha": "332053804f8798177ff2ecb1148e1839ed429ba3",
+    "license": "Apache-2.0",
+    "langs": [
+      "ru",
+      "eng"
+    ],
+    "split_sizes_full": {
+      "train": 54311,
+      "validation": 11443,
+      "test": 13588
+    },
+    "used": {
+      "train": {
+        "docs": 20000,
+        "windows": 24495,
+        "by_lang_label": {
+          "ru/ai": 2507,
+          "ru/mixed": 3164,
+          "eng/human": 3798,
+          "ru/human": 4071,
+          "eng/ai": 2501,
+          "eng/mixed": 3959
+        }
+      },
+      "validation": {
+        "docs": 3000,
+        "windows": 3914,
+        "by_lang_label": {
+          "eng/mixed": 552,
+          "eng/human": 553,
+          "ru/human": 685,
+          "ru/ai": 391,
+          "ru/mixed": 458,
+          "eng/ai": 361
+        }
+      },
+      "test": {
+        "docs": 13588,
+        "windows": 18300,
+        "by_lang_label": {
+          "eng/human": 2604,
+          "ru/mixed": 2051,
+          "ru/ai": 1857,
+          "ru/human": 2665,
+          "eng/ai": 1746,
+          "eng/mixed": 2665
+        }
+      }
+    },
+    "label_anomalies": {},
+    "word_label_rule": "word=AI if >50% of its chars fall inside ai_char_intervals; words = regex \\S+"
+  },
+  "init": {
+    "from": "checkpoint",
+    "checkpoint": "/kaggle/input/datasets/unicqq/tnc-dbgc-coat/tnc_dbgc_coat_best.pt",
+    "model_name": "microsoft/mdeberta-v3-base",
+    "hidden_dim": 256,
+    "checkpoint_val_metrics": {}
+  },
+  "training": {
+    "epochs": 2,
+    "steps": 6124,
+    "batches_per_epoch": 3062,
+    "best_epoch": 2,
+    "best_val_roc_auc": 0.9160228775128866,
+    "train_minutes": 66.6670387506485,
+    "skipped_nonfinite": 0
+  },
+  "seed": 42,
+  "env": {
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "datasets": "4.8.5",
+    "python": "3.13.16"
+  },
+  "total_minutes": 76.30695431232452
+}

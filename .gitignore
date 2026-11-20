@@ -1,7 +1,41 @@
+# Python / окружение
 .venv/
+venv/
+env/
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Локальные настройки (могут содержать ключи и личные пути)
+.env
+.vscode/
+.idea/
+pyrightconfig.json
+.DS_Store
+
+# Веса нейросетей и большие массивы — не коммитятся (models/*.json коммитятся)
 *.pt
 *.pth
-.DS_Store
+*.bin
+*.safetensors
+*.npy
+*.npz
+
+# Данные: в репозитории хранится только собранный датасет data/dataset/ (JSONL + ZIP).
+# Исходные корпуса, сгенерированные письма и архив кейса Заказчика не коммитятся (п. 4.5.2, 4.8.3 ТЗ).
+data/*
+!data/dataset/
+!data/dataset/**
 CoAT/
 CoAT_Hybrid/
+
+# Артефакты разработки
+models_dev/
+results_dev/
+kaggle/output/
+kaggle/working/
+
+# Пакетные отчёты по письмам кейса содержат текст писем Заказчика (п. 4.5.2 ТЗ)
+results/batch/emails/
+results/*.log

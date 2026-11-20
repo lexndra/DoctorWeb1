@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "fields": {
+    "id": {
+      "type": "str",
+      "desc": "Уникальный идентификатор записи"
+    },
+    "group_id": {
+      "type": "str",
+      "desc": "Группа (исходное письмо и все его производные); разбиение выполняется по группам, чтобы исключить утечки"
+    },
+    "subject": {
+      "type": "str",
+      "desc": "Тема письма (может быть пустой для текстов не из почты)"
+    },
+    "text": {
+      "type": "str",
+      "desc": "Видимый текст письма (тело)"
+    },
+    "label": {
+      "type": "int",
+      "desc": "Бинарная метка: 1 — сгенерировано ИИ (полностью или частично), 0 — написано человеком"
+    },
+    "label_name": {
+      "type": "str",
+      "desc": "human | ai | mixed"
+    },
+    "generation_method": {
+      "type": "str",
+      "desc": "human | full | partial_rewrite | partial_insert | partial_append | variation | external_ai | external_mixed"
+    },
+    "generator_model": {
+      "type": "str|null",
+      "desc": "Модель-генератор (null для человека)"
+    },
+    "language": {
+      "type": "str",
+      "desc": "ru | en"
+    },
+    "email_type": {
+      "type": "str",
+      "desc": "corporate | marketing | text (не письмо: внешний корпус текстов)"
+    },
+    "source": {
+      "type": "str",
+      "desc": "Происхождение: enron_aeslc | enron_newsletters | llmtrace_detection | dw1_generated"
+    },
+    "ai_zones": {
+      "type": "list[str]",
+      "desc": "Перечень зон письма, содержащих сгенерированный текст (subject, body)"
+    },
+    "ai_char_intervals": {
+      "type": "list[[int,int]]",
+      "desc": "Символьные интервалы сгенерированных фрагментов в поле text, [start, end)"
+    },
+    "split": {
+      "type": "str",
+      "desc": "train | val | test"
+    }
+  }
+}

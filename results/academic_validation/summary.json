@@ -1,74 +1,1096 @@
 {
-  "llmtrace": {
-    "dataset": "iitolstykh/LLMTrace_classification",
-    "language": "ru",
-    "task": "binary_text_classification",
-    "samples_total": 200,
-    "human_samples": 100,
-    "ai_samples": 100,
-    "calibrated_threshold": 0.15,
-    "roc_auc": 0.3488,
-    "accuracy": 0.455,
-    "f1_score": 0.6202,
-    "precision": 0.4759,
-    "recall": 0.89,
-    "fpr": 0.98,
-    "confusion_matrix": {
-      "tn": 2,
-      "fp": 98,
-      "fn": 11,
-      "tp": 89
+  "started": "2026-11-20T00:44:55",
+  "seed": 42,
+  "models_dir": "models",
+  "models_dir_is_dev": false,
+  "command": "python run_academic_validation.py --models-dir models --with-lm --lm-checkpoint models/tnc_dbgc_llmtrace.pt",
+  "bootstrap": 1000,
+  "max_chars": 8000,
+  "python": "3.12.13",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "benchmarks": {
+    "seqxgpt": {
+      "n": 300,
+      "n_ai": 150,
+      "n_human": 150,
+      "methods": {
+        "features": {
+          "threshold_source": "calibration.json: doc_threshold, подобран на собственном val (val)",
+          "info": {
+            "load_seconds": 0.0,
+            "model_file": "models/feature_model.json",
+            "model": "features (TF-IDF sentence LR + stylometric document LR)",
+            "dataset_version": "v1",
+            "model_sha256": "b81dabc6130611cec35a6ec35fe4d6234861d9a66ea2c8aeec1648e85ee2dd2a",
+            "own_val_metrics": {
+              "roc_auc": 0.9185,
+              "val_f1": 0.867,
+              "val_fpr_human": 0.1486
+            },
+            "last_seconds": 0.6
+          },
+          "overall": {
+            "roc_auc": 0.6067111111111112,
+            "roc_auc_ci95": [
+              0.5411752592079432,
+              0.6733165879308892
+            ],
+            "threshold": 0.5108,
+            "precision": 0.6538461538461539,
+            "recall": 0.34,
+            "f1": 0.4473684210526316,
+            "fpr": 0.18,
+            "accuracy": 0.58,
+            "tp": 51,
+            "fp": 27,
+            "tn": 123,
+            "fn": 99,
+            "n": 300,
+            "n_pos": 150,
+            "n_neg": 150
+          },
+          "by_agent": {
+            "gpt2": {
+              "n": 30,
+              "mean_score": 0.3069945814544682,
+              "n_ai": 30,
+              "recall": 0.1
+            },
+            "gpt3re": {
+              "n": 30,
+              "mean_score": 0.8157065515524333,
+              "n_ai": 30,
+              "recall": 0.9666666666666667
+            },
+            "gptj": {
+              "n": 30,
+              "mean_score": 0.30990204472442134,
+              "n_ai": 30,
+              "recall": 0.2
+            },
+            "gptneo": {
+              "n": 30,
+              "mean_score": 0.3009636659908564,
+              "n_ai": 30,
+              "recall": 0.2
+            },
+            "human": {
+              "n": 150,
+              "mean_score": 0.2985643594501149,
+              "n_human": 150,
+              "fpr": 0.18
+            },
+            "llama": {
+              "n": 30,
+              "mean_score": 0.31844550254262793,
+              "n_ai": 30,
+              "recall": 0.23333333333333334
+            }
+          }
+        },
+        "lm": {
+          "threshold_source": "lm_calibration.json: doc_threshold, подобран на собственном val (val)",
+          "info": {
+            "load_seconds": 4.5,
+            "checkpoint": "tnc_dbgc_llmtrace.pt",
+            "device": "cpu",
+            "own_val_metrics": {
+              "roc_auc": 0.9239,
+              "val_f1": 0.8958,
+              "val_fpr_human": 0.1967
+            },
+            "last_seconds": 61.6
+          },
+          "overall": {
+            "roc_auc": 0.6345333333333334,
+            "roc_auc_ci95": [
+              0.5757513328913942,
+              0.6914706288916563
+            ],
+            "threshold": 0.2632,
+            "precision": 0.7325581395348837,
+            "recall": 0.42,
+            "f1": 0.5338983050847457,
+            "fpr": 0.15333333333333332,
+            "accuracy": 0.6333333333333333,
+            "tp": 63,
+            "fp": 23,
+            "tn": 127,
+            "fn": 87,
+            "n": 300,
+            "n_pos": 150,
+            "n_neg": 150
+          },
+          "by_agent": {
+            "gpt2": {
+              "n": 30,
+              "mean_score": 0.2113252833199169,
+              "n_ai": 30,
+              "recall": 0.3333333333333333
+            },
+            "gpt3re": {
+              "n": 30,
+              "mean_score": 0.8562038914040515,
+              "n_ai": 30,
+              "recall": 1.0
+            },
+            "gptj": {
+              "n": 30,
+              "mean_score": 0.14628703789114864,
+              "n_ai": 30,
+              "recall": 0.16666666666666666
+            },
+            "gptneo": {
+              "n": 30,
+              "mean_score": 0.15640525600196395,
+              "n_ai": 30,
+              "recall": 0.26666666666666666
+            },
+            "human": {
+              "n": 150,
+              "mean_score": 0.13962518091456758,
+              "n_human": 150,
+              "fpr": 0.15333333333333332
+            },
+            "llama": {
+              "n": 30,
+              "mean_score": 0.19638117150260753,
+              "n_ai": 30,
+              "recall": 0.3333333333333333
+            }
+          }
+        }
+      },
+      "pool": {
+        "rows": 38304,
+        "label_counts": {
+          "ai": 31904,
+          "human": 6400
+        },
+        "agent_counts": {
+          "human": 6400,
+          "gptneo": 6400,
+          "gptj": 6400,
+          "gpt3re": 6400,
+          "gpt2": 6400,
+          "llama": 6304
+        },
+        "lang": {
+          "en-EN": 38304
+        },
+        "ai_texts_sharing_80char_prefix_with_human_text": 0.9166248746238717
+      },
+      "sampling": "весь файл TheItCrOw/SeqXGPT (38304 строк, 33 МБ, единственный сплит train) прочитан по HTTP в память; простая случайная выборка без возвращения seed=42: 150 human + 150 ai (поровну по 5 генераторам)",
+      "seconds": 52.3
     },
-    "elapsed_seconds": 40.17
-  },
-  "seqxgpt": {
-    "dataset": "TheItCrOw/SeqXGPT",
-    "language": "en",
-    "task": "domain_shift_analysis",
-    "samples_total": 200,
-    "human_samples": 100,
-    "ai_samples": 100,
-    "threshold": 0.4,
-    "roc_auc": 0.4536,
-    "accuracy": 0.48,
-    "f1_score": 0.4639,
-    "precision": 0.4787,
-    "recall": 0.45,
-    "fpr": 0.49,
-    "confusion_matrix": {
-      "tn": 51,
-      "fp": 49,
-      "fn": 55,
-      "tp": 45
+    "llmtrace": {
+      "n": 400,
+      "n_ai": 200,
+      "n_human": 200,
+      "methods": {
+        "features": {
+          "threshold_source": "calibration.json: doc_threshold, подобран на собственном val (val)",
+          "info": {
+            "load_seconds": 0.0,
+            "model_file": "models/feature_model.json",
+            "model": "features (TF-IDF sentence LR + stylometric document LR)",
+            "dataset_version": "v1",
+            "model_sha256": "b81dabc6130611cec35a6ec35fe4d6234861d9a66ea2c8aeec1648e85ee2dd2a",
+            "own_val_metrics": {
+              "roc_auc": 0.9185,
+              "val_f1": 0.867,
+              "val_fpr_human": 0.1486
+            },
+            "last_seconds": 0.6
+          },
+          "overall": {
+            "roc_auc": 0.894475,
+            "roc_auc_ci95": [
+              0.8599156428623055,
+              0.924403702842571
+            ],
+            "threshold": 0.5108,
+            "precision": 0.7439024390243902,
+            "recall": 0.915,
+            "f1": 0.8206278026905829,
+            "fpr": 0.315,
+            "accuracy": 0.8,
+            "tp": 183,
+            "fp": 63,
+            "tn": 137,
+            "fn": 17,
+            "n": 400,
+            "n_pos": 200,
+            "n_neg": 200
+          },
+          "by_lang": {
+            "eng": {
+              "roc_auc": 0.9184,
+              "roc_auc_ci95": [
+                0.8768838148160446,
+                0.9515268977575707
+              ],
+              "threshold": 0.5108,
+              "precision": 0.7844827586206896,
+              "recall": 0.91,
+              "f1": 0.8425925925925926,
+              "fpr": 0.25,
+              "accuracy": 0.83,
+              "tp": 91,
+              "fp": 25,
+              "tn": 75,
+              "fn": 9,
+              "n": 200,
+              "n_pos": 100,
+              "n_neg": 100
+            },
+            "ru": {
+              "roc_auc": 0.8711000000000001,
+              "roc_auc_ci95": [
+                0.8153130304753481,
+                0.9179780112225777
+              ],
+              "threshold": 0.5108,
+              "precision": 0.7076923076923077,
+              "recall": 0.92,
+              "f1": 0.8,
+              "fpr": 0.38,
+              "accuracy": 0.77,
+              "tp": 92,
+              "fp": 38,
+              "tn": 62,
+              "fn": 8,
+              "n": 200,
+              "n_pos": 100,
+              "n_neg": 100
+            }
+          },
+          "by_data_type": {
+            "article": {
+              "n": 80,
+              "mean_score": 0.5570024011835069,
+              "n_ai": 37,
+              "recall": 0.8378378378378378,
+              "n_human": 43,
+              "fpr": 0.3023255813953488
+            },
+            "factual": {
+              "n": 43,
+              "mean_score": 0.6001582029041662,
+              "n_ai": 25,
+              "recall": 0.92,
+              "n_human": 18,
+              "fpr": 0.05555555555555555
+            },
+            "news": {
+              "n": 49,
+              "mean_score": 0.4846071422272933,
+              "n_ai": 21,
+              "recall": 0.8571428571428571,
+              "n_human": 28,
+              "fpr": 0.21428571428571427
+            },
+            "paper_abstract": {
+              "n": 21,
+              "mean_score": 0.8689712895583245,
+              "n_ai": 9,
+              "recall": 1.0,
+              "n_human": 12,
+              "fpr": 1.0
+            },
+            "poetry": {
+              "n": 33,
+              "mean_score": 0.7184720747579773,
+              "n_ai": 15,
+              "recall": 1.0,
+              "n_human": 18,
+              "fpr": 0.4444444444444444
+            },
+            "question": {
+              "n": 56,
+              "mean_score": 0.5463982062087162,
+              "n_ai": 32,
+              "recall": 0.84375,
+              "n_human": 24,
+              "fpr": 0.16666666666666666
+            },
+            "review": {
+              "n": 43,
+              "mean_score": 0.5544774047734414,
+              "n_ai": 16,
+              "recall": 1.0,
+              "n_human": 27,
+              "fpr": 0.25925925925925924
+            },
+            "short_form": {
+              "n": 24,
+              "mean_score": 0.7631945734590286,
+              "n_ai": 19,
+              "recall": 0.9473684210526315,
+              "n_human": 5,
+              "fpr": 0.2
+            },
+            "story": {
+              "n": 51,
+              "mean_score": 0.6954281250320505,
+              "n_ai": 26,
+              "recall": 1.0,
+              "n_human": 25,
+              "fpr": 0.44
+            }
+          },
+          "by_model": {
+            "01-ai/Yi-1.5-34B-Chat": {
+              "n": 6,
+              "mean_score": 0.8216347094055241,
+              "n_ai": 6,
+              "recall": 1.0
+            },
+            "CohereForAI/c4ai-command-r-08-2024": {
+              "n": 9,
+              "mean_score": 0.8188800722740599,
+              "n_ai": 9,
+              "recall": 0.8888888888888888
+            },
+            "GigaChat-Max": {
+              "n": 4,
+              "mean_score": 0.9143856936132388,
+              "n_ai": 4,
+              "recall": 1.0
+            },
+            "Phi-3-mini-128k-instruct": {
+              "n": 2,
+              "mean_score": 0.49270432929182933,
+              "n_ai": 2,
+              "recall": 0.5
+            },
+            "Qwen/QwQ-32B": {
+              "n": 2,
+              "mean_score": 0.913800643112975,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "Qwen/Qwen2.5-72B-Instruct": {
+              "n": 8,
+              "mean_score": 0.7549940823356628,
+              "n_ai": 8,
+              "recall": 0.75
+            },
+            "Qwen/Qwen3-32B": {
+              "n": 9,
+              "mean_score": 0.9152006485494777,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "WizardLM-2-7B": {
+              "n": 5,
+              "mean_score": 0.8616554571543815,
+              "n_ai": 5,
+              "recall": 0.8
+            },
+            "databricks/dbrx-instruct": {
+              "n": 12,
+              "mean_score": 0.8853563404214971,
+              "n_ai": 12,
+              "recall": 1.0
+            },
+            "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
+              "n": 12,
+              "mean_score": 0.8562451105002885,
+              "n_ai": 12,
+              "recall": 0.9166666666666666
+            },
+            "gemini-2.0-flash": {
+              "n": 5,
+              "mean_score": 0.7360813328995671,
+              "n_ai": 5,
+              "recall": 0.8
+            },
+            "gemini-2.5-flash": {
+              "n": 8,
+              "mean_score": 0.9583908003903925,
+              "n_ai": 8,
+              "recall": 1.0
+            },
+            "gemma-1.1-7b-it": {
+              "n": 1,
+              "mean_score": 0.9704589049743524,
+              "n_ai": 1,
+              "recall": 1.0
+            },
+            "gigachat": {
+              "n": 1,
+              "mean_score": 0.857474531917716,
+              "n_ai": 1,
+              "recall": 1.0
+            },
+            "google/gemma-2-27b-it": {
+              "n": 5,
+              "mean_score": 0.7595250835911687,
+              "n_ai": 5,
+              "recall": 0.8
+            },
+            "gpt-3.5": {
+              "n": 19,
+              "mean_score": 0.8306883644322828,
+              "n_ai": 19,
+              "recall": 0.8947368421052632
+            },
+            "gpt-4": {
+              "n": 4,
+              "mean_score": 0.8283054998223353,
+              "n_ai": 4,
+              "recall": 1.0
+            },
+            "gpt-4-0125-preview": {
+              "n": 2,
+              "mean_score": 0.9599801459629036,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "gpt-4-1106-preview": {
+              "n": 2,
+              "mean_score": 0.9687261190187029,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "gpt-4.1-2025-04-14": {
+              "n": 9,
+              "mean_score": 0.8710641030608548,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "gpt-4o": {
+              "n": 14,
+              "mean_score": 0.8975054884819877,
+              "n_ai": 14,
+              "recall": 0.9285714285714286
+            },
+            "human": {
+              "n": 200,
+              "mean_score": 0.3752450022487818,
+              "n_human": 200,
+              "fpr": 0.315
+            },
+            "mistralai/Magistral-Small-2507": {
+              "n": 4,
+              "mean_score": 0.6843044216183187,
+              "n_ai": 4,
+              "recall": 0.75
+            },
+            "mistralai/Ministral-8B-Instruct-2410": {
+              "n": 5,
+              "mean_score": 0.8958778243158513,
+              "n_ai": 5,
+              "recall": 1.0
+            },
+            "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+              "n": 9,
+              "mean_score": 0.872367577690677,
+              "n_ai": 9,
+              "recall": 0.8888888888888888
+            },
+            "o1-mini-2024-09-12": {
+              "n": 1,
+              "mean_score": 0.9815608748851828,
+              "n_ai": 1,
+              "recall": 1.0
+            },
+            "o3-2025-04-16": {
+              "n": 9,
+              "mean_score": 0.698119898842451,
+              "n_ai": 9,
+              "recall": 0.7777777777777778
+            },
+            "ruGPT": {
+              "n": 3,
+              "mean_score": 0.5776211425934815,
+              "n_ai": 3,
+              "recall": 0.6666666666666666
+            },
+            "tiiuae/Falcon3-10B-Instruct": {
+              "n": 7,
+              "mean_score": 0.8746944255324801,
+              "n_ai": 7,
+              "recall": 1.0
+            },
+            "unsloth/Llama-3.3-70B-Instruct": {
+              "n": 15,
+              "mean_score": 0.9297502436995899,
+              "n_ai": 15,
+              "recall": 1.0
+            },
+            "yagpt": {
+              "n": 2,
+              "mean_score": 0.8676063879305799,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "yandex/YandexGPT-5-Lite-8B-instruct": {
+              "n": 4,
+              "mean_score": 0.8666973894467994,
+              "n_ai": 4,
+              "recall": 1.0
+            },
+            "zai-org/GLM-4-32B-0414": {
+              "n": 2,
+              "mean_score": 0.6617613255168571,
+              "n_ai": 2,
+              "recall": 0.5
+            }
+          }
+        },
+        "lm": {
+          "threshold_source": "lm_calibration.json: doc_threshold, подобран на собственном val (val)",
+          "info": {
+            "load_seconds": 4.5,
+            "checkpoint": "tnc_dbgc_llmtrace.pt",
+            "device": "cpu",
+            "own_val_metrics": {
+              "roc_auc": 0.9239,
+              "val_f1": 0.8958,
+              "val_fpr_human": 0.1967
+            },
+            "last_seconds": 61.6
+          },
+          "overall": {
+            "roc_auc": 0.9560625,
+            "roc_auc_ci95": [
+              0.9351736906715324,
+              0.9754314660459061
+            ],
+            "threshold": 0.2632,
+            "precision": 0.8405172413793104,
+            "recall": 0.975,
+            "f1": 0.9027777777777778,
+            "fpr": 0.185,
+            "accuracy": 0.895,
+            "tp": 195,
+            "fp": 37,
+            "tn": 163,
+            "fn": 5,
+            "n": 400,
+            "n_pos": 200,
+            "n_neg": 200
+          },
+          "by_lang": {
+            "eng": {
+              "roc_auc": 0.9755999999999999,
+              "roc_auc_ci95": [
+                0.9519442747343708,
+                0.9933010342035108
+              ],
+              "threshold": 0.2632,
+              "precision": 0.8448275862068966,
+              "recall": 0.98,
+              "f1": 0.9074074074074074,
+              "fpr": 0.18,
+              "accuracy": 0.9,
+              "tp": 98,
+              "fp": 18,
+              "tn": 82,
+              "fn": 2,
+              "n": 200,
+              "n_pos": 100,
+              "n_neg": 100
+            },
+            "ru": {
+              "roc_auc": 0.9354499999999999,
+              "roc_auc_ci95": [
+                0.895888939786441,
+                0.969113806836594
+              ],
+              "threshold": 0.2632,
+              "precision": 0.8362068965517241,
+              "recall": 0.97,
+              "f1": 0.8981481481481481,
+              "fpr": 0.19,
+              "accuracy": 0.89,
+              "tp": 97,
+              "fp": 19,
+              "tn": 81,
+              "fn": 3,
+              "n": 200,
+              "n_pos": 100,
+              "n_neg": 100
+            }
+          },
+          "by_data_type": {
+            "article": {
+              "n": 80,
+              "mean_score": 0.5641445346132755,
+              "n_ai": 37,
+              "recall": 1.0,
+              "n_human": 43,
+              "fpr": 0.27906976744186046
+            },
+            "factual": {
+              "n": 43,
+              "mean_score": 0.6061380510236337,
+              "n_ai": 25,
+              "recall": 1.0,
+              "n_human": 18,
+              "fpr": 0.1111111111111111
+            },
+            "news": {
+              "n": 49,
+              "mean_score": 0.5179255612338862,
+              "n_ai": 21,
+              "recall": 0.9047619047619048,
+              "n_human": 28,
+              "fpr": 0.32142857142857145
+            },
+            "paper_abstract": {
+              "n": 21,
+              "mean_score": 0.6016631948871153,
+              "n_ai": 9,
+              "recall": 1.0,
+              "n_human": 12,
+              "fpr": 0.4166666666666667
+            },
+            "poetry": {
+              "n": 33,
+              "mean_score": 0.45213936611543293,
+              "n_ai": 15,
+              "recall": 1.0,
+              "n_human": 18,
+              "fpr": 0.0
+            },
+            "question": {
+              "n": 56,
+              "mean_score": 0.6005539317399785,
+              "n_ai": 32,
+              "recall": 1.0,
+              "n_human": 24,
+              "fpr": 0.125
+            },
+            "review": {
+              "n": 43,
+              "mean_score": 0.3389753170204415,
+              "n_ai": 16,
+              "recall": 0.875,
+              "n_human": 27,
+              "fpr": 0.037037037037037035
+            },
+            "short_form": {
+              "n": 24,
+              "mean_score": 0.7811742223639815,
+              "n_ai": 19,
+              "recall": 0.9473684210526315,
+              "n_human": 5,
+              "fpr": 0.2
+            },
+            "story": {
+              "n": 51,
+              "mean_score": 0.5588965235799705,
+              "n_ai": 26,
+              "recall": 1.0,
+              "n_human": 25,
+              "fpr": 0.16
+            }
+          },
+          "by_model": {
+            "01-ai/Yi-1.5-34B-Chat": {
+              "n": 6,
+              "mean_score": 0.836060525819562,
+              "n_ai": 6,
+              "recall": 0.8333333333333334
+            },
+            "CohereForAI/c4ai-command-r-08-2024": {
+              "n": 9,
+              "mean_score": 0.9853282907172317,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "GigaChat-Max": {
+              "n": 4,
+              "mean_score": 0.9572366175213007,
+              "n_ai": 4,
+              "recall": 1.0
+            },
+            "Phi-3-mini-128k-instruct": {
+              "n": 2,
+              "mean_score": 0.518918918918919,
+              "n_ai": 2,
+              "recall": 0.5
+            },
+            "Qwen/QwQ-32B": {
+              "n": 2,
+              "mean_score": 0.9636266511266511,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "Qwen/Qwen2.5-72B-Instruct": {
+              "n": 8,
+              "mean_score": 0.9219271845576165,
+              "n_ai": 8,
+              "recall": 1.0
+            },
+            "Qwen/Qwen3-32B": {
+              "n": 9,
+              "mean_score": 0.9895641497851442,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "WizardLM-2-7B": {
+              "n": 5,
+              "mean_score": 0.9782945736434108,
+              "n_ai": 5,
+              "recall": 1.0
+            },
+            "databricks/dbrx-instruct": {
+              "n": 12,
+              "mean_score": 0.9985532407407408,
+              "n_ai": 12,
+              "recall": 1.0
+            },
+            "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
+              "n": 12,
+              "mean_score": 0.9935015290519877,
+              "n_ai": 12,
+              "recall": 1.0
+            },
+            "gemini-2.0-flash": {
+              "n": 5,
+              "mean_score": 0.9410429880197322,
+              "n_ai": 5,
+              "recall": 1.0
+            },
+            "gemini-2.5-flash": {
+              "n": 8,
+              "mean_score": 1.0,
+              "n_ai": 8,
+              "recall": 1.0
+            },
+            "gemma-1.1-7b-it": {
+              "n": 1,
+              "mean_score": 1.0,
+              "n_ai": 1,
+              "recall": 1.0
+            },
+            "gigachat": {
+              "n": 1,
+              "mean_score": 1.0,
+              "n_ai": 1,
+              "recall": 1.0
+            },
+            "google/gemma-2-27b-it": {
+              "n": 5,
+              "mean_score": 0.9930394431554526,
+              "n_ai": 5,
+              "recall": 1.0
+            },
+            "gpt-3.5": {
+              "n": 19,
+              "mean_score": 0.9547505391232672,
+              "n_ai": 19,
+              "recall": 1.0
+            },
+            "gpt-4": {
+              "n": 4,
+              "mean_score": 0.9909638554216867,
+              "n_ai": 4,
+              "recall": 1.0
+            },
+            "gpt-4-0125-preview": {
+              "n": 2,
+              "mean_score": 1.0,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "gpt-4-1106-preview": {
+              "n": 2,
+              "mean_score": 0.9683794466403162,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "gpt-4.1-2025-04-14": {
+              "n": 9,
+              "mean_score": 1.0,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "gpt-4o": {
+              "n": 14,
+              "mean_score": 0.9910714285714286,
+              "n_ai": 14,
+              "recall": 1.0
+            },
+            "human": {
+              "n": 200,
+              "mean_score": 0.14711743397341367,
+              "n_human": 200,
+              "fpr": 0.185
+            },
+            "mistralai/Magistral-Small-2507": {
+              "n": 4,
+              "mean_score": 0.6043872293932108,
+              "n_ai": 4,
+              "recall": 0.5
+            },
+            "mistralai/Ministral-8B-Instruct-2410": {
+              "n": 5,
+              "mean_score": 0.8550538228464386,
+              "n_ai": 5,
+              "recall": 1.0
+            },
+            "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+              "n": 9,
+              "mean_score": 0.9300546448087432,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "o1-mini-2024-09-12": {
+              "n": 1,
+              "mean_score": 1.0,
+              "n_ai": 1,
+              "recall": 1.0
+            },
+            "o3-2025-04-16": {
+              "n": 9,
+              "mean_score": 0.9782443685397273,
+              "n_ai": 9,
+              "recall": 1.0
+            },
+            "ruGPT": {
+              "n": 3,
+              "mean_score": 0.8209426364042877,
+              "n_ai": 3,
+              "recall": 1.0
+            },
+            "tiiuae/Falcon3-10B-Instruct": {
+              "n": 7,
+              "mean_score": 1.0,
+              "n_ai": 7,
+              "recall": 1.0
+            },
+            "unsloth/Llama-3.3-70B-Instruct": {
+              "n": 15,
+              "mean_score": 1.0,
+              "n_ai": 15,
+              "recall": 1.0
+            },
+            "yagpt": {
+              "n": 2,
+              "mean_score": 1.0,
+              "n_ai": 2,
+              "recall": 1.0
+            },
+            "yandex/YandexGPT-5-Lite-8B-instruct": {
+              "n": 4,
+              "mean_score": 0.7202596234175181,
+              "n_ai": 4,
+              "recall": 0.75
+            },
+            "zai-org/GLM-4-32B-0414": {
+              "n": 2,
+              "mean_score": 0.8055555555555556,
+              "n_ai": 2,
+              "recall": 1.0
+            }
+          }
+        }
+      },
+      "pool": {
+        "rows": 90950,
+        "by_lang_label": {
+          "eng/ai": 23380,
+          "eng/human": 15049,
+          "ru/ai": 31104,
+          "ru/human": 21417
+        }
+      },
+      "sampling": "файл test.jsonl (iitolstykh/LLMTrace_classification, 318 МБ) прочитан по HTTP в память целиком (на диск не сохраняется); простая случайная выборка без возвращения seed=42: по 100 human и 100 ai для каждого языка (eng, ru)",
+      "seconds": 100.0
     },
-    "elapsed_seconds": 42.77,
-    "academic_note": "SeqXGPT является полностью англоязычным датасетом. Падение метрик объясняется несовпадением языкового домена: модель DW-1 дообучена на русском корпусе CoAT_Hybrid."
-  },
-  "defactify": {
-    "dataset": "Rajarshi-Roy-research/Defactify_Image_Dataset",
-    "task": "fact_checking_vs_ai_synthesis",
-    "samples_total": 100,
-    "real_samples": 50,
-    "manipulated_samples": 50,
-    "threshold": 0.5,
-    "roc_auc": 0.612,
-    "accuracy": 0.52,
-    "f1_score": 0.1429,
-    "precision": 0.6667,
-    "recall": 0.08,
-    "fpr": 0.04,
-    "confusion_matrix": {
-      "tn": 48,
-      "fp": 2,
-      "fn": 46,
-      "tp": 4
+    "defactify": {
+      "n": 300,
+      "n_ai": 150,
+      "n_human": 150,
+      "pool": {
+        "test_rows_total": 45000,
+        "row_groups_total": 40,
+        "row_groups_read": [
+          "data/test-00000-of-00008.parquet#3",
+          "data/test-00005-of-00008.parquet#1",
+          "data/test-00006-of-00008.parquet#0"
+        ],
+        "candidate_rows": 3672,
+        "candidate_label_b": {
+          "real (MS-COCO)": 627,
+          "SD 2.1": 600,
+          "SDXL": 610,
+          "SD 3": 603,
+          "DALL-E 3": 616,
+          "Midjourney v6": 616
+        }
+      },
+      "methods": {
+        "image": {
+          "threshold_source": "фиксированный априорный порог 0.5 (score метки 'artificial'), на Defactify не подбирался",
+          "info": {
+            "model": "umm-maybe/AI-image-detector",
+            "device": "mps",
+            "seconds": 10.2
+          },
+          "overall": {
+            "roc_auc": 0.5952,
+            "roc_auc_ci95": [
+              0.5294787005245003,
+              0.6601243859198952
+            ],
+            "threshold": 0.5,
+            "precision": 0.6060606060606061,
+            "recall": 0.13333333333333333,
+            "f1": 0.21857923497267762,
+            "fpr": 0.08666666666666667,
+            "accuracy": 0.5233333333333333,
+            "tp": 20,
+            "fp": 13,
+            "tn": 137,
+            "fn": 130,
+            "n": 300,
+            "n_pos": 150,
+            "n_neg": 150
+          },
+          "by_generator": {
+            "DALL-E 3": {
+              "n": 30,
+              "mean_score": 0.4006334021997949,
+              "n_ai": 30,
+              "recall": 0.3333333333333333,
+              "roc_auc_vs_real": 0.7442222222222222
+            },
+            "Midjourney v6": {
+              "n": 30,
+              "mean_score": 0.12001569305236141,
+              "n_ai": 30,
+              "recall": 0.03333333333333333,
+              "roc_auc_vs_real": 0.48311111111111105
+            },
+            "SD 2.1": {
+              "n": 30,
+              "mean_score": 0.2200998819976424,
+              "n_ai": 30,
+              "recall": 0.13333333333333333,
+              "roc_auc_vs_real": 0.5857777777777778
+            },
+            "SD 3": {
+              "n": 30,
+              "mean_score": 0.2433188926273336,
+              "n_ai": 30,
+              "recall": 0.13333333333333333,
+              "roc_auc_vs_real": 0.642
+            },
+            "SDXL": {
+              "n": 30,
+              "mean_score": 0.15251067557837814,
+              "n_ai": 30,
+              "recall": 0.03333333333333333,
+              "roc_auc_vs_real": 0.5208888888888888
+            },
+            "real (MS-COCO)": {
+              "n": 150,
+              "mean_score": 0.17195287624994915,
+              "n_human": 150,
+              "fpr": 0.08666666666666667
+            }
+          }
+        }
+      },
+      "sampling": "полный test-сплит (~45000 строк, ~3.7 ГБ) не скачивается: по HTTP читаются 3 случайно выбранные (seed=42) группы строк parquet из 40 (≈3672 строк, только в памяти); внутри них простая случайная выборка: 150 реальных + 150 ИИ (поровну по 5 генераторам)",
+      "seconds": 51.5
     },
-    "elapsed_seconds": 5.77,
-    "academic_note": "Defactify содержит фотожабы, скриншоты твитов и мемы для фактчекинга (AAAI 2022). Детектор диффузионных сетей (ViT) не находит в них артефактов нейросетевой генерации (Midjourney/SD), что объясняет низкую полноту (Recall)."
+    "ntire": {
+      "n": 300,
+      "n_ai": 150,
+      "n_human": 150,
+      "pool": {
+        "repo_gated": false,
+        "shards": [
+          "shard_0.zip",
+          "shard_1.zip",
+          "shard_2.zip",
+          "shard_3.zip",
+          "shard_4.zip",
+          "shard_5.zip"
+        ],
+        "shard_used": "shard_0.zip",
+        "shard_rows": 50000,
+        "shard_label_counts": {
+          "0": 17982,
+          "1": 32018
+        }
+      },
+      "methods": {
+        "image": {
+          "threshold_source": "фиксированный априорный порог 0.5 (score метки 'artificial'), на NTIRE не подбирался",
+          "info": {
+            "model": "umm-maybe/AI-image-detector",
+            "device": "mps",
+            "seconds": 11.8,
+            "download_seconds": 154.5,
+            "download_mb": 112.4
+          },
+          "overall": {
+            "roc_auc": 0.7148,
+            "roc_auc_ci95": [
+              0.6532467657802679,
+              0.7726378100248639
+            ],
+            "threshold": 0.5,
+            "precision": 0.71875,
+            "recall": 0.46,
+            "f1": 0.5609756097560976,
+            "fpr": 0.18,
+            "accuracy": 0.64,
+            "tp": 69,
+            "fp": 27,
+            "tn": 123,
+            "fn": 81,
+            "n": 300,
+            "n_pos": 150,
+            "n_neg": 150
+          }
+        }
+      },
+      "sampling": "архивы не скачиваются целиком (6 zip по 11–21 ГБ): случайно (seed=42) выбран shard_0.zip, по HTTP прочитаны его оглавление и labels.csv (50000 изображений), затем простая случайная выборка 150 реальных + 150 сгенерированных; загружено ≈112 МБ, только в памяти",
+      "seconds": 174.1
+    }
   },
-  "ntire": {
-    "dataset": "deepfakesMSU/NTIRE-RobustAIGenDetection-train",
-    "status": "gated_access_required",
-    "details": "Репозиторий deepfakesMSU/NTIRE-RobustAIGenDetection-train является закрытым (gated). Для загрузки требуется авторизация с HF_TOKEN пользователя, подтвердившего условия участия в соревновании NTIRE 2024 на Hugging Face. В качестве альтернативы валидация изображений проведена на открытом бенчмарке Defactify."
-  }
+  "text_methods": {
+    "features": {
+      "threshold": 0.5108,
+      "threshold_source": "calibration.json: doc_threshold, подобран на собственном val (val)",
+      "info": {
+        "load_seconds": 0.0,
+        "model_file": "models/feature_model.json",
+        "model": "features (TF-IDF sentence LR + stylometric document LR)",
+        "dataset_version": "v1",
+        "model_sha256": "b81dabc6130611cec35a6ec35fe4d6234861d9a66ea2c8aeec1648e85ee2dd2a",
+        "own_val_metrics": {
+          "roc_auc": 0.9185,
+          "val_f1": 0.867,
+          "val_fpr_human": 0.1486
+        },
+        "last_seconds": 0.6
+      }
+    },
+    "lm": {
+      "threshold": 0.2632,
+      "threshold_source": "lm_calibration.json: doc_threshold, подобран на собственном val (val)",
+      "info": {
+        "load_seconds": 4.5,
+        "checkpoint": "tnc_dbgc_llmtrace.pt",
+        "device": "cpu",
+        "own_val_metrics": {
+          "roc_auc": 0.9239,
+          "val_f1": 0.8958,
+          "val_fpr_human": 0.1967
+        },
+        "last_seconds": 61.6
+      }
+    }
+  },
+  "runtime_seconds": 383.5
 }

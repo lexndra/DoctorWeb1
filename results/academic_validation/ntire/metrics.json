@@ -25,8 +25,8 @@
       "info": {
         "model": "umm-maybe/AI-image-detector",
         "device": "mps",
-        "seconds": 57.7,
-        "download_seconds": 310.9,
+        "seconds": 11.8,
+        "download_seconds": 154.5,
         "download_mb": 112.4
       },
       "overall": {
@@ -52,5 +52,5 @@
     }
   },
   "sampling": "архивы не скачиваются целиком (6 zip по 11–21 ГБ): случайно (seed=42) выбран shard_0.zip, по HTTP прочитаны его оглавление и labels.csv (50000 изображений), затем простая случайная выборка 150 реальных + 150 сгенерированных; загружено ≈112 МБ, только в памяти",
-  "seconds": 377.0
+  "seconds": 174.1
 }

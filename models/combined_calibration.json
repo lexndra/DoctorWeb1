@@ -1,0 +1,15 @@
+{
+  "method": "combined",
+  "doc_threshold": 0.5114,
+  "sentence_threshold": 0.325,
+  "calibrated_on": "val",
+  "val_metrics": {
+    "roc_auc": 0.9568956524762688,
+    "val_f1": 0.9051724137931034,
+    "val_fpr_human": 0.08368200836820083,
+    "val_fpr_marketing": 0.027777777777777776,
+    "constraints_met": true,
+    "max_fpr": 0.2,
+    "char_f1": 0.9342397992030054
+  }
+}
